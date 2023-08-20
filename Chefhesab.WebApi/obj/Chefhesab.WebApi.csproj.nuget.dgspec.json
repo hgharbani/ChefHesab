@@ -1,0 +1,553 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\Chefhesab.WebApi\\Chefhesab.WebApi.csproj": {}
+  },
+  "projects": {
+    "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Application\\ChefHesab.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Application\\ChefHesab.Application.csproj",
+        "projectName": "ChefHesab.Application",
+        "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Application\\ChefHesab.Application.csproj",
+        "packagesPath": "C:\\Users\\Hossein Gharbani\\.nuget\\packages\\",
+        "outputPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Hossein Gharbani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "E:\\Drive E\\برنامه نویسی\\برنامه های من\\localPackage": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Data\\ChefHesab.Data.csproj": {
+                "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Data\\ChefHesab.Data.csproj"
+              },
+              "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Domain\\ChefHesab.Domain.csproj": {
+                "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Domain\\ChefHesab.Domain.csproj"
+              },
+              "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Dto\\ChefHesab.Dto.csproj": {
+                "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Dto\\ChefHesab.Dto.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Dalir.common": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Data\\ChefHesab.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Data\\ChefHesab.Data.csproj",
+        "projectName": "ChefHesab.Data",
+        "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Data\\ChefHesab.Data.csproj",
+        "packagesPath": "C:\\Users\\Hossein Gharbani\\.nuget\\packages\\",
+        "outputPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Hossein Gharbani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "E:\\Drive E\\برنامه نویسی\\برنامه های من\\localPackage": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Domain\\ChefHesab.Domain.csproj": {
+                "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Domain\\ChefHesab.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Dalir.common": {
+              "target": "Package",
+              "version": "[1.0.4, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Owin": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Owin": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Domain\\ChefHesab.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Domain\\ChefHesab.Domain.csproj",
+        "projectName": "ChefHesab.Domain",
+        "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Domain\\ChefHesab.Domain.csproj",
+        "packagesPath": "C:\\Users\\Hossein Gharbani\\.nuget\\packages\\",
+        "outputPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Hossein Gharbani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "E:\\Drive E\\برنامه نویسی\\برنامه های من\\localPackage": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Dto\\ChefHesab.Dto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Dto\\ChefHesab.Dto.csproj",
+        "projectName": "ChefHesab.Dto",
+        "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Dto\\ChefHesab.Dto.csproj",
+        "packagesPath": "C:\\Users\\Hossein Gharbani\\.nuget\\packages\\",
+        "outputPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Dto\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Hossein Gharbani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "E:\\Drive E\\برنامه نویسی\\برنامه های من\\localPackage": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Share\\ChefHesab.Share.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Share\\ChefHesab.Share.csproj",
+        "projectName": "ChefHesab.Share",
+        "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Share\\ChefHesab.Share.csproj",
+        "packagesPath": "C:\\Users\\Hossein Gharbani\\.nuget\\packages\\",
+        "outputPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Share\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Hossein Gharbani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "E:\\Drive E\\برنامه نویسی\\برنامه های من\\localPackage": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\Chefhesab.WebApi\\Chefhesab.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\Chefhesab.WebApi\\Chefhesab.WebApi.csproj",
+        "projectName": "Chefhesab.WebApi",
+        "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\Chefhesab.WebApi\\Chefhesab.WebApi.csproj",
+        "packagesPath": "C:\\Users\\Hossein Gharbani\\.nuget\\packages\\",
+        "outputPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\Chefhesab.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Hossein Gharbani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "E:\\Drive E\\برنامه نویسی\\برنامه های من\\localPackage": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Application\\ChefHesab.Application.csproj": {
+                "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Application\\ChefHesab.Application.csproj"
+              },
+              "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Data\\ChefHesab.Data.csproj": {
+                "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Data\\ChefHesab.Data.csproj"
+              },
+              "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Domain\\ChefHesab.Domain.csproj": {
+                "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Domain\\ChefHesab.Domain.csproj"
+              },
+              "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Dto\\ChefHesab.Dto.csproj": {
+                "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Dto\\ChefHesab.Dto.csproj"
+              },
+              "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Share\\ChefHesab.Share.csproj": {
+                "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Share\\ChefHesab.Share.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[7.1.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="7.1.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChefHesab.Application\ChefHesab.Application.csproj" />
+    <ProjectReference Include="..\ChefHesab.Data\ChefHesab.Data.csproj" />
+    <ProjectReference Include="..\ChefHesab.Domain\ChefHesab.Domain.csproj" />
+    <ProjectReference Include="..\ChefHesab.Dto\ChefHesab.Dto.csproj" />
+    <ProjectReference Include="..\ChefHesab.Share\ChefHesab.Share.csproj" />
+  </ItemGroup>
+
+</Project>
