@@ -45,11 +45,12 @@ builder.Host.ConfigureContainer<ContainerBuilder>(autofacBuilder =>
         .InstancePerLifetimeScope();
     
 });
+builder.Services.AddCors();
 builder.Services.AddData();
 builder.Services.AddApplication();
 var app = builder.Build();
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
     app.UseSwagger();
     app.UseSwaggerUI();

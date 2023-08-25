@@ -1,0 +1,13 @@
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\bin\Release\net6.0\ChefHesab.Share.deps.json
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\bin\Release\net6.0\ChefHesab.Share.runtimeconfig.json
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\bin\Release\net6.0\ChefHesab.Share.dll
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\bin\Release\net6.0\ChefHesab.Share.pdb
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\obj\Release\net6.0\ChefHesab.Share.GeneratedMSBuildEditorConfig.editorconfig
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\obj\Release\net6.0\ChefHesab.Share.AssemblyInfoInputs.cache
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\obj\Release\net6.0\ChefHesab.Share.AssemblyInfo.cs
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\obj\Release\net6.0\ChefHesab.Share.csproj.CoreCompileInputs.cache
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\obj\Release\net6.0\ChefHesab.Share.dll
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\obj\Release\net6.0\refint\ChefHesab.Share.dll
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\obj\Release\net6.0\ChefHesab.Share.pdb
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\obj\Release\net6.0\ChefHesab.Share.genruntimeconfig.cache
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\obj\Release\net6.0\ref\ChefHesab.Share.dll

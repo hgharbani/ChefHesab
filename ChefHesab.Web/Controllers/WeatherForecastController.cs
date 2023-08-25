@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿
+
+using Microsoft.AspNetCore.Mvc;
 
 namespace ChefHesab.Web.Controllers
 {
@@ -19,15 +21,16 @@ namespace ChefHesab.Web.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<WeatherForecast> Get()
+        public async Task<IActionResult> GetFoodStuffVm()
         {
-            return Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            var client = new HttpClient();
+            HttpResponseMessage response = await client.GetAsync($"https://localhost:7111/api/FoodStuffApi/GetFoodStuff");
+            if (response.IsSuccessStatusCode)
             {
-                Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
-                Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-            })
-            .ToArray();
+                var product = await response.Content.ReadAsStringAsync();
+                return Ok(product);
+            }
+            return Ok();
         }
     }
 }

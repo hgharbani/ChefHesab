@@ -1,5 +1,6 @@
 ﻿using ChefHesab.Data.Presentition.Context;
 using ChefHesab.Data.Presentition.Reositories.generic;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,9 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
             _context = dbContext;
         }
 
-
+        public IQueryable<FoodCategory> GetAllQueryble()
+        {
+            return _context.FoodCategories.AsQueryable();
+        }
     }
 }

@@ -16,6 +16,11 @@ namespace ChefHesab.Data.Configurations
             entity.HasComment("دسته بندی کالا");
 
             entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.SnapId).IsRequired(false);
+            entity.HasOne(d => d.Parent)
+           .WithMany(p => p.InverseParent)
+           .HasForeignKey(d => d.ParentId)
+           .HasConstraintName("FK_FoodCategory_FoodCategory");
 
             OnConfigurePartial(entity);
         }

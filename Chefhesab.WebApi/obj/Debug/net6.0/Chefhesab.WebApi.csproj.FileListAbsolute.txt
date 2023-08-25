@@ -1,9 +1,3 @@
-E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\Chefhesab.WebApi.csproj.AssemblyReference.cache
-E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\Chefhesab.WebApi.GeneratedMSBuildEditorConfig.editorconfig
-E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\Chefhesab.WebApi.AssemblyInfoInputs.cache
-E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\Chefhesab.WebApi.AssemblyInfo.cs
-E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\Chefhesab.WebApi.csproj.CoreCompileInputs.cache
-E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\Chefhesab.WebApi.MvcApplicationPartsAssemblyInfo.cache
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\bin\Debug\net6.0\appsettings.Development.json
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\bin\Debug\net6.0\appsettings.json
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\bin\Debug\net6.0\Chefhesab.WebApi.exe
@@ -94,7 +88,13 @@ E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\bin\Debug\net6.0\ChefHesab.Domain.pdb
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\bin\Debug\net6.0\ChefHesab.Dto.pdb
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\bin\Debug\net6.0\ChefHesab.Share.pdb
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\Chefhesab.WebApi.csproj.AssemblyReference.cache
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\Chefhesab.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\Chefhesab.WebApi.AssemblyInfoInputs.cache
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\Chefhesab.WebApi.AssemblyInfo.cs
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\Chefhesab.WebApi.csproj.CoreCompileInputs.cache
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\Chefhesab.WebApi.MvcApplicationPartsAssemblyInfo.cs
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\Chefhesab.WebApi.MvcApplicationPartsAssemblyInfo.cache
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\staticwebassets\msbuild.Chefhesab.WebApi.Microsoft.AspNetCore.StaticWebAssets.props
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\staticwebassets\msbuild.build.Chefhesab.WebApi.props
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Chefhesab.WebApi.props

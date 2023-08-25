@@ -9,5 +9,6 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
 {
     public interface IFoodCategoryRepository:IBaseGenericRepository<FoodCategory>
     {
+        IQueryable<FoodCategory> GetAllQueryble();
     }
 }

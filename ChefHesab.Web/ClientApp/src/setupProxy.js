@@ -12,11 +12,15 @@ module.exports = function(app) {
   const appProxy = createProxyMiddleware(context, {
     proxyTimeout: 10000,
     target: target,
+    changeOrigin: true,
     secure: false,
     headers: {
-      Connection: 'Keep-Alive'
+      Connection: 'Keep-Alive',
+      
     }
   });
 
   app.use(appProxy);
+
+  
 };

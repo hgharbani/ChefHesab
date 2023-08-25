@@ -25,10 +25,19 @@ namespace ChefHesab.Domain
         [Column("id")]
         public Guid Id { get; set; }
         public string Title { get; set; }
+        public int? SnapId { get; set; }
         [Column("active")]
         public bool? Active { get; set; }
 
+        [Column("parentID")]
+        public Guid? ParentId { get; set; }
+
+        [ForeignKey("ParentId")]
+        [InverseProperty("InverseParent")]
+        public virtual FoodCategory Parent { get; set; }
         [InverseProperty("FoodCategory")]
         public virtual ICollection<FoodStuff> FoodStuffs { get; set; }
+        [InverseProperty("Parent")]
+        public virtual ICollection<FoodCategory> InverseParent { get; set; }
     }
 }

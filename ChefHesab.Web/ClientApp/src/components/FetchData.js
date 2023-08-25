@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-
+import axios from 'axios';
 export class FetchData extends Component {
   static displayName = FetchData.name;
-
+ 
   constructor(props) {
     super(props);
     this.state = { forecasts: [], loading: true };
+
   }
 
   componentDidMount() {
@@ -17,19 +18,18 @@ export class FetchData extends Component {
       <table className='table table-striped' aria-labelledby="tabelLabel">
         <thead>
           <tr>
-            <th>Date</th>
-            <th>Temp. (C)</th>
-            <th>Temp. (F)</th>
-            <th>Summary</th>
+            <th>نام کالا</th>
+            <th>دسته کالا</th>
+           
           </tr>
         </thead>
         <tbody>
           {forecasts.map(forecast =>
-            <tr key={forecast.date}>
-              <td>{forecast.date}</td>
-              <td>{forecast.temperatureC}</td>
-              <td>{forecast.temperatureF}</td>
-              <td>{forecast.summary}</td>
+        
+            <tr key={forecast.id}>
+              <td>{forecast.title}</td>
+              <td>{forecast.categoryTitle}</td>
+            
             </tr>
           )}
         </tbody>
@@ -52,8 +52,14 @@ export class FetchData extends Component {
   }
 
   async populateWeatherData() {
-    const response = await fetch('weatherforecast');
-    const data = await response.json();
-    this.setState({ forecasts: data, loading: false });
+    var baseURL="https://192.168.1.53:8082/api/FoodStuffApi/GetFoodStuff";
+   
+    axios.get(baseURL).then((response) => {
+      console.log(response.data)
+      this.setState({ forecasts: response.data, loading: false });
+      
+    });
+ 
+  
   }
 }

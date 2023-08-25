@@ -16,43 +16,7 @@
    "T4TemplatePath": null,
    "Tables": [
       {
-         "Name": "[dbo].[AdditionalCostFood]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[AdditionalCosts]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[Authenticate]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[ContractingCompanies]",
-         "ObjectType": 0
-      },
-      {
          "Name": "[dbo].[FoodCategory]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[FoodProviders]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[FoodStuff]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[IngredinsFood]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[Personal]",
-         "ObjectType": 0
-      },
-      {
-         "Name": "[dbo].[StuffPrice]",
          "ObjectType": 0
       }
    ],

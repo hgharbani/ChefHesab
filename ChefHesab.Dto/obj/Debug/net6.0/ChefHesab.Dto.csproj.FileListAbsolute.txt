@@ -1,10 +1,10 @@
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Dto\bin\Debug\net6.0\ChefHesab.Dto.deps.json
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Dto\bin\Debug\net6.0\ChefHesab.Dto.dll
+E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Dto\bin\Debug\net6.0\ChefHesab.Dto.pdb
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Dto\obj\Debug\net6.0\ChefHesab.Dto.GeneratedMSBuildEditorConfig.editorconfig
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Dto\obj\Debug\net6.0\ChefHesab.Dto.AssemblyInfoInputs.cache
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Dto\obj\Debug\net6.0\ChefHesab.Dto.AssemblyInfo.cs
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Dto\obj\Debug\net6.0\ChefHesab.Dto.csproj.CoreCompileInputs.cache
-E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Dto\bin\Debug\net6.0\ChefHesab.Dto.deps.json
-E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Dto\bin\Debug\net6.0\ChefHesab.Dto.dll
-E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Dto\bin\Debug\net6.0\ChefHesab.Dto.pdb
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Dto\obj\Debug\net6.0\ChefHesab.Dto.dll
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Dto\obj\Debug\net6.0\refint\ChefHesab.Dto.dll
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Dto\obj\Debug\net6.0\ChefHesab.Dto.pdb
