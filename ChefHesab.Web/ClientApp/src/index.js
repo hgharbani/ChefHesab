@@ -1,15 +1,29 @@
-import 'bootstrap/dist/css/bootstrap.css';
+
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
-
+import "./dist/js/spaghetti.js"
 const baseUrl = document.getElementsByTagName('base')[0].getAttribute('href');
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
+if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  debugger;
+  document.documentElement.classList.add('dark')
+} else {
+  document.documentElement.classList.remove('dark')
+}
 
+// Whenever the user explicitly chooses light mode
+localStorage.theme = 'dark'
+
+// Whenever the user explicitly chooses dark mode
+//localStorage.theme = 'dark'
+
+// Whenever the user explicitly chooses to respect the OS preference
+//localStorage.removeItem('theme')
 root.render(
   <BrowserRouter basename={baseUrl}>
     <App />

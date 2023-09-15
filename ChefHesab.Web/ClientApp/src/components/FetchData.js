@@ -15,11 +15,11 @@ export class FetchData extends Component {
 
   static renderForecastsTable(forecasts) {
     return (
-      <table className='table table-striped' aria-labelledby="tabelLabel">
-        <thead>
+      <table className=' table-fixed  border-collapse border border-slate-400 hover:border-collapse overflow-y-scroll' aria-labelledby="tabelLabel">
+        <thead className='bg-sky-700'>
           <tr>
-            <th>نام کالا</th>
-            <th>دسته کالا</th>
+            <th className='border border-slate-300'>نام کالا</th>
+            <th className='border border-slate-300'>دسته کالا</th>
            
           </tr>
         </thead>
@@ -27,8 +27,8 @@ export class FetchData extends Component {
           {forecasts.map(forecast =>
         
             <tr key={forecast.id}>
-              <td>{forecast.title}</td>
-              <td>{forecast.categoryTitle}</td>
+              <td className='border border-slate-300'>{forecast.title}</td>
+              <td className='border border-slate-300'>{forecast.categoryTitle}</td>
             
             </tr>
           )}

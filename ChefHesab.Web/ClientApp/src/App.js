@@ -2,18 +2,17 @@
 import { Route, Routes } from 'react-router-dom';
 import AppRoutes from './AppRoutes';*/
 import React, { useState } from 'react';
-import './custom.css';
+import './dist/style/custom.css';
 import Sidebar from './components/layout/SideBar';
 import Contents from './components/layout/Content';
 import { Layout, theme } from 'antd';
-const { Header, Content } = Layout;
+const { Header } = Layout;
 
 
 
 const App = () => {
 
-  var [selectedPath, setSelectedPath] = useState('/home'); // Initial selected path
-
+    var [selectedPath, setSelectedPath] = useState('/home'); // Initial selected path
   var handleItemClick = (path) => {
     
     setSelectedPath(path);
@@ -29,15 +28,13 @@ const App = () => {
   return (
  
 
-    <Layout>
+<Layout>
       <Header
         style={{
           display: 'flex',
           alignItems: 'center',
         }}
       >
-  
- 
       </Header>
       <Layout>
       <Sidebar items={sidebarItems} onItemClick={handleItemClick} bgColor={colorBgContainer} />
@@ -46,20 +43,16 @@ const App = () => {
             padding: '0 24px 24px',
           }}
         >
-         
-          <Content
-            style={{
-              padding: 24,
-              margin: 0,
-              minHeight: 280,
-              background: colorBgContainer,
-            }}
-          >
-                <Contents path={selectedPath} />
-          </Content>
+         <div class="container mx-auto px-4">
+         <Contents path={selectedPath} />
+         </div>
+          
         </Layout>
       </Layout>
     </Layout>
+
+
+ 
   );
 };
 export default App;
