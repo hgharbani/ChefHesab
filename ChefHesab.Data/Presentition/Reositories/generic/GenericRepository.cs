@@ -92,9 +92,30 @@ namespace ChefHesab.Data.Presentition.Reositories.generic
             return DbSet.ToList();
         }
 
+        public virtual async Task<bool> Any(Expression<Func<TEntity, bool>> predicate)
+        {
+          return await DbSet.AsQueryable().AnyAsync(predicate);
+        }
+        public virtual IQueryable<TEntity> Where(Expression<Func<TEntity, bool>> predicate)
+        {
+            return  DbSet.AsQueryable().Where(predicate);
+        }
+
         public virtual IList<TEntity> SelectAllByPage(int pageNumber, int quantity)
         {
             return DbSet.Skip(Math.Max(pageNumber - 1, 0) * quantity).Take(quantity).ToList();
+        }
+
+        public virtual async Task<Tuple<int, IList<TEntity>>> SelectDataFilteredByPage(int pageNumber, int quantity, List<Expression<Func<TEntity, bool>>> predicate)
+        {
+            var Data = DbSet.AsNoTracking();
+            foreach(var filter in predicate)
+            {
+                Data = Data.WhereNullSafe(filter);
+            }
+            var CountData= Data.Count();
+            var result = await Data.Skip(Math.Max(pageNumber - 1, 0) * quantity).Take(quantity).ToListAsync();
+            return new Tuple<int, IList<TEntity>>(CountData, result);
         }
 
         public virtual TEntity Select(Expression<Func<TEntity, bool>> predicate)

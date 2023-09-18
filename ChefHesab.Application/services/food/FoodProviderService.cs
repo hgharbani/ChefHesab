@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace ChefHesab.Domain.Peresentition.IRepositories.food
 {
+    /// <summary>
+    /// غذاهای ارائه شده به شرکت
+    /// </summary>
     public class FoodProviderService : IFoodProviderService
     {
         public IChefHesabUnitOfWork _unitOfWork;

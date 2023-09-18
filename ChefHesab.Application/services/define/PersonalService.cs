@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace ChefHesab.Application.services.define
 {
+    /// <summary>
+    /// سرویس مدیریت افراد
+    /// </summary>
     public class PersonalService : IPersonalService
     {
         public IChefHesabUnitOfWork _unitOfWork;

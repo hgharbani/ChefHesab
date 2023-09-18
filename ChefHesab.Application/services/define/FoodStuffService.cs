@@ -13,6 +13,9 @@ using static ChefHesab.Dto.define.FoodStuff.SnapFoodStufCategory;
 
 namespace ChefHesab.Domain.Peresentition.IRepositories.define
 {
+    /// <summary>
+    /// مواد اولیه
+    /// </summary>
     public class FoodStuffService : IFoodStuffService
     {
         public IChefHesabUnitOfWork _unitOfWork;

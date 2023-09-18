@@ -9,5 +9,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
 {
     public interface IAdditionalCostRepository:IBaseGenericRepository<AdditionalCost>
     {
+         IQueryable<AdditionalCost> GetAll();
+        IQueryable<AdditionalCost> GetAllAsNoTracking();
     }
 }

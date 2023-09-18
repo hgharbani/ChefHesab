@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ChefHesab.Dto.define.AdditionalCost
 {
-    public class AdditionalCostVM
+    public class AdditionalCostVM: filterDataRequest
     {
      
         public Guid Id { get; set; }

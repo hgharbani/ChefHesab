@@ -26,6 +26,7 @@
     <ProjectReference Include="..\ChefHesab.Data\ChefHesab.Data.csproj" />
     <ProjectReference Include="..\ChefHesab.Domain\ChefHesab.Domain.csproj" />
     <ProjectReference Include="..\ChefHesab.Dto\ChefHesab.Dto.csproj" />
+    <ProjectReference Include="..\ChefHesab.Share\ChefHesab.Share.csproj" />
   </ItemGroup>
 
 </Project>

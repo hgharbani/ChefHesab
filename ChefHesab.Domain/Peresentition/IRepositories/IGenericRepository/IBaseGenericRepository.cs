@@ -37,7 +37,10 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository
             TEntity Select(Expression<Func<TEntity, bool>> predicate);
 
             TResult Select<TResult>(Expression<Func<TEntity, bool>> predicate, Expression<Func<TEntity, TResult>> properties);
-        }
+        Task<bool> Any(Expression<Func<TEntity, bool>> predicate);
+        IQueryable<TEntity> Where(Expression<Func<TEntity, bool>> predicate);
+         Task<Tuple<int, IList<TEntity>>> SelectDataFilteredByPage(int pageNumber, int quantity, List<Expression<Func<TEntity, bool>>> predicate);
+    }
 
     
 }

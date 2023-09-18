@@ -1438,6 +1438,16 @@
         "runtime": {
           "bin/placeholder/ChefHesab.Dto.dll": {}
         }
+      },
+      "ChefHesab.Share/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ChefHesab.Share.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ChefHesab.Share.dll": {}
+        }
       }
     }
   },
@@ -4051,6 +4061,11 @@
       "type": "project",
       "path": "../ChefHesab.Dto/ChefHesab.Dto.csproj",
       "msbuildProject": "../ChefHesab.Dto/ChefHesab.Dto.csproj"
+    },
+    "ChefHesab.Share/1.0.0": {
+      "type": "project",
+      "path": "../ChefHesab.Share/ChefHesab.Share.csproj",
+      "msbuildProject": "../ChefHesab.Share/ChefHesab.Share.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4061,6 +4076,7 @@
       "ChefHesab.Data >= 1.0.0",
       "ChefHesab.Domain >= 1.0.0",
       "ChefHesab.Dto >= 1.0.0",
+      "ChefHesab.Share >= 1.0.0",
       "Dalir.common >= 1.0.4",
       "Microsoft.EntityFrameworkCore >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.10",
@@ -4105,6 +4121,9 @@
             },
             "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Dto\\ChefHesab.Dto.csproj": {
               "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Dto\\ChefHesab.Dto.csproj"
+            },
+            "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Share\\ChefHesab.Share.csproj": {
+              "projectPath": "E:\\Drive E\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Share\\ChefHesab.Share.csproj"
             }
           }
         }

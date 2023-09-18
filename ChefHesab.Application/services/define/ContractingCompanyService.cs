@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 
 namespace ChefHesab.Domain.Peresentition.IRepositories.define
 {
+    /// <summary>
+    /// شرکت های طرف قرار داد
+    /// </summary>
     public class ContractingCompanyService : IContractingCompanyService
     {
         public IChefHesabUnitOfWork _unitOfWork;

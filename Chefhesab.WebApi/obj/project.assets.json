@@ -1512,6 +1512,7 @@
           "ChefHesab.Data": "1.0.0",
           "ChefHesab.Domain": "1.0.0",
           "ChefHesab.Dto": "1.0.0",
+          "ChefHesab.Share": "1.0.0",
           "Dalir.common": "1.0.4",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",

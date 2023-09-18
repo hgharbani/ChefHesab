@@ -11,6 +11,9 @@ using System.Threading.Tasks;
 
 namespace ChefHesab.Domain.Peresentition.IRepositories
 {
+    /// <summary>
+    /// هزینه های جانبی
+    /// </summary>
     public class AdditionalCostFoodService : IAdditionalCostFoodService
     {
         public IChefHesabUnitOfWork _unitOfWork;
