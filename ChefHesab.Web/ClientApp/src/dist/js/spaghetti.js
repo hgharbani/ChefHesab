@@ -6,10 +6,10 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
   }
   
   // Whenever the user explicitly chooses light mode
-  //localStorage.theme = 'light'
+  localStorage.theme = 'light'
   
   // Whenever the user explicitly chooses dark mode
-  //localStorage.theme = 'dark'
+  localStorage.theme = 'dark'
   
   // Whenever the user explicitly chooses to respect the OS preference
-  //localStorage.removeItem('theme')
+  localStorage.removeItem('theme')
