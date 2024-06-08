@@ -1,0 +1,160 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\tailwind.config.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\fonts\1-IranSansWeb\IRANSansWeb.woff2" />
+    <None Include="wwwroot\fonts\1-IranSansWeb\IRANSansWeb_Bold.woff2" />
+    <None Include="wwwroot\fonts\1-IranSansWeb\IRANSansWeb_Light.woff2" />
+    <None Include="wwwroot\fonts\1-IranSansWeb\IRANSansWeb_Medium.woff2" />
+    <None Include="wwwroot\fonts\1-IranSansWeb\IRANSansWeb_UltraLight.woff2" />
+    <None Include="wwwroot\fonts\12-Behdad-Font\Behdad-Regular.woff2" />
+    <None Include="wwwroot\fonts\2-IranYekan\iranyekanwebbold.woff2" />
+    <None Include="wwwroot\fonts\2-IranYekan\iranyekanweblight.woff2" />
+    <None Include="wwwroot\fonts\5-Sahel\CHANGELOG.md" />
+    <None Include="wwwroot\fonts\5-Sahel\LICENSE" />
+    <None Include="wwwroot\fonts\5-Sahel\README.md" />
+    <None Include="wwwroot\fonts\6-Shabnam\CHANGELOG.md" />
+    <None Include="wwwroot\fonts\6-Shabnam\Farsi-Digits-Without-Latin\Shabnam-Bold-FD-WOL.woff2" />
+    <None Include="wwwroot\fonts\6-Shabnam\Farsi-Digits-Without-Latin\Shabnam-FD-WOL.woff2" />
+    <None Include="wwwroot\fonts\6-Shabnam\Farsi-Digits-Without-Latin\Shabnam-Light-FD-WOL.woff2" />
+    <None Include="wwwroot\fonts\6-Shabnam\Farsi-Digits\Shabnam-Bold-FD.woff2" />
+    <None Include="wwwroot\fonts\6-Shabnam\Farsi-Digits\Shabnam-FD.woff2" />
+    <None Include="wwwroot\fonts\6-Shabnam\Farsi-Digits\Shabnam-Light-FD.woff2" />
+    <None Include="wwwroot\fonts\6-Shabnam\LICENSE" />
+    <None Include="wwwroot\fonts\6-Shabnam\README.md" />
+    <None Include="wwwroot\fonts\6-Shabnam\Shabnam-Bold.woff2" />
+    <None Include="wwwroot\fonts\6-Shabnam\Shabnam-Light.woff2" />
+    <None Include="wwwroot\fonts\6-Shabnam\Shabnam.woff2" />
+    <None Include="wwwroot\fonts\6-Shabnam\Without-Latin\Shabnam-Bold-WOL.woff2" />
+    <None Include="wwwroot\fonts\6-Shabnam\Without-Latin\Shabnam-Light-WOL.woff2" />
+    <None Include="wwwroot\fonts\6-Shabnam\Without-Latin\Shabnam-WOL.woff2" />
+    <None Include="wwwroot\fonts\6-Shabnam\YasDL.com.url" />
+    <None Include="wwwroot\fonts\7-Vazir\CHANGELOG.md" />
+    <None Include="wwwroot\fonts\7-Vazir\Farsi-Digits-Without-Latin\Vazir-Bold-FD-WOL.woff2" />
+    <None Include="wwwroot\fonts\7-Vazir\Farsi-Digits-Without-Latin\Vazir-FD-WOL.woff2" />
+    <None Include="wwwroot\fonts\7-Vazir\Farsi-Digits-Without-Latin\Vazir-Light-FD-WOL.woff2" />
+    <None Include="wwwroot\fonts\7-Vazir\Farsi-Digits-Without-Latin\Vazir-Medium-FD-WOL.woff2" />
+    <None Include="wwwroot\fonts\7-Vazir\Farsi-Digits-Without-Latin\Vazir-Thin-FD-WOL.woff2" />
+    <None Include="wwwroot\fonts\7-Vazir\LICENSE" />
+    <None Include="wwwroot\fonts\7-Vazir\README.md" />
+    <None Include="wwwroot\fonts\7-Vazir\Vazir-Bold.woff2" />
+    <None Include="wwwroot\fonts\7-Vazir\Vazir-Light.woff2" />
+    <None Include="wwwroot\fonts\7-Vazir\Vazir-Medium.woff2" />
+    <None Include="wwwroot\fonts\7-Vazir\Vazir-Thin.woff2" />
+    <None Include="wwwroot\fonts\7-Vazir\Vazir.woff2" />
+    <None Include="wwwroot\fonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\fonts\fa-duotone-900.woff2" />
+    <None Include="wwwroot\fonts\fa-light-300.woff2" />
+    <None Include="wwwroot\fonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\fonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\fonts\fa-thin-100.woff2" />
+    <None Include="wwwroot\fonts\fa-v4compatibility.woff2" />
+    <None Include="wwwroot\fonts\Feather.svg" />
+    <None Include="wwwroot\fonts\slick.svg" />
+    <None Include="wwwroot\icons\flaticon\Flaticon.svg" />
+    <None Include="wwwroot\icons\flaticon_1\Flaticon_1.svg" />
+    <None Include="wwwroot\icons\flaticon_1\Flaticon_1.woff2" />
+    <None Include="wwwroot\icons\fontawesome\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\icons\fontawesome\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\icons\fontawesome\webfonts\fa-solid-900.woff2" />
+    <None Include="wwwroot\icons\fontawesome\webfonts\fa-v4compatibility.woff2" />
+    <None Include="wwwroot\icons\line-awesome\fonts\la-brands-400.svg" />
+    <None Include="wwwroot\icons\line-awesome\fonts\la-brands-400.woff2" />
+    <None Include="wwwroot\icons\line-awesome\fonts\la-regular-400.svg" />
+    <None Include="wwwroot\icons\line-awesome\fonts\la-regular-400.woff2" />
+    <None Include="wwwroot\icons\line-awesome\fonts\la-solid-900.svg" />
+    <None Include="wwwroot\icons\line-awesome\fonts\la-solid-900.woff2" />
+    <None Include="wwwroot\icons\material-design-iconic-font\fonts\materialdesignicons-webfont683c.svg" />
+    <None Include="wwwroot\icons\material-design-iconic-font\fonts\materialdesignicons-webfont683c.woff2" />
+    <None Include="wwwroot\icons\themify-icons\fonts\themify9f249f24.svg" />
+    <None Include="wwwroot\js\dashboard\dashboard-1.js" />
+    <None Include="wwwroot\js\dashboard\my-profile.js" />
+    <None Include="wwwroot\js\dashboard\statistics-page.js" />
+    <None Include="wwwroot\js\plugins-init\bs-daterange-picker-init.js" />
+    <None Include="wwwroot\js\plugins-init\chartist-init.js" />
+    <None Include="wwwroot\js\plugins-init\chartjs-init.js" />
+    <None Include="wwwroot\js\plugins-init\datatables.init.js" />
+    <None Include="wwwroot\js\plugins-init\flot-init.js" />
+    <None Include="wwwroot\js\plugins-init\fullcalendar-init.js" />
+    <None Include="wwwroot\js\plugins-init\jquery-asColorPicker.init.js" />
+    <None Include="wwwroot\js\plugins-init\jquery.validate-init.js" />
+    <None Include="wwwroot\js\plugins-init\jqvmap-init.js" />
+    <None Include="wwwroot\js\plugins-init\morris-init.js" />
+    <None Include="wwwroot\js\plugins-init\nestable-init.js" />
+    <None Include="wwwroot\js\plugins-init\nouislider-init.js" />
+    <None Include="wwwroot\js\plugins-init\pickadate-init.js" />
+    <None Include="wwwroot\js\plugins-init\piety-init.js" />
+    <None Include="wwwroot\js\plugins-init\select2-init.js" />
+    <None Include="wwwroot\js\plugins-init\sparkline-init.js" />
+    <None Include="wwwroot\js\plugins-init\sweetalert.init.js" />
+    <None Include="wwwroot\js\plugins-init\toastr-init.js" />
+    <None Include="wwwroot\js\plugins-init\widgets-script-init.js" />
+    <None Include="wwwroot\tailwind.config.js" />
+    <None Include="wwwroot\vendor\alpine\alpine.js" />
+    <None Include="wwwroot\vendor\alpine\alpineplugin.js" />
+    <None Include="wwwroot\vendor\apexchart\apexchart.js" />
+    <None Include="wwwroot\vendor\chartist-plugin-tooltips\js\chartist-plugin-tooltip.min.js" />
+    <None Include="wwwroot\vendor\chartist\js\chartist.min.js" />
+    <None Include="wwwroot\vendor\chartjs\chart.bundle.min.js" />
+    <None Include="wwwroot\vendor\ckeditor\ckeditor.js" />
+    <None Include="wwwroot\vendor\datatables\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\vendor\datatables\responsive\responsive.js" />
+    <None Include="wwwroot\vendor\daterangepicker\bootstrap-datepicker.fa.min.js" />
+    <None Include="wwwroot\vendor\daterangepicker\daterangepicker.js" />
+    <None Include="wwwroot\vendor\dropzone\dist\dropzone.js" />
+    <None Include="wwwroot\vendor\flatpickr-master\js\flatpickr.js" />
+    <None Include="wwwroot\vendor\flot-spline\jquery.flot.spline.min.js" />
+    <None Include="wwwroot\vendor\flot\jquery.flot.js" />
+    <None Include="wwwroot\vendor\flot\jquery.flot.pie.js" />
+    <None Include="wwwroot\vendor\flot\jquery.flot.resize.js" />
+    <None Include="wwwroot\vendor\fullcalendar\js\main.min.js" />
+    <None Include="wwwroot\vendor\global\global.min.js" />
+    <None Include="wwwroot\vendor\jquery-ascolorpicker\js\jquery-ascolorpicker.min.js" />
+    <None Include="wwwroot\vendor\jquery-ascolor\jquery-ascolor.min.js" />
+    <None Include="wwwroot\vendor\jquery-asgradient\jquery-asgradient.min.js" />
+    <None Include="wwwroot\vendor\jquery-smartwizard\dist\js\jquery.smartWizard.js" />
+    <None Include="wwwroot\vendor\jquery-sparkline\jquery.sparkline.min.js" />
+    <None Include="wwwroot\vendor\jqvmap\js\jquery.vmap.min.js" />
+    <None Include="wwwroot\vendor\jqvmap\js\jquery.vmap.usa.js" />
+    <None Include="wwwroot\vendor\jqvmap\js\jquery.vmap.world.js" />
+    <None Include="wwwroot\vendor\lightgallery\dist\fonts\lgb687.svg" />
+    <None Include="wwwroot\vendor\lightgallery\dist\fonts\lgb687.woff2" />
+    <None Include="wwwroot\vendor\lightgallery\dist\lightgallery.min.js" />
+    <None Include="wwwroot\vendor\lightgallery\dist\plugins\thumbnail\lg-thumbnail.min.js" />
+    <None Include="wwwroot\vendor\lightgallery\dist\plugins\zoom\lg-zoom.min.js" />
+    <None Include="wwwroot\vendor\moment\moment-jalaali.js" />
+    <None Include="wwwroot\vendor\moment\moment.min.js" />
+    <None Include="wwwroot\vendor\morris\morris.min.js" />
+    <None Include="wwwroot\vendor\nestable2\js\jquery.nestable.min.js" />
+    <None Include="wwwroot\vendor\niceselect\js\jquery.nice-select.min.js" />
+    <None Include="wwwroot\vendor\nouislider\nouislider.min.js" />
+    <None Include="wwwroot\vendor\owl-carousel\owl.carousel.js" />
+    <None Include="wwwroot\vendor\peity\jquery.peity.min.js" />
+    <None Include="wwwroot\vendor\pickadate\picker.date.js" />
+    <None Include="wwwroot\vendor\pickadate\picker.js" />
+    <None Include="wwwroot\vendor\pickadate\picker.time.js" />
+    <None Include="wwwroot\vendor\raphael\raphael.min.js" />
+    <None Include="wwwroot\vendor\select2\js\select2.full.min.js" />
+    <None Include="wwwroot\vendor\star-rating\jquery.star-rating-svg.js" />
+    <None Include="wwwroot\vendor\sweetalert2\dist\sweetalert2.min.js" />
+    <None Include="wwwroot\vendor\swiper\js\swiper-bundle.min.js" />
+    <None Include="wwwroot\vendor\swiper\swiper-bundle.min.js" />
+    <None Include="wwwroot\vendor\toastr\js\toastr.min.js" />
+    <None Include="wwwroot\vendor\wnumb\wNumb.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Tailwind.Extensions.AspNetCore" Version="1.0.0" />
+    <PackageReference Include="TailwindCssTagHelpers" Version="0.6.0" />
+  </ItemGroup>
+
+</Project>
