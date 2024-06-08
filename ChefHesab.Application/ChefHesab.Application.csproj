@@ -10,7 +10,6 @@
     <PackageReference Include="Autofac" Version="7.1.0" />
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
-    <PackageReference Include="Dalir.common" Version="1.0.4" />
   
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
@@ -28,5 +27,7 @@
     <ProjectReference Include="..\ChefHesab.Dto\ChefHesab.Dto.csproj" />
     <ProjectReference Include="..\ChefHesab.Share\ChefHesab.Share.csproj" />
   </ItemGroup>
+
+ 
 
 </Project>

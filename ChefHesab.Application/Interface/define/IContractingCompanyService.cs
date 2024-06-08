@@ -2,6 +2,6 @@
 {
     public interface IContractingCompanyService
     {
-        void get(int id);
+       
     }
 }

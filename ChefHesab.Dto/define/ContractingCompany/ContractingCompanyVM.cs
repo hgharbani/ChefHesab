@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ChefHesab.Dto.define.ContractingCompany
 {
-    public class ContractingCompanyVM
+    public class ContractingCompanyVM : filterDataRequest
     {
         public Guid Id { get; set; }
         [StringLength(300)]

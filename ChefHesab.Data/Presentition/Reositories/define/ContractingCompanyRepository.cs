@@ -1,5 +1,6 @@
 ﻿using ChefHesab.Data.Presentition.Context;
 using ChefHesab.Data.Presentition.Reositories.generic;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,15 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
         }
 
 
-       
+        public IQueryable<ContractingCompany> GetAll()
+        {
+            return _context.ContractingCompanies.AsQueryable();
+        }
+        public IQueryable<ContractingCompany> GetAllAsNoTracking()
+        {
+            return _context.ContractingCompanies.AsQueryable().AsNoTracking();
+        }
+
+
     }
 }

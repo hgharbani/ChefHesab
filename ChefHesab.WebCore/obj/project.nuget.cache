@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "4hZU1xcrGHvCZgNfHOLN67bL5TalISQpr6FQ/msORpMHBt7dh2YjPhPXzdStEtPL/+M84s8b+KgLk4UhNkknqg==",
+  "success": true,
+  "projectFilePath": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\ChefHesab.WebCore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\6.0.1\\microsoft.aspnetcore.spaservices.extensions.6.0.1.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0\\microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\tailwind.extensions.aspnetcore\\1.0.0\\tailwind.extensions.aspnetcore.1.0.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\tailwindcsstaghelpers\\0.6.0\\tailwindcsstaghelpers.0.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

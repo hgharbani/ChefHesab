@@ -15,3 +15,21 @@ E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.pdb
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.genruntimeconfig.cache
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ref\ChefHesab.Data.dll
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\bin\Debug\net6.0\ChefHesab.Data.deps.json
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\bin\Debug\net6.0\ChefHesab.Data.runtimeconfig.json
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\bin\Debug\net6.0\ChefHesab.Data.dll
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\bin\Debug\net6.0\ChefHesab.Data.pdb
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\bin\Debug\net6.0\ChefHesab.Domain.dll
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\bin\Debug\net6.0\ChefHesab.Domain.pdb
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.csproj.AssemblyReference.cache
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.AssemblyInfoInputs.cache
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.AssemblyInfo.cs
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.csproj.CoreCompileInputs.cache
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.sourcelink.json
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesa.647209BB.Up2Date
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.dll
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\refint\ChefHesab.Data.dll
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.pdb
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.genruntimeconfig.cache
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ref\ChefHesab.Data.dll

@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChefHesab.Application", "Ch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChefHesab.Web", "ChefHesab.Web\ChefHesab.Web.csproj", "{C6F82420-EA25-4C6B-A97C-A90A0B1BE4F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chefhesab.WebApi", "Chefhesab.WebApi\Chefhesab.WebApi.csproj", "{4F8965D0-F288-4079-87FA-CB0167F64013}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chefhesab.WebApi", "Chefhesab.WebApi\Chefhesab.WebApi.csproj", "{4F8965D0-F288-4079-87FA-CB0167F64013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChefHesab.WebCore", "ChefHesab.WebCore\ChefHesab.WebCore.csproj", "{C366B12F-F8D5-4AEA-9C99-A69F7AB32676}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{4F8965D0-F288-4079-87FA-CB0167F64013}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F8965D0-F288-4079-87FA-CB0167F64013}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F8965D0-F288-4079-87FA-CB0167F64013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C366B12F-F8D5-4AEA-9C99-A69F7AB32676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C366B12F-F8D5-4AEA-9C99-A69F7AB32676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C366B12F-F8D5-4AEA-9C99-A69F7AB32676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C366B12F-F8D5-4AEA-9C99-A69F7AB32676}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

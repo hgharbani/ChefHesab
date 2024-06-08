@@ -1,10 +1,8 @@
 ﻿using ChefHesab.Data.Presentition.Context;
 using ChefHesab.Data.Presentition.Reositories.define;
-using ChefHesab.Data.Presentition.Reositories.generic;
 using ChefHesab.Domain.Peresentition.IRepositories;
 using ChefHesab.Domain.Peresentition.IRepositories.define;
 using ChefHesab.Domain.Peresentition.IRepositories.food;
-using Dalir.common.Interfaces;
 
 namespace ChefHesab.Data.Presentition.Reositories
 {

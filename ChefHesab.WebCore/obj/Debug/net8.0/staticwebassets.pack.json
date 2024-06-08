@@ -1,0 +1,2033 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ChefHesab.WebCore.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ChefHesab.WebCore.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb.eot",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb.ttf",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb.woff",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb.woff2",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_Bold.eot",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_Bold.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_Bold.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_Bold.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_Bold.woff2",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_Bold.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_Light.eot",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_Light.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_Light.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_Light.woff",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_Light.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_Light.woff2",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_Light.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_Medium.eot",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_Medium.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_Medium.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_Medium.woff",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_Medium.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_Medium.woff2",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_Medium.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_UltraLight.eot",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_UltraLight.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_UltraLight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_UltraLight.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_UltraLight.woff",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_UltraLight.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\1-IranSansWeb\\IRANSansWeb_UltraLight.woff2",
+      "PackagePath": "staticwebassets\\fonts\\1-IranSansWeb\\IRANSansWeb_UltraLight.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\10-Aseman\\g aseman.ttf",
+      "PackagePath": "staticwebassets\\fonts\\10-Aseman\\g aseman.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\11-Badr\\+ Badr.ttf",
+      "PackagePath": "staticwebassets\\fonts\\11-Badr\\+ Badr.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\11-Badr\\+ Badr.woff",
+      "PackagePath": "staticwebassets\\fonts\\11-Badr\\+ Badr.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\12-Behdad-Font\\Behdad-Regular.otf",
+      "PackagePath": "staticwebassets\\fonts\\12-Behdad-Font\\Behdad-Regular.otf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\12-Behdad-Font\\Behdad-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\12-Behdad-Font\\Behdad-Regular.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\12-Behdad-Font\\Behdad-Regular.woff",
+      "PackagePath": "staticwebassets\\fonts\\12-Behdad-Font\\Behdad-Regular.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\12-Behdad-Font\\Behdad-Regular.woff2",
+      "PackagePath": "staticwebassets\\fonts\\12-Behdad-Font\\Behdad-Regular.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\13-Kara\\SGKara-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\13-Kara\\SGKara-Light.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\13-Kara\\SGKara-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\13-Kara\\SGKara-Regular.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\13-Kara\\SGKara-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\13-Kara\\SGKara-SemiBold.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\2-IranYekan\\iranyekanwebbold.eot",
+      "PackagePath": "staticwebassets\\fonts\\2-IranYekan\\iranyekanwebbold.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\2-IranYekan\\iranyekanwebbold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\2-IranYekan\\iranyekanwebbold.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\2-IranYekan\\iranyekanwebbold.woff",
+      "PackagePath": "staticwebassets\\fonts\\2-IranYekan\\iranyekanwebbold.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\2-IranYekan\\iranyekanwebbold.woff2",
+      "PackagePath": "staticwebassets\\fonts\\2-IranYekan\\iranyekanwebbold.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\2-IranYekan\\iranyekanweblight.eot",
+      "PackagePath": "staticwebassets\\fonts\\2-IranYekan\\iranyekanweblight.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\2-IranYekan\\iranyekanweblight.ttf",
+      "PackagePath": "staticwebassets\\fonts\\2-IranYekan\\iranyekanweblight.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\2-IranYekan\\iranyekanweblight.woff",
+      "PackagePath": "staticwebassets\\fonts\\2-IranYekan\\iranyekanweblight.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\2-IranYekan\\iranyekanweblight.woff2",
+      "PackagePath": "staticwebassets\\fonts\\2-IranYekan\\iranyekanweblight.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\2-IranYekan\\iranyekanwebregular.eot",
+      "PackagePath": "staticwebassets\\fonts\\2-IranYekan\\iranyekanwebregular.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\2-IranYekan\\iranyekanwebregular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\2-IranYekan\\iranyekanwebregular.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\2-IranYekan\\iranyekanwebregular.woff",
+      "PackagePath": "staticwebassets\\fonts\\2-IranYekan\\iranyekanwebregular.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\3-Bahij Palatino Sans\\Bahij Palatino Sans Arabic-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\3-Bahij Palatino Sans\\Bahij Palatino Sans Arabic-Regular.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\3-Bahij Palatino Sans\\Bahij_Palatino_Arabic-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\3-Bahij Palatino Sans\\Bahij_Palatino_Arabic-Regular.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\3-Bahij Palatino Sans\\Bahij_Palatino_Sans_Arabic-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\3-Bahij Palatino Sans\\Bahij_Palatino_Sans_Arabic-Bold.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\4-Palatino Sans\\PalatinoLT.ttf",
+      "PackagePath": "staticwebassets\\fonts\\4-Palatino Sans\\PalatinoLT.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\4-Palatino Sans\\PalatinoLT.woff",
+      "PackagePath": "staticwebassets\\fonts\\4-Palatino Sans\\PalatinoLT.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\4-Palatino Sans\\PalatinoLTArabic-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\4-Palatino Sans\\PalatinoLTArabic-Regular.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\4-Palatino Sans\\PalatinoSansArabic-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\4-Palatino Sans\\PalatinoSansArabic-Bold.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\4-Palatino Sans\\PalatinoSansArabic-Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\4-Palatino Sans\\PalatinoSansArabic-Bold.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\CHANGELOG.md"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-Black-FD-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-Black-FD-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-Black-FD-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-Black-FD-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-Black-FD-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-Black-FD-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-Bold-FD-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-Bold-FD-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-Bold-FD-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-Bold-FD-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-Bold-FD-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-Bold-FD-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-FD-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-FD-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-FD-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-FD-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-FD-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits-Without-Latin\\Sahel-FD-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-Black-FD.eot",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-Black-FD.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-Black-FD.ttf",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-Black-FD.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-Black-FD.woff",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-Black-FD.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-Bold-FD.eot",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-Bold-FD.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-Bold-FD.ttf",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-Bold-FD.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-Bold-FD.woff",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-Bold-FD.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-FD.eot",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-FD.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-FD.ttf",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-FD.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-FD.woff",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Farsi-Digits\\Sahel-FD.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\LICENSE",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\README.md",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\README.md"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Sahel-Black.eot",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Sahel-Black.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Sahel-Black.ttf",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Sahel-Black.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Sahel-Black.woff",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Sahel-Black.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Sahel-Bold.eot",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Sahel-Bold.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Sahel-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Sahel-Bold.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Sahel-Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Sahel-Bold.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Sahel.eot",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Sahel.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Sahel.ttf",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Sahel.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Sahel.woff",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Sahel.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Without-Latin\\Sahel-Black-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Without-Latin\\Sahel-Black-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Without-Latin\\Sahel-Black-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Without-Latin\\Sahel-Black-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Without-Latin\\Sahel-Black-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Without-Latin\\Sahel-Black-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Without-Latin\\Sahel-Bold-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Without-Latin\\Sahel-Bold-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Without-Latin\\Sahel-Bold-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Without-Latin\\Sahel-Bold-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Without-Latin\\Sahel-Bold-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Without-Latin\\Sahel-Bold-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Without-Latin\\Sahel-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Without-Latin\\Sahel-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Without-Latin\\Sahel-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Without-Latin\\Sahel-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\5-Sahel\\Without-Latin\\Sahel-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\5-Sahel\\Without-Latin\\Sahel-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\CHANGELOG.md"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Bold-FD-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Bold-FD-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Bold-FD-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Bold-FD-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Bold-FD-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Bold-FD-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Bold-FD-WOL.woff2",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Bold-FD-WOL.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-FD-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-FD-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-FD-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-FD-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-FD-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-FD-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-FD-WOL.woff2",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-FD-WOL.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Light-FD-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Light-FD-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Light-FD-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Light-FD-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Light-FD-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Light-FD-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Light-FD-WOL.woff2",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits-Without-Latin\\Shabnam-Light-FD-WOL.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Bold-FD.eot",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Bold-FD.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Bold-FD.ttf",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Bold-FD.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Bold-FD.woff",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Bold-FD.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Bold-FD.woff2",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Bold-FD.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-FD.eot",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-FD.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-FD.ttf",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-FD.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-FD.woff",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-FD.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-FD.woff2",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-FD.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Light-FD.eot",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Light-FD.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Light-FD.ttf",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Light-FD.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Light-FD.woff",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Light-FD.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Light-FD.woff2",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Farsi-Digits\\Shabnam-Light-FD.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\LICENSE",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\README.md",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\README.md"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Read Me.txt",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Read Me.txt"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Shabnam-Bold.eot",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Shabnam-Bold.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Shabnam-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Shabnam-Bold.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Shabnam-Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Shabnam-Bold.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Shabnam-Bold.woff2",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Shabnam-Bold.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Shabnam-Light.eot",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Shabnam-Light.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Shabnam-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Shabnam-Light.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Shabnam-Light.woff",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Shabnam-Light.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Shabnam-Light.woff2",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Shabnam-Light.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Shabnam.eot",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Shabnam.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Shabnam.ttf",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Shabnam.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Shabnam.woff",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Shabnam.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Shabnam.woff2",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Shabnam.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Bold-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Bold-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Bold-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Bold-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Bold-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Bold-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Bold-WOL.woff2",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Bold-WOL.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Light-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Light-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Light-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Light-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Light-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Light-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Light-WOL.woff2",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-Light-WOL.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-WOL.woff2",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\Without-Latin\\Shabnam-WOL.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\6-Shabnam\\YasDL.com.url",
+      "PackagePath": "staticwebassets\\fonts\\6-Shabnam\\YasDL.com.url"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\CHANGELOG.md"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Bold-FD-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Bold-FD-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Bold-FD-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Bold-FD-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Bold-FD-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Bold-FD-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Bold-FD-WOL.woff2",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Bold-FD-WOL.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-FD-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-FD-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-FD-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-FD-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-FD-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-FD-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-FD-WOL.woff2",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-FD-WOL.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Light-FD-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Light-FD-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Light-FD-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Light-FD-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Light-FD-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Light-FD-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Light-FD-WOL.woff2",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Light-FD-WOL.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Medium-FD-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Medium-FD-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Medium-FD-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Medium-FD-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Medium-FD-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Medium-FD-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Medium-FD-WOL.woff2",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Medium-FD-WOL.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Thin-FD-WOL.eot",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Thin-FD-WOL.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Thin-FD-WOL.ttf",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Thin-FD-WOL.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Thin-FD-WOL.woff",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Thin-FD-WOL.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Thin-FD-WOL.woff2",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Farsi-Digits-Without-Latin\\Vazir-Thin-FD-WOL.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\LICENSE",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\README.md",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\README.md"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Bold.eot",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Bold.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Bold.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Bold.woff",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Bold.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Bold.woff2",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Bold.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Light.eot",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Light.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Light.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Light.woff",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Light.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Light.woff2",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Light.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Medium.eot",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Medium.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Medium.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Medium.woff",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Medium.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Medium.woff2",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Medium.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Thin.eot",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Thin.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Thin.ttf",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Thin.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Thin.woff",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Thin.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir-Thin.woff2",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir-Thin.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir.eot",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir.ttf",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir.woff",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\7-Vazir\\Vazir.woff2",
+      "PackagePath": "staticwebassets\\fonts\\7-Vazir\\Vazir.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\8-Roya\\ROYA.TTF",
+      "PackagePath": "staticwebassets\\fonts\\8-Roya\\ROYA.TTF"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\8-Roya\\ROYAB.TTF",
+      "PackagePath": "staticwebassets\\fonts\\8-Roya\\ROYAB.TTF"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\9-Diplomat\\Far_Diplomat.ttf",
+      "PackagePath": "staticwebassets\\fonts\\9-Diplomat\\Far_Diplomat.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\Feather.svg",
+      "PackagePath": "staticwebassets\\fonts\\Feather.svg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\Feather.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Feather.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\Feather.woff",
+      "PackagePath": "staticwebassets\\fonts\\Feather.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\fa-duotone-900.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-duotone-900.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\fa-duotone-900.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-duotone-900.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\fa-light-300.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-light-300.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\fa-light-300.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-light-300.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\fa-thin-100.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-thin-100.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\fa-thin-100.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-thin-100.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\slick-1.eot",
+      "PackagePath": "staticwebassets\\fonts\\slick-1.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\fonts\\slick.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\slick.svg",
+      "PackagePath": "staticwebassets\\fonts\\slick.svg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\fonts\\slick.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\flaticon\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\icons\\flaticon\\Flaticon.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\flaticon\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\icons\\flaticon\\Flaticon.svg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\flaticon\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\icons\\flaticon\\Flaticon.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\flaticon\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\icons\\flaticon\\Flaticon.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\flaticon\\Flaticond41d.eot",
+      "PackagePath": "staticwebassets\\icons\\flaticon\\Flaticond41d.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\flaticon\\flaticon.css",
+      "PackagePath": "staticwebassets\\icons\\flaticon\\flaticon.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\flaticon_1\\Flaticon_1.eot",
+      "PackagePath": "staticwebassets\\icons\\flaticon_1\\Flaticon_1.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\flaticon_1\\Flaticon_1.svg",
+      "PackagePath": "staticwebassets\\icons\\flaticon_1\\Flaticon_1.svg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\flaticon_1\\Flaticon_1.ttf",
+      "PackagePath": "staticwebassets\\icons\\flaticon_1\\Flaticon_1.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\flaticon_1\\Flaticon_1.woff",
+      "PackagePath": "staticwebassets\\icons\\flaticon_1\\Flaticon_1.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\flaticon_1\\Flaticon_1.woff2",
+      "PackagePath": "staticwebassets\\icons\\flaticon_1\\Flaticon_1.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\flaticon_1\\Flaticon_1d41d.eot",
+      "PackagePath": "staticwebassets\\icons\\flaticon_1\\Flaticon_1d41d.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\flaticon_1\\flaticon_1.css",
+      "PackagePath": "staticwebassets\\icons\\flaticon_1\\flaticon_1.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\fontawesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\icons\\fontawesome\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\fontawesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\icons\\fontawesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\fontawesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\icons\\fontawesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\fontawesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\icons\\fontawesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\fontawesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\icons\\fontawesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\fontawesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\icons\\fontawesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\fontawesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\icons\\fontawesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\fontawesome\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\icons\\fontawesome\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\fontawesome\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\icons\\fontawesome\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\css\\line-awesome.min.css",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\css\\line-awesome.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-brands-400.eot",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-brands-400.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-brands-400.svg",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-brands-400.svg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-brands-400.ttf",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-brands-400.woff",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-brands-400.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-brands-400.woff2",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-brands-400d41d.eot",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-brands-400d41d.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-regular-400.eot",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-regular-400.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-regular-400.svg",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-regular-400.svg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-regular-400.ttf",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-regular-400.woff",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-regular-400.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-regular-400.woff2",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-regular-400d41d.eot",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-regular-400d41d.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-solid-900.eot",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-solid-900.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-solid-900.svg",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-solid-900.svg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-solid-900.ttf",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-solid-900.woff",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-solid-900.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-solid-900.woff2",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\line-awesome\\fonts\\la-solid-900d41d.eot",
+      "PackagePath": "staticwebassets\\icons\\line-awesome\\fonts\\la-solid-900d41d.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\material-design-iconic-font\\css\\materialdesignicons.min.css",
+      "PackagePath": "staticwebassets\\icons\\material-design-iconic-font\\css\\materialdesignicons.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.eot",
+      "PackagePath": "staticwebassets\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.svg",
+      "PackagePath": "staticwebassets\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.svg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.ttf",
+      "PackagePath": "staticwebassets\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.woff",
+      "PackagePath": "staticwebassets\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.woff2",
+      "PackagePath": "staticwebassets\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfontd41d.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\themify-icons\\css\\themify-icons.css",
+      "PackagePath": "staticwebassets\\icons\\themify-icons\\css\\themify-icons.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\themify-icons\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\icons\\themify-icons\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\themify-icons\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\icons\\themify-icons\\fonts\\themify.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\themify-icons\\fonts\\themify9f249f24.eot",
+      "PackagePath": "staticwebassets\\icons\\themify-icons\\fonts\\themify9f249f24.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\themify-icons\\fonts\\themify9f249f24.svg",
+      "PackagePath": "staticwebassets\\icons\\themify-icons\\fonts\\themify9f249f24.svg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\icons\\themify-icons\\fonts\\themifyd41dd41d.eot",
+      "PackagePath": "staticwebassets\\icons\\themify-icons\\fonts\\themifyd41dd41d.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\avatar\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar\\1.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\avatar\\1.png",
+      "PackagePath": "staticwebassets\\images\\avatar\\1.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\avatar\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar\\2.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\avatar\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar\\3.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\avatar\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar\\4.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\avatar\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\avatar\\5.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\avatar\\5.png",
+      "PackagePath": "staticwebassets\\images\\avatar\\5.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\big\\img1.jpg",
+      "PackagePath": "staticwebassets\\images\\big\\img1.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\big\\img2.jpg",
+      "PackagePath": "staticwebassets\\images\\big\\img2.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\big\\img3.jpg",
+      "PackagePath": "staticwebassets\\images\\big\\img3.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\big\\img4.jpg",
+      "PackagePath": "staticwebassets\\images\\big\\img4.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\big\\img5.jpg",
+      "PackagePath": "staticwebassets\\images\\big\\img5.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\big\\img6.jpg",
+      "PackagePath": "staticwebassets\\images\\big\\img6.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\big\\img7.jpg",
+      "PackagePath": "staticwebassets\\images\\big\\img7.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\big\\img8.jpg",
+      "PackagePath": "staticwebassets\\images\\big\\img8.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\card\\1.png",
+      "PackagePath": "staticwebassets\\images\\card\\1.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\card\\2.png",
+      "PackagePath": "staticwebassets\\images\\card\\2.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\card\\3.png",
+      "PackagePath": "staticwebassets\\images\\card\\3.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\demo\\pic1.JPG",
+      "PackagePath": "staticwebassets\\images\\demo\\pic1.JPG"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\demo\\pic2.JPG",
+      "PackagePath": "staticwebassets\\images\\demo\\pic2.JPG"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\demo\\pic3.JPG",
+      "PackagePath": "staticwebassets\\images\\demo\\pic3.JPG"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\demo\\pic4.JPG",
+      "PackagePath": "staticwebassets\\images\\demo\\pic4.JPG"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\demo\\pic5.JPG",
+      "PackagePath": "staticwebassets\\images\\demo\\pic5.JPG"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\demo\\pic6.JPG",
+      "PackagePath": "staticwebassets\\images\\demo\\pic6.JPG"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\demo\\pic7.JPG",
+      "PackagePath": "staticwebassets\\images\\demo\\pic7.JPG"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\demo\\pic8.JPG",
+      "PackagePath": "staticwebassets\\images\\demo\\pic8.JPG"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\dots1.png",
+      "PackagePath": "staticwebassets\\images\\dots1.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\images\\favicon.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\like.png",
+      "PackagePath": "staticwebassets\\images\\like.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\logo-full.png",
+      "PackagePath": "staticwebassets\\images\\logo-full.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\logoChef.png",
+      "PackagePath": "staticwebassets\\images\\logoChef.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\no-img-avatar.png",
+      "PackagePath": "staticwebassets\\images\\no-img-avatar.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\pattern\\pattern5.png",
+      "PackagePath": "staticwebassets\\images\\pattern\\pattern5.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\product\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\1.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\product\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\2.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\product\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\3.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\product\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\4.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\product\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\5.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\product\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\6.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\product\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\7.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile1.jpg",
+      "PackagePath": "staticwebassets\\images\\profile1.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\1.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\2.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\3.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\4.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\5.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\6.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\6.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\7.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\7.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\8.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\9.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\9.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\cover.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\cover.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\pic1.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\pic1.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\profile.png",
+      "PackagePath": "staticwebassets\\images\\profile\\profile.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\small\\pic1.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\small\\pic1.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\small\\pic10.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\small\\pic10.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\small\\pic2.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\small\\pic2.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\small\\pic3.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\small\\pic3.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\small\\pic4.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\small\\pic4.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\small\\pic5.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\small\\pic5.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\small\\pic6.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\small\\pic6.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\small\\pic7.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\small\\pic7.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\small\\pic8.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\small\\pic8.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\profile\\small\\pic9.jpg",
+      "PackagePath": "staticwebassets\\images\\profile\\small\\pic9.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\qr.png",
+      "PackagePath": "staticwebassets\\images\\qr.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\tab\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\tab\\1.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\tab\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\tab\\2.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\tab\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\tab\\3.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\tab\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\tab\\4.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\custom.min.js",
+      "PackagePath": "staticwebassets\\js\\custom.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\dashboard\\dashboard-1.js",
+      "PackagePath": "staticwebassets\\js\\dashboard\\dashboard-1.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\dashboard\\my-profile.js",
+      "PackagePath": "staticwebassets\\js\\dashboard\\my-profile.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\dashboard\\statistics-page.js",
+      "PackagePath": "staticwebassets\\js\\dashboard\\statistics-page.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\demo.js",
+      "PackagePath": "staticwebassets\\js\\demo.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\dlabnav-init.js",
+      "PackagePath": "staticwebassets\\js\\dlabnav-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\fa.js",
+      "PackagePath": "staticwebassets\\js\\fa.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\bs-daterange-picker-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\bs-daterange-picker-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\chartist-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\chartist-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\chartjs-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\chartjs-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\datatables.init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\datatables.init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\flot-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\flot-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\fullcalendar-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\fullcalendar-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\jquery-asColorPicker.init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\jquery-asColorPicker.init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\jquery.validate-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\jquery.validate-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\jqvmap-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\jqvmap-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\morris-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\morris-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\nestable-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\nestable-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\nouislider-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\nouislider-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\pickadate-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\pickadate-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\piety-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\piety-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\select2-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\select2-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\sparkline-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\sparkline-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\sweetalert.init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\sweetalert.init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\toastr-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\toastr-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\widgets-script-init.js",
+      "PackagePath": "staticwebassets\\js\\plugins-init\\widgets-script-init.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\styleSwitcher.js",
+      "PackagePath": "staticwebassets\\js\\styleSwitcher.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\alpine\\alpine.js",
+      "PackagePath": "staticwebassets\\vendor\\alpine\\alpine.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\alpine\\alpineplugin.js",
+      "PackagePath": "staticwebassets\\vendor\\alpine\\alpineplugin.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\apexchart\\apexchart.js",
+      "PackagePath": "staticwebassets\\vendor\\apexchart\\apexchart.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\chartist-plugin-tooltips\\js\\chartist-plugin-tooltip.min.js",
+      "PackagePath": "staticwebassets\\vendor\\chartist-plugin-tooltips\\js\\chartist-plugin-tooltip.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\chartist\\css\\chartist.min.css",
+      "PackagePath": "staticwebassets\\vendor\\chartist\\css\\chartist.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\chartist\\js\\chartist.min.js",
+      "PackagePath": "staticwebassets\\vendor\\chartist\\js\\chartist.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\chartjs\\chart.bundle.min.js",
+      "PackagePath": "staticwebassets\\vendor\\chartjs\\chart.bundle.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\ckeditor\\ckeditor.js",
+      "PackagePath": "staticwebassets\\vendor\\ckeditor\\ckeditor.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\datatables\\css\\jquery.dataTables.min.css",
+      "PackagePath": "staticwebassets\\vendor\\datatables\\css\\jquery.dataTables.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\datatables\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\vendor\\datatables\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\datatables\\responsive\\responsive.js",
+      "PackagePath": "staticwebassets\\vendor\\datatables\\responsive\\responsive.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\daterangepicker\\bootstrap-datepicker.fa.min.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\bootstrap-datepicker.fa.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\daterangepicker\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\daterangepicker.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\vendor\\daterangepicker\\daterangepicker.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\dropzone\\dist\\dropzone.css",
+      "PackagePath": "staticwebassets\\vendor\\dropzone\\dist\\dropzone.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\dropzone\\dist\\dropzone.js",
+      "PackagePath": "staticwebassets\\vendor\\dropzone\\dist\\dropzone.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\flatpickr-master\\css\\flatpicker.css",
+      "PackagePath": "staticwebassets\\vendor\\flatpickr-master\\css\\flatpicker.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\flatpickr-master\\js\\flatpickr.js",
+      "PackagePath": "staticwebassets\\vendor\\flatpickr-master\\js\\flatpickr.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\flot-spline\\jquery.flot.spline.min.js",
+      "PackagePath": "staticwebassets\\vendor\\flot-spline\\jquery.flot.spline.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\flot\\jquery.flot.js",
+      "PackagePath": "staticwebassets\\vendor\\flot\\jquery.flot.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\flot\\jquery.flot.pie.js",
+      "PackagePath": "staticwebassets\\vendor\\flot\\jquery.flot.pie.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\flot\\jquery.flot.resize.js",
+      "PackagePath": "staticwebassets\\vendor\\flot\\jquery.flot.resize.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\fullcalendar\\css\\main.min.css",
+      "PackagePath": "staticwebassets\\vendor\\fullcalendar\\css\\main.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\fullcalendar\\js\\main.min.js",
+      "PackagePath": "staticwebassets\\vendor\\fullcalendar\\js\\main.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\global\\global.min.js",
+      "PackagePath": "staticwebassets\\vendor\\global\\global.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jquery-ascolor\\jquery-ascolor.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery-ascolor\\jquery-ascolor.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jquery-ascolorpicker\\css\\ascolorpicker.min.css",
+      "PackagePath": "staticwebassets\\vendor\\jquery-ascolorpicker\\css\\ascolorpicker.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jquery-ascolorpicker\\images\\alpha.png",
+      "PackagePath": "staticwebassets\\vendor\\jquery-ascolorpicker\\images\\alpha.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jquery-ascolorpicker\\images\\hue.png",
+      "PackagePath": "staticwebassets\\vendor\\jquery-ascolorpicker\\images\\hue.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jquery-ascolorpicker\\images\\saturation.png",
+      "PackagePath": "staticwebassets\\vendor\\jquery-ascolorpicker\\images\\saturation.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jquery-ascolorpicker\\images\\transparent.png",
+      "PackagePath": "staticwebassets\\vendor\\jquery-ascolorpicker\\images\\transparent.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jquery-ascolorpicker\\js\\jquery-ascolorpicker.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery-ascolorpicker\\js\\jquery-ascolorpicker.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jquery-asgradient\\jquery-asgradient.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery-asgradient\\jquery-asgradient.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jquery-smartwizard\\dist\\css\\smart_wizard.min.css",
+      "PackagePath": "staticwebassets\\vendor\\jquery-smartwizard\\dist\\css\\smart_wizard.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jquery-smartwizard\\dist\\js\\jquery.smartWizard.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery-smartwizard\\dist\\js\\jquery.smartWizard.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jquery-sparkline\\jquery.sparkline.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jquery-sparkline\\jquery.sparkline.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jqvmap\\css\\jqvmap.min.css",
+      "PackagePath": "staticwebassets\\vendor\\jqvmap\\css\\jqvmap.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jqvmap\\js\\jquery.vmap.min.js",
+      "PackagePath": "staticwebassets\\vendor\\jqvmap\\js\\jquery.vmap.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jqvmap\\js\\jquery.vmap.usa.js",
+      "PackagePath": "staticwebassets\\vendor\\jqvmap\\js\\jquery.vmap.usa.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\jqvmap\\js\\jquery.vmap.world.js",
+      "PackagePath": "staticwebassets\\vendor\\jqvmap\\js\\jquery.vmap.world.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\lightgallery\\dist\\css\\lg-thumbnail.css",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\dist\\css\\lg-thumbnail.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\lightgallery\\dist\\css\\lg-zoom.css",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\dist\\css\\lg-zoom.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\lightgallery\\dist\\css\\lightgallery.css",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\dist\\css\\lightgallery.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\lightgallery\\dist\\fonts\\lgb687.svg",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\dist\\fonts\\lgb687.svg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\lightgallery\\dist\\fonts\\lgb687.ttf",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\dist\\fonts\\lgb687.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\lightgallery\\dist\\fonts\\lgb687.woff",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\dist\\fonts\\lgb687.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\lightgallery\\dist\\fonts\\lgb687.woff2",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\dist\\fonts\\lgb687.woff2"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\lightgallery\\dist\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\dist\\images\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\lightgallery\\dist\\lightgallery.min.js",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\dist\\lightgallery.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\lightgallery\\dist\\plugins\\thumbnail\\lg-thumbnail.min.js",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\dist\\plugins\\thumbnail\\lg-thumbnail.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\lightgallery\\dist\\plugins\\zoom\\lg-zoom.min.js",
+      "PackagePath": "staticwebassets\\vendor\\lightgallery\\dist\\plugins\\zoom\\lg-zoom.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\moment\\moment-jalaali.js",
+      "PackagePath": "staticwebassets\\vendor\\moment\\moment-jalaali.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\moment\\moment.min.js",
+      "PackagePath": "staticwebassets\\vendor\\moment\\moment.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\morris\\morris.min.js",
+      "PackagePath": "staticwebassets\\vendor\\morris\\morris.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\nestable2\\css\\jquery.nestable.min.css",
+      "PackagePath": "staticwebassets\\vendor\\nestable2\\css\\jquery.nestable.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\nestable2\\js\\jquery.nestable.min.js",
+      "PackagePath": "staticwebassets\\vendor\\nestable2\\js\\jquery.nestable.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\niceselect\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\vendor\\niceselect\\css\\nice-select.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\niceselect\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\vendor\\niceselect\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\nouislider\\nouislider.min.css",
+      "PackagePath": "staticwebassets\\vendor\\nouislider\\nouislider.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\nouislider\\nouislider.min.js",
+      "PackagePath": "staticwebassets\\vendor\\nouislider\\nouislider.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\owl-carousel\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\vendor\\owl-carousel\\owl.carousel.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\owl-carousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\vendor\\owl-carousel\\owl.carousel.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\peity\\jquery.peity.min.js",
+      "PackagePath": "staticwebassets\\vendor\\peity\\jquery.peity.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\pickadate\\picker.date.js",
+      "PackagePath": "staticwebassets\\vendor\\pickadate\\picker.date.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\pickadate\\picker.js",
+      "PackagePath": "staticwebassets\\vendor\\pickadate\\picker.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\pickadate\\picker.time.js",
+      "PackagePath": "staticwebassets\\vendor\\pickadate\\picker.time.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\pickadate\\themes\\default.css",
+      "PackagePath": "staticwebassets\\vendor\\pickadate\\themes\\default.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\pickadate\\themes\\default.date.css",
+      "PackagePath": "staticwebassets\\vendor\\pickadate\\themes\\default.date.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\raphael\\raphael.min.js",
+      "PackagePath": "staticwebassets\\vendor\\raphael\\raphael.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\select2\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\vendor\\select2\\css\\select2.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\select2\\js\\select2.full.min.js",
+      "PackagePath": "staticwebassets\\vendor\\select2\\js\\select2.full.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\star-rating\\jquery.star-rating-svg.js",
+      "PackagePath": "staticwebassets\\vendor\\star-rating\\jquery.star-rating-svg.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\star-rating\\star-rating-svg.css",
+      "PackagePath": "staticwebassets\\vendor\\star-rating\\star-rating-svg.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\sweetalert2\\dist\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\vendor\\sweetalert2\\dist\\sweetalert2.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\sweetalert2\\dist\\sweetalert2.min.js",
+      "PackagePath": "staticwebassets\\vendor\\sweetalert2\\dist\\sweetalert2.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\swiper\\css\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\vendor\\swiper\\css\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\swiper\\js\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\vendor\\swiper\\js\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\swiper\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\vendor\\swiper\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\swiper\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\vendor\\swiper\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\toastr\\css\\toastr.min.css",
+      "PackagePath": "staticwebassets\\vendor\\toastr\\css\\toastr.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\toastr\\js\\toastr.min.js",
+      "PackagePath": "staticwebassets\\vendor\\toastr\\js\\toastr.min.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\vendor\\wnumb\\wNumb.js",
+      "PackagePath": "staticwebassets\\vendor\\wnumb\\wNumb.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ChefHesab.WebCore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ChefHesab.WebCore.props",
+      "PackagePath": "build\\ChefHesab.WebCore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ChefHesab.WebCore.props",
+      "PackagePath": "buildMultiTargeting\\ChefHesab.WebCore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ChefHesab.WebCore.props",
+      "PackagePath": "buildTransitive\\ChefHesab.WebCore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

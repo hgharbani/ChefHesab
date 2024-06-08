@@ -929,7 +929,7 @@
           "ChefHesab.Data": "1.0.0",
           "ChefHesab.Domain": "1.0.0",
           "ChefHesab.Dto": "1.0.0",
-          "Dalir.common": "1.0.4",
+          "ChefHesab.Share": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
@@ -1036,7 +1036,7 @@
     "Dalir.common/1.0.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-u5BD1WSf6YFaeOyxqHSIe9iBK+Cv6W5D0Reg8KJlJHE83MiVGrzQIpXxO3aOiItMLzdjyrpmW9Wi8JuSvLL3Cg==",
+      "sha512": "sha512-fc99mEu3nuLMgecIL+JTJpYndJEY6on/e63l/yvJCCzCoTz4vrFyBRPDLydO+AElrDRWBIeifTaiCogSqGii2Q==",
       "path": "dalir.common/1.0.4",
       "hashPath": "dalir.common.1.0.4.nupkg.sha512"
     },
