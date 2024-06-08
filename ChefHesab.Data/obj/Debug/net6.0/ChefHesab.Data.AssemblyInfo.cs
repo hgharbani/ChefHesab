@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChefHesab.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d9a5a1499cd3a8ff429118bdb3fa4d0c5993a37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7226748831daa37eb79b9c6f98090c1a8aa422eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChefHesab.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChefHesab.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
