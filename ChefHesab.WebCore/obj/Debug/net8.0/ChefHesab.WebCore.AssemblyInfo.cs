@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChefHesab.WebCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d9a5a1499cd3a8ff429118bdb3fa4d0c5993a37")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c19d37233ef8e769be65cfcbb4c69376db51c22")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChefHesab.WebCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChefHesab.WebCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
