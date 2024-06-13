@@ -50,7 +50,7 @@ namespace Chefhesab.WebApi.Controllers.define
                     {
                         var product = await response.Content.ReadFromJsonAsync<Rootobject>();
                         count = product.metadata.pagination.total;
-                        await _foodStuffService.AddFoodStuffFromSnap(product, item.Id);
+                        await _foodStuffService.AddFoodStuffFromSnap(product, item.CategoryId);
                         i = i + 200;
                     }
                     else

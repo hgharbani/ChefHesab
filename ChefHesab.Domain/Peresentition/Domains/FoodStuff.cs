@@ -13,7 +13,7 @@ namespace ChefHesab.Domain
     /// <summary>
     /// مواد غذایی
     /// </summary>
-    [Table("FoodStuff")]
+    
     public partial class FoodStuff
     {
         public FoodStuff()
@@ -24,19 +24,18 @@ namespace ChefHesab.Domain
 
         [Key]
         public Guid Id { get; set; }
-        [Required]
-        [StringLength(500)]
+
+       
         public string Title { get; set; }
         public int? Amount { get; set; }
         public int? Calories { get; set; }
-        public Guid? FoodCategoryId { get; set; }
+        public long FoodCategoryId { get; set; }
 
         [ForeignKey("FoodCategoryId")]
-        [InverseProperty("FoodStuffs")]
         public virtual FoodCategory FoodCategory { get; set; }
-        [InverseProperty("FoodStuff")]
+    
         public virtual ICollection<FoodProvider> FoodProviders { get; set; }
-        [InverseProperty("FoodStuff")]
+   
         public virtual ICollection<StuffPrice> StuffPrices { get; set; }
     }
 }

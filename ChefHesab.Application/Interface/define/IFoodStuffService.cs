@@ -4,7 +4,7 @@ namespace ChefHesab.Application.Interface.define
 {
     public interface IFoodStuffService
     {
-        Task<bool> AddFoodStuffFromSnap(SnapFoodStufCategory.Rootobject model, Guid? categoryId);
+        Task<bool> AddFoodStuffFromSnap(SnapFoodStufCategory.Rootobject model, long categoryId);
         Task<List<FoodStuffVM>> GetFoodStuff();
     }
 }

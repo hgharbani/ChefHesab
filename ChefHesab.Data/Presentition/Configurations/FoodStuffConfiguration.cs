@@ -13,8 +13,9 @@ namespace ChefHesab.Data.Configurations
     {
         public void Configure(EntityTypeBuilder<FoodStuff> entity)
         {
+            entity.ToTable(nameof(FoodStuff),"dbo");
             entity.HasComment("مواد غذایی");
-
+            entity.HasKey(a=>a.Id);
             entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
 
             entity.HasOne(d => d.FoodCategory)

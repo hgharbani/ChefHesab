@@ -46,6 +46,19 @@
           }
         }
       },
+      "DNTPersianUtils.Core/6.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/DNTPersianUtils.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/DNTPersianUtils.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -1195,6 +1208,34 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "DNTPersianUtils.Core/6.3.1": {
+      "sha512": "6MjmBUBmsYhnmtycxMaUCO471vtFpffdLdgrjygj05IcqHE099d7FB+XtFwDIKY4xJxA5HaGez6lGQOtE+ghaw==",
+      "type": "package",
+      "path": "dntpersianutils.core/6.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "dntpersianutils.core.6.3.1.nupkg.sha512",
+        "dntpersianutils.core.nuspec",
+        "lib/net46/DNTPersianUtils.Core.dll",
+        "lib/net46/DNTPersianUtils.Core.xml",
+        "lib/net5.0/DNTPersianUtils.Core.dll",
+        "lib/net5.0/DNTPersianUtils.Core.xml",
+        "lib/net6.0/DNTPersianUtils.Core.dll",
+        "lib/net6.0/DNTPersianUtils.Core.xml",
+        "lib/net7.0/DNTPersianUtils.Core.dll",
+        "lib/net7.0/DNTPersianUtils.Core.xml",
+        "lib/net8.0/DNTPersianUtils.Core.dll",
+        "lib/net8.0/DNTPersianUtils.Core.xml",
+        "lib/netstandard1.3/DNTPersianUtils.Core.dll",
+        "lib/netstandard1.3/DNTPersianUtils.Core.xml",
+        "lib/netstandard2.0/DNTPersianUtils.Core.dll",
+        "lib/netstandard2.0/DNTPersianUtils.Core.xml",
+        "lib/netstandard2.1/DNTPersianUtils.Core.dll",
+        "lib/netstandard2.1/DNTPersianUtils.Core.xml"
       ]
     },
     "Humanizer.Core/2.14.1": {
@@ -3504,6 +3545,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DNTPersianUtils.Core >= 6.3.1",
       "Microsoft.EntityFrameworkCore >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Abstractions >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Analyzers >= 7.0.10",
@@ -3566,6 +3608,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "DNTPersianUtils.Core": {
+            "target": "Package",
+            "version": "[6.3.1, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.10, )"

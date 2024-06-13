@@ -1,0 +1,66 @@
+﻿@model List<FoodStuffVM>
+
+<div class="grid grid-col-1">
+    <div id="SearchBox" class="columns-1">
+        <div class="w-full max-w-md p-2 mx-auto bg-white rounded-2xl">
+         
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header mb-0" >
+                        <button class="accordion-button relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none" type="button" >
+                        <button class="accordion-button relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none" type="button" >
+                            اکوردیون آیتم #1
+                            <svg class="accordion-icon ..."
+                                 id="accordionIcon1"> </svg>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-content show">
+                        <div class="accordion-body py-4 px-5">
+                            @foreach (var item in Model)
+                            {
+                           <label class="mb-3 form-control form-control-lg">  @item.Title</label>  
+                            }
+                        </div>
+                    </div>
+                </div>
+                <!-- ... سایر آیتم‌های اکوردیون ... -->
+            </div>
+        </div>
+
+    </div>
+    <div class="mt-2 k-rtl" id="GridBox">
+        <div id="CompanyGrid"></div>
+    </div>
+</div>
+@section scripts {
+    <script>
+        $(document).ready(function (e) {
+            const accordionBtns = document.querySelectorAll(".accordion-button");
+            const accordionIcons = document.querySelectorAll(".accordion-icon");
+            const accordionContents = document.querySelectorAll(".accordion-content");
+            accordionBtns.forEach((btn, index) => {
+                btn.addEventListener("click", () => {
+                    toggleAccordion(index,this);
+                });
+            });
+
+
+            function toggleAccordion(index,btn) {
+                accordionIcons.forEach((icon, i) => {
+                    if (i === index) {
+                        icon.classList.toggle("rotate-45");
+                    } else {
+                        icon.classList.remove("rotate-45");
+                    }
+                });
+                accordionContents.forEach((content, i) => {
+                    if (i === index) {
+                        content.classList.toggle("hidden");
+                    } else {
+                        content.classList.add("hidden");
+                    }
+                });
+            }
+        });
+    </script>
+}

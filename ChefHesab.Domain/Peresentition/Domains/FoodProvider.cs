@@ -30,14 +30,12 @@ namespace ChefHesab.Domain
         public DateTime InsertDate { get; set; }
 
         [ForeignKey("ContractCompanyId")]
-        [InverseProperty("FoodProviders")]
         public virtual ContractingCompany ContractCompany { get; set; }
         [ForeignKey("FoodStuffId")]
-        [InverseProperty("FoodProviders")]
         public virtual FoodStuff FoodStuff { get; set; }
-        [InverseProperty("FoodProvider")]
+       
         public virtual ICollection<AdditionalCostFood> AdditionalCostFoods { get; set; }
-        [InverseProperty("FoodProvider")]
+      
         public virtual ICollection<IngredinsFood> IngredinsFoods { get; set; }
     }
 }

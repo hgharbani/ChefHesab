@@ -25,7 +25,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
             _unitOfWork = unitOfWork;
         }
        
-        public async Task<bool> AddFoodStuffFromSnap(Rootobject model,Guid? categoryId)
+        public async Task<bool> AddFoodStuffFromSnap(Rootobject model,long categoryId)
         {
             try
             {
@@ -67,16 +67,25 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
 
         public async Task<List<FoodStuffVM>> GetFoodStuff()
         {
-            var result=_unitOfWork.FoodStuffRepository.GetAllQuery().Select(a=>new FoodStuffVM
+            try
             {
-                Title=a.Title,
-                CategoryTitle=a.FoodCategory.Title,
-                FoodCategoryId = a.FoodCategoryId,
-                Id=a.Id
+                var result = _unitOfWork.FoodStuffRepository.GetAllQuery().Select(a => new FoodStuffVM
+                {
+                    Title = a.Title,
+                    CategoryTitle = a.FoodCategory.Title,
+                    FoodCategoryId = a.FoodCategoryId,
+                    Id = a.Id
 
-            }).ToList();
+                }).ToList();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            
 
-            return result;
+     
         }
 
     }

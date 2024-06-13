@@ -38,5 +38,7 @@ namespace ChefHesab.Domain
         public virtual Personal Personal { get; set; }
         [InverseProperty("ContractCompany")]
         public virtual ICollection<FoodProvider> FoodProviders { get; set; }
+
+        public virtual ICollection<StuffPrice> StuffPrices { get; set; }
     }
 }

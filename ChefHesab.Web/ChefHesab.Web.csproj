@@ -21,6 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="DNTPersianUtils.Core" Version="6.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ChefHesab.Dto\ChefHesab.Dto.csproj" />
   </ItemGroup>
 

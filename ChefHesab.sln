@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChefHesab.Web", "ChefHesab.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chefhesab.WebApi", "Chefhesab.WebApi\Chefhesab.WebApi.csproj", "{4F8965D0-F288-4079-87FA-CB0167F64013}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChefHesab.WebCore", "ChefHesab.WebCore\ChefHesab.WebCore.csproj", "{C366B12F-F8D5-4AEA-9C99-A69F7AB32676}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChefHesab.WebCore", "ChefHesab.WebCore\ChefHesab.WebCore.csproj", "{C366B12F-F8D5-4AEA-9C99-A69F7AB32676}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

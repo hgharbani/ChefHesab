@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChefHesab.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7226748831daa37eb79b9c6f98090c1a8aa422eb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1429d26c59f055c62ec89ef6db15531ab7d35a0e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChefHesab.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChefHesab.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

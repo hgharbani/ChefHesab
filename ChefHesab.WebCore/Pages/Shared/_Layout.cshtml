@@ -33,6 +33,14 @@
     <!-- STYLESHEETS -->
     <link href="/vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
 
+
+    <!-- KendoJquery -->
+    <link href="/css/kendo.common.min.css" rel="stylesheet">
+    <link href="/css/kendo.rtl.min.css" rel="stylesheet">
+    <link href="/css/kendo.bootstrap.min.css" rel="stylesheet">
+    <link href="/css/kendo.bootstrap.mobile.min.css" rel="stylesheet">
+
+
     <!-- ICONS -->
     <link rel="stylesheet" href="/icons/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="/icons/line-awesome/css/line-awesome.min.css">
@@ -47,83 +55,81 @@
     <!-- STYLE CSS -->
     <link href="/css/style.css" rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="selection:text-white selection:bg-primary">
+<body class="selection:text-white selection:bg-primary" data-typography="poppins" data-theme-version="light" data-layout="vertical" data-nav-headerbg="color_1" data-headerbg="color_1" data-sidebar-style="full" data-sidebarbg="color_1" data-sidebar-position="fixed" data-header-position="fixed" data-container="wide" direction="rtl" data-primary="color_1">
 
     <!-- Preloader start  -->
-    <div id="preloader" class="bg-card h-full fixed z-[99999] w-full items-center justify-center">
-        <div class="lds-ripple inline-block relative size-20">
-            <div class="absolute border-4 border-primary rounded-full"></div>
-            <div class="absolute border-4 border-primary rounded-full"></div>
+    <div  id="preloader" class="bg-card h-full fixed z-[99999] w-full items-center justify-center" style="display: none;">
+        <div  class="lds-ripple inline-block relative size-20">
+            <div  class="absolute border-4 border-primary rounded-full"></div>
+            <div  class="absolute border-4 border-primary rounded-full"></div>
         </div>
     </div>
     <!-- Preloader end -->
     <!-- Main wrapper start -->
-    <div id="main-wrapper" class="relative">
+    <div  id="main-wrapper" class="relative show">
         <!-- Nav header start -->
 
-        <div class="nav-header">
-            <div class="row text-right pr-4">
-                <div class="col-3 brand-logo">
-                    <img style="height: 39%;width: 50%;" src="/images/logoChef.png" class="img-fluid brand-logo" />
+        <div  class="nav-header">
+            <div  class="row text-right pr-4">
+                <div  class="col-3 brand-logo">
+                    <img  style="height: 39%;width: 50%;" src="/images/logoChef.png" class="img-fluid brand-logo">
                 </div>
-                <div class="col-9 row">
-                    <div class="col-12"><h3>ChefHesab</h3></div>
-                    <div class="col-12 text-sm text-gray"><p>سیستم مدیریت مناقصات</p></div>
+                <div  class="col-9 row">
+                    <div  class="col-12"><h3 >ChefHesab</h3></div>
+                    <div  class="col-12 text-sm text-gray"><p >سیستم مدیریت مناقصات</p></div>
                 </div>
-               
-               
+
+
             </div>
-            <div class="nav-control">
-                <div class="hamburger">
-                    <span class="line"></span><span class="line"></span><span class="line"></span>
+            <div  class="nav-control">
+                <div  class="hamburger">
+                    <span  class="line"></span><span  class="line"></span><span  class="line"></span>
                 </div>
             </div>
         </div>
 
         <!-- Nav header end -->
         <!-- Header start -->
-        <div x-data="{ modalOpen: false }">
+        <div  x-data="{ modalOpen: false }">
             <!-- MODAL -->
 
-            <div class="header">
-                <div class="header-content">
-                    <nav class="navbar navbar-expand">
-                        <div class="navbar-collapse justify-between">
-                            <div class="header-left">
-                                <div class="dashboard_bar max-md:hidden">
+            <div  class="header">
+                <div  class="header-content">
+                    <nav  class="navbar navbar-expand">
+                        <div  class="navbar-collapse justify-between">
+                            <div  class="header-left">
+                                <div  class="dashboard_bar max-md:hidden">
                                     داشبرد
                                 </div>
-                                <div class="nav-item flex items-center">
-                                
+                                <div  class="nav-item flex items-center">
                                 </div>
                             </div>
-                            <ul class="navbar-nav header-right flex h-full">
-                                <li class="nav-item flex items-center h-full relative notification_dropdown">
-                                    <a class="nav-link relative leading-[1] text-lg block bell dz-theme-mode" href="javascript:void(0);">
-                                        <i id="icon-light" class="fas fa-sun scale-[1.3]"></i>
-                                        <i id="icon-dark" class="fas fa-moon scale-[1.3]"></i>
+                            <ul  class="navbar-nav header-right flex h-full">
+                                <li  class="nav-item flex items-center h-full relative notification_dropdown">
+                                    <a  class="nav-link relative leading-[1] text-lg block bell dz-theme-mode" href="javascript:void(0);">
+                                        <i  id="icon-light" class="fas fa-sun scale-[1.3]"></i>
+                                        <i  id="icon-dark" class="fas fa-moon scale-[1.3]"></i>
 
                                     </a>
                                 </li>
-                             
-                                <li class="nav-item flex items-center h-full relative ltr:sm:pl-4 ltr:pl-[.4rem] rtl:sm:pr-4 rtl:pr-[.4rem] header-profile" x-data="{ open: false }">
-                                    <a class="nav-link flex items-center ltr:2xxl:ml-4 rtl:2xxl:mr-4" href="javascript:void(0)">
-                                        <img src="/images/profile/pic1.jpg" class="rounded-lg size-12 max-md:size-10" width="20" alt="">
+
+                                <li  class="nav-item flex items-center h-full relative ltr:sm:pl-4 ltr:pl-[.4rem] rtl:sm:pr-4 rtl:pr-[.4rem] header-profile" x-data="{ open: false }">
+                                    <a  class="nav-link flex items-center ltr:2xxl:ml-4 rtl:2xxl:mr-4" href="javascript:void(0)">
+                                        <img  src="/images/profile/pic1.jpg" class="rounded-lg size-12 max-md:size-10" width="20" alt="">
                                     </a>
-                                    <div class="absolute z-[9] shadow-[0_0_37px_rgba(8,21,66,0.05)] min-w-[12.5rem] py-[15px] mt-0.5 top-full ltr:right-0 rtl:left-0 rounded-lg bg-card" x-transition.duration.100ms x-show.transition.origin.top.right="open" x-cloak>
-                                        <a href="app-profile.html" class="dropdown-item block text-right w-full py-2 px-6 text-body-text duration-300 hover:bg-bs-dropdown-color hover:text-primary">
-                                            <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                                            <span class="ltr:ml-2 rtl:mr-2">پروفایل</span>
+                                    <div  class="absolute z-[9] shadow-[0_0_37px_rgba(8,21,66,0.05)] min-w-[12.5rem] py-[15px] mt-0.5 top-full ltr:right-0 rtl:left-0 rounded-lg bg-card" x-transition.duration.100ms="" x-show.transition.origin.top.right="open" style="display: none;">
+                                        <a  href="app-profile.html" class="dropdown-item block text-right w-full py-2 px-6 text-body-text duration-300 hover:bg-bs-dropdown-color hover:text-primary">
+                                            <svg  id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path  d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle  cx="12" cy="7" r="4"></circle></svg>
+                                            <span  class="ltr:ml-2 rtl:mr-2">پروفایل</span>
                                         </a>
-                                        <a href="email-inbox.html" class="dropdown-item block text-right w-full py-2 px-6 text-body-text duration-300 hover:bg-bs-dropdown-color hover:text-primary">
-                                            <svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                                            <span class="ltr:ml-2 rtl:mr-2">صندوق</span>
+                                        <a  href="email-inbox.html" class="dropdown-item block text-right w-full py-2 px-6 text-body-text duration-300 hover:bg-bs-dropdown-color hover:text-primary">
+                                            <svg  id="icon-inbox" xmlns="http://www.w3.org/2000/svg" class="text-success" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline  points="22,6 12,13 2,6"></polyline></svg>
+                                            <span  class="ltr:ml-2 rtl:mr-2">صندوق</span>
                                         </a>
-                                        <a href="page-login.html" class="dropdown-item block text-right w-full py-2 px-6 text-body-text duration-300 hover:bg-bs-dropdown-color hover:text-primary">
-                                            <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
-                                            <span class="ltr:ml-2 rtl:mr-2">خروج</span>
+                                        <a  href="page-login.html" class="dropdown-item block text-right w-full py-2 px-6 text-body-text duration-300 hover:bg-bs-dropdown-color hover:text-primary">
+                                            <svg  id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path  d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline  points="16 17 21 12 16 7"></polyline><line  x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                            <span  class="ltr:ml-2 rtl:mr-2">خروج</span>
                                         </a>
                                     </div>
                                 </li>
@@ -135,74 +141,77 @@
         </div>
         <!-- Header end -->
         <!-- Sidebar start -->
-        <div class="dlabnav">
-            <div class="dlabnav-scroll">
-                <div class="dropdown header-profile2" x-data="{ open: false }">
-                    <a class="nav-link " href="javascript:void(0);">
-                        <div class="header-info2 flex items-center">
-                            <img src="/images/profile/pic1.jpg" alt="" class="size-[2.8rem] rounded-lg ltr:mr-[.8rem] rtl:ml-[.8rem]">
-                            <div class="flex items-center sidebar-info flex-1">
-                                <div>
-                                    <span class="block font-medium text-[15px]">جلوه آب</span>
-                                    <small class="text-xs">کاربر</small>
+        <div  class="dlabnav">
+            <div  class="dlabnav-scroll mm-active">
+                <div  class="dropdown header-profile2" x-data="{ open: false }">
+                    <a  class="nav-link " href="javascript:void(0);">
+                        <div  class="header-info2 flex items-center">
+                            <img  src="/images/profile/pic1.jpg" alt="" class="size-[2.8rem] rounded-lg ltr:mr-[.8rem] rtl:ml-[.8rem]">
+                            <div  class="flex items-center sidebar-info flex-1">
+                                <div >
+                                    <span  class="block font-medium text-[15px]">جلوه آب</span>
+                                    <small  class="text-xs">کاربر</small>
                                 </div>
-                                <i class="fas fa-chevron-down ltr:ml-auto rtl:mr-auto"></i>
+                                <i  class="fas fa-chevron-down ltr:ml-auto rtl:mr-auto"></i>
                             </div>
 
                         </div>
                     </a>
 
-                    <div class="absolute z-[9] shadow-[0_0_37px_rgba(8,21,66,0.05)] min-w-[15rem] py-[15px] mt-0.5 ltr:ml-3 rtl:mr-3 rounded-lg bg-card" x-transition.duration.100ms x-show.transition.origin.top.right="open" x-cloak>
-                        <a href="app-profile.html" class="dropdown-item block text-right w-full py-2 px-6 text-body-text duration-300 hover:bg-bs-dropdown-color hover:text-primary">
-                            <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                            <span class="ltr:ml-2 rtl:mr-2">پروفایل</span>
+                    <div  class="absolute z-[9] shadow-[0_0_37px_rgba(8,21,66,0.05)] min-w-[15rem] py-[15px] mt-0.5 ltr:ml-3 rtl:mr-3 rounded-lg bg-card" x-transition.duration.100ms="" x-show.transition.origin.top.right="open" style="display: none;">
+                        <a  href="app-profile.html" class="dropdown-item block text-right w-full py-2 px-6 text-body-text duration-300 hover:bg-bs-dropdown-color hover:text-primary">
+                            <svg  id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path  d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle  cx="12" cy="7" r="4"></circle></svg>
+                            <span  class="ltr:ml-2 rtl:mr-2">پروفایل</span>
                         </a>
-                      
-                        <a href="page-login.html" class="dropdown-item block text-right w-full py-2 px-6 text-body-text duration-300 hover:bg-bs-dropdown-color hover:text-primary">
-                            <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
-                            <span class="ltr:ml-2 rtl:mr-2">خروج</span>
+
+                        <a  href="page-login.html" class="dropdown-item block text-right w-full py-2 px-6 text-body-text duration-300 hover:bg-bs-dropdown-color hover:text-primary">
+                            <svg  id="icon-logout" xmlns="http://www.w3.org/2000/svg" class="text-danger" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path  d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline  points="16 17 21 12 16 7"></polyline><line  x1="21" y1="12" x2="9" y2="12"></line></svg>
+                            <span  class="ltr:ml-2 rtl:mr-2">خروج</span>
                         </a>
                     </div>
                 </div>
-                <ul class="metismenu" id="menu">
-                    <li>
-                        <a class="has-arrow " href="javascript:void()" aria-expanded="false">
-                            <i class="flaticon-025-dashboard"></i>
-                            <span class="nav-text">تعاریف پایه</span>
+                <ul  class="metismenu mm-show" id="menu">
+                    <li  class="mm-active">
+                        <a  class="has-arrow " href="javascript:void()" aria-expanded="false">
+                            <i  class="flaticon-025-dashboard"></i>
+                            <span  class="nav-text">تعاریف پایه</span>
                         </a>
-                        <ul aria-expanded="false">
-                            <li><a href="compaines.html">قرارداد ها</a></li>
-                            <li><a href="index-3.html">مواد غذایی</a></li>
-                            <li><a href="jobs-page.html">غذاها</a></li>
-                            <li><a href="my-profile.html">هزینه های جانبی</a></li>
-                            <li><a href="statistics-page.html">آمار</a></li>
+                        <ul  aria-expanded="false" class="mm-collapse mm-show" style="">
+                            <li  class="mm-active"><a  href="/Define/Companies/index" class="mm-active">شرکت های طرف قرارداد</a></li>
+                            <li ><a  href="index-3.html">مواد غذایی</a></li>
+                            <li ><a  href="jobs-page.html">غذاها</a></li>
+                            <li ><a  href="my-profile.html">هزینه های جانبی</a></li>
+                            <li ><a  href="statistics-page.html">آمار</a></li>
                         </ul>
 
                     </li>
-                    <li>
-                        <a class="has-arrow " href="javascript:void()" aria-expanded="false">
-                            <i class="flaticon-093-waving"></i>
-                            <span class="nav-text">آنالیزها</span>
+                    <li >
+                        <a  class="has-arrow " href="javascript:void()" aria-expanded="false">
+                            <i  class="flaticon-093-waving"></i>
+                            <span  class="nav-text">آنالیزها</span>
                         </a>
-                        <ul aria-expanded="false">
-                            <li><a href="job-list.html">آنالیز غذاها</a></li>
-                            <li><a href="job-view.html">نیازمندی جز </a></li>
-                            <li><a href="job-application.html">آمار کل </a></li>
-                         
+                        <ul  aria-expanded="false" class="mm-collapse" style="">
+                            <li ><a  href="job-list.html">آنالیز غذاها</a></li>
+                            <li ><a  href="job-view.html">نیازمندی جز </a></li>
+                            <li ><a  href="job-application.html">آمار کل </a></li>
+
                         </ul>
                     </li>
-              
+
                 </ul>
-             
+
             </div>
         </div>
         <!-- Sidebar end -->
         <!-- Content body start -->
-        <div class="content-body default-height">
+        <div  class="content-body default-height" style="min-height: 464px;">
             <!-- row -->
-            <div class="container-fluid">
-                <div class="row">
+            <div  class="container-fluid">
+                <div  class="row">
+            
                     @RenderBody()
+
+
 
 
                 </div>
@@ -210,9 +219,9 @@
         </div>
         <!-- Content body end -->
         <!-- Footer start -->
-        <div class="footer mt-4 bg-card">
-            <div class="copyright p-[15px]">
-                <p class="text-center text-gray sm:text-sm text-xs leading-[1.8]">کپی رایت © ارائه از <a href="https://chefhesab.ir/" target="_blank" class="text-primary">حساب سر آشپزم</a> 1403</p>
+        <div  class="footer mt-4 bg-card">
+            <div  class="copyright p-[15px]">
+                <p  class="text-center text-gray sm:text-sm text-xs leading-[1.8]">کپی رایت © ارائه از <a  href="https://chefhesab.ir/" target="_blank" class="text-primary">حساب سر آشپزم</a> 1403</p>
             </div>
         </div>
         <!-- Footer end -->
@@ -231,60 +240,24 @@
     <!-- Chart piety plugin files -->
     <script src="/vendor/peity/jquery.peity.min.js"></script>
     <!-- Dashboard 1 -->
-    <script src="/js/dashboard/dashboard-1.js"></script>
+    @*   <script src="/js/dashboard/dashboard-1.js"></script> *@
 
 
     <script src="/vendor/flatpickr-master/js/flatpickr.js"></script>
     <script src="/js/dlabnav-init.js"></script>
     <script src="/js/custom.min.js"></script>
-
+    
     <script src="/js/demo.js"></script>
 
+    <script src="/js/jszip.min.js"></script>
+    <script src="/js/kendo.all.min.js"></script>
+    @*    <script src="/js/danScripts.js"></script> *@
+    <script src="/js/jquery.PostMvcAjax.js"></script>
 
+    @RenderSection("Scripts",false)
+ 
+   
 
-    <script>
-        function JobickCarousel() {
-            /*  testimonial one function by = owl.carousel.js */
-            jQuery('.front-view-slider').owlCarousel({
-                loop: false,
-                margin: 30,
-                nav: false,
-                autoplaySpeed: 3000,
-                navSpeed: 3000,
-                autoWidth: true,
-                paginationSpeed: 3000,
-                slideSpeed: 3000,
-                smartSpeed: 3000,
-                autoplay: false,
-                animateOut: 'fadeOut',
-                dots: false,
-                navText: ['', ''],
-                responsive: {
-                    0: {
-                        items: 1,
-
-                        margin: 10
-                    },
-
-                    480: {
-                        items: 1
-                    },
-
-                    767: {
-                        items: 3
-                    },
-                    1750: {
-                        items: 3
-                    }
-                }
-            })
-        }
-        jQuery(window).on('load', function () {
-            setTimeout(function () {
-                JobickCarousel();
-            }, 1000);
-        });
-    </script>
 
 </body>
 

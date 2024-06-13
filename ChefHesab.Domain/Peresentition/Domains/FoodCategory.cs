@@ -21,16 +21,15 @@ namespace ChefHesab.Domain
             FoodStuffs = new HashSet<FoodStuff>();
         }
 
-        [Key]
-        [Column("id")]
-        public Guid Id { get; set; }
+        [Key]      
+        public long CategoryId { get; set; }
         public string Title { get; set; }
         public int? SnapId { get; set; }
-        [Column("active")]
+    
         public bool? Active { get; set; }
 
-        [Column("parentID")]
-        public Guid? ParentId { get; set; }
+       
+        public long? ParentId { get; set; }
 
         [ForeignKey("ParentId")]
         [InverseProperty("InverseParent")]

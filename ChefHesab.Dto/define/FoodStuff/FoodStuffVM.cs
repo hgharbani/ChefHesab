@@ -14,7 +14,7 @@ namespace ChefHesab.Dto.define.FoodStuff
         [StringLength(500)]
         public string Title { get; set; }
 
-        public Guid? FoodCategoryId { get; set; }
+        public long FoodCategoryId { get; set; }
         public string CategoryTitle { get; set; }
     }
 }

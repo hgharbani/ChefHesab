@@ -2,6 +2,7 @@
 using ChefHesab.Data.Presentition.Reositories;
 using ChefHesab.Domain.Peresentition.IRepositories;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -22,8 +23,11 @@ namespace ChefHesab.Data
             {
                 config.UseSqlServer(configurations.GetConnectionString("ChefHesabContext"), providerOptions => providerOptions.EnableRetryOnFailure());
             });
-         
+
             return services;
         }
+
+
+       
     }
 }

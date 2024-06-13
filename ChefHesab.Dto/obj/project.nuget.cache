@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Knfu6fafNvWsK5p4yPdV0jMLTz4/ST48xTJvtLAwSKrI5Qxh+CSvUgD2FI9nq9joa0vkOvJ/rBCW55A8ozGdJQ==",
+  "dgSpecHash": "w/m4JeXHsPRJlq+liaS7/5fhEq2+5kXW8mxbQYhPUkFuvJzJyXPaPRAaEA65HthYWyfDDpXAI6zNzoTAL1vvSw==",
   "success": true,
   "projectFilePath": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Dto\\ChefHesab.Dto.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\dntpersianutils.core\\6.3.1\\dntpersianutils.core.6.3.1.nupkg.sha512"
+  ],
   "logs": []
 }

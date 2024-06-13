@@ -10,4 +10,8 @@
     <Folder Include="Authenticate\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="DNTPersianUtils.Core" Version="6.3.1" />
+  </ItemGroup>
+
 </Project>

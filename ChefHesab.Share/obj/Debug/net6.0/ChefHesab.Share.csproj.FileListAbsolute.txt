@@ -15,6 +15,7 @@ D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHe
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\bin\Debug\net6.0\ChefHesab.Share.runtimeconfig.json
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\bin\Debug\net6.0\ChefHesab.Share.dll
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\bin\Debug\net6.0\ChefHesab.Share.pdb
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\obj\Debug\net6.0\ChefHesab.Share.csproj.AssemblyReference.cache
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\obj\Debug\net6.0\ChefHesab.Share.GeneratedMSBuildEditorConfig.editorconfig
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\obj\Debug\net6.0\ChefHesab.Share.AssemblyInfoInputs.cache
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Share\obj\Debug\net6.0\ChefHesab.Share.AssemblyInfo.cs

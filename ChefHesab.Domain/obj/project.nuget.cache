@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "RGZC5+LD2/7/iZsAGHjWIwYQN2bZ/ljwReUhXBhBFSPReI/ZSRLGqXxZrF3ZlANsJTDufkP4JgMxppJ7Gcu6Hw==",
+  "dgSpecHash": "qm9+Q4b5waab3zb1/TnahXBn0rwtXK2Oq9kssIVG9+HHAEiE10PQ2sNXp1WoVLRaOMVkr5Gp1lVTps8KSuSokw==",
   "success": true,
   "projectFilePath": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Domain\\ChefHesab.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\dntpersianutils.core\\6.3.1\\dntpersianutils.core.6.3.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

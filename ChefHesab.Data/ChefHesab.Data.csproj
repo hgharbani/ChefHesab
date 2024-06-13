@@ -9,7 +9,9 @@
   <ItemGroup>
     <PackageReference Include="Autofac" Version="7.1.0" />
     <PackageReference Include="Dalir.common" Version="1.0.4" />
+    <PackageReference Include="DNTPersianUtils.Core" Version="6.3.1" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="7.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="7.0.10" />

@@ -35,6 +35,7 @@ namespace ChefHesab.Domain
         public string InsertDate { get; set; }
         public bool Active { get; set; }
         public Guid? PersonalId { get; set; }
+        public Guid? CompanyId { get; set; }
 
         [ForeignKey("FoodStuffId")]
         [InverseProperty("StuffPrices")]
@@ -44,5 +45,11 @@ namespace ChefHesab.Domain
         public virtual Personal Personal { get; set; }
         [InverseProperty("StuffPrice")]
         public virtual ICollection<IngredinsFood> IngredinsFoods { get; set; }
+
+        [ForeignKey("CompanyId")]
+        [InverseProperty("StuffPrices")]
+        public virtual ContractingCompany ContractingCompany { get; set; }
+
+
     }
 }

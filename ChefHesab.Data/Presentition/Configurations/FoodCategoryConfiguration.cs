@@ -15,7 +15,7 @@ namespace ChefHesab.Data.Configurations
         {
             entity.HasComment("دسته بندی کالا");
 
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.HasKey(e => e.CategoryId);
             entity.Property(e => e.SnapId).IsRequired(false);
             entity.HasOne(d => d.Parent)
            .WithMany(p => p.InverseParent)

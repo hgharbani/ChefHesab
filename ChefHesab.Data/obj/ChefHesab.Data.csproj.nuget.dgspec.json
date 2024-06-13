@@ -59,11 +59,19 @@
               "target": "Package",
               "version": "[7.1.0, )"
             },
+            "DNTPersianUtils.Core": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            },
             "Dalir.common": {
               "target": "Package",
               "version": "[1.0.4, )"
             },
             "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.2.0, )"
             },
@@ -183,6 +191,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "DNTPersianUtils.Core": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.10, )"

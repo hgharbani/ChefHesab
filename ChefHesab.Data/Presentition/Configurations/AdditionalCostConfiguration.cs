@@ -14,7 +14,8 @@ namespace ChefHesab.Data.Configurations
         public void Configure(EntityTypeBuilder<AdditionalCost> entity)
         {
             entity.HasComment("عناوین هزینه های جانبی");
-
+            entity.ToTable(nameof(AdditionalCost));
+            entity.HasKey(a=>a.Id);
             entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
 
             entity.HasOne(d => d.Personal)

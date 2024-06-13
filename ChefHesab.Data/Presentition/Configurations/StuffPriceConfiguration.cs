@@ -34,6 +34,10 @@ namespace ChefHesab.Data.Configurations
                 .HasForeignKey(d => d.PersonalId)
                 .HasConstraintName("FK_StuffPrice_Personal");
 
+            entity.HasOne(d => d.ContractingCompany)
+              .WithMany(p => p.StuffPrices)
+              .HasForeignKey(d => d.CompanyId)
+              .HasConstraintName("FK_StuffPrice_ContractingCompanies");
             OnConfigurePartial(entity);
         }
 
