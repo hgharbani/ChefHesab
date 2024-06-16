@@ -2939,6 +2939,9 @@
           }
         }
       },
+      "Salar.kendoHelpers/1.4.0": {
+        "type": "package"
+      },
       "SkiaSharp/2.88.8": {
         "type": "package",
         "dependencies": {
@@ -9311,6 +9314,18 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
+    "Salar.kendoHelpers/1.4.0": {
+      "sha512": "eR26/4FXQHRPVjTAcVH5Y81Gs5rJM8ijiiaX/VKzBp2OR7FPnuJ4QZJGhE1b16z8IEwuElOoAgtFUe6NNMVITQ==",
+      "type": "package",
+      "path": "salar.kendohelpers/1.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/scripts/kendoHelpers.js",
+        "salar.kendohelpers.1.4.0.nupkg.sha512",
+        "salar.kendohelpers.nuspec"
+      ]
+    },
     "SkiaSharp/2.88.8": {
       "sha512": "bRkp3uKp5ZI8gXYQT57uKwil1uobb2p8c69n7v5evlB/2JNcMAXVcw9DZAP5Ig3WSvgzGm2YSn27UVeOi05NlA==",
       "type": "package",
@@ -13498,6 +13513,7 @@
       "DNTCommon.Web.Core >= 5.3.3",
       "DNTPersianUtils.Core >= 6.3.1",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.2",
+      "Salar.kendoHelpers >= 1.4.0",
       "Tailwind.Extensions.AspNetCore >= 1.0.0",
       "TailwindCssTagHelpers >= 0.6.0"
     ]
@@ -13571,6 +13587,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[8.0.2, )"
+          },
+          "Salar.kendoHelpers": {
+            "target": "Package",
+            "version": "[1.4.0, )"
           },
           "Tailwind.Extensions.AspNetCore": {
             "target": "Package",

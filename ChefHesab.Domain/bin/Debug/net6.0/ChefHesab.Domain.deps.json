@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "ChefHesab.Domain/1.0.0": {
         "dependencies": {
+          "DNTPersianUtils.Core": "6.3.1",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.10",
           "Microsoft.EntityFrameworkCore.Analyzers": "7.0.10",
@@ -53,6 +54,14 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.6.0.0",
             "fileVersion": "1.600.22.20503"
+          }
+        }
+      },
+      "DNTPersianUtils.Core/6.3.1": {
+        "runtime": {
+          "lib/net6.0/DNTPersianUtils.Core.dll": {
+            "assemblyVersion": "6.3.1.0",
+            "fileVersion": "6.3.1.0"
           }
         }
       },
@@ -726,6 +735,13 @@
       "sha512": "sha512-EycyMsb6rD2PK9P0SyibFfEhvWWttdrYhyPF4f41uzdB/44yQlV+2Wehxyg489Rj6gbPvSPgbKq0xsHJBhipZA==",
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
+    },
+    "DNTPersianUtils.Core/6.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6MjmBUBmsYhnmtycxMaUCO471vtFpffdLdgrjygj05IcqHE099d7FB+XtFwDIKY4xJxA5HaGez6lGQOtE+ghaw==",
+      "path": "dntpersianutils.core/6.3.1",
+      "hashPath": "dntpersianutils.core.6.3.1.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",

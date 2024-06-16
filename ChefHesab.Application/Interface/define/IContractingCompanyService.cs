@@ -1,6 +1,7 @@
 ﻿using ChefHesab.Domain;
 using ChefHesab.Dto.define.ContractingCompany;
 using ChefHesab.Share.model;
+using ChefHesab.Share.model.KendoModel;
 
 namespace ChefHesab.Application.Interface.define
 {
@@ -8,7 +9,8 @@ namespace ChefHesab.Application.Interface.define
     {
         Task<ChefResult> Add(ContractingCompanyVM ContractingCompany);
         Task<ChefResult> Edit(ContractingCompanyVM ContractingCompany);
-        List<ContractingCompany> GetContractingCompany();
+        dynamic GetAllByKendoFilter(Request request);
+        List<ContractingCompanyVM> GetContractingCompany();
         Task<Tuple<List<ContractingCompanyVM>, int>> GetContractingCompanyListWithPeginition(ContractingCompanyVM contractingCompany);
     }
 }

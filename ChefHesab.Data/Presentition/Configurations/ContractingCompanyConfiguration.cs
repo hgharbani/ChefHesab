@@ -14,7 +14,8 @@ namespace ChefHesab.Data.Configurations
         public void Configure(EntityTypeBuilder<ContractingCompany> entity)
         {
             entity.HasComment("شرکت های تحت قرار داد کاربران");
-
+            entity.ToTable("ContractingCompanies", "dbo");
+            entity.HasKey(a=>a.Id);
             entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
 
             entity.HasOne(d => d.Personal)

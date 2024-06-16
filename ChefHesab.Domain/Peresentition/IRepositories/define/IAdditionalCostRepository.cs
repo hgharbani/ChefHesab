@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ChefHesab.Domain.Peresentition.IRepositories.define
 {
-    public interface IAdditionalCostRepository:IBaseGenericRepository<AdditionalCost>
+    public interface IAdditionalCostRepository: IGenericRepository<AdditionalCost>
     {
          IQueryable<AdditionalCost> GetAll();
         IQueryable<AdditionalCost> GetAllAsNoTracking();

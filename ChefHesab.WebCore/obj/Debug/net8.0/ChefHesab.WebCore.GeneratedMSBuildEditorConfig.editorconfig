@@ -26,6 +26,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.WebCore
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/Define/Views/Companies/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVmaW5lXFZpZXdzXENvbXBhbmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/Define/Views/Companies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVmaW5lXFZpZXdzXENvbXBhbmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

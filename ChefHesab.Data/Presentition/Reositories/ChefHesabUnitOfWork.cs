@@ -40,6 +40,7 @@ namespace ChefHesab.Data.Presentition.Reositories
                 return contractingCompanyRepository;
             }
         }
+
         private IFoodCategoryRepository? foodCategoryRepository;
         public IFoodCategoryRepository FoodCategoryRepository
         {

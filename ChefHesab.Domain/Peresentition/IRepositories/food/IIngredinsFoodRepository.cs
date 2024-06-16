@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ChefHesab.Domain.Peresentition.IRepositories.food
 {
-    public interface IIngredinsFoodRepository:IBaseGenericRepository<IngredinsFood>
+    public interface IIngredinsFoodRepository: IGenericRepository<IngredinsFood>
     {
     }
 }

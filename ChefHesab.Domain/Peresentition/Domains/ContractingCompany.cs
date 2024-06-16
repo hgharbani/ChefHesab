@@ -22,21 +22,19 @@ namespace ChefHesab.Domain
 
         [Key]
         public Guid Id { get; set; }
-        [StringLength(300)]
+
         public string CompanyName { get; set; }
-        [Column(TypeName = "date")]
+       
         public DateTime? AgreementDate { get; set; }
         public int? AgreementPeriod { get; set; }
-        [Column(TypeName = "date")]
+ 
         public DateTime? ExpirationDate { get; set; }
         public string AgreementNumber { get; set; }
         public bool? IsActive { get; set; }
         public Guid? PersonalId { get; set; }
 
         [ForeignKey("PersonalId")]
-        [InverseProperty("ContractingCompanies")]
         public virtual Personal Personal { get; set; }
-        [InverseProperty("ContractCompany")]
         public virtual ICollection<FoodProvider> FoodProviders { get; set; }
 
         public virtual ICollection<StuffPrice> StuffPrices { get; set; }

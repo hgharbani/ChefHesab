@@ -9,10 +9,13 @@ using System.Threading.Tasks;
 
 namespace ChefHesab.Domain.Peresentition.IRepositories.define
 {
-    public class ContractingCompanyRepository : GenericRepository<ContractingCompany>, IContractingCompanyRepository
+
+
+
+    public class ContractingCompanyRepository :GenericRepository<ContractingCompany>, IContractingCompanyRepository
     {
         private readonly ChefHesabContext _context;
-        public ContractingCompanyRepository(ChefHesabContext dbContext) : base(dbContext)
+        public ContractingCompanyRepository(ChefHesabContext dbContext) :base (dbContext)
         {
             _context = dbContext;
         }
@@ -26,7 +29,14 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
         {
             return _context.ContractingCompanies.AsQueryable().AsNoTracking();
         }
+        public void Add(ContractingCompany company)
+        {
+            _context.ContractingCompanies.Add(company);
+        }
 
-
+        public Task<bool> Any(Func<object, bool> value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

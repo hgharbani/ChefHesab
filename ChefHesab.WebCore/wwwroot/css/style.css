@@ -116,6 +116,16 @@ body {
   line-height: inherit;
   /* 2 */
 }
+.k-prompt-container, .k-window-content{
+    padding:0 !important;
+}
+#modalFooter {
+    position: sticky !important;
+    width: -webkit-fill-available !important;
+    bottom: 0 !important;
+    overflow: hidden !important;
+    background-color: #fafafa;
+}
 
 /*
 1. Add the correct height in Firefox.
@@ -123,12 +133,12 @@ body {
 3. Ensure horizontal rules are visible by default.
 */
 hr {
-  height: 0;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  border-top-width: 1px;
-  /* 3 */
+    height: 0;
+    /* 1 */
+    color: inherit;
+    /* 2 */
+    border-top-width: 1px;
+    /* 3 */
 }
 
 /*
@@ -5256,7 +5266,7 @@ body {
   /* IE and Edge */
   scrollbar-width: none;
   /* Firefox */
-  font-family: var(--dz-ffont-family);
+  font-family: var(--dz-ffont-family) !important;
   overflow-x: hidden;
   height: 100%;
   position: relative;
@@ -15449,4 +15459,8 @@ div.dt-buttons {
 .select2-container--default[dir="rtl"] .select2-selection--multiple .select2-selection__choice {
 
   float: right;
+}
+
+.k-window {
+    font-family: var(--dz-ffont-family) !important;
 }

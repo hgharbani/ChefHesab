@@ -9,11 +9,10 @@ namespace Chefhesab.WebApi.Controllers.define
     public class FoodStuffApiController : ControllerBase
     {
 
-        private readonly IFoodCategoryService _foodCategory;
         private readonly IFoodStuffService _foodStuffService;
-        public FoodStuffApiController(IFoodCategoryService foodCategoryService, IFoodStuffService foodStuffService)
+        public FoodStuffApiController( IFoodStuffService foodStuffService)
         {
-            _foodCategory = foodCategoryService;
+            
             _foodStuffService = foodStuffService;
         }
         [HttpGet("GetFoodStuff")]

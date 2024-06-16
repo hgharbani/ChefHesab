@@ -69,7 +69,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
                             parentitem.InverseParent.Add(foodCategory);
                         }
                     }
-                    _unitOfWork.FoodCategoryRepository.Insert(parentitem);
+                  await  _unitOfWork.FoodCategoryRepository.Add(parentitem);
 
                 }
                 await _unitOfWork.SaveAsync();

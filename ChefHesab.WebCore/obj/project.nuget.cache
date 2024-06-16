@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "qrPjliM1SU8z6dsAgxJszSXX4WSSdJ9DWfDZKeg+ehbIpEkNvhSJOWXx+rOCrsV4N+y9iEl316EqulLkxkuQDw==",
+  "dgSpecHash": "uYn4BLmXPyF2yKyRuWV9LDo26PMStTGlbQcmO+DwlHifGWlILlA1UCi9EJfT2SGPKUpUpJ0G3hAR8K6lhVf1CA==",
   "success": true,
   "projectFilePath": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\ChefHesab.WebCore.csproj",
   "expectedPackageFiles": [
@@ -180,6 +180,7 @@
     "C:\\Users\\PC\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\salar.kendohelpers\\1.4.0\\salar.kendohelpers.1.4.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\skiasharp\\2.88.8\\skiasharp.2.88.8.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\skiasharp.harfbuzz\\2.88.8\\skiasharp.harfbuzz.2.88.8.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\skiasharp.nativeassets.linux\\2.88.8\\skiasharp.nativeassets.linux.2.88.8.nupkg.sha512",

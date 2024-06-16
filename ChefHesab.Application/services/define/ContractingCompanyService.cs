@@ -5,14 +5,20 @@ using ChefHesab.Data.Presentition.Context;
 using ChefHesab.Data.Presentition.Reositories.generic;
 using ChefHesab.Dto.define.ContractingCompany;
 using ChefHesab.Share.model;
+using ChefHesab.Share.model.KendoModel;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using ChefHesab.Share.Extiontions.KendoExtentions;
+using ChefHesab.Share.model.KendoModel.Response;
+using ChefHesab.Domain.Peresentition.IRepositories;
+using ChefHesab.Domain;
 
-namespace ChefHesab.Domain.Peresentition.IRepositories.define
+namespace ChefHesab.Application.services.define
 {
     /// <summary>
     /// شرکت های طرف قرار داد
@@ -20,8 +26,8 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
     public class ContractingCompanyService : IContractingCompanyService
     {
         public IChefHesabUnitOfWork _unitOfWork;
-        public Mapper _mapper;
-        public ContractingCompanyService(IChefHesabUnitOfWork unitOfWork, Mapper mapper)
+        private readonly IMapper _mapper;
+        public ContractingCompanyService(IChefHesabUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
@@ -32,18 +38,67 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
         {
             if (string.IsNullOrEmpty(contractingCompany.Id.ToString()))
             {
-                return await _unitOfWork.ContractingCompanyRepository.Any(a => a.Id != contractingCompany.Id && a.CompanyName == contractingCompany.CompanyName);
+                return false;
 
             }
             else
             {
-                return await _unitOfWork.ContractingCompanyRepository.Any(a => a.CompanyName == contractingCompany.CompanyName);
+                return false;
             }
 
         }
-        public List<ContractingCompany> GetContractingCompany()
+        public List<ContractingCompanyVM> GetContractingCompany()
         {
-            return _unitOfWork.ContractingCompanyRepository.SelectAll().ToList();
+          
+            return _unitOfWork.ContractingCompanyRepository.SelectAll().Select(a=>_mapper.Map<ContractingCompanyVM>(a)).ToList();
+        }
+
+        public ContractingCompanyVM GetOne(Guid contractingId){
+            var result= _unitOfWork.ContractingCompanyRepository.Where(a => a.Id == contractingId).Select(a => _mapper.Map<ContractingCompanyVM>(a)).FirstOrDefault();
+            return result;
+        }
+        public dynamic GetAllByKendoFilter(Request request)
+        {
+            var data = _unitOfWork.ContractingCompanyRepository.GetAllAsNoTracking();
+            int total = data.Count();
+            IList resultData;
+            bool isGrouped = false;
+
+            var aggregates = new Dictionary<string, Dictionary<string, string>>();
+
+            if (request.Sorts != null)
+            {
+                data = data.Sort(request.Sorts);
+            }
+
+            if (request.Filter != null)
+            {
+                data = data.Filter(request.Filter);
+                total = data.Count();
+            }
+
+            if (request.Aggregates != null)
+            {
+                aggregates = data.CalculateAggregates(request.Aggregates);
+            }
+
+            if (request.Take > 0)
+            {
+                data = data.Page(request.Skip, request.Take);
+            }
+
+            if (request.Groups != null && request.Groups.Count > 0 && !request.GroupPaging)
+            {
+                resultData = data.Group(request.Groups).Cast<Group>().ToList();
+                isGrouped = true;
+            }
+            else
+            {
+                resultData = data.ToList();
+            }
+
+            var result = new Response(resultData, aggregates, total, isGrouped).ToResult();
+            return result;
         }
         public async Task<Tuple<List<ContractingCompanyVM>, int>> GetContractingCompanyListWithPeginition(ContractingCompanyVM contractingCompany)
         {
@@ -54,26 +109,29 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
             }
 
 
-            var result = await _unitOfWork.ContractingCompanyRepository.SelectDataFilteredByPage(contractingCompany.pageNumber, contractingCompany.pageSize, filters);
-            var mappedResult = result.Item2.Select(a => _mapper.Map<ContractingCompanyVM>(a)).ToList();
-            return new Tuple<List<ContractingCompanyVM>, int>(mappedResult, result.Item1);
+           // var result = await _unitOfWork.ContractingCompanyRepository.SelectDataFilteredByPage(contractingCompany.pageNumber, contractingCompany.pageSize, filters);
+           // var mappedResult = result.Item2.Select(a => _mapper.Map<ContractingCompanyVM>(a)).ToList();
+            return new Tuple<List<ContractingCompanyVM>, int>(new List<ContractingCompanyVM>(), 0);
 
         }
 
-        public async Task<ChefResult> Add(ContractingCompanyVM ContractingCompany)
+        public async Task<ChefResult> Add(ContractingCompanyVM model)
         {
             var result = new ChefResult();
             try
             {
 
-                if (await IsDuplicate(ContractingCompany))
+                if (await IsDuplicate(model))
                 {
                     result.AddError("داده وارد شده تکراری می باشد");
                     return result;
                 }
-                var mapper = _mapper.Map<ContractingCompany>(ContractingCompany);
-                _unitOfWork.ContractingCompanyRepository.Insert(mapper);
-                await _unitOfWork.SaveAsync();
+                var mapper = _mapper.Map<ContractingCompany>(model);
+                mapper.PersonalId = new Guid("FC769A7E-6A78-42CE-B7F9-0E1619CD5EFB");
+                mapper.AgreementPeriod = mapper.ExpirationDate.Value.Date.Subtract(mapper.AgreementDate.Value.Date).Days;
+                _unitOfWork.ContractingCompanyRepository.Add(mapper);
+            
+                var idsave = await _unitOfWork.SaveAsync();
                 return result;
             }
             catch (Exception ex)
@@ -94,7 +152,8 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
                     result.AddError("داده وارد شده تکراری می باشد");
                     return result;
                 }
-                var find = _unitOfWork.ContractingCompanyRepository.SelectByKey(ContractingCompany.Id);
+                var find= new ContractingCompany();
+                //   var find = _unitOfWork.ContractingCompanyRepository.SelectByKey(ContractingCompany.Id);
                 if (find == null)
                 {
                     result.AddError("داده مورد نظر حذف شده است");
@@ -102,7 +161,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
                 }
 
                 var mapper = _mapper.Map<ContractingCompanyVM, ContractingCompany>(ContractingCompany, find);
-                _unitOfWork.ContractingCompanyRepository.Update(mapper);
+               // _unitOfWork.ContractingCompanyRepository.Update(mapper);
                 await _unitOfWork.SaveAsync();
                 return result;
             }

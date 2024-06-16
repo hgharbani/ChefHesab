@@ -1,19 +1,41 @@
 using ChefHesab.Share.Extiontions;
+using ChefHesab.Share.ModelBinder;
 using DNTCommon.Web.Core;
+using System.Text.Json;
 
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options =>
+{
+    options.SerializerOptions.PropertyNameCaseInsensitive = false;
+    options.SerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+});
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(options => {
+        options.AllowAnyOrigin();
+        options.AllowAnyMethod();
+        options.AllowAnyHeader();
+    });
+});
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<ApiExtention>();
 builder.Services.AddDNTCommonWeb();
-builder.Services.AddMvc(options => options.UsePersianDateModelBinder());
-builder.Services.AddMvc(options => options.UseYeKeModelBinder());
-builder.Services.AddMvcCore(options => options.UsePersianDateModelBinder());
-builder.Services.AddMvcCore(options => options.UseYeKeModelBinder());
-builder.Services.AddControllersWithViews(options => options.Filters.Add(typeof(ApplyCorrectYeKeFilterAttribute)));
+
+builder.Services.AddMvcCore(options => {
+
+    options.ModelBinderProviders.Insert(0, new PersianDateModelBinderProvider());
+    options.UseYeKeModelBinder();
+});
+
+
+builder.Services.AddControllersWithViews(options => {
+    options.ModelBinderProviders.Insert(0, new PersianDateModelBinderProvider());
+    options.Filters.Add(typeof(ApplyCorrectYeKeFilterAttribute));
+    
+    });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -23,6 +23,7 @@ namespace ChefHesab.Application
          
             services.AddSingleton(mapper);
             services.AddScoped<IChefHesabUnitOfWork, ChefHesabUnitOfWork>();
+          
             return services;
         }
 

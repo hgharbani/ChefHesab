@@ -14,9 +14,10 @@ namespace ChefHesab.Dto.define.ContractingCompany
         [StringLength(300)]
         public string CompanyName { get; set; }
 
+        [DataType(DataType.Date)]
         public DateTime? AgreementDate { get; set; }
         public int? AgreementPeriod { get; set; }
-
+        [DataType(DataType.Date)]
         public DateTime? ExpirationDate { get; set; }
         public string AgreementNumber { get; set; }
         public bool? IsActive { get; set; }

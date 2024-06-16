@@ -9,8 +9,30 @@ using System.Threading.Tasks;
 
 namespace ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository
 {
+    public interface IGenericRepository<T> where T : class
+    {
+        Task<T> GetById(int id);
+        Task<IEnumerable<T>> GetAll();
+        Task Add(T entity);
+        void Delete(T entity);
+        void Update(T entity);
 
-        public  interface IBaseGenericRepository<TEntity> : IDisposable where TEntity : class
+
+        IList<T> SelectAll();
+
+        IList<T> SelectAllByPage(int pageNumber, int quantity);
+
+        T Select(Expression<Func<T, bool>> predicate);
+
+        TResult Select<TResult>(Expression<Func<T, bool>> predicate, Expression<Func<T, TResult>> properties);
+        Task<bool> Any(Expression<Func<T, bool>> predicate);
+        IQueryable<T> Where(Expression<Func<T, bool>> predicate);
+        Task<Tuple<int, IList<T>>> SelectDataFilteredByPage(int pageNumber, int quantity, List<Expression<Func<T, bool>>> predicate);
+        Task AddRange(List<T> entity);
+    }
+
+
+    public  interface IBaseGenericRepository<TEntity> : IDisposable where TEntity : class
         {
             void Insert(TEntity entity);
 

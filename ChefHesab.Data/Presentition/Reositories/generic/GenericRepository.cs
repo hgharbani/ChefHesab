@@ -1,152 +1,102 @@
-﻿using ChefHesab.Data.Presentition.Context;
-using ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository;
-using Dalir.common.Context;
-using Dalir.common.Extensions;
-using Dalir.common.Interfaces;
-using Dalir.common.Resources;
+﻿using Dalir.common.Extensions;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ChefHesab.Data.Presentition.Reositories.generic
 {
-    public  class GenericRepository<TEntity> : IBaseGenericRepository<TEntity>, IDisposable where TEntity : class
+    public abstract class GenericRepository<T> : Domain.Peresentition.IRepositories.IGenericRepository.IGenericRepository<T> where T : class
     {
-        protected readonly ChefHesabContext _dbContext;
+        protected readonly DbContext _dbContext;
 
-        public DbSet<TEntity> DbSet;
-
-        public GenericRepository(ChefHesabContext dbContext)
+        protected GenericRepository(DbContext context)
         {
-            _dbContext = dbContext ?? throw new ArgumentNullException("dbContext");
-
-            try
-            {
-                DbSet = dbContext.Set<TEntity>();
-            }
-            catch (InvalidOperationException innerException)
-            {
-                throw new Exception(string.Format(Errors.Possible_0, "map the entity: " + GetType().Name), innerException);
-            }
+            _dbContext = context;
         }
 
-        public virtual void Insert(TEntity entity)
+        public async Task<T> GetById(int id)
         {
-            DbSet.Add(entity);
+            return await _dbContext.Set<T>().FindAsync(id);
         }
 
-        public virtual void Insert(IEnumerable<TEntity> entities)
+        public async Task<IEnumerable<T>> GetAll()
         {
-            DbSet.AddRange(entities);
+            return await _dbContext.Set<T>().ToListAsync();
         }
 
-        public virtual void Update(TEntity entity)
+        public async Task Add(T entity)
         {
-            DbSet.Update(entity);
+            await _dbContext.Set<T>().AddAsync(entity);
+        }
+        public async Task AddRange(List<T> entity)
+        {
+            await _dbContext.Set<T>().AddRangeAsync(entity);
         }
 
-        public virtual void Update(IEnumerable<TEntity> entities)
+        public void Delete(T entity)
         {
-            DbSet.UpdateRange(entities);
+            _dbContext.Set<T>().Remove(entity);
         }
 
-        public void Update(TEntity entity, params Expression<Func<TEntity, object>>[] propriedades)
+        public void Update(T entity)
         {
-            _dbContext.Attach(entity);
-            foreach (Expression<Func<TEntity, object>> item in propriedades.AsParallel())
-            {
-                _dbContext.Entry(entity).Property(item).IsModified = true;
-            }
+            _dbContext.Set<T>().Update(entity);
         }
 
-        public virtual void Delete(TEntity entity)
+        public virtual IList<T> SelectAll()
         {
-            DbSet.Remove(entity);
+            return _dbContext.Set<T>().ToList();
         }
 
-        public virtual void Delete(IEnumerable<TEntity> entities)
+        public virtual async Task<bool> Any(Expression<Func<T, bool>> predicate)
         {
-            DbSet.RemoveRange(entities);
+            return await _dbContext.Set<T>().AsQueryable().AnyAsync(predicate);
+        }
+        public virtual IQueryable<T> Where(Expression<Func<T, bool>> predicate)
+        {
+            return _dbContext.Set<T>().AsQueryable().Where(predicate);
         }
 
-        public virtual void Delete(Expression<Func<TEntity, bool>> predicate)
+        public virtual IList<T> SelectAllByPage(int pageNumber, int quantity)
         {
-            DbSet.AsQueryable().Where(predicate).ToList()
-                .ForEach(delegate (TEntity entity)
-                {
-                    DbSet.Remove(entity);
-                });
+            return _dbContext.Set<T>().Skip(Math.Max(pageNumber - 1, 0) * quantity).Take(quantity).ToList();
         }
 
-        public TEntity SelectByKey(params object[] primaryKeys)
+        public virtual async Task<Tuple<int, IList<T>>> SelectDataFilteredByPage(int pageNumber, int quantity, List<Expression<Func<T, bool>>> predicate)
         {
-            return DbSet.Find(primaryKeys);
-        }
-
-        public virtual IList<TEntity> SelectAll()
-        {
-            return DbSet.ToList();
-        }
-
-        public virtual async Task<bool> Any(Expression<Func<TEntity, bool>> predicate)
-        {
-          return await DbSet.AsQueryable().AnyAsync(predicate);
-        }
-        public virtual IQueryable<TEntity> Where(Expression<Func<TEntity, bool>> predicate)
-        {
-            return  DbSet.AsQueryable().Where(predicate);
-        }
-
-        public virtual IList<TEntity> SelectAllByPage(int pageNumber, int quantity)
-        {
-            return DbSet.Skip(Math.Max(pageNumber - 1, 0) * quantity).Take(quantity).ToList();
-        }
-
-        public virtual async Task<Tuple<int, IList<TEntity>>> SelectDataFilteredByPage(int pageNumber, int quantity, List<Expression<Func<TEntity, bool>>> predicate)
-        {
-            var Data = DbSet.AsNoTracking();
-            foreach(var filter in predicate)
+            var Data = _dbContext.Set<T>().AsNoTracking();
+            foreach (var filter in predicate)
             {
                 Data = Data.WhereNullSafe(filter);
             }
-            var CountData= Data.Count();
+            var CountData = Data.Count();
             var result = await Data.Skip(Math.Max(pageNumber - 1, 0) * quantity).Take(quantity).ToListAsync();
-            return new Tuple<int, IList<TEntity>>(CountData, result);
+            return new Tuple<int, IList<T>>(CountData, result);
         }
 
-        public virtual TEntity Select(Expression<Func<TEntity, bool>> predicate)
+        public virtual T Select(Expression<Func<T, bool>> predicate)
         {
-            return DbSet.WhereNullSafe(predicate).FirstOrDefault();
+            return _dbContext.Set<T>().WhereNullSafe(predicate).FirstOrDefault();
         }
 
-        public TResult Select<TResult>(Expression<Func<TEntity, bool>> predicate, Expression<Func<TEntity, TResult>> properties)
+        public TResult Select<TResult>(Expression<Func<T, bool>> predicate, Expression<Func<T, TResult>> properties)
         {
-            return DbSet.WhereNullSafe(predicate).Select(properties).FirstOrDefault();
+            return _dbContext.Set<T>().WhereNullSafe(predicate).Select(properties).FirstOrDefault();
         }
 
-        public IList<TEntity> SelectList(Expression<Func<TEntity, bool>> predicate)
+        public IList<T> SelectList(Expression<Func<T, bool>> predicate)
         {
-            return DbSet.WhereNullSafe(predicate).ToList();
+            return _dbContext.Set<T>().WhereNullSafe(predicate).ToList();
         }
 
-        public IList<TResult> SelectList<TResult>(Expression<Func<TEntity, bool>> predicate, Expression<Func<TEntity, TResult>> properties)
+        public IList<TResult> SelectList<TResult>(Expression<Func<T, bool>> predicate, Expression<Func<T, TResult>> properties)
         {
-            return DbSet.WhereNullSafe(predicate).Select(properties).ToList();
+            return _dbContext.Set<T>().WhereNullSafe(predicate).Select(properties).ToList();
         }
 
-        public virtual bool Exists(Expression<Func<TEntity, bool>> predicate)
+        public virtual bool Exists(Expression<Func<T, bool>> predicate)
         {
-            return DbSet.Any(predicate);
+            return _dbContext.Set<T>().Any(predicate);
         }
 
-        public void Dispose()
-        {
-            _dbContext.Dispose();
-            GC.SuppressFinalize(this);
-        }
     }
 }

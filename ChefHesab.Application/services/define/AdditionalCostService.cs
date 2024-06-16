@@ -77,7 +77,7 @@ namespace ChefHesab.Application.services.define
                     return result;
                 }
                 var mapper = _mapper.Map<AdditionalCost>(additionalCost);
-                _unitOfWork.AdditionalCostRepository.Insert(mapper);
+              await  _unitOfWork.AdditionalCostRepository.Add(mapper);
                 await _unitOfWork.SaveAsync();
                 return result;
             }
@@ -99,7 +99,7 @@ namespace ChefHesab.Application.services.define
                     result.AddError("داده وارد شده تکراری می باشد");
                     return result;
                 }
-                var find = _unitOfWork.AdditionalCostRepository.SelectByKey(additionalCost.Id);
+                var find = _unitOfWork.AdditionalCostRepository.Where(a=>a.Id== additionalCost.Id).FirstOrDefault();
                 if (find == null)
                 {
                     result.AddError("داده مورد نظر حذف شده است");

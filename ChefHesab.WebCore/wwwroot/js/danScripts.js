@@ -86,47 +86,8 @@ function customDelete(e, formId, options) {
 }
 //custom validators
 jQuery(document).ready(function () {
-    jQuery.validator.unobtrusive.adapters.add('requiredwithinitialvalue',
-                                            ['initialvalue'],
-                                            function (options) {
-                                                // simply pass the options.params here       
-                                                options.rules['requiredwithinitialvalue'] = options.params;
-                                                options.messages['requiredwithinitialvalue'] = options.message;
-                                            });
-    jQuery.validator.addMethod('requiredwithinitialvalue',
-                                              function (value, element, params) {
-                                                  // params here will equal { param1: 'value1', param2: 'value2' } 
-                                                  var initial = params["initialvalue"];
-                                                  if (value == "") {
-                                                      return false;
-                                                  }
-                                                  if (value == null) {
-                                                      return false;
-                                                  }
-                                                  if (value == initial) {
-                                                      return false;
-                                                  }
-                                                  else {
-                                                      return true;
-                                                  }
-                                              });
-});
-///
-//color switcher script
-//$(function () {
-//    $("#custom").spectrum({
-//        showPalette: true,
-//        localStorageKey: "spectrum.homepage",
-//        showInitial: true,
-//        palette: [
-//        ],
-//        move: function (color) {
-//            var selectedColor = color.toHexString(); // #ff0000
-//            $('.sidebar').css('background-color', selectedColor);
 
-//        }
-//    });
-//});
+});
 function display_kendoui_grid_error(e) {
     if (e.errors) {
         if ((typeof e.errors) == 'string') {
@@ -152,53 +113,6 @@ function display_kendoui_grid_error(e) {
         alert('با عرض پوزش ،خطایی رخ داده است.لطفا دوباره تلاش نمایید.');
     }
 }
-
-function GetView(options) {
-    var defaults = {
-        getUrl: '/',
-        loginUrl: '/login',
-        errorHandler: null,
-        UpdateTargetId: ''
-    };
-    options = $.extend(defaults, options);
-    if (this.event)
-        this.event.preventDefault();
-    //در اينجا مي‌توان مثلا دكمه‌اي را غيرفعال كرد
-    if (options.beforePostHandler)
-        options.beforePostHandler(this);
-    showLoading();
-    //اطلاعات نبايد كش شوند
-    $.ajaxSetup({ cache: false });
-    $.ajax({
-        type: "GET",
-        url: options.getUrl,
-        data: null,
-        complete: function (xhr, status) {
-            var data = xhr.responseText;
-            if (xhr.status == 403) {
-                window.location = options.loginUrl; //در حالت لاگين نبودن شخص اجرا مي‌شود
-            }
-            else if (status === 'error' || !data) {
-                if (options.errorHandler)
-                    options.errorHandler(this);
-            }
-            else {
-                $("#" + options.UpdateTargetId).html(data);
-                $('form').removeData('validator');
-                $('form').removeData('unobtrusiveValidation');
-                $.validator.unobtrusive.parse('form');
-            }
-            hideLoading();
-        },
-        error: function () {
-            alert("خطایی رخ داده است");
-            if (options.errorHandler)
-                options.errorHandler(this);
-            hideLoading();
-        }
-    });
-};
-// ]]>
 
 function ShowNotifications(data, form, options) {
     //data = $.parseJSON(data);

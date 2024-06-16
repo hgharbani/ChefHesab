@@ -2,6 +2,7 @@
 using ChefHesab.Application.Interface.define;
 using ChefHesab.Data.Presentition.Context;
 using ChefHesab.Data.Presentition.Reositories.generic;
+using ChefHesab.Domain.Peresentition.IRepositories;
 using ChefHesab.Dto.define.FoodCategory;
 using ChefHesab.Dto.define.FoodStuff;
 using System;
@@ -9,10 +10,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static ChefHesab.Dto.define.FoodStuff.SnapFoodStufCategory;
+using ChefHesab.Dto.define.FoodStuff;
+using ChefHesab.Domain;
 
-namespace ChefHesab.Domain.Peresentition.IRepositories.define
-{
+namespace ChefHesab.Application.services.define
+{ 
     /// <summary>
     /// مواد اولیه
     /// </summary>
@@ -25,7 +27,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
             _unitOfWork = unitOfWork;
         }
        
-        public async Task<bool> AddFoodStuffFromSnap(Rootobject model,long categoryId)
+        public async Task<bool> AddFoodStuffFromSnap(SnapFoodStufCategory.Rootobject model,long categoryId)
         {
             try
             {
@@ -46,7 +48,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
                     listfood.Add(foodCategory);
                 }
                 var distinglist = listfood.DistinctBy(a => a.Title).ToList();
-                _unitOfWork.FoodStuffRepository.Insert(distinglist);
+               await _unitOfWork.FoodStuffRepository.AddRange(distinglist);
                 var idsave=await _unitOfWork.SaveAsync();
                 if (idsave > 0)
                 {

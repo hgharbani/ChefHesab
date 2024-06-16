@@ -61,6 +61,1898 @@
       "PackagePath": "staticwebassets\\css\\Bootstrap\\sprite_kpi_2x.png"
     },
     {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Black\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Black\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Black\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Black\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Black\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Black\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Black\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Black\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Black\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Black\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Black\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Black\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Black\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Black\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Black\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Black\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Black\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Black\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Black\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Black\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Black\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Black\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Black\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Black\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Black\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Black\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Black\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Black\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\BlueOpal\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\BlueOpal\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\BlueOpal\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\BlueOpal\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\BlueOpal\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\BlueOpal\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\BlueOpal\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\BlueOpal\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\BlueOpal\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\BlueOpal\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\BlueOpal\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\BlueOpal\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\BlueOpal\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\BlueOpal\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\BlueOpal\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\BlueOpal\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\BlueOpal\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\BlueOpal\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\BlueOpal\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\BlueOpal\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\BlueOpal\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\BlueOpal\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\BlueOpal\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\BlueOpal\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\BlueOpal\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\BlueOpal\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\BlueOpal\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\BlueOpal\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Bootstrap\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Bootstrap\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Bootstrap\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Bootstrap\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Bootstrap\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Bootstrap\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Bootstrap\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Bootstrap\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Bootstrap\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Bootstrap\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Bootstrap\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Bootstrap\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Bootstrap\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Bootstrap\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Bootstrap\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Bootstrap\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Bootstrap\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Bootstrap\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Bootstrap\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Bootstrap\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Bootstrap\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Bootstrap\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Bootstrap\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Bootstrap\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Bootstrap\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Bootstrap\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Bootstrap\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Bootstrap\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Default\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Default\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Default\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Default\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Default\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Default\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Default\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Default\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Default\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Default\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Default\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Default\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Default\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Default\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Default\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Default\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Default\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Default\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Default\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Default\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Default\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Default\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Default\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Default\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Default\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Default\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Default\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Default\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Fiori\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Fiori\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Fiori\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Fiori\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Fiori\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Fiori\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Fiori\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Fiori\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Fiori\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Fiori\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Fiori\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Fiori\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Fiori\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Fiori\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Fiori\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Fiori\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Fiori\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Fiori\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Fiori\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Fiori\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Fiori\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Fiori\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Fiori\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Fiori\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Fiori\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Fiori\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Fiori\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Fiori\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Flat\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Flat\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Flat\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Flat\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Flat\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Flat\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Flat\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Flat\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Flat\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Flat\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Flat\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Flat\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Flat\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Flat\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Flat\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Flat\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Flat\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Flat\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Flat\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Flat\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Flat\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Flat\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Flat\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Flat\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Flat\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Flat\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Flat\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Flat\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\HighContrast\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\HighContrast\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\HighContrast\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\HighContrast\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\HighContrast\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\HighContrast\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\HighContrast\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\HighContrast\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\HighContrast\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\HighContrast\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\HighContrast\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\HighContrast\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\HighContrast\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\HighContrast\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\HighContrast\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\HighContrast\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\HighContrast\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\HighContrast\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\HighContrast\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\HighContrast\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\HighContrast\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\HighContrast\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\HighContrast\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\HighContrast\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\HighContrast\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\HighContrast\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\HighContrast\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\HighContrast\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MaterialBlack\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MaterialBlack\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MaterialBlack\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MaterialBlack\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MaterialBlack\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MaterialBlack\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MaterialBlack\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MaterialBlack\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MaterialBlack\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MaterialBlack\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MaterialBlack\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MaterialBlack\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MaterialBlack\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MaterialBlack\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MaterialBlack\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MaterialBlack\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MaterialBlack\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MaterialBlack\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MaterialBlack\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MaterialBlack\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MaterialBlack\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MaterialBlack\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MaterialBlack\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MaterialBlack\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MaterialBlack\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MaterialBlack\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MaterialBlack\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MaterialBlack\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Material\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Material\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Material\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Material\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Material\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Material\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Material\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Material\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Material\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Material\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Material\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Material\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Material\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Material\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Material\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Material\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Material\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Material\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Material\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Material\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Material\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Material\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Material\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Material\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Material\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Material\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Material\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Material\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MetroBlack\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MetroBlack\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MetroBlack\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MetroBlack\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MetroBlack\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MetroBlack\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MetroBlack\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MetroBlack\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MetroBlack\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MetroBlack\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MetroBlack\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MetroBlack\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MetroBlack\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MetroBlack\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MetroBlack\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MetroBlack\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MetroBlack\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MetroBlack\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MetroBlack\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MetroBlack\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MetroBlack\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MetroBlack\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MetroBlack\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MetroBlack\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MetroBlack\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MetroBlack\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\MetroBlack\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\MetroBlack\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Metro\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Metro\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Metro\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Metro\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Metro\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Metro\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Metro\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Metro\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Metro\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Metro\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Metro\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Metro\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Metro\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Metro\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Metro\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Metro\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Metro\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Metro\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Metro\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Metro\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Metro\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Metro\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Metro\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Metro\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Metro\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Metro\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Metro\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Metro\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Moonlight\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Moonlight\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Moonlight\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Moonlight\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Moonlight\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Moonlight\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Moonlight\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Moonlight\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Moonlight\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Moonlight\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Moonlight\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Moonlight\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Moonlight\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Moonlight\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Moonlight\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Moonlight\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Moonlight\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Moonlight\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Moonlight\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Moonlight\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Moonlight\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Moonlight\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Moonlight\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Moonlight\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Moonlight\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Moonlight\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Moonlight\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Moonlight\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Nova\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Nova\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Nova\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Nova\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Nova\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Nova\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Nova\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Nova\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Nova\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Nova\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Nova\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Nova\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Nova\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Nova\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Nova\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Nova\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Nova\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Nova\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Nova\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Nova\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Nova\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Nova\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Nova\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Nova\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Nova\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Nova\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Nova\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Nova\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Office365\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Office365\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Office365\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Office365\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Office365\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Office365\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Office365\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Office365\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Office365\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Office365\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Office365\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Office365\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Office365\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Office365\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Office365\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Office365\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Office365\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Office365\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Office365\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Office365\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Office365\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Office365\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Office365\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Office365\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Office365\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Office365\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Office365\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Office365\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Silver\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Silver\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Silver\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Silver\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Silver\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Silver\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Silver\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Silver\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Silver\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Silver\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Silver\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Silver\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Silver\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Silver\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Silver\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Silver\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Silver\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Silver\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Silver\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Silver\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Silver\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Silver\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Silver\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Silver\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Silver\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Silver\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Silver\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Silver\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Uniform\\editor.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Uniform\\editor.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Uniform\\imagebrowser.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Uniform\\imagebrowser.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Uniform\\indeterminate.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Uniform\\indeterminate.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Uniform\\loading-image.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Uniform\\loading-image.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Uniform\\loading.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Uniform\\loading.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Uniform\\loading_2x.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Uniform\\loading_2x.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Uniform\\markers.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Uniform\\markers.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Uniform\\markers_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Uniform\\markers_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Uniform\\slider-h.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Uniform\\slider-h.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Uniform\\slider-v.gif",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Uniform\\slider-v.gif"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Uniform\\sprite.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Uniform\\sprite.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Uniform\\sprite_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Uniform\\sprite_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Uniform\\sprite_kpi.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Uniform\\sprite_kpi.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\Uniform\\sprite_kpi_2x.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\Uniform\\sprite_kpi_2x.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSans-Bold.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSans-Bold.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSans-BoldOblique.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSans-BoldOblique.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSans-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSans-ExtraLight.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSans-Oblique.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSans-Oblique.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSans.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSans.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSansMono-Bold.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSansMono-Bold.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSansMono-BoldOblique.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSansMono-BoldOblique.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSansMono-Oblique.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSansMono-Oblique.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSansMono.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSansMono.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSerif-Bold.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSerif-Bold.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSerif-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSerif-BoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSerif-Italic.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSerif-Italic.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSerif.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\DejaVu\\DejaVuSerif.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\DejaVu\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\DejaVu\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\glyphs\\KendoUIGlyphs.eot",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\glyphs\\KendoUIGlyphs.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\glyphs\\KendoUIGlyphs.svg",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\glyphs\\KendoUIGlyphs.svg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\glyphs\\KendoUIGlyphs.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\glyphs\\KendoUIGlyphs.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\glyphs\\KendoUIGlyphs.woff",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\glyphs\\KendoUIGlyphs.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\glyphs\\WebComponentsIcons.eot",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\glyphs\\WebComponentsIcons.eot"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\glyphs\\WebComponentsIcons.svg",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\glyphs\\WebComponentsIcons.svg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\glyphs\\WebComponentsIcons.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\glyphs\\WebComponentsIcons.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\fonts\\glyphs\\WebComponentsIcons.woff",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\fonts\\glyphs\\WebComponentsIcons.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\images\\back.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\images\\back.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\images\\kendoui.svg",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\images\\kendoui.svg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\images\\kendoui.ttf",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\images\\kendoui.ttf"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\images\\kendoui.woff",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\images\\kendoui.woff"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\images\\wp8_icons.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\images\\wp8_icons.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\images\\wp8_inverseicons.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\images\\wp8_inverseicons.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.black.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.black.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.black.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.black.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.black.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.black.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.black.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.black.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.blueopal.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.blueopal.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.blueopal.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.blueopal.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.blueopal.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.blueopal.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.blueopal.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.blueopal.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap-main-dark.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap-main-dark.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap-main-dark.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap-main-dark.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap-main.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap-main.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap-main.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap-main.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap-nordic.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap-nordic.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap-nordic.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap-nordic.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap-urban.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap-urban.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap-urban.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap-urban.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap-v4.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap-v4.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap-v4.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap-v4.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap-vintage.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap-vintage.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap-vintage.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap-vintage.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.bootstrap.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.bootstrap.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.classic-main-dark.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.classic-main-dark.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.classic-main-dark.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.classic-main-dark.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.classic-main.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.classic-main.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.classic-main.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.classic-main.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.classic-opal.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.classic-opal.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.classic-opal.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.classic-opal.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.classic-silver.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.classic-silver.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.classic-silver.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.classic-silver.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.common-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.common-bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.common-bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.common-bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.common-fiori.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.common-fiori.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.common-fiori.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.common-fiori.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.common-material.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.common-material.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.common-material.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.common-material.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.common-nova.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.common-nova.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.common-nova.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.common-nova.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.common-office365.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.common-office365.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.common-office365.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.common-office365.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.common.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.common.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.common.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.common.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.black.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.black.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.black.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.black.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.blueopal.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.blueopal.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.blueopal.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.blueopal.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.default.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.default.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.default.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.default.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.fiori.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.fiori.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.fiori.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.fiori.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.flat.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.flat.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.flat.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.flat.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.highcontrast.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.highcontrast.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.highcontrast.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.highcontrast.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.material.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.material.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.material.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.material.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.materialblack.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.materialblack.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.materialblack.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.materialblack.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.metro.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.metro.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.metro.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.metro.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.metroblack.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.metroblack.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.metroblack.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.metroblack.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.moonlight.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.moonlight.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.moonlight.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.moonlight.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.nova.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.nova.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.nova.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.nova.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.office365.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.office365.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.office365.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.office365.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.silver.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.silver.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.silver.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.silver.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.uniform.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.uniform.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.dataviz.uniform.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.dataviz.uniform.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default-main-dark.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default-main-dark.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default-main-dark.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default-main-dark.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default-main.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default-main.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default-main.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default-main.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default-nordic.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default-nordic.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default-nordic.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default-nordic.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default-ocean-blue.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default-ocean-blue.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default-ocean-blue.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default-ocean-blue.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default-purple.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default-purple.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default-purple.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default-purple.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default-turquoise.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default-turquoise.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default-turquoise.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default-turquoise.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default-v2.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default-v2.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default-v2.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default-v2.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.default.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.default.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.fiori.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.fiori.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.fiori.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.fiori.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.fiori.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.fiori.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.fiori.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.fiori.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.flat.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.flat.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.flat.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.flat.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.flat.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.flat.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.flat.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.flat.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.fluent-main.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.fluent-main.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.fluent-main.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.fluent-main.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.highcontrast.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.highcontrast.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.highcontrast.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.highcontrast.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.highcontrast.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.highcontrast.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.highcontrast.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.highcontrast.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material-arctic.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material-arctic.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material-arctic.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material-arctic.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material-lime-dark.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material-lime-dark.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material-lime-dark.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material-lime-dark.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material-main-dark.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material-main-dark.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material-main-dark.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material-main-dark.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material-main.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material-main.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material-main.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material-main.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material-nova.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material-nova.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material-nova.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material-nova.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material-v2.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material-v2.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material-v2.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material-v2.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.material.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.material.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.materialblack.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.materialblack.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.materialblack.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.materialblack.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.materialblack.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.materialblack.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.materialblack.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.materialblack.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.metro.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.metro.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.metro.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.metro.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.metro.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.metro.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.metro.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.metro.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.metroblack.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.metroblack.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.metroblack.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.metroblack.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.metroblack.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.metroblack.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.metroblack.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.metroblack.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.all.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.all.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.all.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.all.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.android.dark.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.android.dark.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.android.dark.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.android.dark.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.android.light.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.android.light.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.android.light.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.android.light.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.blackberry.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.blackberry.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.blackberry.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.blackberry.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.common.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.common.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.common.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.common.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.fiori.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.fiori.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.fiori.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.fiori.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.flat.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.flat.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.flat.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.flat.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.ios.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.ios.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.ios.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.ios.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.material.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.material.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.material.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.material.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.meego.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.meego.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.meego.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.meego.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.nova.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.nova.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.nova.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.nova.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.office365.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.office365.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.office365.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.office365.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.wp8.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.wp8.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.mobile.wp8.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.mobile.wp8.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.moonlight.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.moonlight.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.moonlight.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.moonlight.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.moonlight.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.moonlight.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.moonlight.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.moonlight.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.nova.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.nova.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.nova.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.nova.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.nova.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.nova.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.nova.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.nova.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.office365.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.office365.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.office365.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.office365.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.office365.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.office365.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.office365.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.office365.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.rtl.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.rtl.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.silver.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.silver.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.silver.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.silver.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.silver.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.silver.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.silver.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.silver.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.uniform.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.uniform.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.uniform.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.uniform.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.uniform.mobile.min.css",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.uniform.mobile.min.css"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\kendo.uniform.mobile.min.css.map",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\kendo.uniform.mobile.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\brushed-metal.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\brushed-metal.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\dots1.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\dots1.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\dots10.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\dots10.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\dots11.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\dots11.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\dots12.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\dots12.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\dots13.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\dots13.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\dots2.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\dots2.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\dots3.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\dots3.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\dots4.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\dots4.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\dots5.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\dots5.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\dots6.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\dots6.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\dots7.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\dots7.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\dots8.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\dots8.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\dots9.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\dots9.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\glass-lighter.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\glass-lighter.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\glass.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\glass.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\highlight.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\highlight.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\hsv-gradient.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\hsv-gradient.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\hue.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\hue.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\image-default.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\image-default.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\leather1.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\leather1.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\leather2.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\leather2.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\noise.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\noise.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\stripe1.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\stripe1.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\stripe2.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\stripe2.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\stripe3.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\stripe3.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\stripe4.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\stripe4.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\stripe5.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\stripe5.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\stripe6.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\stripe6.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\transparency-reversed.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\transparency-reversed.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\transparency.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\transparency.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\NewFolder\\textures\\transtexture.png",
+      "PackagePath": "staticwebassets\\css\\NewFolder\\textures\\transtexture.png"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\flatpickr.min.css",
+      "PackagePath": "staticwebassets\\css\\flatpickr.min.css"
+    },
+    {
       "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\fonts\\DejaVu\\DejaVuSans-Bold.ttf",
       "PackagePath": "staticwebassets\\css\\fonts\\DejaVu\\DejaVuSans-Bold.ttf"
     },
@@ -211,6 +2103,10 @@
     {
       "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\kendo.rtl.min.css.map",
       "PackagePath": "staticwebassets\\css\\kendo.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\persianDatepicker-default.css",
+      "PackagePath": "staticwebassets\\css\\persianDatepicker-default.css"
     },
     {
       "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\css\\site.css",
@@ -8425,6 +10321,14 @@
       "PackagePath": "staticwebassets\\js\\fa.js"
     },
     {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\flatpickr.js",
+      "PackagePath": "staticwebassets\\js\\flatpickr.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\flatpickr.min.js",
+      "PackagePath": "staticwebassets\\js\\flatpickr.min.js"
+    },
+    {
       "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\jquery.PostMvcAjax.js",
       "PackagePath": "staticwebassets\\js\\jquery.PostMvcAjax.js"
     },
@@ -9223,6 +11127,18 @@
     {
       "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\messages\\kendo.messages.zh-TW.min.js.map",
       "PackagePath": "staticwebassets\\js\\messages\\kendo.messages.zh-TW.min.js.map"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\persian-tools.umd.js",
+      "PackagePath": "staticwebassets\\js\\persian-tools.umd.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\persianDatepicker.js",
+      "PackagePath": "staticwebassets\\js\\persianDatepicker.js"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\persianDatepicker.min.js",
+      "PackagePath": "staticwebassets\\js\\persianDatepicker.min.js"
     },
     {
       "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\plugins-init\\bs-daterange-picker-init.js",

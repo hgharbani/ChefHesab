@@ -9,7 +9,7 @@ using ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository;
 
 namespace ChefHesab.Domain.Peresentition.IRepositories
 {
-    public interface IAuthenticateRepository : IBaseGenericRepository<Authenticate>
+    public interface IAuthenticateRepository : IGenericRepository<Authenticate>
     {
        
     }

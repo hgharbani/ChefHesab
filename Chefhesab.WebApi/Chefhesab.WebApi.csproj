@@ -10,6 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Autofac" Version="7.1.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="DNTCommon.Web.Core" Version="5.3.3" />
     <PackageReference Include="DNTPersianUtils.Core" Version="6.3.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
       <PrivateAssets>all</PrivateAssets>

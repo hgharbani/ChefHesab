@@ -9,7 +9,7 @@ using ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository;
 
 namespace ChefHesab.Domain.Peresentition.IRepositories
 {
-    public interface IPersonalRepository : IBaseGenericRepository<Personal>
+    public interface IPersonalRepository : IGenericRepository<Personal>
     {
         Task<List<Personal>> GetAllAsync();
     }

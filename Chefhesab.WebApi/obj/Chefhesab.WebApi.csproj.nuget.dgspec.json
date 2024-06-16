@@ -101,6 +101,10 @@
             "Microsoft.Extensions.Logging": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "wilx.Kendo.DynamicLinq.Core": {
+              "target": "Package",
+              "version": "[2.1.2, )"
             }
           },
           "imports": [
@@ -607,6 +611,10 @@
             "Autofac.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "DNTCommon.Web.Core": {
+              "target": "Package",
+              "version": "[5.3.3, )"
             },
             "DNTPersianUtils.Core": {
               "target": "Package",

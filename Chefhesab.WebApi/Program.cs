@@ -12,10 +12,28 @@ using ChefHesab.Application;
 using ChefHesab.Data;
 using ChefHesab.Application.services.define;
 using ChefHesab.Application.Interface.define;
+using System.Text.Json;
+using DNTCommon.Web.Core;
+using ChefHesab.Share.ModelBinder;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options =>
+{
+    options.SerializerOptions.PropertyNameCaseInsensitive = false;
+    options.SerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+});
+
+
+builder.Services.AddMvcCore(options => {
+   // options.UsePersianDateModelBinder();
+
+    options.ModelBinderProviders.Insert(0, new PersianDateModelBinderProvider());
+    options.UseYeKeModelBinder();
+    });
+builder.Services.AddControllers().AddJsonOptions(options =>
+options.JsonSerializerOptions.PropertyNamingPolicy = null);
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<IPersonalService, PersonalService>();
@@ -43,7 +61,9 @@ builder.Host.ConfigureContainer<ContainerBuilder>(autofacBuilder =>
     autofacBuilder
         .RegisterType<ChefHesabContext>()
         .InstancePerLifetimeScope();
-    
+
+
+
 });
 builder.Services.AddCors();
 builder.Services.AddData();

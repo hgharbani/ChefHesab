@@ -1,66 +1,139 @@
 ﻿@model List<FoodStuffVM>
 
-<div class="grid grid-col-1">
-    <div id="SearchBox" class="columns-1">
-        <div class="w-full max-w-md p-2 mx-auto bg-white rounded-2xl">
-         
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header mb-0" >
-                        <button class="accordion-button relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none" type="button" >
-                        <button class="accordion-button relative flex items-center w-full py-4 px-5 text-base text-gray-800 text-left bg-white border-0 rounded-none transition focus:outline-none" type="button" >
-                            اکوردیون آیتم #1
-                            <svg class="accordion-icon ..."
-                                 id="accordionIcon1"> </svg>
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-content show">
-                        <div class="accordion-body py-4 px-5">
-                            @foreach (var item in Model)
-                            {
-                           <label class="mb-3 form-control form-control-lg">  @item.Title</label>  
-                            }
-                        </div>
-                    </div>
-                </div>
-                <!-- ... سایر آیتم‌های اکوردیون ... -->
-            </div>
-        </div>
 
-    </div>
+<div class="grid grid-col-1">
+   
     <div class="mt-2 k-rtl" id="GridBox">
         <div id="CompanyGrid"></div>
     </div>
 </div>
+<div id="window" class="k-rtl">
+</div>
 @section scripts {
     <script>
+  
         $(document).ready(function (e) {
-            const accordionBtns = document.querySelectorAll(".accordion-button");
-            const accordionIcons = document.querySelectorAll(".accordion-icon");
-            const accordionContents = document.querySelectorAll(".accordion-content");
-            accordionBtns.forEach((btn, index) => {
-                btn.addEventListener("click", () => {
-                    toggleAccordion(index,this);
-                });
+            bindCompanyGrids();
+            $("#CompanyGrid").find(".k-grid-add").click(function (e) {
+
+                ShowPopup("#window", "اضافه کردن شرکت جدید", "600px", "auto", refreshGrid)
+            });
+
+        });
+  
+       
+        function bindCompanyGrids() {
+            var record = 0;
+
+            $("#CompanyGrid").kendoGrid({
+
+                toolbar: ["create","excel", "pdf"],
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "/Define/Companies/GetAllByKendoFilter",
+                            type: "POST",
+                            dataType: "json",
+                            contentType: "application/json",
+                        },
+
+                        parameterMap: function (data, operation) {
+                            if (operation != "read") {
+                                return data;
+                            } else {
+                                return JSON.stringify(data);
+                            }
+                        }
+                    },
+                    pageSize: 20,
+                    autoSync: true,
+                    schema: {
+                        data: "Data",
+                        model: {
+                            id: "Id",
+                            fields: {
+                                Id: { editable: false, nullable: true },
+                                CompanyName: { type: "string", editable: false },
+                                AgreementPeriod: { type: "number", editable: false },
+                                AgreementDate: { type: "date" },
+                                ExpirationDate: { type: "date", editable: false },
+                                AgreementNumber: { type: "number" },
+
+                            }
+                        }
+                    }
+                },
+                columnMenu: {
+                    filterable: true
+                },
+
+                editable: false,
+                dataBinding: function () {
+                    record = (this.dataSource.page() - 1) * this.dataSource.pageSize();
+                },
+                pageable: {
+                    pageSizes: [10, 25, 50, 100],
+                    refresh: true,
+                    messages: {
+                        display: "{0} تا {1} از {2} رکورد",
+                        //{0} is the index of the first record on the page, {1} - index of the last record on the page, {2} is the total amount of records
+                        empty: "رکوردی برای نمایش وجود ندارد.",
+                        page: "صفحه",
+                        of: "از {0}", //{0} is total amount of pages
+                        itemsPerPage: "رکورد در صفحه",
+                        first: "صفحه نخست",
+                        previous: "صفحه قبل",
+                        next: "صفحه بعد",
+                        last: "صفحه آخر",
+                        refresh: "دوباره سازی"
+                    }
+                },
+                sortable: true,
+                navigatable: true,
+                resizable: true,
+                reorderable: true,
+
+                filterable: true,
+                
+                pdfExport: function (e) {
+                    const width = e.sender.wrapper.width();
+                    e.sender.wrapperClone.width(width);
+                    e.sender.wrapperClone.addClass('k-clone');
+                },
+                columns: [{
+                    field: "AgreementNumber",
+                    title: "شماره قرار داد",
+                    width: 105
+                }, {
+                    field: "CompanyName",
+                    title: "نام شرکت",
+                    width: 300
+                }, {
+                    field: "AgreementDate",
+                    title: "تاریخ قرارداد",
+                    template: kendo.template("#= convertToJalaliDate(AgreementDate)#"),
+                    width: 105
+                }, {
+                    field: "ExpirationDate",
+                    title: "تاریخ پایان قرارداد",
+                    template: kendo.template("#= convertToJalaliDate(ExpirationDate)#"),
+
+                    width: 105
+                },
+                {
+                    field: "AgreementPeriod",
+                    title: "مدت  قرارداد",
+                    width: 105
+                }
+                ],
             });
 
 
-            function toggleAccordion(index,btn) {
-                accordionIcons.forEach((icon, i) => {
-                    if (i === index) {
-                        icon.classList.toggle("rotate-45");
-                    } else {
-                        icon.classList.remove("rotate-45");
-                    }
-                });
-                accordionContents.forEach((content, i) => {
-                    if (i === index) {
-                        content.classList.toggle("hidden");
-                    } else {
-                        content.classList.add("hidden");
-                    }
-                });
-            }
-        });
+
+        }
+
+        function refreshGrid() {
+            $("#CompanyGrid").data("kendoGrid").dataSource.read();
+        }
     </script>
 }

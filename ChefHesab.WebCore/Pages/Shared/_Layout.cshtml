@@ -18,7 +18,7 @@
     <meta property="og:image" content="../social-image.png">
     <meta name="format-detection" content="telephone=no">
 
-    <meta name="twitter:title" content="جابیک  ، قالب ادمین مدیریتی کاریابی سی اس اس تیلوند">
+    <meta name="twitter:title" content="حساب سرآشپز، مجموعه ای برای مدیریت مناقصات رستورانها">
     <meta name="twitter:description" content="chefhesab,مدیریت مناقصات حساب سر آشسپز">
     <meta name="twitter:image" content="../social-image.png">
     <meta name="twitter:card" content="summary_large_image">
@@ -37,9 +37,10 @@
     <!-- KendoJquery -->
     <link href="/css/kendo.common.min.css" rel="stylesheet">
     <link href="/css/kendo.rtl.min.css" rel="stylesheet">
-    <link href="/css/kendo.bootstrap.min.css" rel="stylesheet">
-    <link href="/css/kendo.bootstrap.mobile.min.css" rel="stylesheet">
 
+    <link href="/css/kendo.common-bootstrap.min.css" rel="stylesheet">
+    <link href="/css/newfolder/kendo.bootstrap-urban.min.css" rel="stylesheet">
+    <link href="/css/kendo.bootstrap.mobile.min.css" rel="stylesheet">
 
     <!-- ICONS -->
     <link rel="stylesheet" href="/icons/fontawesome/css/all.min.css">
@@ -49,14 +50,14 @@
     <link rel="stylesheet" href="/icons/themify-icons/css/themify-icons.css">
 
     <!-- NICE SELECT -->
-    <link href="/vendor/niceselect/css/nice-select.css" rel="stylesheet">
-    <link href="/vendor/flatpickr-master/css/flatpicker.css" rel="stylesheet">
+    <link href="/css/persiandatepicker-default.css" rel="stylesheet" />
 
     <!-- STYLE CSS -->
+    <link href="https://unpkg.com/tailwindcss@@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="/css/style.css" rel="stylesheet">
 
 </head>
-<body class="selection:text-white selection:bg-primary" data-typography="poppins" data-theme-version="light" data-layout="vertical" data-nav-headerbg="color_1" data-headerbg="color_1" data-sidebar-style="full" data-sidebarbg="color_1" data-sidebar-position="fixed" data-header-position="fixed" data-container="wide" direction="rtl" data-primary="color_1">
+<body class="" data-typography="poppins" data-theme-version="light" data-layout="vertical" data-nav-headerbg="color_1" data-headerbg="color_1" data-sidebar-style="full" data-sidebarbg="color_1" data-sidebar-position="fixed" data-header-position="fixed" data-container="wide" direction="rtl" data-primary="color_1">
 
     <!-- Preloader start  -->
     <div  id="preloader" class="bg-card h-full fixed z-[99999] w-full items-center justify-center" style="display: none;">
@@ -243,21 +244,38 @@
     @*   <script src="/js/dashboard/dashboard-1.js"></script> *@
 
 
-    <script src="/vendor/flatpickr-master/js/flatpickr.js"></script>
+    <script src="~/js/flatpickr.js"></script>
+    <script src="/js/persiandatepicker.js"></script>
     <script src="/js/dlabnav-init.js"></script>
     <script src="/js/custom.min.js"></script>
     
     <script src="/js/demo.js"></script>
 
     <script src="/js/jszip.min.js"></script>
+
+    <script src="/js/plugins-init/jquery.validate-init.js"></script>
+    <script src="/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="/lib/jquery-validation/dist/jquery.validate.js"></script>
     <script src="/js/kendo.all.min.js"></script>
-    @*    <script src="/js/danScripts.js"></script> *@
+    <script src="/js/cultures/kendo.culture.fa-ir.min.js"></script>
+    <script src="/js/messages/kendo.messages.fa-ir.min.js"></script>
+    
     <script src="/js/jquery.PostMvcAjax.js"></script>
-
+    <script src="/js/persian-tools.umd.js"></script>
+    <script src="https://unpkg.com/jalaali-js/dist/jalaali.js"></script>
+    <script src="https://unpkg.com/jalaali-js/dist/jalaali.min.js"></script>
+    <script src="/vendor/moment/moment.min.js"></script>
+    <script src="/vendor/moment/moment-jalaali.js"></script>
+    <script src="/js/site.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        kendo.culture("fa-ir");
+    </script>
+    <script src="/js/danScripts.js"></script>
     @RenderSection("Scripts",false)
- 
-   
 
+    
+  
 
 </body>
 

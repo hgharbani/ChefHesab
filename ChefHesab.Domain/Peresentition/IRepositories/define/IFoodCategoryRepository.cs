@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ChefHesab.Domain.Peresentition.IRepositories.define
 {
-    public interface IFoodCategoryRepository:IBaseGenericRepository<FoodCategory>
+    public interface IFoodCategoryRepository: IGenericRepository<FoodCategory>
     {
         IQueryable<FoodCategory> GetAllQueryble();
     }
