@@ -1,5 +1,6 @@
 ﻿using ChefHesab.Data.Presentition.Context;
 using ChefHesab.Data.Presentition.Reositories.generic;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,5 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.food
         }
 
 
-   
     }
 }

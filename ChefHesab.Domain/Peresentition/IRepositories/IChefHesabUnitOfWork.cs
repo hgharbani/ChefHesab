@@ -15,9 +15,11 @@ namespace ChefHesab.Domain.Peresentition.IRepositories
         IContractingCompanyRepository ContractingCompanyRepository { get; }
         IFoodCategoryRepository FoodCategoryRepository { get; }
         IFoodStuffRepository FoodStuffRepository { get; }
+        IStuffPriceRepository StuffPriceRepository { get; }
         IIngredinsFoodRepository IngredinsFoodRepository { get; }
         IAuthenticateRepository AuthenticateRepository { get; }
         IAdditionalCostFoodRepository AdditionalCostFoodRepository { get; }
+        IFoodProviderRepository FoodProviderRepository { get; }
     }
     
 }

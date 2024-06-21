@@ -4,8 +4,8 @@
 // Write your JavaScript code.
 function convertToJalaliDate(date) {
     if (date == null) return "";
-    var persianDate = new Intl.DateTimeFormat('fa-IR').format(date);
-    return persianDate
+    var persianDate = new Intl.DateTimeFormat('fa-IR').format(new Date(date));
+    return PersianTools.digitsFaToEn(persianDate)
 }
 
 
@@ -31,12 +31,12 @@ function toggleAccordion(index, btn) {
 
 }
 
-function ShowPopup(windowid, title = '', width = '500px', height = 'auto', closeFunction = null) {
+function ShowPopup1(windowid,url, title = '', width = '500px', height = 'auto', closeFunction = null) {
     var myWindow = $(windowid);
 
     myWindow.empty()
     $.ajax({
-        url: "/Define/Companies/Create",
+        url: url ,
         beforeSend: function (xhr) {
 
         }

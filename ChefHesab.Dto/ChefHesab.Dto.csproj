@@ -14,4 +14,8 @@
     <PackageReference Include="DNTPersianUtils.Core" Version="6.3.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChefHesab.Share\ChefHesab.Share.csproj" />
+  </ItemGroup>
+
 </Project>

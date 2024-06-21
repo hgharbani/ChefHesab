@@ -11,15 +11,18 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
 {
     public class FoodCategoryRepository : GenericRepository<FoodCategory>, IFoodCategoryRepository
     {
+
         private readonly ChefHesabContext _context;
         public FoodCategoryRepository(ChefHesabContext dbContext) : base(dbContext)
         {
             _context = dbContext;
         }
 
+
         public IQueryable<FoodCategory> GetAllQueryble()
         {
-            return _context.FoodCategories.AsQueryable();
+            return GetAllQueryable();
         }
+      
     }
 }

@@ -3245,6 +3245,10 @@
       "PackagePath": "staticwebassets\\images\\card\\3.png"
     },
     {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\cheflogo.png",
+      "PackagePath": "staticwebassets\\images\\cheflogo.png"
+    },
+    {
       "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\demo\\pic1.JPG",
       "PackagePath": "staticwebassets\\images\\demo\\pic1.JPG"
     },
@@ -3447,6 +3451,10 @@
     {
       "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\tab\\4.jpg",
       "PackagePath": "staticwebassets\\images\\tab\\4.jpg"
+    },
+    {
+      "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\KendoObject.js",
+      "PackagePath": "staticwebassets\\js\\KendoObject.js"
     },
     {
       "Id": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\cultures\\kendo.culture.aa-DJ.min.js",

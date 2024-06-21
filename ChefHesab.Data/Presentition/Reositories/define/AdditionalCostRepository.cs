@@ -17,20 +17,21 @@ namespace ChefHesab.Domain.Peresentition.IRepositories
     /// </summary>
     public class AdditionalCostRepository : GenericRepository<AdditionalCost>, IAdditionalCostRepository
     {
+
         private readonly ChefHesabContext _context;
         public AdditionalCostRepository(ChefHesabContext dbContext) : base(dbContext)
         {
             _context = dbContext;
         }
 
-       
+
         public IQueryable<AdditionalCost> GetAll()
         {
-            return _context.AdditionalCosts.AsQueryable();
+            return GetAllQueryable();
         }
         public IQueryable<AdditionalCost> GetAllAsNoTracking()
         {
-            return _context.AdditionalCosts.AsQueryable().AsNoTracking();
+            return GetAllQueryable().AsNoTracking();
         }
        
     }

@@ -38,28 +38,37 @@ namespace ChefHesab.Application.services.define
         {
             if (string.IsNullOrEmpty(contractingCompany.Id.ToString()))
             {
-                return false;
+                return await _unitOfWork.ContractingCompanyRepository.Any(a => a.Id != contractingCompany.Id && a.CompanyName == contractingCompany.CompanyName &&
+                (a.AgreementDate <= contractingCompany.AgreementDate && a.ExpirationDate >= contractingCompany.AgreementDate)
+                ||
+                (a.AgreementDate <= contractingCompany.ExpirationDate && a.ExpirationDate >= contractingCompany.ExpirationDate)
+                );
 
             }
             else
             {
-                return false;
+                return await _unitOfWork.ContractingCompanyRepository.Any(a =>  a.CompanyName == contractingCompany.CompanyName &&
+                ((a.AgreementDate <= contractingCompany.AgreementDate && a.ExpirationDate >= contractingCompany.AgreementDate)
+                ||
+                (a.AgreementDate <= contractingCompany.ExpirationDate && a.ExpirationDate >= contractingCompany.ExpirationDate))
+                );
             }
 
         }
         public List<ContractingCompanyVM> GetContractingCompany()
         {
-          
-            return _unitOfWork.ContractingCompanyRepository.SelectAll().Select(a=>_mapper.Map<ContractingCompanyVM>(a)).ToList();
+
+            return _unitOfWork.ContractingCompanyRepository.SelectAll().Select(a => _mapper.Map<ContractingCompanyVM>(a)).ToList();
         }
 
-        public ContractingCompanyVM GetOne(Guid contractingId){
-            var result= _unitOfWork.ContractingCompanyRepository.Where(a => a.Id == contractingId).Select(a => _mapper.Map<ContractingCompanyVM>(a)).FirstOrDefault();
+        public ContractingCompanyVM GetOne(Guid contractingId)
+        {
+            var result = _unitOfWork.ContractingCompanyRepository.Where(a => a.Id == contractingId).Select(a => _mapper.Map<ContractingCompanyVM>(a)).FirstOrDefault();
             return result;
         }
         public dynamic GetAllByKendoFilter(Request request)
         {
-            var data = _unitOfWork.ContractingCompanyRepository.GetAllAsNoTracking();
+            var data = _unitOfWork.ContractingCompanyRepository.GetAllAsNoTracking().Where(a=>a.IsActive.Value==true);
             int total = data.Count();
             IList resultData;
             bool isGrouped = false;
@@ -109,8 +118,8 @@ namespace ChefHesab.Application.services.define
             }
 
 
-           // var result = await _unitOfWork.ContractingCompanyRepository.SelectDataFilteredByPage(contractingCompany.pageNumber, contractingCompany.pageSize, filters);
-           // var mappedResult = result.Item2.Select(a => _mapper.Map<ContractingCompanyVM>(a)).ToList();
+            // var result = await _unitOfWork.ContractingCompanyRepository.SelectDataFilteredByPage(contractingCompany.pageNumber, contractingCompany.pageSize, filters);
+            // var mappedResult = result.Item2.Select(a => _mapper.Map<ContractingCompanyVM>(a)).ToList();
             return new Tuple<List<ContractingCompanyVM>, int>(new List<ContractingCompanyVM>(), 0);
 
         }
@@ -129,8 +138,9 @@ namespace ChefHesab.Application.services.define
                 var mapper = _mapper.Map<ContractingCompany>(model);
                 mapper.PersonalId = new Guid("FC769A7E-6A78-42CE-B7F9-0E1619CD5EFB");
                 mapper.AgreementPeriod = mapper.ExpirationDate.Value.Date.Subtract(mapper.AgreementDate.Value.Date).Days;
+                mapper.IsActive = true;
                 _unitOfWork.ContractingCompanyRepository.Add(mapper);
-            
+
                 var idsave = await _unitOfWork.SaveAsync();
                 return result;
             }
@@ -152,8 +162,7 @@ namespace ChefHesab.Application.services.define
                     result.AddError("داده وارد شده تکراری می باشد");
                     return result;
                 }
-                var find= new ContractingCompany();
-                //   var find = _unitOfWork.ContractingCompanyRepository.SelectByKey(ContractingCompany.Id);
+                var find = _unitOfWork.ContractingCompanyRepository.Select(a=>a.Id==ContractingCompany.Id);
                 if (find == null)
                 {
                     result.AddError("داده مورد نظر حذف شده است");
@@ -161,7 +170,8 @@ namespace ChefHesab.Application.services.define
                 }
 
                 var mapper = _mapper.Map<ContractingCompanyVM, ContractingCompany>(ContractingCompany, find);
-               // _unitOfWork.ContractingCompanyRepository.Update(mapper);
+                mapper.AgreementPeriod = mapper.ExpirationDate.Value.Date.Subtract(mapper.AgreementDate.Value.Date).Days;
+                _unitOfWork.ContractingCompanyRepository.Update(mapper);
                 await _unitOfWork.SaveAsync();
                 return result;
             }
@@ -172,6 +182,32 @@ namespace ChefHesab.Application.services.define
             }
 
         }
+        public async Task<ChefResult> Delete(CoontractingCompanySearch model)
+        {
+            var result = new ChefResult();
+            try
+            {
 
+
+                var find = _unitOfWork.ContractingCompanyRepository.Select(a => a.Id == model.Id);
+                if (find == null)
+                {
+                    result.AddError("داده مورد نظر حذف شده است");
+                    return result;
+                }
+
+
+                find.IsActive = false;
+                _unitOfWork.ContractingCompanyRepository.Update(find);
+                await _unitOfWork.SaveAsync();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                result.AddError("عملیات نا موفق بود");
+                return result;
+            }
+
+        }
     }
 }

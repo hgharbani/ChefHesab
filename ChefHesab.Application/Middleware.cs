@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using ChefHesab.Application.services;
 using ChefHesab.Data.Presentition.Reositories;
+using ChefHesab.Data.Presentition.Reositories.generic;
 using ChefHesab.Domain.Peresentition.IRepositories;
+using ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -23,7 +25,7 @@ namespace ChefHesab.Application
          
             services.AddSingleton(mapper);
             services.AddScoped<IChefHesabUnitOfWork, ChefHesabUnitOfWork>();
-          
+
             return services;
         }
 

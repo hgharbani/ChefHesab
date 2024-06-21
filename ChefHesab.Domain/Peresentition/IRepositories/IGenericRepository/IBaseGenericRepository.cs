@@ -9,60 +9,36 @@ using System.Threading.Tasks;
 
 namespace ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository
 {
-    public interface IGenericRepository<T> where T : class
+    public interface IGenericRepository<TEntity> where TEntity : class
     {
-        Task<T> GetById(int id);
-        Task<IEnumerable<T>> GetAll();
-        Task Add(T entity);
-        void Delete(T entity);
-        void Update(T entity);
+
+        Task<TEntity> GetByIdAsync(int id);
+        Task<IEnumerable<TEntity>> GetAllAsync();
+        Task<IQueryable<TEntity>> GetAllQuaryble();
+        Task AddAsync(TEntity entity);
+        Task UpdateAsync(TEntity entity);
+        Task DeleteAsync(TEntity entity);
+
+        Task<TEntity> GetById(int id);
+        Task<IEnumerable<TEntity>> GetAll();
+        void Add(TEntity entity);
+        void Delete(TEntity entity);
+        void Update(TEntity entity);
 
 
-        IList<T> SelectAll();
+        IList<TEntity> SelectAll();
 
-        IList<T> SelectAllByPage(int pageNumber, int quantity);
+        IList<TEntity> SelectAllByPage(int pageNumber, int quantity);
 
-        T Select(Expression<Func<T, bool>> predicate);
+        TEntity Select(Expression<Func<TEntity, bool>> predicate);
 
-        TResult Select<TResult>(Expression<Func<T, bool>> predicate, Expression<Func<T, TResult>> properties);
-        Task<bool> Any(Expression<Func<T, bool>> predicate);
-        IQueryable<T> Where(Expression<Func<T, bool>> predicate);
-        Task<Tuple<int, IList<T>>> SelectDataFilteredByPage(int pageNumber, int quantity, List<Expression<Func<T, bool>>> predicate);
-        Task AddRange(List<T> entity);
-    }
-
-
-    public  interface IBaseGenericRepository<TEntity> : IDisposable where TEntity : class
-        {
-            void Insert(TEntity entity);
-
-            void Insert(IEnumerable<TEntity> entities);
-
-            void Update(TEntity entity);
-
-            void Update(IEnumerable<TEntity> entities);
-
-            void Update(TEntity entity, params Expression<Func<TEntity, object>>[] propriedades);
-
-            void Delete(TEntity entity);
-
-            void Delete(IEnumerable<TEntity> entities);
-
-            void Delete(Expression<Func<TEntity, bool>> predicate);
-
-            TEntity SelectByKey(params object[] primaryKeys);
-
-            IList<TEntity> SelectAll();
-
-            IList<TEntity> SelectAllByPage(int pageNumber, int quantity);
-
-            TEntity Select(Expression<Func<TEntity, bool>> predicate);
-
-            TResult Select<TResult>(Expression<Func<TEntity, bool>> predicate, Expression<Func<TEntity, TResult>> properties);
+        TResult Select<TResult>(Expression<Func<TEntity, bool>> predicate, Expression<Func<TEntity, TResult>> properties);
         Task<bool> Any(Expression<Func<TEntity, bool>> predicate);
         IQueryable<TEntity> Where(Expression<Func<TEntity, bool>> predicate);
-         Task<Tuple<int, IList<TEntity>>> SelectDataFilteredByPage(int pageNumber, int quantity, List<Expression<Func<TEntity, bool>>> predicate);
+        Task<Tuple<int, IList<TEntity>>> SelectDataFilteredByPage(int pageNumber, int quantity, List<Expression<Func<TEntity, bool>>> predicate);
+        Task AddRange(List<TEntity> entity);
     }
+
 
     
 }

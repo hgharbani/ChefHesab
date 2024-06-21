@@ -21,8 +21,7 @@ namespace ChefHesab.WebCore.Areas.Define.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var model=await _apiExtention.GetServiceAsync<List<FoodStuffVM>>($"{_configuration["ChefHesabApi"]}api/FoodStuffApi/GetFoodStuff");
-            return View(model);
+            return View();
         }
         [HttpPost]
 
@@ -50,6 +49,40 @@ namespace ChefHesab.WebCore.Areas.Define.Controllers
                 }
             }
             return View(model);
+        }
+
+        public async Task<IActionResult> Edit(CoontractingCompanySearch model)
+        {
+            var result = await _apiExtention.PostDataToApiAsync<CoontractingCompanySearch, ContractingCompanyVM>($"{_configuration["ChefHesabApi"]}api/CompaniesApi/GetOne", model);
+            
+            return View(result);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(ContractingCompanyVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _apiExtention.PostDataToApiAsync<ContractingCompanyVM, ChefResult>($"{_configuration["ChefHesabApi"]}api/CompaniesApi/Edit", model);
+                if (result.IsSuccess)
+                {
+                    return Json(result);
+                }
+            }
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Delete(CoontractingCompanySearch model)
+        {
+           
+                var result = await _apiExtention.PostDataToApiAsync<CoontractingCompanySearch, ChefResult >($"{_configuration["ChefHesabApi"]}api/CompaniesApi/Delete", model);
+                if (result.IsSuccess)
+                {
+                    return Json(result);
+                }
+           
+            return Json(model);
         }
     }
 }

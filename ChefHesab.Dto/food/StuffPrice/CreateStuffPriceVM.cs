@@ -9,20 +9,14 @@ namespace ChefHesab.Dto.food.StuffPrice
 {
     public class CreateStuffPriceVM
     {
-        public Guid Id { get; set; }
+        public Guid? Id { get; set; }
         public Guid FoodStuffId { get; set; }
-        public string FoodStuffTitle { get; set; }
-        [Required]
-        [StringLength(10)]
-        public string Price { get; set; }
-        [Required]
-        [StringLength(10)]
-        public string Unit { get; set; }
-        [Required]
-        [StringLength(10)]
-        public string InsertDate { get; set; }
-        public bool Active { get; set; }
+        public long Price { get; set; }
+
+        public decimal AmountPercent { get; set; }
+        public long TotalPrice { get; set; }
+
         public Guid? PersonalId { get; set; }
-        public string PersonnelFullName { get; set; }
+        public Guid CompanyId { get; set; } // CompanyId
     }
 }

@@ -13,29 +13,37 @@ namespace ChefHesab.Domain
     /// <summary>
     /// مواد غذایی
     /// </summary>
-    
-    public partial class FoodStuff
+
+    public class FoodStuff
     {
+        public Guid Id { get; set; } // Id (Primary key)
+        public string Title { get; set; } // Title (length: 500)
+        public long? FoodCategoryId { get; set; } // FoodCategoryId
+
+        // Reverse navigation
+
+        /// <summary>
+        /// Child FoodProviders where [FoodProviders].[FoodStuffId] point to this entity (FK_FoodProviders_FoodStuff)
+        /// </summary>
+        public ICollection<FoodProvider> FoodProviders { get; set; } // FoodProviders.FK_FoodProviders_FoodStuff
+
+        /// <summary>
+        /// Child StuffPrices where [StuffPrice].[FoodStuffId] point to this entity (FK_StuffPrice_FoodStuff)
+        /// </summary>
+        public ICollection<StuffPrice> StuffPrices { get; set; } // StuffPrice.FK_StuffPrice_FoodStuff
+
+        // Foreign keys
+
+        /// <summary>
+        /// Parent FoodCategory pointed by [FoodStuff].([FoodCategoryId]) (FK_FoodStuff_FoodCategory)
+        /// </summary>
+        public FoodCategory FoodCategory { get; set; } // FK_FoodStuff_FoodCategory
+
         public FoodStuff()
         {
-            FoodProviders = new HashSet<FoodProvider>();
-            StuffPrices = new HashSet<StuffPrice>();
+            Id = Guid.NewGuid();
+            FoodProviders = new List<FoodProvider>();
+            StuffPrices = new List<StuffPrice>();
         }
-
-        [Key]
-        public Guid Id { get; set; }
-
-       
-        public string Title { get; set; }
-        public int? Amount { get; set; }
-        public int? Calories { get; set; }
-        public long FoodCategoryId { get; set; }
-
-        [ForeignKey("FoodCategoryId")]
-        public virtual FoodCategory FoodCategory { get; set; }
-    
-        public virtual ICollection<FoodProvider> FoodProviders { get; set; }
-   
-        public virtual ICollection<StuffPrice> StuffPrices { get; set; }
     }
 }

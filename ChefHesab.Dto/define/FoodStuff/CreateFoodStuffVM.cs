@@ -9,12 +9,8 @@ namespace ChefHesab.Dto.define.FoodStuff
 {
     public class CreateFoodStuffVM
     {
-        public Guid Id { get; set; }
-        [Required]
-        [StringLength(500)]
-        public string Title { get; set; }
-        public int? Amount { get; set; }
-        public int? Calories { get; set; }
-        public Guid? FoodCategoryId { get; set; }
+        public Guid? Id { get; set; }  
+        public string Title { get; set; }  
+        public long FoodCategoryId { get; set; }
     }
 }

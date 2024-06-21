@@ -1,0 +1,80 @@
+﻿@model CreateFoodStuffVM
+@{
+    Layout = null;
+}
+
+<div style="overflow: auto; height: calc(100% - 70px); padding: 10px" class="relative flex-auto p-4" data-twe-modal-body-ref id="ModalConent">
+    <form id="FoodStuffform" method="post" action="create" class="bg-white px-8 pt-6 pb-8 mb-4">
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(a=>a.Id)
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                نوع غذا
+            </label>
+            @Html.TextBoxFor(a => a.FoodCategoryId, new { @class = " " })
+        </div>
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                نام مواد غذایی
+            </label>
+            @Html.TextBoxFor(a => a.Title, new { @class = " k-input" })
+
+        </div>
+
+    </form>
+</div>
+
+<!-- Modal footer -->
+<div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 p-2 dark:border-white/10" id="modalFooter">
+    <button type="button"
+            class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline "
+            data-twe-modal-dismiss
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+            onclick=" CloseWindow()">
+        بستن
+    </button>
+    <button type="button"
+            class="ms-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+            id="btnCreate">
+        ذخیره
+    </button>
+</div>
+
+
+<script>
+    $(document).ready(function (event) {
+        renderFoodCategoryComboBox("#FoodCategoryId")
+        $("#btnCreate").click(function (e) {
+            e.preventDefault();
+            $("#FoodStuffform").PostMvcFormAjax({
+                baseEvent: e,
+                postUrl: '/Define/FoodStuff/Edit',
+                loginUrl: '/login',
+                beforePostHandler: function () {
+
+
+                },
+                completeHandler: function (data) {
+
+
+                    CloseWindow()
+                },
+                errorHandler: function () {
+
+                }
+            });
+
+
+
+
+
+        })
+
+    })
+
+
+</script>

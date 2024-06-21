@@ -2,45 +2,36 @@
 
 using ChefHesab.Domain;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
 using System.Collections.Generic;
 
 namespace ChefHesab.Data.Configurations
 {
-    public partial class StuffPriceConfiguration : IEntityTypeConfiguration<StuffPrice>
+
+    public class StuffPriceConfiguration : IEntityTypeConfiguration<StuffPrice>
     {
-        public void Configure(EntityTypeBuilder<StuffPrice> entity)
+        public void Configure(EntityTypeBuilder<StuffPrice> builder)
         {
-            entity.HasComment("مواد اولیه");
+            builder.ToTable("StuffPrice", "dbo");
+            builder.HasKey(x => x.Id).HasName("PK_StuffPrice").IsClustered();
 
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            builder.Property(x => x.Id).HasColumnName(@"Id").HasColumnType("uniqueidentifier").IsRequired().ValueGeneratedOnAdd();
+            builder.Property(x => x.FoodStuffId).HasColumnName(@"FoodStuffId").HasColumnType("uniqueidentifier").IsRequired();
+            builder.Property(x => x.Price).HasColumnName(@"Price").HasColumnType("bigint").IsRequired();
+            builder.Property(x => x.AmountPercent).HasColumnName(@"AmountPercent").HasColumnType("decimal(2,2)").HasPrecision(2, 2).IsRequired(false);
+            builder.Property(x => x.TotalPrice).HasColumnName(@"TotalPrice").HasColumnType("bigint").IsRequired();
+            builder.Property(x => x.InsertDate).HasColumnName(@"InsertDate").HasColumnType("date").IsRequired();
+            builder.Property(x => x.Active).HasColumnName(@"Active").HasColumnType("bit").IsRequired();
+            builder.Property(x => x.PersonalId).HasColumnName(@"PersonalId").HasColumnType("uniqueidentifier").IsRequired(false);
+            builder.Property(x => x.CompanyId).HasColumnName(@"CompanyId").HasColumnType("uniqueidentifier").IsRequired();
 
-            entity.Property(e => e.InsertDate).IsFixedLength();
-
-            entity.Property(e => e.Price).IsFixedLength();
-
-            entity.Property(e => e.Unit).IsFixedLength();
-
-            entity.HasOne(d => d.FoodStuff)
-                .WithMany(p => p.StuffPrices)
-                .HasForeignKey(d => d.FoodStuffId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_StuffPrice_FoodStuff");
-
-            entity.HasOne(d => d.Personal)
-                .WithMany(p => p.StuffPrices)
-                .HasForeignKey(d => d.PersonalId)
-                .HasConstraintName("FK_StuffPrice_Personal");
-
-            entity.HasOne(d => d.ContractingCompany)
-              .WithMany(p => p.StuffPrices)
-              .HasForeignKey(d => d.CompanyId)
-              .HasConstraintName("FK_StuffPrice_ContractingCompanies");
-            OnConfigurePartial(entity);
+            // Foreign keys
+            builder.HasOne(a => a.ContractingCompany).WithMany(b => b.StuffPrices).HasForeignKey(c => c.CompanyId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_StuffPrice_ContractingCompanies");
+            builder.HasOne(a => a.FoodStuff).WithMany(b => b.StuffPrices).HasForeignKey(c => c.FoodStuffId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_StuffPrice_FoodStuff");
+            builder.HasOne(a => a.Personal).WithMany(b => b.StuffPrices).HasForeignKey(c => c.PersonalId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_StuffPrice_Personal");
         }
-
-        partial void OnConfigurePartial(EntityTypeBuilder<StuffPrice> entity);
     }
+
+
 }

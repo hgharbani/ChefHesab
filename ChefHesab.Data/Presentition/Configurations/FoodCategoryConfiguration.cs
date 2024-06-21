@@ -11,18 +11,23 @@ namespace ChefHesab.Data.Configurations
 {
     public partial class FoodCategoryConfiguration : IEntityTypeConfiguration<FoodCategory>
     {
-        public void Configure(EntityTypeBuilder<FoodCategory> entity)
+        public void Configure(EntityTypeBuilder<FoodCategory> builder)
         {
-            entity.HasComment("دسته بندی کالا");
 
-            entity.HasKey(e => e.CategoryId);
-            entity.Property(e => e.SnapId).IsRequired(false);
-            entity.HasOne(d => d.Parent)
-           .WithMany(p => p.InverseParent)
-           .HasForeignKey(d => d.ParentId)
-           .HasConstraintName("FK_FoodCategory_FoodCategory");
+            builder.ToTable("FoodCategory", "dbo");
+            builder.HasKey(x => x.CategoryId).HasName("PK_FoodCategory").IsClustered();
 
-            OnConfigurePartial(entity);
+            builder.Property(x => x.CategoryId).HasColumnName(@"CategoryId").HasColumnType("bigint").IsRequired().ValueGeneratedOnAdd().UseIdentityColumn();
+            builder.Property(x => x.Title).HasColumnName(@"Title").HasColumnType("nvarchar(max)").IsRequired(false);
+            builder.Property(x => x.Code).HasColumnName(@"Code").HasColumnType("int").IsRequired(false);
+            builder.Property(x => x.Active).HasColumnName(@"active").HasColumnType("bit").IsRequired(false);
+            builder.Property(x => x.ParentId).HasColumnName(@"ParentId").HasColumnType("bigint").IsRequired(false);
+
+
+            // Foreign keys
+            builder.HasOne(a => a.Parent).WithMany(b => b.FoodCategories).HasForeignKey(c => c.ParentId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_FoodCategory_FoodCategory");
+
+            OnConfigurePartial(builder);
         }
 
         partial void OnConfigurePartial(EntityTypeBuilder<FoodCategory> entity);

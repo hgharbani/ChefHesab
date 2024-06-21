@@ -22,11 +22,6 @@ namespace ChefHesab.Data.Presentition.Context
                 ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
             }
 
-        public ChefHesabContext()
-        {
-                
-        }
-
         public virtual DbSet<AdditionalCost> AdditionalCosts { get; set; }
         public virtual DbSet<AdditionalCostFood> AdditionalCostFoods { get; set; }
         public virtual DbSet<Authenticate> Authenticates { get; set; }
@@ -56,18 +51,7 @@ namespace ChefHesab.Data.Presentition.Context
 
             base.OnModelCreating(modelBuilder);
         }
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    if (!optionsBuilder.IsConfigured)
-        //    {
-        //        IConfigurationRoot configuration = new ConfigurationBuilder()
-        //           .SetBasePath(Directory.GetCurrentDirectory())
-        //           .AddJsonFile("appsettings.json")
-        //           .Build();
-        //        var connectionString = configuration.GetConnectionString("ChefHesabContext");
-        //        optionsBuilder.UseSqlServer(connectionString, providerOptions => providerOptions.EnableRetryOnFailure());
-        //    }
-        //}
+  
 
     }
 }

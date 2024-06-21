@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
 using ChefHesab.Domain;
 
 
@@ -13,43 +12,48 @@ namespace ChefHesab.Domain
     /// <summary>
     /// مواد اولیه
     /// </summary>
-    [Table("StuffPrice")]
     public partial class StuffPrice
     {
+       
+
+        public Guid Id { get; set; } // Id (Primary key)
+        public Guid FoodStuffId { get; set; } // FoodStuffId
+        public long Price { get; set; } // Price
+        public decimal? AmountPercent { get; set; } // AmountPercent
+        public long TotalPrice { get; set; } // TotalPrice
+        public DateTime InsertDate { get; set; } // InsertDate
+        public bool Active { get; set; } // Active
+        public Guid? PersonalId { get; set; } // PersonalId
+        public Guid CompanyId { get; set; } // CompanyId
+
+        // Reverse navigation
+
+        /// <summary>
+        /// Child IngredinsFoods where [IngredinsFood].[StuffPriceId] point to this entity (FK_IngredinsFood_StuffPrice)
+        /// </summary>
+        public ICollection<IngredinsFood> IngredinsFoods { get; set; } // IngredinsFood.FK_IngredinsFood_StuffPrice
+
+        // Foreign keys
+
+        /// <summary>
+        /// Parent ContractingCompany pointed by [StuffPrice].([CompanyId]) (FK_StuffPrice_ContractingCompanies)
+        /// </summary>
+        public ContractingCompany ContractingCompany { get; set; } // FK_StuffPrice_ContractingCompanies
+
+        /// <summary>
+        /// Parent FoodStuff pointed by [StuffPrice].([FoodStuffId]) (FK_StuffPrice_FoodStuff)
+        /// </summary>
+        public FoodStuff FoodStuff { get; set; } // FK_StuffPrice_FoodStuff
+
+        /// <summary>
+        /// Parent Personal pointed by [StuffPrice].([PersonalId]) (FK_StuffPrice_Personal)
+        /// </summary>
+        public Personal Personal { get; set; } // FK_StuffPrice_Personal
+
         public StuffPrice()
         {
-            IngredinsFoods = new HashSet<IngredinsFood>();
+            Id = Guid.NewGuid();
+            IngredinsFoods = new List<IngredinsFood>();
         }
-
-        [Key]
-        public Guid Id { get; set; }
-        public Guid FoodStuffId { get; set; }
-        [Required]
-        [StringLength(10)]
-        public string Price { get; set; }
-        [Required]
-        [StringLength(10)]
-        public string Unit { get; set; }
-        [Required]
-        [StringLength(10)]
-        public string InsertDate { get; set; }
-        public bool Active { get; set; }
-        public Guid? PersonalId { get; set; }
-        public Guid? CompanyId { get; set; }
-
-        [ForeignKey("FoodStuffId")]
-        [InverseProperty("StuffPrices")]
-        public virtual FoodStuff FoodStuff { get; set; }
-        [ForeignKey("PersonalId")]
-        [InverseProperty("StuffPrices")]
-        public virtual Personal Personal { get; set; }
-        [InverseProperty("StuffPrice")]
-        public virtual ICollection<IngredinsFood> IngredinsFoods { get; set; }
-
-        [ForeignKey("CompanyId")]
-        [InverseProperty("StuffPrices")]
-        public virtual ContractingCompany ContractingCompany { get; set; }
-
-
     }
 }

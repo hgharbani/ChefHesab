@@ -25,9 +25,9 @@ namespace Chefhesab.WebApi.Controllers.define
         }
 
         [HttpPost("GetOne")]
-        public IActionResult GetOne([FromBody] ContractingCompanyVM model)
+        public IActionResult GetOne(CoontractingCompanySearch model)
         {
-            var result = _companyService.GetContractingCompany(request);
+            var result = _companyService.GetOne(model.Id);
             return Ok(result);
         }
         [HttpPost("Create")]
@@ -40,6 +40,13 @@ namespace Chefhesab.WebApi.Controllers.define
         public async Task<IActionResult> Edit(ContractingCompanyVM model)
         {
             var result = await _companyService.Edit(model);
+            return Ok(result);
+        }
+
+        [HttpPost("Delete")]
+        public async Task<IActionResult> Delete(CoontractingCompanySearch model)
+        {
+            var result = await _companyService.Delete(model);
             return Ok(result);
         }
     }

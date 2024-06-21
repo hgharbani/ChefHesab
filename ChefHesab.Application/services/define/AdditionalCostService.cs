@@ -77,7 +77,7 @@ namespace ChefHesab.Application.services.define
                     return result;
                 }
                 var mapper = _mapper.Map<AdditionalCost>(additionalCost);
-              await  _unitOfWork.AdditionalCostRepository.Add(mapper);
+                _unitOfWork.AdditionalCostRepository.Add(mapper);
                 await _unitOfWork.SaveAsync();
                 return result;
             }

@@ -1,33 +1,34 @@
-﻿@model List<FoodStuffVM>
-
+﻿
+@Html.DalirWindow()
 
 <div class="grid grid-col-1">
-   
+
     <div class="mt-2 k-rtl" id="GridBox">
         <div id="CompanyGrid"></div>
     </div>
 </div>
-<div id="window" class="k-rtl">
-</div>
+
 @section scripts {
     <script>
-  
+
         $(document).ready(function (e) {
+            $("#CompaniesMenu").addClass("mm-active")
+            
             bindCompanyGrids();
             $("#CompanyGrid").find(".k-grid-add").click(function (e) {
-
-                ShowPopup("#window", "اضافه کردن شرکت جدید", "600px", "auto", refreshGrid)
+                ShowPopup(null, "/Define/Companies/Create", "اضافه کردن شرکت جدید", "600px", "auto", refreshGrid)
+                //ShowPopup("#window", "/Define/Companies/Create", "اضافه کردن شرکت جدید", "600px", "auto", refreshGrid)
             });
 
         });
-  
-       
+
+
         function bindCompanyGrids() {
             var record = 0;
 
             $("#CompanyGrid").kendoGrid({
 
-                toolbar: ["create","excel", "pdf"],
+                toolbar: ["create", "excel"],
                 dataSource: {
                     transport: {
                         read: {
@@ -94,37 +95,102 @@
                 reorderable: true,
 
                 filterable: true,
-                
+
                 pdfExport: function (e) {
                     const width = e.sender.wrapper.width();
                     e.sender.wrapperClone.width(width);
                     e.sender.wrapperClone.addClass('k-clone');
                 },
-                columns: [{
-                    field: "AgreementNumber",
-                    title: "شماره قرار داد",
-                    width: 105
-                }, {
-                    field: "CompanyName",
-                    title: "نام شرکت",
-                    width: 300
-                }, {
-                    field: "AgreementDate",
-                    title: "تاریخ قرارداد",
-                    template: kendo.template("#= convertToJalaliDate(AgreementDate)#"),
-                    width: 105
-                }, {
-                    field: "ExpirationDate",
-                    title: "تاریخ پایان قرارداد",
-                    template: kendo.template("#= convertToJalaliDate(ExpirationDate)#"),
+                columns: [
 
-                    width: 105
-                },
-                {
-                    field: "AgreementPeriod",
-                    title: "مدت  قرارداد",
-                    width: 105
-                }
+                    {
+                        field: "Id",
+                        title: "عملیات",
+                        width: 105,
+                        template: function (e) {
+                            var btn = `
+                                                  <button type="button"
+                                                                  class="ms-1 inline-block
+                                                                  rounded bg-yellow-500 px-4
+                                                                  pb-2 pt-2.5 text-xs
+                                                                  font-medium uppercase
+                                                                  leading-normal
+                                                                  text-white
+                                                                  hover:bg-primary-accent-300
+                                                                  hover:shadow-primary-2
+                                                                 "
+
+                                                          onclick="showEditForm('${e.Id}')" >
+                                              <i class="fa fa-edit"></i>
+                                          </button>
+                                                   <button type="button"
+                                                          class="ms-1 inline-block
+                                                          rounded bg-red-500 px-4
+                                                          pb-2 pt-2.5 text-xs
+                                                          font-medium uppercase
+                                                          leading-normal
+                                                          text-white
+                                                          transition
+                                                          duration-150
+                                                          ease-in-out
+                                                          hover:bg-primary-accent-300
+                                                          hover:shadow-primary-2
+                                                         "
+
+                                                          onclick="deleteCompany('${e.Id}')"
+
+                                                          >
+                                                      <i class="fa fa-trash"></i>
+                                                  </button>
+
+                                        `
+                            return btn;
+                        },
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    },
+
+                    {
+                        field: "AgreementNumber",
+                        title: "شماره قرار داد",
+                        width: 105,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    }, {
+                        field: "CompanyName",
+                        title: "نام شرکت",
+                        width: 300,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    }, {
+                        field: "AgreementDate",
+                        title: "تاریخ قرارداد",
+                        template: kendo.template("#= convertToJalaliDate(AgreementDate)#"),
+                        width: 105,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    }, {
+                        field: "ExpirationDate",
+                        title: "تاریخ پایان قرارداد",
+                        template: kendo.template("#= convertToJalaliDate(ExpirationDate)#"),
+
+                        width: 105,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    },
+                    {
+                        field: "AgreementPeriod",
+                        title: "مدت  قرارداد",
+                        width: 105,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    }
                 ],
             });
 
@@ -134,6 +200,36 @@
 
         function refreshGrid() {
             $("#CompanyGrid").data("kendoGrid").dataSource.read();
+        }
+
+        function showEditForm(id) {
+            ShowPopup(null, "/Define/Companies/Edit?id=" + id, 'تصویر', "600px", "auto", refreshGrid)
+
+            // ShowPopup("#window", "/Define/Companies/Edit?id=" + id, "اضافه کردن شرکت جدید", "600px", "auto", refreshGrid)
+        }
+        function deleteCompany(id) {
+            Swal.fire({
+                title: "با حذف این شرکت تمام اطلاعات مربوط به ۀن حذف میشود،?",
+
+                showCancelButton: true,
+                confirmButtonText: "حذف کن !",
+                cancelButtonText: `انصراف`
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: "/Define/Companies/Delete?id=" + id,
+                        type:'post',
+                        beforeSend: function (xhr) {
+
+                        }
+                    })
+                        .done(function (data) {
+                            Swal.fire("حذف شد", "", "success");
+                        });
+
+                }
+            });
         }
     </script>
 }

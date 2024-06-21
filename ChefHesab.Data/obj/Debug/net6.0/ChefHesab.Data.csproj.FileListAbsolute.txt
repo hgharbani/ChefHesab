@@ -16,7 +16,6 @@ E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.genruntimeconfig.cache
 E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ref\ChefHesab.Data.dll
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\bin\Debug\net6.0\ChefHesab.Data.deps.json
-D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\bin\Debug\net6.0\ChefHesab.Data.runtimeconfig.json
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\bin\Debug\net6.0\ChefHesab.Data.dll
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\bin\Debug\net6.0\ChefHesab.Data.pdb
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\bin\Debug\net6.0\ChefHesab.Domain.dll
@@ -31,5 +30,4 @@ D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHe
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.dll
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\refint\ChefHesab.Data.dll
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.pdb
-D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ChefHesab.Data.genruntimeconfig.cache
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Data\obj\Debug\net6.0\ref\ChefHesab.Data.dll

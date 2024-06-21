@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
+
 using ChefHesab.Domain;
 
 
@@ -13,30 +13,45 @@ namespace ChefHesab.Domain
     /// <summary>
     /// دسته بندی کالا
     /// </summary>
-    [Table("FoodCategory")]
+
     public partial class FoodCategory
     {
+
+        public long CategoryId { get; set; } // CategoryId (Primary key)
+        public string Title { get; set; } // Title
+        public int? Code { get; set; } // Code
+        public bool? Active { get; set; } // active
+        public long? ParentId { get; set; } // ParentId
+
+        // Reverse navigation
+
+        /// <summary>
+        /// Child AdditionalCosts where [AdditionalCosts].[FoodCategoryId] point to this entity (FK_AdditionalCosts_FoodCategory)
+        /// </summary>
+        public ICollection<AdditionalCost> AdditionalCosts { get; set; } // AdditionalCosts.FK_AdditionalCosts_FoodCategory
+
+        /// <summary>
+        /// Child FoodCategories where [FoodCategory].[ParentId] point to this entity (FK_FoodCategory_FoodCategory)
+        /// </summary>
+        public ICollection<FoodCategory> FoodCategories { get; set; } // FoodCategory.FK_FoodCategory_FoodCategory
+
+        /// <summary>
+        /// Child FoodStuffs where [FoodStuff].[FoodCategoryId] point to this entity (FK_FoodStuff_FoodCategory)
+        /// </summary>
+        public ICollection<FoodStuff> FoodStuffs { get; set; } // FoodStuff.FK_FoodStuff_FoodCategory
+
+        // Foreign keys
+
+        /// <summary>
+        /// Parent FoodCategory pointed by [FoodCategory].([ParentId]) (FK_FoodCategory_FoodCategory)
+        /// </summary>
+        public FoodCategory Parent { get; set; } // FK_FoodCategory_FoodCategory
+
         public FoodCategory()
         {
-            FoodStuffs = new HashSet<FoodStuff>();
+            AdditionalCosts = new List<AdditionalCost>();
+            FoodCategories = new List<FoodCategory>();
+            FoodStuffs = new List<FoodStuff>();
         }
-
-        [Key]      
-        public long CategoryId { get; set; }
-        public string Title { get; set; }
-        public int? SnapId { get; set; }
-    
-        public bool? Active { get; set; }
-
-       
-        public long? ParentId { get; set; }
-
-        [ForeignKey("ParentId")]
-        [InverseProperty("InverseParent")]
-        public virtual FoodCategory Parent { get; set; }
-        [InverseProperty("FoodCategory")]
-        public virtual ICollection<FoodStuff> FoodStuffs { get; set; }
-        [InverseProperty("Parent")]
-        public virtual ICollection<FoodCategory> InverseParent { get; set; }
     }
 }

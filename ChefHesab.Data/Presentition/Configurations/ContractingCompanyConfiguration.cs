@@ -11,19 +11,23 @@ namespace ChefHesab.Data.Configurations
 {
     public partial class ContractingCompanyConfiguration : IEntityTypeConfiguration<ContractingCompany>
     {
-        public void Configure(EntityTypeBuilder<ContractingCompany> entity)
+        public void Configure(EntityTypeBuilder<ContractingCompany> builder)
         {
-            entity.HasComment("شرکت های تحت قرار داد کاربران");
-            entity.ToTable("ContractingCompanies", "dbo");
-            entity.HasKey(a=>a.Id);
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            builder.ToTable("ContractingCompanies", "dbo");
+            builder.HasKey(x => x.Id).HasName("PK_ContractingCompanies").IsClustered();
 
-            entity.HasOne(d => d.Personal)
-                .WithMany(p => p.ContractingCompanies)
-                .HasForeignKey(d => d.PersonalId)
-                .HasConstraintName("FK_ContractingCompanies_Personal");
+            builder.Property(x => x.Id).HasColumnName(@"Id").HasColumnType("uniqueidentifier").HasDefaultValueSql("NEWID()").IsRequired().ValueGeneratedOnAdd();
+            builder.Property(x => x.CompanyName).HasColumnName(@"CompanyName").HasColumnType("nvarchar(300)").IsRequired(false).HasMaxLength(300);
+            builder.Property(x => x.AgreementDate).HasColumnName(@"AgreementDate").HasColumnType("date").IsRequired(false);
+            builder.Property(x => x.AgreementPeriod).HasColumnName(@"AgreementPeriod").HasColumnType("int").IsRequired(false);
+            builder.Property(x => x.ExpirationDate).HasColumnName(@"ExpirationDate").HasColumnType("date").IsRequired(false);
+            builder.Property(x => x.AgreementNumber).HasColumnName(@"AgreementNumber").HasColumnType("nvarchar(max)").IsRequired(false);
+            builder.Property(x => x.IsActive).HasColumnName(@"IsActive").HasColumnType("bit").IsRequired(false);
+            builder.Property(x => x.PersonalId).HasColumnName(@"PersonalId").HasColumnType("uniqueidentifier").IsRequired(false);
 
-            OnConfigurePartial(entity);
+            // Foreign keys
+            builder.HasOne(a => a.Personal).WithMany(b => b.ContractingCompanies).HasForeignKey(c => c.PersonalId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_ContractingCompanies_Personal");
+            OnConfigurePartial(builder);
         }
 
         partial void OnConfigurePartial(EntityTypeBuilder<ContractingCompany> entity);

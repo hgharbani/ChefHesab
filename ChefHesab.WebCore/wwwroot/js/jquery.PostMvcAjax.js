@@ -77,7 +77,8 @@
             loginUrl: '/login',
             beforePostHandler: null,
             completeHandler: null,
-            errorHandler: null
+            errorHandler: null,
+          
         };
         options = $.extend(defaults, options);
         if (options.baseEvent)
@@ -90,6 +91,9 @@
         $.ajaxSetup({ cache: false });
         $.ajax({
             type: "POST",
+            dataType: "json",
+            traditional: true,
+            contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
             url: options.postUrl,
             data: options.data, //تمام فيلدهاي فرم منجمله آنتي فرجري توكن آن‌را ارسال مي‌كند
             complete: function (xhr, status) {

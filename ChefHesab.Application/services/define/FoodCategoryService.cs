@@ -4,8 +4,12 @@ using ChefHesab.Data.Presentition.Context;
 using ChefHesab.Data.Presentition.Reositories.generic;
 using ChefHesab.Dto.define.FoodCategory;
 using ChefHesab.Dto.define.FoodStuff;
+using ChefHesab.Share.Extiontions.KendoExtentions;
+using ChefHesab.Share.model.KendoModel;
+using ChefHesab.Share.model.KendoModel.Response;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,74 +30,53 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<bool> AddFoodCategory(Rootobject model)
+        public dynamic GetAllByKendoFilter(SearchFoodCategoryVM request)
         {
-            try
+            var data = _unitOfWork.FoodCategoryRepository.GetAllQueryble().Include(_ => _.Parent)
+                .AsNoTracking().Where(a => a.Active == true && a.ParentId.HasValue);
+                if (request.Code > 0)
             {
-                var getSnapCategory = model.metadata.filter.options.First(a => a.name == "categories");
-
-                var parents = getSnapCategory.data.options.ToList();
-                foreach (var parent in parents)
-                {
-                    var parentitem = new FoodCategory()
-                    {
-                        Title = parent.title,
-                        SnapId = parent.id,
-                        Active = true,
-                        InverseParent = new List<FoodCategory>()
-                    };
-                    if (parent.children.Any())
-                    {
-                        var child1 = parent.children.Where(a => a.children == null).ToList();
-                        foreach (var item in child1)
-                        {
-                            var foodCategory = new FoodCategory()
-                            {
-                                Title = item.title,
-                                SnapId = item.id,
-                                Active = true,
-                            };
-                            parentitem.InverseParent.Add(foodCategory);
-                        }
-
-                        var child2 = parent.children.Where(a => a.children != null && a.children.Any())
-                                 .SelectMany(a => a.children).ToList();
-                        foreach (var item in child2)
-                        {
-                            var foodCategory = new FoodCategory()
-                            {
-                                Title = item.title,
-                                SnapId = item.id,
-                                Active = true,
-                            };
-                            parentitem.InverseParent.Add(foodCategory);
-                        }
-                    }
-                  await  _unitOfWork.FoodCategoryRepository.Add(parentitem);
-
-                }
-                await _unitOfWork.SaveAsync();
-                return true;
-
-
-
+                data = data.Where(a => a.Parent.Code == request.Code);
             }
-            catch (Exception ex)
+            int total = data.Count();
+            IList resultData;
+            bool isGrouped = false;
+
+            var aggregates = new Dictionary<string, Dictionary<string, string>>();
+
+            if (request.Sorts != null)
             {
-                return false;
+                data = data.Sort(request.Sorts);
             }
 
+            if (request.Filter != null)
+            {
+                data = data.Filter(request.Filter);
+                total = data.Count();
+            }
+
+            if (request.Aggregates != null)
+            {
+                aggregates = data.CalculateAggregates(request.Aggregates);
+            }
+
+            if (request.Take > 0)
+            {
+                data = data.Page(request.Skip, request.Take);
+            }
+
+            if (request.Groups != null && request.Groups.Count > 0 && !request.GroupPaging)
+            {
+                resultData = data.Group(request.Groups).Cast<Group>().ToList();
+                isGrouped = true;
+            }
+            else
+            {
+                resultData = data.ToList();
+            }
+
+            var result = new Response(resultData, aggregates, total, isGrouped).ToResult();
+            return result;
         }
-
-        public List<FoodCategory> GetAll()
-        {
-            var foodCategory = new List<int>() {278343,278344,
-                278345,278346,278347,278348,
-                278349,278350,278352,278355, };
-            return _unitOfWork.FoodCategoryRepository.GetAllQueryble().Include(a => a.Parent)
-                .Where(a => foodCategory.Contains(a.Parent.SnapId.Value)&&a.ParentId.HasValue).ToList();
-        }
-
-
     }
 }

@@ -1,102 +1,142 @@
 ﻿using Dalir.common.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-
+using ChefHesab.Domain.Peresentition.IRepositories;
+using ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository;
+using ChefHesab.Data.Presentition.Context;
 namespace ChefHesab.Data.Presentition.Reositories.generic
 {
-    public abstract class GenericRepository<T> : Domain.Peresentition.IRepositories.IGenericRepository.IGenericRepository<T> where T : class
+    public abstract class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
     {
-        protected readonly DbContext _dbContext;
+        private readonly ChefHesabContext _Context;
 
-        protected GenericRepository(DbContext context)
+        public GenericRepository(ChefHesabContext Context)
         {
-            _dbContext = context;
-        }
-
-        public async Task<T> GetById(int id)
-        {
-            return await _dbContext.Set<T>().FindAsync(id);
+            _Context = Context;
         }
 
-        public async Task<IEnumerable<T>> GetAll()
+
+
+        public async Task<TEntity> GetByIdAsync(int id)
         {
-            return await _dbContext.Set<T>().ToListAsync();
+            return await _Context.Set<TEntity>().FindAsync(id);
         }
 
-        public async Task Add(T entity)
+        public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
-            await _dbContext.Set<T>().AddAsync(entity);
+            return await _Context.Set<TEntity>().ToListAsync();
         }
-        public async Task AddRange(List<T> entity)
+        public IQueryable<TEntity> GetAllQueryable()
         {
-            await _dbContext.Set<T>().AddRangeAsync(entity);
+            return  _Context.Set<TEntity>().AsQueryable();
         }
-
-        public void Delete(T entity)
+        public async Task AddAsync(TEntity entity)
         {
-            _dbContext.Set<T>().Remove(entity);
-        }
-
-        public void Update(T entity)
-        {
-            _dbContext.Set<T>().Update(entity);
+            await _Context.Set<TEntity>().AddAsync(entity);
         }
 
-        public virtual IList<T> SelectAll()
+        public async Task UpdateAsync(TEntity entity)
         {
-            return _dbContext.Set<T>().ToList();
+            _Context.Set<TEntity>().Update(entity);
         }
 
-        public virtual async Task<bool> Any(Expression<Func<T, bool>> predicate)
+        public async Task DeleteAsync(TEntity entity)
         {
-            return await _dbContext.Set<T>().AsQueryable().AnyAsync(predicate);
+            _Context.Set<TEntity>().Remove(entity);
         }
-        public virtual IQueryable<T> Where(Expression<Func<T, bool>> predicate)
+        public async Task<TEntity> GetById(int id)
         {
-            return _dbContext.Set<T>().AsQueryable().Where(predicate);
-        }
-
-        public virtual IList<T> SelectAllByPage(int pageNumber, int quantity)
-        {
-            return _dbContext.Set<T>().Skip(Math.Max(pageNumber - 1, 0) * quantity).Take(quantity).ToList();
+            return await _Context.Set<TEntity>().FindAsync(id);
         }
 
-        public virtual async Task<Tuple<int, IList<T>>> SelectDataFilteredByPage(int pageNumber, int quantity, List<Expression<Func<T, bool>>> predicate)
+        public async Task<IEnumerable<TEntity>> GetAll()
         {
-            var Data = _dbContext.Set<T>().AsNoTracking();
+            return await _Context.Set<TEntity>().ToListAsync();
+        }
+
+        public void Add(TEntity entity)
+        {
+             _Context.Set<TEntity>().AddAsync(entity);
+        }
+        public async Task AddRange(List<TEntity> entity)
+        {
+            await _Context.Set<TEntity>().AddRangeAsync(entity);
+        }
+
+        public void Delete(TEntity entity)
+        {
+            _Context.Set<TEntity>().Remove(entity);
+        }
+
+        public void Update(TEntity entity)
+        {
+            _Context.Set<TEntity>().Update(entity);
+        }
+
+        public virtual IList<TEntity> SelectAll()
+        {
+            return _Context.Set<TEntity>().ToList();
+        }
+
+        public virtual async Task<bool> Any(Expression<Func<TEntity, bool>> predicate)
+        {
+            return await _Context.Set<TEntity>().AsQueryable().AnyAsync(predicate);
+        }
+        public virtual IQueryable<TEntity> Where(Expression<Func<TEntity, bool>> predicate)
+        {
+            return _Context.Set<TEntity>().AsQueryable().Where(predicate);
+        }
+
+        public virtual IList<TEntity> SelectAllByPage(int pageNumber, int quantity)
+        {
+            return _Context.Set<TEntity>().Skip(Math.Max(pageNumber - 1, 0) * quantity).Take(quantity).ToList();
+        }
+
+        public virtual async Task<Tuple<int, IList<TEntity>>> SelectDataFilteredByPage(int pageNumber, int quantity, List<Expression<Func<TEntity, bool>>> predicate)
+        {
+            var Data = _Context.Set<TEntity>().AsNoTracking();
             foreach (var filter in predicate)
             {
                 Data = Data.WhereNullSafe(filter);
             }
             var CountData = Data.Count();
             var result = await Data.Skip(Math.Max(pageNumber - 1, 0) * quantity).Take(quantity).ToListAsync();
-            return new Tuple<int, IList<T>>(CountData, result);
+            return new Tuple<int, IList<TEntity>>(CountData, result);
         }
 
-        public virtual T Select(Expression<Func<T, bool>> predicate)
+        public virtual TEntity Select(Expression<Func<TEntity, bool>> predicate)
         {
-            return _dbContext.Set<T>().WhereNullSafe(predicate).FirstOrDefault();
+            return _Context.Set<TEntity>().WhereNullSafe(predicate).FirstOrDefault();
         }
 
-        public TResult Select<TResult>(Expression<Func<T, bool>> predicate, Expression<Func<T, TResult>> properties)
+        public TResult Select<TResult>(Expression<Func<TEntity, bool>> predicate, Expression<Func<TEntity, TResult>> properties)
         {
-            return _dbContext.Set<T>().WhereNullSafe(predicate).Select(properties).FirstOrDefault();
+            return _Context.Set<TEntity>().WhereNullSafe(predicate).Select(properties).FirstOrDefault();
         }
 
-        public IList<T> SelectList(Expression<Func<T, bool>> predicate)
+        public IList<TEntity> SelectList(Expression<Func<TEntity, bool>> predicate)
         {
-            return _dbContext.Set<T>().WhereNullSafe(predicate).ToList();
+            return _Context.Set<TEntity>().WhereNullSafe(predicate).ToList();
         }
 
-        public IList<TResult> SelectList<TResult>(Expression<Func<T, bool>> predicate, Expression<Func<T, TResult>> properties)
+        public IList<TResult> SelectList<TResult>(Expression<Func<TEntity, bool>> predicate, Expression<Func<TEntity, TResult>> properties)
         {
-            return _dbContext.Set<T>().WhereNullSafe(predicate).Select(properties).ToList();
+            return _Context.Set<TEntity>().WhereNullSafe(predicate).Select(properties).ToList();
         }
 
-        public virtual bool Exists(Expression<Func<T, bool>> predicate)
+        public virtual bool Exists(Expression<Func<TEntity, bool>> predicate)
         {
-            return _dbContext.Set<T>().Any(predicate);
+            return _Context.Set<TEntity>().Any(predicate);
         }
 
+        public Task<IQueryable<TEntity>> GetAllQuaryble()
+        {
+            throw new NotImplementedException();
+        }
+
+        TEntity IGenericRepository<TEntity>.Select(Expression<Func<TEntity, bool>> predicate)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

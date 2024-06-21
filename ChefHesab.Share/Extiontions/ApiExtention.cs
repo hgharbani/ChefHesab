@@ -33,11 +33,43 @@ namespace ChefHesab.Share.Extiontions
 
         public async Task<TResponse> PostDataToApiAsync<TRequest, TResponse>(string apiUrl, TRequest data)
         {
-            using var httpClient = _httpClientFactory.CreateClient();
-            var response = await httpClient.PostAsJsonAsync(apiUrl, data);
-            response.EnsureSuccessStatusCode();
-            var result = await response.Content.ReadFromJsonAsync<TResponse>();
-            return result;
+            try
+            {
+                using var httpClient = _httpClientFactory.CreateClient();
+                var response = await httpClient.PostAsJsonAsync(apiUrl, data);
+                if (response.IsSuccessStatusCode)
+                {
+                  
+                    var result = await response.Content.ReadFromJsonAsync<TResponse>();
+                    return result;
+                }
+                throw new ArgumentException();
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
+            
+        }
+        public async Task<TResponse> PutDataToApiAsync<TRequest, TResponse>(string apiUrl, TRequest data)
+        {
+            try
+            {
+                using var httpClient = _httpClientFactory.CreateClient();
+                var response = await httpClient.PutAsJsonAsync(apiUrl, data);
+                if (response.IsSuccessStatusCode)
+                {
+
+                    var result = await response.Content.ReadFromJsonAsync<TResponse>();
+                    return result;
+                }
+                throw new ArgumentException();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
         public async Task<T> GetServiceAsync<T>(string baseUrl)
         {

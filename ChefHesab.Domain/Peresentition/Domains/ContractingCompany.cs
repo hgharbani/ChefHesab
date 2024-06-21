@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
+
 using ChefHesab.Domain;
 
 
@@ -15,28 +15,45 @@ namespace ChefHesab.Domain
     /// </summary>
     public partial class ContractingCompany
     {
+        public Guid Id { get; set; } // Id (Primary key)
+        public string CompanyName { get; set; } // CompanyName (length: 300)
+        public DateTime? AgreementDate { get; set; } // AgreementDate
+        public int? AgreementPeriod { get; set; } // AgreementPeriod
+        public DateTime? ExpirationDate { get; set; } // ExpirationDate
+        public string AgreementNumber { get; set; } // AgreementNumber
+        public bool? IsActive { get; set; } // IsActive
+        public Guid? PersonalId { get; set; } // PersonalId
+
+        // Reverse navigation
+
+        /// <summary>
+        /// Child AdditionalCosts where [AdditionalCosts].[CompanyId] point to this entity (FK_AdditionalCosts_ContractingCompanies)
+        /// </summary>
+        public ICollection<AdditionalCost> AdditionalCosts { get; set; } // AdditionalCosts.FK_AdditionalCosts_ContractingCompanies
+
+        /// <summary>
+        /// Child FoodProviders where [FoodProviders].[ContractCompanyId] point to this entity (FK_FoodProviders_ContractingCompanies)
+        /// </summary>
+        public ICollection<FoodProvider> FoodProviders { get; set; } // FoodProviders.FK_FoodProviders_ContractingCompanies
+
+        /// <summary>
+        /// Child StuffPrices where [StuffPrice].[CompanyId] point to this entity (FK_StuffPrice_ContractingCompanies)
+        /// </summary>
+        public ICollection<StuffPrice> StuffPrices { get; set; } // StuffPrice.FK_StuffPrice_ContractingCompanies
+
+        // Foreign keys
+
+        /// <summary>
+        /// Parent Personal pointed by [ContractingCompanies].([PersonalId]) (FK_ContractingCompanies_Personal)
+        /// </summary>
+        public Personal Personal { get; set; } // FK_ContractingCompanies_Personal
+
         public ContractingCompany()
         {
-            FoodProviders = new HashSet<FoodProvider>();
+            Id = Guid.NewGuid();
+            AdditionalCosts = new List<AdditionalCost>();
+            FoodProviders = new List<FoodProvider>();
+            StuffPrices = new List<StuffPrice>();
         }
-
-        [Key]
-        public Guid Id { get; set; }
-
-        public string CompanyName { get; set; }
-       
-        public DateTime? AgreementDate { get; set; }
-        public int? AgreementPeriod { get; set; }
- 
-        public DateTime? ExpirationDate { get; set; }
-        public string AgreementNumber { get; set; }
-        public bool? IsActive { get; set; }
-        public Guid? PersonalId { get; set; }
-
-        [ForeignKey("PersonalId")]
-        public virtual Personal Personal { get; set; }
-        public virtual ICollection<FoodProvider> FoodProviders { get; set; }
-
-        public virtual ICollection<StuffPrice> StuffPrices { get; set; }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using ChefHesab.Application.Interface.define;
+using ChefHesab.Dto.define.FoodCategory;
+using ChefHesab.Share.model.KendoModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using static ChefHesab.Dto.define.FoodStuff.SnapFoodStufCategory;
@@ -16,6 +18,11 @@ namespace Chefhesab.WebApi.Controllers.define
             _foodCategory = foodCategoryService;
             _foodStuffService = foodStuffService;
         }
-     
+        [HttpPost("GetAllByKendoFilter")]
+        public IActionResult GetAllByKendoFilter([FromBody] SearchFoodCategoryVM request)
+        {
+            var result = _foodCategory.GetAllByKendoFilter(request);
+            return Ok(result);
+        }
     }
 }

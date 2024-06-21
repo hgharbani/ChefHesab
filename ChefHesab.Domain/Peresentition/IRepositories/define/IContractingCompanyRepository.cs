@@ -10,9 +10,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
 {
     public interface IContractingCompanyRepository  : IGenericRepository<ContractingCompany>
     {
-        void Add(ContractingCompany company);
-        Task<bool> Any(Func<object, bool> value);
-        IQueryable<ContractingCompany> GetAll();
+      
         IQueryable<ContractingCompany> GetAllAsNoTracking();
     }
 }

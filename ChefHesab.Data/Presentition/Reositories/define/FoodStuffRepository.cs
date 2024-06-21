@@ -16,10 +16,10 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
         {
             _context = dbContext;
         }
-
+    
        public IQueryable<FoodStuff> GetAllQuery()
         {
-            return _context.FoodStuffs.Include(a => a.FoodCategory).AsQueryable();
+            return GetAllQueryable().Include(a => a.FoodCategory).Include(a=>a.StuffPrices).AsQueryable();
         }
 
 

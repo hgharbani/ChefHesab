@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cnR8CfMFcay8WZg4uNA7K3wpRn2S01PPBeLmuzCzcVQ=",
+  "Hash": "SUgXscRPp06xHETE6JPLahMuJpL60U8wKhtpz67WznA=",
   "Source": "ChefHesab.WebCore",
   "BasePath": "_content/ChefHesab.WebCore",
   "Mode": "Default",
@@ -15443,6 +15443,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\card\\3.png"
+    },
+    {
+      "Identity": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\cheflogo.png",
+      "SourceId": "ChefHesab.WebCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\",
+      "BasePath": "_content/ChefHesab.WebCore",
+      "RelativePath": "images/cheflogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cheflogo.png"
     },
     {
       "Identity": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\demo\\pic1.JPG",
@@ -49168,6 +49187,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\kendo.all.min.js.map"
+    },
+    {
+      "Identity": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\KendoObject.js",
+      "SourceId": "ChefHesab.WebCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\",
+      "BasePath": "_content/ChefHesab.WebCore",
+      "RelativePath": "js/KendoObject.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\KendoObject.js"
     },
     {
       "Identity": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\js\\messages\\kendo.messages.ar-AE.min.js",

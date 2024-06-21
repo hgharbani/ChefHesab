@@ -1,0 +1,293 @@
+﻿@Html.DalirWindow()
+<style>
+    .k-grid-cancel {
+        background-color: lightgray !important;
+        color: black !important;
+    }
+
+    .k-grid-update {
+        border-color: #222222 !important;
+        color: #ffffff !important;
+        background-color: #0dc121 !important;
+    }
+
+    .k-grid-edit {
+        border-color: #222222 !important;
+        color: black !important;
+        background-color: #ffc501 !important;
+    }
+</style>
+<div class="grid grid-cols-4 gap-4">
+ 
+    <div class="col-span-2 mt-2 k-rtl" id="search">
+        نوع
+        <select id="FoodCategory" class="drodpwon"></select>
+    </div>
+    <div class="col-span-4 mt-2 k-rtl" id="GridBox">
+        <div id="FoodStuffGrid"></div>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        var foodStuffClass;
+        $(document).ready(function (event) {
+            $("#FoodMenu").addClass("mm-active")
+       
+            renderFoodCategoryComboBox("#FoodCategory")
+
+            bindFoodStuffGrids();
+
+            $("#FoodCategory").change(function (e) {
+                    refreshGrid()
+            })
+
+        });
+
+        function renderFoodCategoryComboBox(nameId) {
+            $(nameId).kendoComboBox({
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "/Define/FoodCategory/GetAllByKendoFilter",
+                            type: "POST",
+                            dataType: "json",
+                            contentType: "application/json",
+                            data: {
+                                Code:2
+                            }
+                        },
+
+                        parameterMap: function (data, operation) {
+                            if (operation != "read") {
+                                return data;
+                            } else {
+                                return JSON.stringify(data);
+                            }
+                        }
+                    },
+                    pageSize: 20,
+                    autoSync: true,
+                    schema: {
+                        data: "Data",
+                        model: {
+                            id: "CategoryId",
+                            fields: {
+                                CategoryId: { editable: false, nullable: true },
+                                Title: { type: "string", editable: false },
+
+
+                            }
+                        }
+                    }
+                },
+                dataTextField: "Title",
+                dataValueField: "CategoryId",
+                filter: "contains",
+                suggest: true,
+
+            });
+        }
+        function bindFoodStuffGrids() {
+            var record = 0;
+
+            $("#FoodStuffGrid").kendoGrid({
+                autoBind: false,
+                toolbar: function () {
+                    var btn = `<button onclick="Add()" type="button" class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base"><span class="k-icon k-i-plus k-button-icon"></span><span class="k-button-text">اضافه کردن ردیف جدید</span></button>`
+                    return btn;
+                },
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "/Define/FoodStuff/GetAllFoodByKendoFilter",
+                            type: "POST",
+                            dataType: "json",
+                            contentType: "application/json",
+                            data: getData
+                        },
+                        update: {
+                            url: "/Define/FoodStuff/UpdateStuff",
+                            dataType: "jsonp",
+
+                        },
+                        parameterMap: function (data, operation) {
+                            if (operation != "read") {
+                                return data;
+                            } else {
+                                return JSON.stringify(data);
+                            }
+                        }
+                    },
+                    pageSize: 20,
+                    autoSync: false,
+                    schema: {
+                        data: "Data",
+                        model: {
+                            id: "Id",
+                            fields: {
+                                Id: { editable: false, nullable: true },
+                                Title: { type: "string", editable: false },
+                                TotalPrice: { type: "number", editable: false, defaultValue: 0 },
+                                FoodCategoryTitle: { type: "string", editable: false },
+
+                            }
+                        }
+                    },
+                    sortable: {
+                        mode: "multiple",
+                        allowUnsort: true
+                    },
+                    sort: [
+                        {
+                            field: "FoodCategoryTitle",
+                            dir: "asc"
+                        },
+                        {
+                            field: "Title",
+                            dir: "asc"
+                        }
+                    ]
+                },
+                columnMenu: {
+                    filterable: true
+                },
+
+                dataBinding: function () {
+                    record = (this.dataSource.page() - 1) * this.dataSource.pageSize();
+                },
+                dataBound: function (e) {
+                    foodStuffClass = new KendoObject("#FoodStuffGrid", "kendoGrid");
+
+
+
+
+                    $("#FoodStuffGrid").find(".k-grid-edit").click(function (e) {
+                        var dataRow = foodStuffClass.kendoConstractor.dataItem(this.closest('tr'))
+                        UpdateRow(dataRow, e)
+                    });
+                },
+                pageable: {
+                    pageSizes: [10, 25, 50, 100, 250, 500],
+                    refresh: true,
+                    messages: {
+                        display: "{0} تا {1} از {2} رکورد",
+                        //{0} is the index of the first record on the page, {1} - index of the last record on the page, {2} is the total amount of records
+                        empty: "رکوردی برای نمایش وجود ندارد.",
+                        page: "صفحه",
+                        of: "از {0}", //{0} is total amount of pages
+                        itemsPerPage: "رکورد در صفحه",
+                        first: "صفحه نخست",
+                        previous: "صفحه قبل",
+                        next: "صفحه بعد",
+                        last: "صفحه آخر",
+                        refresh: "دوباره سازی"
+                    }
+                },
+                sortable: true,
+                groupable: true,
+                resizable: true,
+                reorderable: true,
+                editable: true,
+                filterable: true,
+                selectable: 'row',
+                columns: [
+                    {
+                        command: ["edit"], title: "&nbsp;", attributes: {
+                            style: "text-align: center;"
+                        }, width: "150px"
+                    },
+
+                    {
+                        field: "Title",
+                        title: "عنوان",
+                        width: 300,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    }, {
+                        field: "FoodCategoryTitle",
+                        title: "نوع",
+                        width: 105,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    },
+
+                    {
+                        field: "TotalPrice",
+                        title: "مبلغ",
+                        width: 105,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                        template: `<span class="totalPrice">#= addCommas(TotalPrice)#</span>`
+
+                    }
+                ],
+            });
+
+
+
+
+
+
+        }
+        function Add() {
+            ShowPopup(null, "/Define/FoodStuff/Create", "اضافه کردن شرکت جدید", "600px", "auto", refreshGrid)
+        }
+        function PriceEditor(container, options) {
+            var data = $('<input required  class="k-input" name="' + options.field + '"/>')
+                .appendTo(container)
+            $(data).change(function (e) {
+                ;
+                var stuffPrice = $("#FoodStuffGrid").data("kendoGrid").dataItem($(this).closest('tr'));
+                stuffPrice.Price = this.value;
+                var percent = 1;
+                var totalPrice = (Number(this.value) * Number(stuffPrice.AmountPercent)) + Number(this.value)
+
+                stuffPrice.TotalPrice = totalPrice
+                foodStuffClass.rowActive($(this).closest('tr'));
+                foodStuffClass.setValueToCellNumberByClassName(5, ".totalPrice", addCommas(totalPrice));
+                foodStuffClass.focusToColumRowActived(4)
+                return;
+            })
+        }
+
+        function AmountPercentEditor(container, options) {
+            var data = $('<input required  class="k-input" name="' + options.field + '"/>')
+                .appendTo(container)
+            $(data).change(function (e) {
+
+                e.preventDefault()
+                var stuffPrice = $("#FoodStuffGrid").data("kendoGrid").dataItem($(this).closest('tr'));
+                stuffPrice.AmountPercent = this.value;
+                var percent = 1;
+                var totalPrice = (Number(this.value) * Number(stuffPrice.Price)) + Number(stuffPrice.Price)
+
+                stuffPrice.TotalPrice = totalPrice
+                foodStuffClass.rowActive($(this).closest('tr'))
+                foodStuffClass.setValueToCellNumberByClassName(5, ".totalPrice", addCommas(totalPrice))
+                foodStuffClass.focusToColumRowActived(0)
+                return;
+            })
+        }
+
+        function refreshGrid() {
+            $("#FoodStuffGrid").data("kendoGrid").dataSource.read();
+        }
+
+        function getData() {
+            return {
+                FoodCategoryId: $("#FoodCategory").data("kendoComboBox").value() !== '' ? $("#FoodCategory").data("kendoComboBox").value() : 0
+
+            }
+        }
+        function showEditForm(id) {
+            ShowPopup(null, "/Define/FoodProvider/Edit?id=" + id, 'تصویر', "600px", "auto", refreshGrid)
+
+        }
+    </script>
+}
+
+

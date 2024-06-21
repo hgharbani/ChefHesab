@@ -11,19 +11,19 @@ namespace ChefHesab.Data.Configurations
 {
     public partial class FoodStuffConfiguration : IEntityTypeConfiguration<FoodStuff>
     {
-        public void Configure(EntityTypeBuilder<FoodStuff> entity)
+        public void Configure(EntityTypeBuilder<FoodStuff> builder)
         {
-            entity.ToTable(nameof(FoodStuff),"dbo");
-            entity.HasComment("مواد غذایی");
-            entity.HasKey(a=>a.Id);
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            builder.ToTable("FoodStuff", "dbo");
+            builder.HasKey(x => x.Id).HasName("PK_FoodStuff").IsClustered();
 
-            entity.HasOne(d => d.FoodCategory)
-                .WithMany(p => p.FoodStuffs)
-                .HasForeignKey(d => d.FoodCategoryId)
-                .HasConstraintName("FK_FoodStuff_FoodCategory");
+            builder.Property(x => x.Id).HasColumnName(@"Id").HasColumnType("uniqueidentifier").HasDefaultValueSql("NEWID()").IsRequired();
+            builder.Property(x => x.Title).HasColumnName(@"Title").HasColumnType("nvarchar(500)").IsRequired().HasMaxLength(500);
 
-            OnConfigurePartial(entity);
+            builder.Property(x => x.FoodCategoryId).HasColumnName(@"FoodCategoryId").HasColumnType("bigint").IsRequired(false);
+
+            // Foreign keys
+            builder.HasOne(a => a.FoodCategory).WithMany(b => b.FoodStuffs).HasForeignKey(c => c.FoodCategoryId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_FoodStuff_FoodCategory");
+            OnConfigurePartial(builder);
         }
 
         partial void OnConfigurePartial(EntityTypeBuilder<FoodStuff> entity);

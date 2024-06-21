@@ -1,14 +1,13 @@
-﻿using Microsoft.AspNetCore.Html;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
+﻿
+using Microsoft.AspNetCore.Html;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
-using Microsoft.AspNetCore.Mvc.ViewFeatures.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace ChefHesab.Share.Extiontions
 {
@@ -19,7 +18,18 @@ namespace ChefHesab.Share.Extiontions
             return ConfigurationBasedStringEncrypter.Prefix + name;
         }
 
-        public static HtmlString DanWindow(this HtmlHelper helper, string name = "danWindow")
+
+        //public static string PropertyNameFor<TModel, TProperty>(this HtmlHelper<IEnumerable<TModel>> helper, Expression<Func<TModel, TProperty>> expression)
+        //{
+        //    return ExpressionMetadataProvider.FromLambdaExpression(expression, helper.ViewData, helper.MetadataProvider).PropertyName;
+        //}
+
+        //public static string PropertyNameFor<TModel, TProperty>(this HtmlHelper<TModel> helper, Expression<Func<TModel, TProperty>> expression)
+        //{
+        //    return ExpressionMetadataProvider.FromLambdaExpression(expression, new ViewDataDictionary<TModel>()).PropertyName;
+        //}
+
+        public static HtmlString DalirWindow(this IHtmlHelper helper, string name = "dalirWindow")
         {
             StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.AppendLine($"<div id=\"{name}\"></div>");
@@ -44,7 +54,7 @@ namespace ChefHesab.Share.Extiontions
             stringBuilder.AppendLine("var popupWindow = $(\"#\" + windowcontainerId).kendoWindow({");
             stringBuilder.AppendLine("actions: [\"Close\", \"Maximize\"],");
             stringBuilder.AppendLine("modal: true,");
-            stringBuilder.AppendLine("iframe: true,");
+            stringBuilder.AppendLine("iframe: false,");
             stringBuilder.AppendLine("content: content,");
             stringBuilder.AppendLine("draggable: true,");
             stringBuilder.AppendLine("minHeight: 300,");

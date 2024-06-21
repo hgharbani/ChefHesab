@@ -14,29 +14,17 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
 
     public class ContractingCompanyRepository :GenericRepository<ContractingCompany>, IContractingCompanyRepository
     {
+
         private readonly ChefHesabContext _context;
-        public ContractingCompanyRepository(ChefHesabContext dbContext) :base (dbContext)
+        public ContractingCompanyRepository(ChefHesabContext dbContext) : base(dbContext)
         {
             _context = dbContext;
         }
 
-
-        public IQueryable<ContractingCompany> GetAll()
-        {
-            return _context.ContractingCompanies.AsQueryable();
-        }
         public IQueryable<ContractingCompany> GetAllAsNoTracking()
         {
-            return _context.ContractingCompanies.AsQueryable().AsNoTracking();
-        }
-        public void Add(ContractingCompany company)
-        {
-            _context.ContractingCompanies.Add(company);
+            return GetAllQueryable().AsNoTracking();
         }
 
-        public Task<bool> Any(Func<object, bool> value)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -8,9 +8,11 @@ namespace ChefHesab.Application.Interface.define
     public interface IContractingCompanyService
     {
         Task<ChefResult> Add(ContractingCompanyVM ContractingCompany);
+        Task<ChefResult> Delete(CoontractingCompanySearch model);
         Task<ChefResult> Edit(ContractingCompanyVM ContractingCompany);
         dynamic GetAllByKendoFilter(Request request);
         List<ContractingCompanyVM> GetContractingCompany();
         Task<Tuple<List<ContractingCompanyVM>, int>> GetContractingCompanyListWithPeginition(ContractingCompanyVM contractingCompany);
+        ContractingCompanyVM GetOne(Guid contractingId);
     }
 }

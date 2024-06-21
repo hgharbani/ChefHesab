@@ -1,7 +1,11 @@
-﻿namespace ChefHesab.Application.Interface.food
+﻿using ChefHesab.Dto.food.StuffPrice;
+using ChefHesab.Share.model;
+
+namespace ChefHesab.Application.Interface.food
 {
     public interface IStuffPriceService
     {
-        void get(int id);
+        Task<ChefResult> AddOrUpdate(CreateStuffPriceVM model);
+ 
     }
 }

@@ -1,4 +1,5 @@
-﻿using ChefHesab.Application.Interface.define;
+﻿using AutoMapper;
+using ChefHesab.Application.Interface.define;
 using ChefHesab.Domain;
 using ChefHesab.Domain.Peresentition.IRepositories;
 using Dalir.common.Interfaces;
@@ -16,20 +17,21 @@ namespace ChefHesab.Application.services.define
     public class PersonalService : IPersonalService
     {
         public IChefHesabUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
 
-        public PersonalService(IChefHesabUnitOfWork unitOfWork)
+        public PersonalService(IChefHesabUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
 
-
-        public async Task<List<Personal>> GetAllProducts()
+        public Task<List<Personal>> GetAllProducts()
         {
-            var PersonalList = await _unitOfWork.PersonalRepository.GetAllAsync();
+            var PersonalList = _unitOfWork.PersonalRepository.GetAllAsync();
             return PersonalList;
         }
-
-
-
     }
 }
+
+
+     

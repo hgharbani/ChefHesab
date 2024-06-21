@@ -30,8 +30,28 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVmaW5lXFZpZXdzXENvbXBhbmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/Define/Views/Companies/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVmaW5lXFZpZXdzXENvbXBhbmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/Define/Views/Companies/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVmaW5lXFZpZXdzXENvbXBhbmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/Define/Views/FoodStuff/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVmaW5lXFZpZXdzXEZvb2RTdHVmZlxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/Define/Views/FoodStuff/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVmaW5lXFZpZXdzXEZvb2RTdHVmZlxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/Define/Views/FoodStuff/FoodIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVmaW5lXFZpZXdzXEZvb2RTdHVmZlxGb29kSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/Define/Views/FoodStuff/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVmaW5lXFZpZXdzXEZvb2RTdHVmZlxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/_ViewImports.cshtml]

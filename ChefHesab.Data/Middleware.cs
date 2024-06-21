@@ -23,7 +23,7 @@ namespace ChefHesab.Data
             {
                 config.UseSqlServer(configurations.GetConnectionString("ChefHesabContext"), providerOptions => providerOptions.EnableRetryOnFailure());
             });
-
+            
             return services;
         }
 
