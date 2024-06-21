@@ -5,7 +5,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories
     {
         bool IsDisposed    { get; }
 
-    Task<int> SaveAsync(CancellationToken cancellationToken = default);
+    Task<int> SaveAsync();
     int Save();
 
 }

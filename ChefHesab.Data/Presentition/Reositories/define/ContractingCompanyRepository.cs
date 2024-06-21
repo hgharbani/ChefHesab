@@ -23,7 +23,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
 
         public IQueryable<ContractingCompany> GetAllAsNoTracking()
         {
-            return GetAllQueryable().AsNoTracking();
+            return _context.ContractingCompanies.AsNoTracking();
         }
 
     }

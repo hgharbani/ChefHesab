@@ -27,11 +27,11 @@ namespace ChefHesab.Domain.Peresentition.IRepositories
 
         public IQueryable<AdditionalCost> GetAll()
         {
-            return GetAllQueryable();
+            return _context.AdditionalCosts.AsQueryable();
         }
         public IQueryable<AdditionalCost> GetAllAsNoTracking()
         {
-            return GetAllQueryable().AsNoTracking();
+            return _context.AdditionalCosts.AsQueryable().AsNoTracking();
         }
        
     }

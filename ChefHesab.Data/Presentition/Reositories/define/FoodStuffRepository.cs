@@ -19,7 +19,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
     
        public IQueryable<FoodStuff> GetAllQuery()
         {
-            return GetAllQueryable().Include(a => a.FoodCategory).Include(a=>a.StuffPrices).AsQueryable();
+            return _context.FoodStuffs.AsQueryable().Include(a => a.FoodCategory).Include(a=>a.StuffPrices).AsQueryable();
         }
 
 

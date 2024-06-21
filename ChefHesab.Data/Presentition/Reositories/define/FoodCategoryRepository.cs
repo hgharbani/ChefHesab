@@ -21,7 +21,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
 
         public IQueryable<FoodCategory> GetAllQueryble()
         {
-            return GetAllQueryable();
+            return _context.FoodCategories.AsQueryable();
         }
       
     }

@@ -206,7 +206,7 @@ namespace ChefHesab.Application.services.define
                model.Id = Guid.NewGuid();
                 var mapper = _mapper.Map<FoodStuff>(model);
           
-               await _unitOfWork.FoodStuffRepository.AddAsync(mapper);
+                _unitOfWork.FoodStuffRepository.Add(mapper);
 
                 var idsave = await _unitOfWork.SaveAsync();
                 return result;

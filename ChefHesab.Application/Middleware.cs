@@ -24,7 +24,8 @@ namespace ChefHesab.Application
             services.AddAutoMapper(typeof(Middleware).Assembly);
          
             services.AddSingleton(mapper);
-            services.AddScoped<IChefHesabUnitOfWork, ChefHesabUnitOfWork>();
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddTransient<IChefHesabUnitOfWork, ChefHesabUnitOfWork>();
 
             return services;
         }

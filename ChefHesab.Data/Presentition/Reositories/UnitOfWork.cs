@@ -34,33 +34,17 @@ namespace ChefHesab.Data.Presentition.Reositories
 
         protected virtual void Dispose(bool disposing)
         {
-            if (IsDisposed)
-            {
-                return;
-            }
-
-            if (disposing)
-            {
-
-                if (DatabaseContext != null)
-                {
-                    //DatabaseContext.Database.CloseConnection();
-
-                    DatabaseContext.Dispose();
-                }
-            }
-
-            IsDisposed = true;
+            DatabaseContext?.Dispose();
         }
 
-        public async Task<int> SaveAsync(CancellationToken cancellationToken)
+        public async Task<int> SaveAsync()
         {
             int result = -1;
 
             try
             {
                 result =
-                    await DatabaseContext.SaveChangesAsync(cancellationToken);
+                    await DatabaseContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {
