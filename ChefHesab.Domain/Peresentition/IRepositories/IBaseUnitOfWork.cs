@@ -6,7 +6,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories
         bool IsDisposed    { get; }
 
     Task<int> SaveAsync();
-    int Save();
+ 
 
 }
 }

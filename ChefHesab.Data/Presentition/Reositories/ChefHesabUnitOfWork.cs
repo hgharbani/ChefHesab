@@ -8,17 +8,16 @@ namespace ChefHesab.Data.Presentition.Reositories
 {
     public class ChefHesabUnitOfWork :  UnitOfWork<ChefHesabContext>, IChefHesabUnitOfWork
     {
-
-        public ChefHesabUnitOfWork(ChefHesabContext context) : base(context)
+        public ChefHesabUnitOfWork(ChefHesabContext chefHesab) : base(chefHesab)
         {
-           
+            ChefHesab = chefHesab;
         }
         private IPersonalRepository? personalRepository;
         public IPersonalRepository PersonalRepository
         {
             get
             {
-                personalRepository ??= new PersonalRepository(DatabaseContext);
+                personalRepository ??= new PersonalRepository(ChefHesab);
                 return personalRepository;
             }
         }
@@ -27,7 +26,7 @@ namespace ChefHesab.Data.Presentition.Reositories
         {
             get
             {
-                additionalCostRepository ??= new AdditionalCostRepository(DatabaseContext);
+                additionalCostRepository ??= new AdditionalCostRepository(ChefHesab);
                 return additionalCostRepository;
             }
         }
@@ -36,7 +35,7 @@ namespace ChefHesab.Data.Presentition.Reositories
         {
             get
             {
-                contractingCompanyRepository ??= new ContractingCompanyRepository(DatabaseContext);
+                contractingCompanyRepository ??= new ContractingCompanyRepository(ChefHesab);
                 return contractingCompanyRepository;
             }
         }
@@ -46,7 +45,7 @@ namespace ChefHesab.Data.Presentition.Reositories
         {
             get
             {
-                foodCategoryRepository ??= new FoodCategoryRepository(DatabaseContext);
+                foodCategoryRepository ??= new FoodCategoryRepository(ChefHesab);
                 return foodCategoryRepository;
             }
         }
@@ -55,7 +54,7 @@ namespace ChefHesab.Data.Presentition.Reositories
         {
             get
             {
-                foodStuffRepository ??= new FoodStuffRepository(DatabaseContext);
+                foodStuffRepository ??= new FoodStuffRepository(ChefHesab);
                 return foodStuffRepository;
             }
         }
@@ -64,7 +63,7 @@ namespace ChefHesab.Data.Presentition.Reositories
         {
             get
             {
-                additionalCostFoodRepository ??= new AdditionalCostFoodRepository(DatabaseContext);
+                additionalCostFoodRepository ??= new AdditionalCostFoodRepository(ChefHesab);
                 return additionalCostFoodRepository;
             }
         }
@@ -73,7 +72,7 @@ namespace ChefHesab.Data.Presentition.Reositories
         {
             get
             {
-                foodProviderRepository ??= new FoodProviderRepository(DatabaseContext);
+                foodProviderRepository ??= new FoodProviderRepository(ChefHesab);
                 return foodProviderRepository;
             }
         }
@@ -82,7 +81,7 @@ namespace ChefHesab.Data.Presentition.Reositories
         {
             get
             {
-                ingredinsFoodRepository ??= new IngredinsFoodRepository(DatabaseContext);
+                ingredinsFoodRepository ??= new IngredinsFoodRepository(ChefHesab);
                 return ingredinsFoodRepository;
             }
         }
@@ -91,7 +90,7 @@ namespace ChefHesab.Data.Presentition.Reositories
         {
             get
             {
-                stuffPriceRepository ??= new StuffPriceRepository(DatabaseContext);
+                stuffPriceRepository ??= new StuffPriceRepository(ChefHesab);
                 return stuffPriceRepository;
             }
         }
@@ -100,12 +99,11 @@ namespace ChefHesab.Data.Presentition.Reositories
         {
             get
             {
-                authenticateRepository ??= new AuthenticateRepository(DatabaseContext);
+                authenticateRepository ??= new AuthenticateRepository(ChefHesab);
                 return authenticateRepository;
             }
         }
 
-       
-
+        public ChefHesabContext ChefHesab { get; }
     }
 }

@@ -45,7 +45,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.food
         {
             if (model.Id.HasValue)
             {
-                return await _unitOfWork.StuffPriceRepository.Any(a => 
+                return  _unitOfWork.StuffPriceRepository.Any(a => 
                 a.Id != model.Id 
                 && a.CompanyId == model.CompanyId 
                 && a.FoodStuffId == model.FoodStuffId
@@ -54,7 +54,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.food
             }
             else
             {
-                return await _unitOfWork.StuffPriceRepository.Any(a =>
+                return  _unitOfWork.StuffPriceRepository.Any(a =>
                 a.CompanyId == model.CompanyId
                 && a.FoodStuffId == model.FoodStuffId
                 );
@@ -83,7 +83,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.food
                 }
                 _unitOfWork.StuffPriceRepository.Add(mapper);
 
-                var idsave = await _unitOfWork.SaveAsync();
+              await  _unitOfWork.SaveAsync();
                 return result;
             }
             catch (Exception ex)

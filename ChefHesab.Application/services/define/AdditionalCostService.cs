@@ -37,12 +37,12 @@ namespace ChefHesab.Application.services.define
         {
             if (string.IsNullOrEmpty(additionalCost.Id.ToString()))
             {
-                return await _unitOfWork.AdditionalCostRepository.Any(a =>a.Id!=additionalCost.Id&& a.Title == additionalCost.Title);
+                return  _unitOfWork.AdditionalCostRepository.Any(a =>a.Id!=additionalCost.Id&& a.Title == additionalCost.Title);
 
             }
             else
             {
-                return await _unitOfWork.AdditionalCostRepository.Any(a => a.Title == additionalCost.Title);
+                return  _unitOfWork.AdditionalCostRepository.Any(a => a.Title == additionalCost.Title);
             }
             
         }
@@ -108,7 +108,7 @@ namespace ChefHesab.Application.services.define
 
                 var mapper = _mapper.Map<AdditionalCostVM,AdditionalCost>(additionalCost, find);
                 _unitOfWork.AdditionalCostRepository.Update(mapper);
-                await _unitOfWork.SaveAsync();
+                 _unitOfWork.SaveAsync();
                 return result;
             }
             catch (Exception ex)

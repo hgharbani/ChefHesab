@@ -12,22 +12,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChefHesab.Data
+namespace ChefHesab.Data;
+
+public static class Middleware
 {
-    public static class Middleware
+    public static IServiceCollection AddData(this IServiceCollection services)
     {
-        public static IServiceCollection AddData(this IServiceCollection services)
+        var configurations = services.BuildServiceProvider().GetRequiredService<IConfiguration>();
+        services.AddScoped<DbContext, ChefHesabContext>();
+        services.AddDbContextFactory<ChefHesabContext>(option =>
         {
-            var configurations = services.BuildServiceProvider().GetRequiredService<IConfiguration>();
-            services.AddDbContext<ChefHesabContext>(config =>
-            {
-                config.UseSqlServer(configurations.GetConnectionString("ChefHesabContext"), providerOptions => providerOptions.EnableRetryOnFailure());
-            });
-            
-            return services;
-        }
+            option.UseSqlServer(configurations.GetConnectionString("ChefHesabContext"));
+
+        });
 
 
-       
+        ServiceTool.Create(services);
+
+        return services;
+    }
+
+
+   
+}
+public class ServiceTool
+{
+    private static IServiceProvider? ServiceProvider { get; set; }
+    public static IServiceCollection Create(IServiceCollection service)
+    {
+        ServiceProvider = service.BuildServiceProvider();
+        return service;
+    }
+    public static T Resolve<T>()
+    {
+        return ServiceProvider!.GetService<T>()!;
     }
 }

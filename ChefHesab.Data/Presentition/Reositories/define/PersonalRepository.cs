@@ -8,21 +8,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Query.Internal;
 
 namespace ChefHesab.Data.Presentition.Reositories.define
 {
     public class PersonalRepository : GenericRepository<Personal>,IPersonalRepository
     {
-        private readonly ChefHesabContext _context;
-        public PersonalRepository(ChefHesabContext dbContext) : base(dbContext)
+        public PersonalRepository(ChefHesabContext chefHesab) : base(chefHesab)
         {
-            _context = dbContext;
+            
         }
-
-
         public async Task<List<Personal>> GetAllAsync()
         {
-            return await _context.Personals.ToListAsync();
+            return await _dbContext.Set<Personal>().ToListAsync();
         }
     }
 }

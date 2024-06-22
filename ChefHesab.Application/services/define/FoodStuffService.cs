@@ -3,21 +3,13 @@ using ChefHesab.Application.Interface.define;
 using ChefHesab.Domain;
 using ChefHesab.Domain.Peresentition.IRepositories;
 using ChefHesab.Dto.define.FoodStuff;
-using ChefHesab.Dto.food.StuffPrice;
 using ChefHesab.Share.Extiontions.KendoExtentions;
 using ChefHesab.Share.model;
 using ChefHesab.Share.model.KendoModel.Response;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
-using System.Collections;
 using OfficeOpenXml;
-using System.Data.SqlClient;
-
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
-using System.IO;
+using System.Collections;
 using System.Linq.Dynamic;
-using ChefHesab.Dto.define.ContractingCompany;
 
 namespace ChefHesab.Application.services.define
 {
@@ -38,21 +30,21 @@ namespace ChefHesab.Application.services.define
 
         {
             var FoodStuff = _unitOfWork.FoodStuffRepository.GetAllQuery().AsNoTracking();
-            if (request.FoodCategoryId.HasValue&& request.FoodCategoryId.Value>0)
+            if (request.FoodCategoryId.HasValue && request.FoodCategoryId.Value > 0)
             {
                 var foodCategoryId = request.FoodCategoryId.Value;
                 FoodStuff = FoodStuff.Where(a => a.FoodCategoryId == foodCategoryId);
             }
 
-          var  query= FoodStuff.Select(a => new
-                {
-                    a.Id,
-                    a.Title,
-                    FoodCategoryTitle= a.FoodCategory.Title,
-                    a.FoodCategoryId,
-                    StuffPrices = a.StuffPrices.Where(c => c.CompanyId == request.CompanyId)
-                }).OrderBy(a=>a.FoodCategoryTitle);
-          
+            var query = FoodStuff.Select(a => new
+            {
+                a.Id,
+                a.Title,
+                FoodCategoryTitle = a.FoodCategory.Title,
+                a.FoodCategoryId,
+                StuffPrices = a.StuffPrices.Where(c => c.CompanyId == request.CompanyId)
+            }).OrderBy(a => a.FoodCategoryTitle);
+
             int total = query.Count();
             IList resultData;
             bool isGrouped = false;
@@ -68,8 +60,8 @@ namespace ChefHesab.Application.services.define
                 StuffPricesId = a.StuffPrices.Any() ? a.StuffPrices.FirstOrDefault().Id : null,
                 FoodCategoryTitle = a.FoodCategoryTitle,
                 FoodCategoryId = a.FoodCategoryId.Value,
-                CompanyId= request.CompanyId.Value,
-               
+                CompanyId = request.CompanyId.Value,
+
             });
             if (request.Sorts != null)
             {
@@ -175,18 +167,19 @@ namespace ChefHesab.Application.services.define
 
 
 
-        private async Task<bool> IsDuplicate(CreateFoodStuffVM contractingCompany)
+        private bool IsDuplicate(CreateFoodStuffVM contractingCompany)
         {
             if (!string.IsNullOrEmpty(contractingCompany.Id.ToString()))
             {
-                return await _unitOfWork.FoodStuffRepository.Any(a => a.Id != contractingCompany.Id && a.Title == contractingCompany.Title
+                return  _unitOfWork.FoodStuffRepository
+                    .Any(a => a.Id != contractingCompany.Id && a.Title == contractingCompany.Title
                 && a.FoodCategoryId == contractingCompany.FoodCategoryId
                );
 
             }
             else
             {
-                return await _unitOfWork.FoodStuffRepository.Any(a => a.Title == contractingCompany.Title && a.FoodCategoryId == contractingCompany.FoodCategoryId
+                return  _unitOfWork.FoodStuffRepository.Any(a => a.Title == contractingCompany.Title && a.FoodCategoryId == contractingCompany.FoodCategoryId
                 );
             }
 
@@ -198,17 +191,18 @@ namespace ChefHesab.Application.services.define
             try
             {
 
-                if (await IsDuplicate(model))
+                if (IsDuplicate(model))
                 {
                     result.AddError("داده وارد شده تکراری می باشد");
                     return result;
                 }
-               model.Id = Guid.NewGuid();
+                model.Id = Guid.NewGuid();
                 var mapper = _mapper.Map<FoodStuff>(model);
-          
-                _unitOfWork.FoodStuffRepository.Add(mapper);
 
-                var idsave = await _unitOfWork.SaveAsync();
+                _unitOfWork.FoodStuffRepository.Add(mapper);
+                var id = await _unitOfWork.SaveAsync();
+
+
                 return result;
             }
             catch (Exception ex)
@@ -224,7 +218,7 @@ namespace ChefHesab.Application.services.define
             try
             {
 
-                if (await IsDuplicate(model))
+                if ( IsDuplicate(model))
                 {
                     result.AddError("داده وارد شده تکراری می باشد");
                     return result;
@@ -237,8 +231,8 @@ namespace ChefHesab.Application.services.define
                 }
 
                 var mapper = _mapper.Map<CreateFoodStuffVM, FoodStuff>(model, find);
-               _unitOfWork.FoodStuffRepository.Update(mapper);
-                await _unitOfWork.SaveAsync();
+                _unitOfWork.FoodStuffRepository.Update(mapper);
+               await _unitOfWork.SaveAsync();
                 return result;
             }
             catch (Exception ex)
@@ -270,15 +264,10 @@ namespace ChefHesab.Application.services.define
                 }
                 var distinglist = listfood.DistinctBy(a => a.Title).ToList();
                 await _unitOfWork.FoodStuffRepository.AddRange(distinglist);
-                var idsave = await _unitOfWork.SaveAsync();
-                if (idsave > 0)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+               await _unitOfWork.SaveAsync();
+
+                return true;
+
 
             }
             catch (Exception ex)
@@ -315,7 +304,7 @@ namespace ChefHesab.Application.services.define
         {
             try
             {
-                var result = _unitOfWork.FoodStuffRepository.GetAllQuery().Where(a=>a.Id==id).Select(a => new CreateFoodStuffVM
+                var result = _unitOfWork.FoodStuffRepository.GetAllQuery().Where(a => a.Id == id).Select(a => new CreateFoodStuffVM
                 {
                     Title = a.Title,
                     FoodCategoryId = a.FoodCategoryId.Value,
@@ -337,31 +326,31 @@ namespace ChefHesab.Application.services.define
         {
             var result = new ChefResult();
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
-            var foodCategories=new List<FoodCategory>();
+            var foodCategories = new List<FoodCategory>();
             using (var package = new ExcelPackage(new FileInfo(@"D:/analys.xlsx")))
             {
                 ExcelWorksheet worksheet = package.Workbook.Worksheets[1];
                 try
                 {
-                   for (int i = 1; i <= worksheet.Columns.EndColumn; i = i +5)
+                    for (int i = 1; i <= worksheet.Columns.EndColumn; i = i + 5)
                     {
-                        if (worksheet.Cells[1, i ].Value==null) break;
+                        if (worksheet.Cells[1, i].Value == null) break;
 
                         if (string.IsNullOrEmpty(worksheet.Cells[1, i].Value.ToString())) break;
                         #region foodCategory
                         var foodCategory = new FoodCategory();
-                       
+
                         foodCategory.Title = worksheet.Cells[1, i].Value.ToString();
                         foodCategory.Active = true;
                         foodCategory.ParentId = 1;
-                        foodCategory.CategoryId=new Random().Next();    
+                        foodCategory.CategoryId = new Random().Next();
                         #endregion
                         #region foodStuff
                         for (int row = 3; row <= worksheet.Dimension.Rows; row++)
                         {
-                            var foodstuff=new FoodStuff();
-                            if (worksheet.Cells[row, i+1].Value==null) break;
-                            if (worksheet.Cells[row, i + 1].Value.ToString()=="") break;
+                            var foodstuff = new FoodStuff();
+                            if (worksheet.Cells[row, i + 1].Value == null) break;
+                            if (worksheet.Cells[row, i + 1].Value.ToString() == "") break;
                             // Read values from Excel
                             foodstuff.Title = worksheet.Cells[row, i + 1].Value.ToString();
                             foodCategory.FoodStuffs.Add(foodstuff);
@@ -371,13 +360,14 @@ namespace ChefHesab.Application.services.define
                         #endregion
                         // Iterate through the rows and columns
 
-                    } 
-                    
-               await _unitOfWork.FoodCategoryRepository.AddRange(foodCategories);
-                var id=  _unitOfWork.SaveAsync();
-                   
+                    }
+
+                    await _unitOfWork.FoodCategoryRepository.AddRange(foodCategories);
+                   await _unitOfWork.SaveAsync();
+
                 }
-                catch (Exception ex) {
+                catch (Exception ex)
+                {
 
                     return result;
                 }

@@ -1,4 +1,5 @@
-﻿using ChefHesab.Data.Presentition.Context;
+﻿using ChefHesab.Data;
+using ChefHesab.Data.Presentition.Context;
 using ChefHesab.Data.Presentition.Reositories.generic;
 using ChefHesab.Domain.Peresentition.IRepositories.define;
 using Microsoft.EntityFrameworkCore;
@@ -17,21 +18,19 @@ namespace ChefHesab.Domain.Peresentition.IRepositories
     /// </summary>
     public class AdditionalCostRepository : GenericRepository<AdditionalCost>, IAdditionalCostRepository
     {
-
-        private readonly ChefHesabContext _context;
-        public AdditionalCostRepository(ChefHesabContext dbContext) : base(dbContext)
+        public AdditionalCostRepository(ChefHesabContext chefHesab):base(chefHesab)
         {
-            _context = dbContext;
+                
         }
 
 
         public IQueryable<AdditionalCost> GetAll()
         {
-            return _context.AdditionalCosts.AsQueryable();
+            return _dbContext.Set<AdditionalCost>().AsQueryable();
         }
         public IQueryable<AdditionalCost> GetAllAsNoTracking()
         {
-            return _context.AdditionalCosts.AsQueryable().AsNoTracking();
+            return _dbContext.Set<AdditionalCost>().AsQueryable().AsNoTracking();
         }
        
     }

@@ -38,7 +38,7 @@ namespace ChefHesab.Application.services.define
         {
             if (string.IsNullOrEmpty(contractingCompany.Id.ToString()))
             {
-                return await _unitOfWork.ContractingCompanyRepository.Any(a => a.Id != contractingCompany.Id && a.CompanyName == contractingCompany.CompanyName &&
+                return  _unitOfWork.ContractingCompanyRepository.Any(a => a.Id != contractingCompany.Id && a.CompanyName == contractingCompany.CompanyName &&
                 (a.AgreementDate <= contractingCompany.AgreementDate && a.ExpirationDate >= contractingCompany.AgreementDate)
                 ||
                 (a.AgreementDate <= contractingCompany.ExpirationDate && a.ExpirationDate >= contractingCompany.ExpirationDate)
@@ -47,7 +47,7 @@ namespace ChefHesab.Application.services.define
             }
             else
             {
-                return await _unitOfWork.ContractingCompanyRepository.Any(a =>  a.CompanyName == contractingCompany.CompanyName &&
+                return  _unitOfWork.ContractingCompanyRepository.Any(a =>  a.CompanyName == contractingCompany.CompanyName &&
                 ((a.AgreementDate <= contractingCompany.AgreementDate && a.ExpirationDate >= contractingCompany.AgreementDate)
                 ||
                 (a.AgreementDate <= contractingCompany.ExpirationDate && a.ExpirationDate >= contractingCompany.ExpirationDate))
@@ -141,7 +141,7 @@ namespace ChefHesab.Application.services.define
                 mapper.IsActive = true;
                 _unitOfWork.ContractingCompanyRepository.Add(mapper);
 
-                var idsave = await _unitOfWork.SaveAsync();
+              await _unitOfWork.SaveAsync();
                 return result;
             }
             catch (Exception ex)
@@ -172,7 +172,7 @@ namespace ChefHesab.Application.services.define
                 var mapper = _mapper.Map<ContractingCompanyVM, ContractingCompany>(ContractingCompany, find);
                 mapper.AgreementPeriod = mapper.ExpirationDate.Value.Date.Subtract(mapper.AgreementDate.Value.Date).Days;
                 _unitOfWork.ContractingCompanyRepository.Update(mapper);
-                await _unitOfWork.SaveAsync();
+               await  _unitOfWork.SaveAsync();
                 return result;
             }
             catch (Exception ex)
@@ -199,7 +199,7 @@ namespace ChefHesab.Application.services.define
 
                 find.IsActive = false;
                 _unitOfWork.ContractingCompanyRepository.Update(find);
-                await _unitOfWork.SaveAsync();
+               await  _unitOfWork.SaveAsync();
                 return result;
             }
             catch (Exception ex)

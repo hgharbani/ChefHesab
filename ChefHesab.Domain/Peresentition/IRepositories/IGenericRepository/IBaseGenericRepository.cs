@@ -11,7 +11,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository
 {
     public interface IGenericRepository<T> where T : class
     {
-
+      
 
         Task<T> GetById(int id);
         Task<IEnumerable<T>> GetAll();
@@ -27,11 +27,14 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository
         T Select(Expression<Func<T, bool>> predicate);
 
         TResult Select<TResult>(Expression<Func<T, bool>> predicate, Expression<Func<T, TResult>> properties);
-        Task<bool> Any(Expression<Func<T, bool>> predicate);
+        Task<bool> AnyAsync(Expression<Func<T, bool>> predicate);
+        bool Any(Expression<Func<T, bool>> predicate);
         IQueryable<T> Where(Expression<Func<T, bool>> predicate);
         Task<Tuple<int, IList<T>>> SelectDataFilteredByPage(int pageNumber, int quantity, List<Expression<Func<T, bool>>> predicate);
         Task AddRange(List<T> entity);
-     
+  
+
+        IQueryable<T> SelectQuery();
     }
 
 

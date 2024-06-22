@@ -1,4 +1,5 @@
-﻿using ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository;
+﻿using ChefHesab.Data.Presentition.Context;
+using ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository;
 using Dalir.common.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
@@ -7,11 +8,12 @@ namespace ChefHesab.Data.Presentition.Reositories.generic
 {
     public abstract class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        protected readonly DbContext _dbContext;
+        protected DbContext _dbContext { get; private set; }
 
-        protected GenericRepository(DbContext context)
+        public GenericRepository(ChefHesabContext chefHesab)
         {
-            _dbContext = context;
+           
+            _dbContext = chefHesab;
         }
 
         public async Task<T> GetById(int id)
@@ -27,9 +29,13 @@ namespace ChefHesab.Data.Presentition.Reositories.generic
         public void Add(T entity)
         {
              _dbContext.Set<T>().Add(entity);
+           
         }
+       
+
         public async Task AddRange(List<T> entity)
         {
+
             await _dbContext.Set<T>().AddRangeAsync(entity);
         }
 
@@ -48,10 +54,18 @@ namespace ChefHesab.Data.Presentition.Reositories.generic
             return _dbContext.Set<T>().ToList();
         }
 
-        public virtual async Task<bool> Any(Expression<Func<T, bool>> predicate)
+        public virtual async Task<bool> AnyAsync(Expression<Func<T, bool>> predicate)
         {
+  
             return await _dbContext.Set<T>().AsQueryable().AnyAsync(predicate);
         }
+
+        public virtual bool Any(Expression<Func<T, bool>> predicate)
+        {
+
+            return  _dbContext.Set<T>().AsQueryable().Any(predicate);
+        }
+
         public virtual IQueryable<T> Where(Expression<Func<T, bool>> predicate)
         {
             return _dbContext.Set<T>().AsQueryable().Where(predicate);
@@ -98,7 +112,11 @@ namespace ChefHesab.Data.Presentition.Reositories.generic
         {
             return _dbContext.Set<T>().Any(predicate);
         }
+        public IQueryable<T> SelectQuery()
+        {
+            return _dbContext.Set<T>();
+        }
 
-     
+
     }
 }

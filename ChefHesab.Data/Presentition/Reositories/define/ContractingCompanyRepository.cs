@@ -1,4 +1,5 @@
-﻿using ChefHesab.Data.Presentition.Context;
+﻿using ChefHesab.Data;
+using ChefHesab.Data.Presentition.Context;
 using ChefHesab.Data.Presentition.Reositories.generic;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -15,15 +16,13 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.define
     public class ContractingCompanyRepository :GenericRepository<ContractingCompany>, IContractingCompanyRepository
     {
 
-        private readonly ChefHesabContext _context;
-        public ContractingCompanyRepository(ChefHesabContext dbContext) : base(dbContext)
+        public ContractingCompanyRepository(ChefHesabContext chefHesab) : base(chefHesab)
         {
-            _context = dbContext;
+            
         }
-
         public IQueryable<ContractingCompany> GetAllAsNoTracking()
         {
-            return _context.ContractingCompanies.AsNoTracking();
+            return _dbContext.Set<ContractingCompany>().AsNoTracking();
         }
 
     }

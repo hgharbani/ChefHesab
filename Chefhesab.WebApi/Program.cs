@@ -10,6 +10,8 @@ using System.Text.Json;
 using Newtonsoft.Json;
 using System.Text.Json.Serialization;
 using Autofac.Core;
+using ChefHesab.Data.Presentition.Reositories;
+using ChefHesab.Domain.Peresentition.IRepositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,7 +36,6 @@ builder.Services.AddControllers().AddJsonOptions(options =>
     options.JsonSerializerOptions.PropertyNamingPolicy = null;
     options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
 });
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -43,6 +44,12 @@ builder.Services.AddSwaggerGen();
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 builder.Host.ConfigureContainer<ContainerBuilder>(autofacBuilder =>
 {
+    // Add this line
+    autofacBuilder
+        .RegisterType<ChefHesabContext>()
+        .InstancePerLifetimeScope();
+
+
     var assemblyData = typeof(ChefHesab.Data.Middleware).Assembly;
     autofacBuilder.RegisterAssemblyTypes(assemblyData)
            .AsImplementedInterfaces()
@@ -54,18 +61,16 @@ builder.Host.ConfigureContainer<ContainerBuilder>(autofacBuilder =>
     autofacBuilder.RegisterAssemblyTypes(assemblyApplication)
            .AsImplementedInterfaces()
            .InstancePerLifetimeScope();
+    autofacBuilder.RegisterType<ChefHesabUnitOfWork>().As<IChefHesabUnitOfWork>();
 
-
-    // Add this line
-    autofacBuilder
-        .RegisterType<ChefHesabContext>()
-        .InstancePerLifetimeScope();
-
+ 
 
 
 });
-builder.Services.AddCors();
 builder.Services.AddData();
+
+builder.Services.AddCors();
+
 builder.Services.AddApplication();
 var app = builder.Build();
 // Configure the HTTP request pipeline.

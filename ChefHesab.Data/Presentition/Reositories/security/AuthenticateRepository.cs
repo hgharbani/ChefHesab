@@ -13,11 +13,10 @@ using Microsoft.Extensions.Logging;
 namespace ChefHesab.Data.Presentition.Reositories.define
 {
     public class AuthenticateRepository : GenericRepository<Authenticate>, IAuthenticateRepository
-    {
-        private readonly ChefHesabContext _context;
-        public AuthenticateRepository(ChefHesabContext dbContext) : base(dbContext)
-        {
-            _context = dbContext;
+    { 
+        public AuthenticateRepository(ChefHesabContext chefHesab):base(chefHesab)
+        { 
+
         }
 
     }
