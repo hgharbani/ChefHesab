@@ -11,25 +11,23 @@ namespace ChefHesab.Data.Configurations
 {
     public partial class FoodProviderConfiguration : IEntityTypeConfiguration<FoodProvider>
     {
-        public void Configure(EntityTypeBuilder<FoodProvider> entity)
+        public void Configure(EntityTypeBuilder<FoodProvider> builder)
         {
-            entity.HasComment("غذاهای ارائه شده");
+            builder.ToTable("FoodProviders", "dbo");
+            builder.HasKey(x => x.Id).HasName("PK_FoodProviders").IsClustered();
 
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            builder.Property(x => x.Id).HasColumnName(@"Id").HasColumnType("uniqueidentifier").IsRequired().ValueGeneratedOnAdd();
+            builder.Property(x => x.ContractCompanyId).HasColumnName(@"ContractCompanyId").HasColumnType("uniqueidentifier").IsRequired();
+            builder.Property(x => x.FoodStuffId).HasColumnName(@"FoodStuffId").HasColumnType("uniqueidentifier").IsRequired();
+            builder.Property(x => x.Active).HasColumnName(@"Active").HasColumnType("bit").IsRequired();
+            builder.Property(x => x.InsertDate).HasColumnName(@"InsertDate").HasColumnType("date").IsRequired(false);
+            builder.Property(x => x.AmountRequested).HasColumnName(@"AmountRequested").HasColumnType("bigint").IsRequired(false);
 
-            entity.HasOne(d => d.ContractCompany)
-                .WithMany(p => p.FoodProviders)
-                .HasForeignKey(d => d.ContractCompanyId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_FoodProviders_ContractingCompanies");
+            // Foreign keys
+            builder.HasOne(a => a.ContractingCompany).WithMany(b => b.FoodProviders).HasForeignKey(c => c.ContractCompanyId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_FoodProviders_ContractingCompanies");
+            builder.HasOne(a => a.FoodStuff).WithMany(b => b.FoodProviders).HasForeignKey(c => c.FoodStuffId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_FoodProviders_FoodStuff");
 
-            entity.HasOne(d => d.FoodStuff)
-                .WithMany(p => p.FoodProviders)
-                .HasForeignKey(d => d.FoodStuffId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_FoodProviders_FoodStuff");
-
-            OnConfigurePartial(entity);
+            OnConfigurePartial(builder);
         }
 
         partial void OnConfigurePartial(EntityTypeBuilder<FoodProvider> entity);

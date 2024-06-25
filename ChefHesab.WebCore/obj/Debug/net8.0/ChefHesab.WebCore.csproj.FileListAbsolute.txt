@@ -6,6 +6,7 @@ D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHe
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.WebCore\bin\Debug\net8.0\ChefHesab.WebCore.runtimeconfig.json
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.WebCore\bin\Debug\net8.0\ChefHesab.WebCore.dll
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.WebCore\bin\Debug\net8.0\ChefHesab.WebCore.pdb
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.WebCore\bin\Debug\net8.0\AWSSDK.Core.dll
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.WebCore\bin\Debug\net8.0\Ben.Demystifier.dll
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.WebCore\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.WebCore\bin\Debug\net8.0\DNTCommon.Web.Core.dll

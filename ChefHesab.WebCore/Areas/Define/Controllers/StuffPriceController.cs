@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ChefHesab.WebCore.Areas.Define.Controllers
 {
     [Area("Define")]
-    public class StuffPriceController : Controller
+    public class StuffPriceController : BaseController
     {
         private readonly ApiExtention _apiExtention;
         private readonly IConfiguration _configuration;
@@ -34,18 +34,23 @@ namespace ChefHesab.WebCore.Areas.Define.Controllers
                     FoodStuffId = model.Id,
                     AmountPercent = model.AmountPercent.HasValue ? model.AmountPercent.Value : 0,
                     CompanyId = model.CompanyId,
-                    PersonalId = new Guid("FC769A7E-6A78-42CE-B7F9-0E1619CD5EFB"),
+                    PersonalId = currentUser,
                 };
                 result = await _apiExtention.PostDataToApiAsync<CreateStuffPriceVM, ChefResult>($"{_configuration["ChefHesabApi"]}api/StuffPriceApi/AddOrEditStuffPrice", stuffPriceModel);
+                if (!result.IsSuccess)
+                {
+                    ErrorNotifications(result.Errors, true, true);
+                    return InvokeNotifications(false);
+                }
+                SuccessNotification("اطلاعات با موفقیت ذخیره شد");
 
-
-
-                return Json(result);
+                return InvokeNotifications(true);
             }
             catch (Exception ex)
             {
-                result.AddError(ex.Message);
-                return Json(result);
+                ErrorNotification(ex.Message);
+
+                return InvokeNotifications(false);
             }
                
                 

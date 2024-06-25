@@ -62,6 +62,14 @@
           }
         }
       },
+      "AWSSDK.Core/3.7.304.19": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.304.19"
+          }
+        }
+      },
       "Azure.Core/1.24.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.1",
@@ -2395,6 +2403,7 @@
       },
       "ChefHesab.Share/1.0.0": {
         "dependencies": {
+          "AWSSDK.Core": "3.7.304.19",
           "DNTPersianUtils.Core": "6.3.1",
           "Microsoft.AspNet.Mvc": "5.3.0",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
@@ -2433,6 +2442,13 @@
       "sha512": "sha512-+g/K+Vpe3gGMKGzjslMOdqNlkikScDjWfVvmWTayrDHaG/n2pPmFBMa+jKX1r/h6BDGFdkyRjAuhFE3ykW+r1g==",
       "path": "automapper.extensions.microsoft.dependencyinjection/12.0.1",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512"
+    },
+    "AWSSDK.Core/3.7.304.19": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0Q8QBpL2Q7U66oTL6IAf73o2SXWJbcFsmde+zyA3+w5T4w/ZAV0YNM6zZIwFPpd5ertzuoWIgkLvBV+wlu2J7A==",
+      "path": "awssdk.core/3.7.304.19",
+      "hashPath": "awssdk.core.3.7.304.19.nupkg.sha512"
     },
     "Azure.Core/1.24.0": {
       "type": "package",

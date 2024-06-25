@@ -10,32 +10,48 @@ using ChefHesab.Domain;
 
 namespace ChefHesab.Domain
 {
+    // FoodProviders
     /// <summary>
     /// غذاهای ارائه شده
     /// </summary>
-    public partial class FoodProvider
+    public class FoodProvider
     {
+        public Guid Id { get; set; } // Id (Primary key)
+        public Guid ContractCompanyId { get; set; } // ContractCompanyId
+        public Guid FoodStuffId { get; set; } // FoodStuffId
+        public bool Active { get; set; } // Active
+        public DateTime? InsertDate { get; set; } // InsertDate
+        public long? AmountRequested { get; set; } // AmountRequested
+
+        // Reverse navigation
+
+        /// <summary>
+        /// Child AdditionalCostFoods where [AdditionalCostFood].[FoodProviderId] point to this entity (FK_AdditionalCostFood_FoodProviders)
+        /// </summary>
+        public ICollection<AdditionalCostFood> AdditionalCostFoods { get; set; } // AdditionalCostFood.FK_AdditionalCostFood_FoodProviders
+
+        /// <summary>
+        /// Child IngredinsFoods where [IngredinsFood].[FoodProviderId] point to this entity (FK_IngredinsFood_FoodProviders)
+        /// </summary>
+        public ICollection<IngredinsFood> IngredinsFoods { get; set; } // IngredinsFood.FK_IngredinsFood_FoodProviders
+
+        // Foreign keys
+
+        /// <summary>
+        /// Parent ContractingCompany pointed by [FoodProviders].([ContractCompanyId]) (FK_FoodProviders_ContractingCompanies)
+        /// </summary>
+        public ContractingCompany ContractingCompany { get; set; } // FK_FoodProviders_ContractingCompanies
+
+        /// <summary>
+        /// Parent FoodStuff pointed by [FoodProviders].([FoodStuffId]) (FK_FoodProviders_FoodStuff)
+        /// </summary>
+        public FoodStuff FoodStuff { get; set; } // FK_FoodProviders_FoodStuff
+
         public FoodProvider()
         {
-            AdditionalCostFoods = new HashSet<AdditionalCostFood>();
-            IngredinsFoods = new HashSet<IngredinsFood>();
+            Id = Guid.NewGuid();
+            AdditionalCostFoods = new List<AdditionalCostFood>();
+            IngredinsFoods = new List<IngredinsFood>();
         }
-
-        [Key]
-        public Guid Id { get; set; }
-        public Guid ContractCompanyId { get; set; }
-        public Guid FoodStuffId { get; set; }
-        public bool Active { get; set; }
-        [Column(TypeName = "date")]
-        public DateTime InsertDate { get; set; }
-
-        [ForeignKey("ContractCompanyId")]
-        public virtual ContractingCompany ContractCompany { get; set; }
-        [ForeignKey("FoodStuffId")]
-        public virtual FoodStuff FoodStuff { get; set; }
-       
-        public virtual ICollection<AdditionalCostFood> AdditionalCostFoods { get; set; }
-      
-        public virtual ICollection<IngredinsFood> IngredinsFoods { get; set; }
     }
 }

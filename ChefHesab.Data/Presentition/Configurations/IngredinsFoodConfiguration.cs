@@ -11,25 +11,23 @@ namespace ChefHesab.Data.Configurations
 {
     public partial class IngredinsFoodConfiguration : IEntityTypeConfiguration<IngredinsFood>
     {
-        public void Configure(EntityTypeBuilder<IngredinsFood> entity)
+        public void Configure(EntityTypeBuilder<IngredinsFood> builder)
         {
-            entity.HasComment("مواد لازم");
+            builder.ToTable("IngredinsFood", "dbo");
+            builder.HasKey(x => x.Id).HasName("PK_IngredinsFood").IsClustered();
 
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            builder.Property(x => x.Id).HasColumnName(@"Id").HasColumnType("uniqueidentifier").IsRequired().ValueGeneratedOnAdd();
+            builder.Property(x => x.StuffPriceId).HasColumnName(@"StuffPriceId").HasColumnType("uniqueidentifier").IsRequired();
+            builder.Property(x => x.FoodProviderId).HasColumnName(@"FoodProviderId").HasColumnType("uniqueidentifier").IsRequired();
+            builder.Property(x => x.Amount).HasColumnName(@"Amount").HasColumnType("float").HasPrecision(53).IsRequired(false);
+            builder.Property(x => x.Cost).HasColumnName(@"Cost").HasColumnType("float").HasPrecision(53).IsRequired(false);
+            builder.Property(x => x.Unit).HasColumnName(@"Unit").HasColumnType("nvarchar(max)").IsRequired(false);
 
-            entity.HasOne(d => d.FoodProvider)
-                .WithMany(p => p.IngredinsFoods)
-                .HasForeignKey(d => d.FoodProviderId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_IngredinsFood_FoodProviders");
+            // Foreign keys
+            builder.HasOne(a => a.FoodProvider).WithMany(b => b.IngredinsFoods).HasForeignKey(c => c.FoodProviderId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_IngredinsFood_FoodProviders");
+            builder.HasOne(a => a.StuffPrice).WithMany(b => b.IngredinsFoods).HasForeignKey(c => c.StuffPriceId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_IngredinsFood_StuffPrice");
 
-            entity.HasOne(d => d.StuffPrice)
-                .WithMany(p => p.IngredinsFoods)
-                .HasForeignKey(d => d.StuffPriceId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_IngredinsFood_StuffPrice");
-
-            OnConfigurePartial(entity);
+            OnConfigurePartial(builder);
         }
 
         partial void OnConfigurePartial(EntityTypeBuilder<IngredinsFood> entity);

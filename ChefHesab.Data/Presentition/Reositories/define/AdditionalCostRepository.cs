@@ -18,12 +18,12 @@ namespace ChefHesab.Domain.Peresentition.IRepositories
     /// </summary>
     public class AdditionalCostRepository : GenericRepository<AdditionalCost>, IAdditionalCostRepository
     {
-        public AdditionalCostRepository(ChefHesabContext chefHesab):base(chefHesab)
+
+        public AdditionalCostRepository(ChefHesabContext chefHesab) : base(chefHesab)
         {
-                
+
         }
-
-
+    
         public IQueryable<AdditionalCost> GetAll()
         {
             return _dbContext.Set<AdditionalCost>().AsQueryable();

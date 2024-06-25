@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "ChefHesab.Share/1.0.0": {
         "dependencies": {
+          "AWSSDK.Core": "3.7.304.19",
           "DNTPersianUtils.Core": "6.3.1",
           "Microsoft.AspNet.Mvc": "5.3.0",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
@@ -17,6 +18,14 @@
         },
         "runtime": {
           "ChefHesab.Share.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.304.19": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.304.19"
+          }
         }
       },
       "DNTPersianUtils.Core/6.3.1": {
@@ -1535,6 +1544,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.7.304.19": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0Q8QBpL2Q7U66oTL6IAf73o2SXWJbcFsmde+zyA3+w5T4w/ZAV0YNM6zZIwFPpd5ertzuoWIgkLvBV+wlu2J7A==",
+      "path": "awssdk.core/3.7.304.19",
+      "hashPath": "awssdk.core.3.7.304.19.nupkg.sha512"
     },
     "DNTPersianUtils.Core/6.3.1": {
       "type": "package",

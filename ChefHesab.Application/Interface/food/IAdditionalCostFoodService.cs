@@ -2,6 +2,5 @@
 {
     public interface IAdditionalCostFoodService
     {
-        void get(int id);
     }
 }

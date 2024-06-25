@@ -36,35 +36,35 @@ namespace Chefhesab.WebApi.Controllers.define
         }
 
         [HttpPost("GetExcelFileAndSaveInSql")]
-        public IActionResult GetExcelFileAndSaveInSql()
+        public async Task<IActionResult> GetExcelFileAndSaveInSql()
         {
 
-            var result = _foodStuffService.GetExcelFileAndSaveInSql();
+            var result =await _foodStuffService.GetExcelFileAndSaveInSql();
             return Ok(result);
         }
 
-        [HttpPost("GetFoodStuffForEdit")]
+        [HttpGet("GetFoodStuffForEdit")]
         public async Task<IActionResult> GetFoodStuffForEdit(Guid id)
         {
 
-            var result = _foodStuffService.GetFoodStuffForEdit(id);
+            var result =await _foodStuffService.GetFoodStuffForEdit(id);
             return Ok(result);
         }
 
 
         [HttpPut("Add")]
-        public IActionResult Add(CreateFoodStuffVM model)
+        public async Task<IActionResult> Add(CreateFoodStuffVM model)
         {
 
-            var result = _foodStuffService.Add(model);
+            var result =await _foodStuffService.Add(model);
             return Ok(result);
         }
 
         [HttpPut("Edit")]
-        public IActionResult Edit(CreateFoodStuffVM model)
+        public async Task<IActionResult>  Edit(CreateFoodStuffVM model)
         {
 
-            var result = _foodStuffService.Edit(model);
+            var result =await _foodStuffService.Edit(model);
             return Ok(result);
         }
     }

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "o0wroCdVI1BOp3mCq5P8CLUH3mG6tvOG5bpd8uc5brUHDQhj24FjpGvA0xOjQEyZHHs5EXIJZb2OwJ8stCIKYQ==",
+  "dgSpecHash": "BxiV5xJug03Es9tVDnPjretLM3c0tUNBLNEF3qXAFpU6ROU3G5Gpgy62rfVwsXuDxArdDo44oBQ8fDYAM+PLWA==",
   "success": true,
   "projectFilePath": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Application\\ChefHesab.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\autofac\\7.1.0\\autofac.7.1.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\awssdk.core\\3.7.304.19\\awssdk.core.3.7.304.19.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\dalir.common\\1.0.4\\dalir.common.1.0.4.nupkg.sha512",

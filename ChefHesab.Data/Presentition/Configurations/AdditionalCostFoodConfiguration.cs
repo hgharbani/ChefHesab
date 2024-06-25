@@ -11,27 +11,22 @@ namespace ChefHesab.Data.Configurations
 {
     public partial class AdditionalCostFoodConfiguration : IEntityTypeConfiguration<AdditionalCostFood>
     {
-        public void Configure(EntityTypeBuilder<AdditionalCostFood> entity)
+        public void Configure(EntityTypeBuilder<AdditionalCostFood> builder)
         {
-            entity.HasComment("هزینه های جانبی هر پرس غذا");
+            builder.ToTable("AdditionalCostFood", "dbo");
+            builder.HasKey(x => x.Id).HasName("PK_AdditionalCostFood").IsClustered();
 
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            builder.Property(x => x.Id).HasColumnName(@"Id").HasColumnType("uniqueidentifier").IsRequired().ValueGeneratedOnAdd();
+            builder.Property(x => x.AdditionalCostId).HasColumnName(@"AdditionalCostId").HasColumnType("uniqueidentifier").IsRequired();
+            builder.Property(x => x.FoodProviderId).HasColumnName(@"FoodProviderId").HasColumnType("uniqueidentifier").IsRequired();
+            builder.Property(x => x.Ratio).HasColumnName(@"Ratio").HasColumnType("float").HasPrecision(53).IsRequired();
+            builder.Property(x => x.Cost).HasColumnName(@"Cost").HasColumnType("float").HasPrecision(53).IsRequired();
 
-            entity.Property(e => e.Ratio).HasDefaultValueSql("((1))");
+            // Foreign keys
+            builder.HasOne(a => a.AdditionalCost).WithMany(b => b.AdditionalCostFoods).HasForeignKey(c => c.AdditionalCostId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_AdditionalCostFood_AdditionalCosts");
+            builder.HasOne(a => a.FoodProvider).WithMany(b => b.AdditionalCostFoods).HasForeignKey(c => c.FoodProviderId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_AdditionalCostFood_FoodProviders");
 
-            entity.HasOne(d => d.AdditionalCost)
-                .WithMany(p => p.AdditionalCostFoods)
-                .HasForeignKey(d => d.AdditionalCostId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_AdditionalCostFood_AdditionalCosts");
-
-            entity.HasOne(d => d.FoodProvider)
-                .WithMany(p => p.AdditionalCostFoods)
-                .HasForeignKey(d => d.FoodProviderId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_AdditionalCostFood_FoodProviders");
-
-            OnConfigurePartial(entity);
+            OnConfigurePartial(builder);
         }
 
         partial void OnConfigurePartial(EntityTypeBuilder<AdditionalCostFood> entity);

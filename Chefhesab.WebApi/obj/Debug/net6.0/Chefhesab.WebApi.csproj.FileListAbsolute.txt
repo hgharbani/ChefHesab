@@ -9,6 +9,7 @@ D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHe
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\bin\Debug\net6.0\AutoMapper.dll
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\bin\Debug\net6.0\AWSSDK.Core.dll
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\bin\Debug\net6.0\Azure.Core.dll
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\bin\Debug\net6.0\Azure.Identity.dll
 D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\Chefhesab.WebApi\bin\Debug\net6.0\Ben.Demystifier.dll

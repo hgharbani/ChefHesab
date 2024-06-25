@@ -44,7 +44,7 @@
 
         });
 
-        function renderFoodCategoryComboBox(nameId) {
+        function renderFoodCategoryComboBox(nameId,value=0) {
             $(nameId).kendoComboBox({
                 dataSource: {
                     transport: {
@@ -85,6 +85,7 @@
                 dataValueField: "CategoryId",
                 filter: "contains",
                 suggest: true,
+                value: value > 0 ? value:0
 
             });
         }
@@ -92,7 +93,7 @@
             var record = 0;
 
             $("#FoodStuffGrid").kendoGrid({
-                autoBind: false,
+                autoBind: true,
                 toolbar: function () {
                     var btn = `<button onclick="Add()" type="button" class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base"><span class="k-icon k-i-plus k-button-icon"></span><span class="k-button-text">اضافه کردن ردیف جدید</span></button>`
                     return btn;
@@ -164,7 +165,7 @@
 
                     $("#FoodStuffGrid").find(".k-grid-edit").click(function (e) {
                         var dataRow = foodStuffClass.kendoConstractor.dataItem(this.closest('tr'))
-                        UpdateRow(dataRow, e)
+                        UpdateRow(dataRow.Id, e)
                     });
                 },
                 pageable: {
@@ -193,9 +194,48 @@
                 selectable: 'row',
                 columns: [
                     {
-                        command: ["edit"], title: "&nbsp;", attributes: {
-                            style: "text-align: center;"
-                        }, width: "150px"
+                        field: "Id",
+                        title: "عملیات",
+                        width: 105,
+                        template: function (e) {
+                            var btn = `
+                                                          <button type="button"
+                                                                          class="ms-1 inline-block
+                                                                          rounded bg-yellow-500 px-4
+                                                                          pb-2 pt-2.5 text-xs
+                                                                          font-medium uppercase
+                                                                          leading-normal
+                                                                          text-white
+                                                                          hover:bg-primary-accent-300
+                                                                          hover:shadow-primary-2
+                                                                         "
+
+                                                                  onclick="showEditForm('${e.Id}')" >
+                                                      <i class="fa fa-edit"></i>
+                                                  </button>
+                                                           <button type="button"
+                                                                  class="ms-1 inline-block
+                                                                  rounded bg-red-500 px-4
+                                                                  pb-2 pt-2.5 text-xs
+                                                                  font-medium uppercase
+                                                                  leading-normal
+                                                                  text-white
+                                                                  transition
+                                                                  duration-150
+                                                                  ease-in-out
+                                                                  hover:bg-primary-accent-300
+                                                                  hover:shadow-primary-2
+                                                                 "
+
+                                                                  onclick="deleteCompany('${e.Id}')"
+
+                                                                  >
+                                                              <i class="fa fa-trash"></i>
+                                                          </button>
+
+                                                `
+                            return btn;
+                        },
                     },
 
                     {
@@ -236,42 +276,8 @@
         function Add() {
             ShowPopup(null, "/Define/FoodStuff/Create", "اضافه کردن شرکت جدید", "600px", "auto", refreshGrid)
         }
-        function PriceEditor(container, options) {
-            var data = $('<input required  class="k-input" name="' + options.field + '"/>')
-                .appendTo(container)
-            $(data).change(function (e) {
-                ;
-                var stuffPrice = $("#FoodStuffGrid").data("kendoGrid").dataItem($(this).closest('tr'));
-                stuffPrice.Price = this.value;
-                var percent = 1;
-                var totalPrice = (Number(this.value) * Number(stuffPrice.AmountPercent)) + Number(this.value)
 
-                stuffPrice.TotalPrice = totalPrice
-                foodStuffClass.rowActive($(this).closest('tr'));
-                foodStuffClass.setValueToCellNumberByClassName(5, ".totalPrice", addCommas(totalPrice));
-                foodStuffClass.focusToColumRowActived(4)
-                return;
-            })
-        }
 
-        function AmountPercentEditor(container, options) {
-            var data = $('<input required  class="k-input" name="' + options.field + '"/>')
-                .appendTo(container)
-            $(data).change(function (e) {
-
-                e.preventDefault()
-                var stuffPrice = $("#FoodStuffGrid").data("kendoGrid").dataItem($(this).closest('tr'));
-                stuffPrice.AmountPercent = this.value;
-                var percent = 1;
-                var totalPrice = (Number(this.value) * Number(stuffPrice.Price)) + Number(stuffPrice.Price)
-
-                stuffPrice.TotalPrice = totalPrice
-                foodStuffClass.rowActive($(this).closest('tr'))
-                foodStuffClass.setValueToCellNumberByClassName(5, ".totalPrice", addCommas(totalPrice))
-                foodStuffClass.focusToColumRowActived(0)
-                return;
-            })
-        }
 
         function refreshGrid() {
             $("#FoodStuffGrid").data("kendoGrid").dataSource.read();
@@ -284,8 +290,34 @@
             }
         }
         function showEditForm(id) {
-            ShowPopup(null, "/Define/FoodProvider/Edit?id=" + id, 'تصویر', "600px", "auto", refreshGrid)
+            ShowPopup(null, "/Define/FoodStuff/Edit?id=" + id, 'ویرایش عنوان غذا', "600px", "auto", refreshGrid)
 
+        }
+
+
+        function deleteCompany(id) {
+            Swal.fire({
+                title: "با حذف این شرکت تمام اطلاعات مربوط به ۀن حذف میشود،?",
+
+                showCancelButton: true,
+                confirmButtonText: "حذف کن !",
+                cancelButtonText: `انصراف`
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: "/Define/FoodStuff/Delete?id=" + id,
+                        type: 'post',
+                        beforeSend: function (xhr) {
+
+                        }
+                    })
+                        .done(function (data) {
+                            Swal.fire("حذف شد", "", "success");
+                        });
+
+                }
+            });
         }
     </script>
 }

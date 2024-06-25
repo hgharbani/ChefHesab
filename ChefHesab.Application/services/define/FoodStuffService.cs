@@ -6,6 +6,7 @@ using ChefHesab.Dto.define.FoodStuff;
 using ChefHesab.Share.Extiontions.KendoExtentions;
 using ChefHesab.Share.model;
 using ChefHesab.Share.model.KendoModel.Response;
+using Kendo.DynamicLinq;
 using Microsoft.EntityFrameworkCore;
 using OfficeOpenXml;
 using System.Collections;
@@ -35,6 +36,11 @@ namespace ChefHesab.Application.services.define
                 var foodCategoryId = request.FoodCategoryId.Value;
                 FoodStuff = FoodStuff.Where(a => a.FoodCategoryId == foodCategoryId);
             }
+            else
+            {
+                var foodCategoryId = request.FoodCategoryId.Value;
+                FoodStuff = FoodStuff.Where(a => a.FoodCategory.ParentId == 1);
+            }
 
             var query = FoodStuff.Select(a => new
             {
@@ -48,7 +54,6 @@ namespace ChefHesab.Application.services.define
             int total = query.Count();
             IList resultData;
             bool isGrouped = false;
-
             var aggregates = new Dictionary<string, Dictionary<string, string>>();
             var data = query.Select(a => new FoodStuffVM()
             {
@@ -107,6 +112,11 @@ namespace ChefHesab.Application.services.define
             {
                 var foodCategoryId = request.FoodCategoryId.Value;
                 FoodStuff = FoodStuff.Where(a => a.FoodCategoryId == foodCategoryId);
+            }
+            else
+            {
+                var foodCategoryId = request.FoodCategoryId.Value;
+                FoodStuff = FoodStuff.Where(a => a.FoodCategory.ParentId==2);
             }
 
             var query = FoodStuff.Select(a => new

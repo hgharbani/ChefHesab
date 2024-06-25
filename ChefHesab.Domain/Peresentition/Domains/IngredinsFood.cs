@@ -10,24 +10,34 @@ using ChefHesab.Domain;
 
 namespace ChefHesab.Domain
 {
+    // IngredinsFood
     /// <summary>
     /// مواد لازم
     /// </summary>
-    [Table("IngredinsFood")]
-    public partial class IngredinsFood
+    public class IngredinsFood
     {
-        [Key]
-        public Guid Id { get; set; }
-        public Guid StuffPriceId { get; set; }
-        public Guid FoodProviderId { get; set; }
-        public double? Amount { get; set; }
-        public double? Cost { get; set; }
+        public Guid Id { get; set; } // Id (Primary key)
+        public Guid StuffPriceId { get; set; } // StuffPriceId
+        public Guid FoodProviderId { get; set; } // FoodProviderId
+        public double? Amount { get; set; } // Amount
+        public double? Cost { get; set; } // Cost
+        public string Unit { get; set; } // Unit
 
-        [ForeignKey("FoodProviderId")]
-        [InverseProperty("IngredinsFoods")]
-        public virtual FoodProvider FoodProvider { get; set; }
-        [ForeignKey("StuffPriceId")]
-        [InverseProperty("IngredinsFoods")]
-        public virtual StuffPrice StuffPrice { get; set; }
+        // Foreign keys
+
+        /// <summary>
+        /// Parent FoodProvider pointed by [IngredinsFood].([FoodProviderId]) (FK_IngredinsFood_FoodProviders)
+        /// </summary>
+        public FoodProvider FoodProvider { get; set; } // FK_IngredinsFood_FoodProviders
+
+        /// <summary>
+        /// Parent StuffPrice pointed by [IngredinsFood].([StuffPriceId]) (FK_IngredinsFood_StuffPrice)
+        /// </summary>
+        public StuffPrice StuffPrice { get; set; } // FK_IngredinsFood_StuffPrice
+
+        public IngredinsFood()
+        {
+            Id = Guid.NewGuid();
+        }
     }
 }

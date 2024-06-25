@@ -13,7 +13,7 @@
 
         $(document).ready(function (e) {
             $("#CompaniesMenu").addClass("mm-active")
-            
+            renderCompanyComboBox("#Company")
             bindCompanyGrids();
             $("#CompanyGrid").find(".k-grid-add").click(function (e) {
                 ShowPopup(null, "/Define/Companies/Create", "اضافه کردن شرکت جدید", "600px", "auto", refreshGrid)

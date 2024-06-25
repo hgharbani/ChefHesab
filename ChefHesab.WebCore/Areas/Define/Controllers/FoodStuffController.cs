@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ChefHesab.WebCore.Areas.Define.Controllers
 {
     [Area("Define")]
-    public class FoodStuffController : Controller
+    public class FoodStuffController : BaseController
     {
         private readonly ApiExtention _apiExtention;
         private readonly IConfiguration _configuration;
@@ -58,12 +58,22 @@ namespace ChefHesab.WebCore.Areas.Define.Controllers
             if (ModelState.IsValid)
             {
                  result = await _apiExtention.PutDataToApiAsync<CreateFoodStuffVM, ChefResult>($"{_configuration["ChefHesabApi"]}api/FoodStuffApi/Add", model);
-                if (result.IsSuccess)
+                if (!result.IsSuccess)
                 {
-                    return Json(result);
+                    ErrorNotifications(result.Errors, true, true);
+                    return InvokeNotifications(false);
                 }
+                SuccessNotification("اطلاعات با موفقیت ذخیره شد");
+
+                return InvokeNotifications(true);
             }
-            return Json(result);
+            else
+            {
+                var ListErrors = ModelState.Select(x => x.Value.Errors)
+                           .Where(y => y.Count > 0).SelectMany(a=>a).ToList();
+                ErrorNotifications(ListErrors.Select(a=>a.ErrorMessage).ToList(), true, true);
+                return InvokeNotifications(false);
+            }
         }
 
         public async Task<IActionResult> Edit(Guid? Id)
@@ -78,28 +88,39 @@ namespace ChefHesab.WebCore.Areas.Define.Controllers
         {
             if (ModelState.IsValid)
             {
-                var result = await _apiExtention.PostDataToApiAsync<CreateFoodStuffVM, ChefResult>($"{_configuration["ChefHesabApi"]}api/FoodStuffApi/Edit", model);
-                if (result.IsSuccess)
+                var result = await _apiExtention.PutDataToApiAsync<CreateFoodStuffVM, ChefResult>($"{_configuration["ChefHesabApi"]}api/FoodStuffApi/Edit", model);
+                if (!result.IsSuccess)
                 {
-                    return Json(result);
+                    ErrorNotifications(result.Errors, true, true);
+                    return InvokeNotifications(false);
                 }
+                SuccessNotification("اطلاعات با موفقیت ذخیره شد");
+
+                return InvokeNotifications(true);
             }
-            return View(model);
+            else
+            {
+                var ListErrors = ModelState.Select(x => x.Value.Errors)
+                           .Where(y => y.Count > 0).SelectMany(a => a).ToList();
+                ErrorNotifications(ListErrors.Select(a => a.ErrorMessage).ToList(), true, true);
+                return InvokeNotifications(false);
+            }
         }
 
         [HttpPost]
         public async Task<IActionResult> Delete(FoodStuffSearch model)
         {
 
-            var result = await _apiExtention.PostDataToApiAsync<FoodStuffSearch, ChefResult>($"{_configuration["ChefHesabApi"]}api/FoodStuffApi/Delete", model);
-            if (result.IsSuccess)
+            var result = await _apiExtention.PutDataToApiAsync<FoodStuffSearch, ChefResult>($"{_configuration["ChefHesabApi"]}api/FoodStuffApi/Delete", model);
+            if (!result.IsSuccess)
             {
-                return Json(result);
+                ErrorNotifications(result.Errors, true, true);
+                return InvokeNotifications(false);
             }
+            SuccessNotification("اطلاعات با موفقیت ذخیره شد");
 
-            return Json(model);
+            return InvokeNotifications(true);
         }
-
 
     }
 }

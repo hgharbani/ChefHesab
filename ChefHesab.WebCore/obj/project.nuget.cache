@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "0NX8MaQdLNypuUDaYo4n9KjWfKGasdo/2kQ0tbsr361HSGRej2Ceij8OTVOzK4I6L2gH2CvGp6Gd18OxR9np5w==",
+  "dgSpecHash": "QHunX2dmxKetXXihmNACei0nuU0wwBxeVmfQAu3/QTlEXwjZmMoLNIDNeuUusZZ6DrTvF735Ua0cHBrPOEui+A==",
   "success": true,
   "projectFilePath": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\ChefHesab.WebCore.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\awssdk.core\\3.7.304.19\\awssdk.core.3.7.304.19.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\ben.demystifier\\0.4.1\\ben.demystifier.0.4.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\dntcommon.web.core\\5.3.3\\dntcommon.web.core.5.3.3.nupkg.sha512",

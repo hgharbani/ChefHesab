@@ -1,0 +1,124 @@
+﻿@{
+    Layout = null;
+}
+@Html.DalirWindow()
+<style>
+    .k-grid-cancel {
+        background-color: lightgray !important;
+        color: black !important;
+    }
+
+    .k-grid-update {
+        border-color: #222222 !important;
+        color: #ffffff !important;
+        background-color: #0dc121 !important;
+    }
+
+    .k-grid-edit {
+        border-color: #222222 !important;
+        color: black !important;
+        background-color: #ffc501 !important;
+    }
+</style>
+<div class="grid grid-cols-7 gap-4">
+    <div class="col-span-2 mt-2 k-rtl" >
+        مواد غذایی
+        <select id="IngredinsFood" class="drodpwon w-full"></select>
+    </div>
+    <div class="col-span-2 mt-2 k-rtl" >
+        واحد
+        <input id="Unit" class="k-input"></input>
+    </div>
+    <div class="col-span-2 mt-2 k-rtl" >
+        مقدار لازم
+        <input id="Amount" class="k-input"></input>
+    </div>
+    <div class="col-span-1 mt-2 k-rtl" >
+        
+        <button id="" class="k-button-add"><i class="fa fa-pluss"></i></button>
+    </div>
+    <div class="col-span-7 mt-2 k-rtl" id="IngredinsFoodGrid">
+       
+    </div>
+</div>
+
+    <script>
+    
+        $(document).ready(function (event) {
+
+            RenderIngredinsFood()
+          
+
+        });
+
+        function getDataIngredinsFood() {
+            return {
+            CompanyId: $("#Company").data("kendoComboBox").value() == "" ? 0 : $("#Company").data("kendoComboBox").value(),
+                FoodCategoryId: 0
+
+            }
+        }
+        function RenderIngredinsFood() {
+            $("#IngredinsFood").kendoComboBox({
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "/Define/FoodStuff/GetAllByKendoFilter",
+                            type: "POST",
+                            dataType: "json",
+                            contentType: "application/json",
+                            data: getDataIngredinsFood
+                        },
+                        update: {
+                            url: "/Define/FoodStuff/UpdateStuff",
+                            dataType: "jsonp",
+
+                        },
+                        parameterMap: function (data, operation) {
+                            if (operation != "read") {
+                                return data;
+                            } else {
+                                return JSON.stringify(data);
+                            }
+                        }
+                    },
+                    pageSize: 20,
+                    autoSync: false,
+                    schema: {
+                        data: "Data",
+                        model: {
+                            id: "Id",
+                            fields: {
+                                Id: { editable: false, nullable: true },
+                                Title: { type: "string", editable: false },
+                                AmountPercent: { type: "number", editable: true },
+                                TotalPrice: { type: "number", editable: false, defaultValue: 0 },
+                                FoodCategoryTitle: { type: "string", editable: false },
+                                Price: { type: "string", editable: true },
+
+                            }
+                        }
+                    },
+                    sortable: {
+                        mode: "multiple",
+                        allowUnsort: true
+                    },
+                    sort: [
+                        {
+                            field: "FoodCategoryTitle",
+                            dir: "asc"
+                        },
+                        {
+                            field: "Title",
+                            dir: "asc"
+                        }
+                    ]
+                },
+                dataTextField: "Title",
+                dataValueField: "Id",
+                filter: "contains",
+                suggest: true,
+
+            });
+        }
+    </script>

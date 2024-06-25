@@ -15,22 +15,43 @@ namespace ChefHesab.Domain
     /// </summary>
     public partial class AdditionalCost
     {
+        public Guid Id { get; set; } // Id (Primary key)
+        public string Title { get; set; } // Title
+        public long? FoodCategoryId { get; set; } // FoodCategoryId
+        public bool IsShowRatio { get; set; } // IsShowRatio
+        public Guid? PersonalId { get; set; } // PersonalId
+        public Guid? CompanyId { get; set; } // CompanyId
+        public long? Price { get; set; } // Price
+        public bool? IsActive { get; set; } // IsActive
+
+        // Reverse navigation
+
+        /// <summary>
+        /// Child AdditionalCostFoods where [AdditionalCostFood].[AdditionalCostId] point to this entity (FK_AdditionalCostFood_AdditionalCosts)
+        /// </summary>
+        public ICollection<AdditionalCostFood> AdditionalCostFoods { get; set; } // AdditionalCostFood.FK_AdditionalCostFood_AdditionalCosts
+
+        // Foreign keys
+
+        /// <summary>
+        /// Parent ContractingCompany pointed by [AdditionalCosts].([CompanyId]) (FK_AdditionalCosts_ContractingCompanies)
+        /// </summary>
+        public ContractingCompany ContractingCompany { get; set; } // FK_AdditionalCosts_ContractingCompanies
+
+        /// <summary>
+        /// Parent FoodCategory pointed by [AdditionalCosts].([FoodCategoryId]) (FK_AdditionalCosts_FoodCategory)
+        /// </summary>
+        public FoodCategory FoodCategory { get; set; } // FK_AdditionalCosts_FoodCategory
+
+        /// <summary>
+        /// Parent Personal pointed by [AdditionalCosts].([PersonalId]) (FK_AdditionalCosts_Personal)
+        /// </summary>
+        public Personal Personal { get; set; } // FK_AdditionalCosts_Personal
+
         public AdditionalCost()
         {
-            AdditionalCostFoods = new HashSet<AdditionalCostFood>();
+            Id = Guid.NewGuid();
+            AdditionalCostFoods = new List<AdditionalCostFood>();
         }
-
-        [Key]
-        public Guid Id { get; set; }
-        [Required]
-        public string Title { get; set; }
-        public bool IsShowRatio { get; set; }
-        public Guid? PersonalId { get; set; }
-
-        [ForeignKey("PersonalId")]
-        [InverseProperty("AdditionalCosts")]
-        public virtual Personal Personal { get; set; }
-        [InverseProperty("AdditionalCost")]
-        public virtual ICollection<AdditionalCostFood> AdditionalCostFoods { get; set; }
     }
 }

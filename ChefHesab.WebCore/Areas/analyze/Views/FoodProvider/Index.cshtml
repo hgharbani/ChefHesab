@@ -1,0 +1,165 @@
+﻿
+@Html.DalirWindow()
+<style>
+    .k-grid-cancel {
+        background-color: lightgray !important;
+        color: black !important;
+    }
+
+    .k-grid-update {
+        border-color: #222222 !important;
+        color: #ffffff !important;
+        background-color: #0dc121 !important;
+    }
+
+    .k-grid-edit {
+        border-color: #222222 !important;
+        color: black !important;
+        background-color: #ffc501 !important;
+    }
+</style>
+<div class="grid grid-cols-6 gap-4">
+    <div class="col-span-2 mt-2 k-rtl" id="search">
+        شرکت طرف قرارداد
+        <select id="Company" class="drodpwon w-full"></select>
+    </div>
+    <div class="col-span-2 mt-2 k-rtl" id="search">
+        غذا
+        <select id="FoodName" class="drodpwon w-full"></select>
+    </div>
+    <div class="col-span-2 mt-2 k-rtl" id="search">
+        تعداد درخواست
+        <input id="AmountRequested" class="k-input"></input>
+    </div>
+    <div class="col-span-6 mt-2 k-rtl" id="tabstrip">
+        <ul>
+            <li class="k-active">مواد غذایی</li>
+            <li>هزینه های جانبی</li>
+        </ul>
+
+    </div>
+</div>
+@section scripts {
+    <script>
+        var foodStuffClass;
+        $(document).ready(function (event) {
+            $("#foodProvidermenu").addClass("mm-active")
+            RenderCompany();
+            RenderFoodStuff()
+            var ts = $("#tabstrip").kendoTabStrip({
+                animation: { open: { effects: "fadeIn" } },
+                contentUrls: [
+                    '/analyze/IngredinsFood/Index',
+                    '/analyze/AdditionalCostFood/Index'
+                ]
+            }).data('kendoTabStrip');
+
+        });
+        function RenderCompany() {
+            $("#Company").kendoComboBox({
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "/Define/Companies/GetAllByKendoFilter",
+                            type: "POST",
+                            dataType: "json",
+                            contentType: "application/json",
+                        },
+
+                        parameterMap: function (data, operation) {
+                            if (operation != "read") {
+                                return data;
+                            } else {
+                                return JSON.stringify(data);
+                            }
+                        }
+                    },
+                    pageSize: 20,
+                    autoSync: true,
+                    schema: {
+                        data: "Data",
+                        model: {
+                            id: "Id",
+                            fields: {
+                                Id: { editable: false, nullable: true },
+                                CompanyName: { type: "string", editable: false },
+                                AgreementPeriod: { type: "number", editable: false },
+                                AgreementDate: { type: "date" },
+                                ExpirationDate: { type: "date", editable: false },
+                                AgreementNumber: { type: "number" },
+
+                            }
+                        }
+                    }
+                },
+                dataTextField: "CompanyName",
+                dataValueField: "Id",
+                filter: "contains",
+                suggest: true,
+
+            });
+        }
+        function getDataFoodCategory() {
+            return {
+                FoodCategoryId: 0
+
+            }
+        }
+        function RenderFoodStuff() {
+            $("#FoodName").kendoComboBox({
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "/Define/FoodStuff/GetAllFoodByKendoFilter",
+                            type: "POST",
+                            dataType: "json",
+                            contentType: "application/json",
+                            data: getDataFoodCategory
+                        },
+                        parameterMap: function (data, operation) {
+                            if (operation != "read") {
+                                return data;
+                            } else {
+                                return JSON.stringify(data);
+                            }
+                        }
+                    },
+                    pageSize: 500,
+                    autoSync: false,
+                    schema: {
+                        data: "Data",
+                        model: {
+                            id: "Id",
+                            fields: {
+                                Id: { editable: false, nullable: true },
+                                Title: { type: "string", editable: false },
+                                TotalPrice: { type: "number", editable: false, defaultValue: 0 },
+                                FoodCategoryTitle: { type: "string", editable: false },
+
+                            }
+                        }
+                    },
+                    sortable: {
+                        mode: "multiple",
+                        allowUnsort: true
+                    },
+                    sort: [
+                        {
+                            field: "FoodCategoryTitle",
+                            dir: "asc"
+                        },
+                        {
+                            field: "Title",
+                            dir: "asc"
+                        }
+                    ]
+                },
+                dataTextField: "Title",
+                dataValueField: "Id",
+                filter: "contains",
+                suggest: true,
+
+            });
+        }
+    </script>
+}

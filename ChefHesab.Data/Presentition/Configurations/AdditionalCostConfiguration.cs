@@ -11,19 +11,25 @@ namespace ChefHesab.Data.Configurations
 {
     public partial class AdditionalCostConfiguration : IEntityTypeConfiguration<AdditionalCost>
     {
-        public void Configure(EntityTypeBuilder<AdditionalCost> entity)
+        public void Configure(EntityTypeBuilder<AdditionalCost> builder)
         {
-            entity.HasComment("عناوین هزینه های جانبی");
-            entity.ToTable(nameof(AdditionalCost));
-            entity.HasKey(a=>a.Id);
-            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            builder.ToTable("AdditionalCosts", "dbo");
+            builder.HasKey(x => x.Id).HasName("PK_AdditionalCosts").IsClustered();
 
-            entity.HasOne(d => d.Personal)
-                .WithMany(p => p.AdditionalCosts)
-                .HasForeignKey(d => d.PersonalId)
-                .HasConstraintName("FK_AdditionalCosts_Personal");
+            builder.Property(x => x.Id).HasColumnName(@"Id").HasColumnType("uniqueidentifier").IsRequired().ValueGeneratedOnAdd();
+            builder.Property(x => x.Title).HasColumnName(@"Title").HasColumnType("nvarchar(max)").IsRequired();
+            builder.Property(x => x.FoodCategoryId).HasColumnName(@"FoodCategoryId").HasColumnType("bigint").IsRequired(false);
+            builder.Property(x => x.IsShowRatio).HasColumnName(@"IsShowRatio").HasColumnType("bit").IsRequired();
+            builder.Property(x => x.PersonalId).HasColumnName(@"PersonalId").HasColumnType("uniqueidentifier").IsRequired(false);
+            builder.Property(x => x.CompanyId).HasColumnName(@"CompanyId").HasColumnType("uniqueidentifier").IsRequired(false);
+            builder.Property(x => x.Price).HasColumnName(@"Price").HasColumnType("bigint").IsRequired(false);
+            builder.Property(x => x.IsActive).HasColumnName(@"IsActive").HasColumnType("bit").IsRequired(false);
 
-            OnConfigurePartial(entity);
+            // Foreign keys
+            builder.HasOne(a => a.ContractingCompany).WithMany(b => b.AdditionalCosts).HasForeignKey(c => c.CompanyId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_AdditionalCosts_ContractingCompanies");
+            builder.HasOne(a => a.FoodCategory).WithMany(b => b.AdditionalCosts).HasForeignKey(c => c.FoodCategoryId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_AdditionalCosts_FoodCategory");
+            builder.HasOne(a => a.Personal).WithMany(b => b.AdditionalCosts).HasForeignKey(c => c.PersonalId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_AdditionalCosts_Personal");
+            OnConfigurePartial(builder);
         }
 
         partial void OnConfigurePartial(EntityTypeBuilder<AdditionalCost> entity);

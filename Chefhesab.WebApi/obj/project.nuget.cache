@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KitkziKWrw/hoCGnuoasKt32w6P7NfA7fmCA8z35ARMmCjxioK1xf1EQMnnY1VW0hxUI6NLe4bt4GG08xFh8iQ==",
+  "dgSpecHash": "KA2m86PcL9mCtBrL7X2rcgk8Qmv9aPs3awREWpyeHw8W5Q83f/NxYx5b8F0GhwwdcvFIUMJxbmkEcHb24TqjAA==",
   "success": true,
   "projectFilePath": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\Chefhesab.WebApi\\Chefhesab.WebApi.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\PC\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\PC\\.nuget\\packages\\awssdk.core\\3.7.304.19\\awssdk.core.3.7.304.19.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\ben.demystifier\\0.4.1\\ben.demystifier.0.4.1.nupkg.sha512",

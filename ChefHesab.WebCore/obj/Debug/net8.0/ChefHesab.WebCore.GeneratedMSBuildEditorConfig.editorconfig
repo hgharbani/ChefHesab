@@ -26,6 +26,30 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\programming\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.WebCore
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/analyze/Views/AdditionalCostFood/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYW5hbHl6ZVxWaWV3c1xBZGRpdGlvbmFsQ29zdEZvb2RcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/analyze/Views/FoodProvider/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYW5hbHl6ZVxWaWV3c1xGb29kUHJvdmlkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/analyze/Views/IngredinsFood/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcYW5hbHl6ZVxWaWV3c1xJbmdyZWRpbnNGb29kXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/Define/Views/AdditionalCost/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVmaW5lXFZpZXdzXEFkZGl0aW9uYWxDb3N0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/Define/Views/AdditionalCost/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVmaW5lXFZpZXdzXEFkZGl0aW9uYWxDb3N0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/Define/Views/AdditionalCost/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVmaW5lXFZpZXdzXEFkZGl0aW9uYWxDb3N0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/programming/برنامه نویسی/برنامه های من/chefhesab/ChefHesab/ChefHesab.WebCore/Areas/Define/Views/Companies/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGVmaW5lXFZpZXdzXENvbXBhbmllc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

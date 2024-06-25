@@ -9,10 +9,13 @@ namespace ChefHesab.Dto.define.AdditionalCost
 {
     public class CreateAdditionalCostVM
     {
-        public Guid Id { get; set; }
-        [Required]
-        public string? Title { get; set; }
-        public bool IsShowRatio { get; set; }
-        public Guid? PersonalId { get; set; }
+        public Guid? Id { get; set; }
+        public string? Title { get; set; } // Title
+        public long? FoodCategoryId { get; set; } // FoodCategoryId
+        public long? Price { get; set; } // FoodCategoryId
+        public bool IsShowRatio { get; set; } // IsShowRatio
+        public Guid? PersonalId { get; set; } // PersonalId
+        public Guid? CompanyId { get; set; } // CompanyId
+        public string? CompanyTitle { get; set; } // CompanyId
     }
 }

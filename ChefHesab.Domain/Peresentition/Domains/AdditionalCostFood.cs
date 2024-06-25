@@ -10,24 +10,34 @@ using ChefHesab.Domain;
 
 namespace ChefHesab.Domain
 {
+    // AdditionalCostFood
     /// <summary>
     /// هزینه های جانبی هر پرس غذا
     /// </summary>
-    [Table("AdditionalCostFood")]
-    public partial class AdditionalCostFood
+    public class AdditionalCostFood
     {
-        [Key]
-        public Guid Id { get; set; }
-        public Guid AdditionalCostId { get; set; }
-        public Guid FoodProviderId { get; set; }
-        public double Ratio { get; set; }
-        public double Cost { get; set; }
+        public Guid Id { get; set; } // Id (Primary key)
+        public Guid AdditionalCostId { get; set; } // AdditionalCostId
+        public Guid FoodProviderId { get; set; } // FoodProviderId
+        public double Ratio { get; set; } // Ratio
+        public double Cost { get; set; } // Cost
 
-        [ForeignKey("AdditionalCostId")]
-        [InverseProperty("AdditionalCostFoods")]
-        public virtual AdditionalCost AdditionalCost { get; set; }
-        [ForeignKey("FoodProviderId")]
-        [InverseProperty("AdditionalCostFoods")]
-        public virtual FoodProvider FoodProvider { get; set; }
+        // Foreign keys
+
+        /// <summary>
+        /// Parent AdditionalCost pointed by [AdditionalCostFood].([AdditionalCostId]) (FK_AdditionalCostFood_AdditionalCosts)
+        /// </summary>
+        public AdditionalCost AdditionalCost { get; set; } // FK_AdditionalCostFood_AdditionalCosts
+
+        /// <summary>
+        /// Parent FoodProvider pointed by [AdditionalCostFood].([FoodProviderId]) (FK_AdditionalCostFood_FoodProviders)
+        /// </summary>
+        public FoodProvider FoodProvider { get; set; } // FK_AdditionalCostFood_FoodProviders
+
+        public AdditionalCostFood()
+        {
+            Id = Guid.NewGuid();
+            Ratio = 1;
+        }
     }
 }

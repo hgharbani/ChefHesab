@@ -23,10 +23,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories
             _unitOfWork = unitOfWork;
         }
 
-        public void get(int id)
-        {
-
-        }
+       
 
     }
 }

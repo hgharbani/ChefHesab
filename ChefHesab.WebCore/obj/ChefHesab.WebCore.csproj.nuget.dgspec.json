@@ -127,6 +127,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.7.304.19, )"
+            },
             "DNTPersianUtils.Core": {
               "target": "Package",
               "version": "[6.3.1, )"

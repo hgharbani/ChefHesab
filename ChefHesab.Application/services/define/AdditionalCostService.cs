@@ -1,21 +1,13 @@
 ﻿using AutoMapper;
-using ChefHesab.Application.Interface;
 using ChefHesab.Application.Interface.define;
-using ChefHesab.Data.Presentition.Context;
-using ChefHesab.Data.Presentition.Reositories.generic;
 using ChefHesab.Domain;
 using ChefHesab.Domain.Peresentition.IRepositories;
-using ChefHesab.Domain.Peresentition.IRepositories.define;
-using ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository;
 using ChefHesab.Dto.define.AdditionalCost;
+using ChefHesab.Share.Extiontions.KendoExtentions;
 using ChefHesab.Share.model;
-using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
+using ChefHesab.Share.model.KendoModel.Response;
+using Microsoft.EntityFrameworkCore;
+using System.Collections;
 
 namespace ChefHesab.Application.services.define
 {
@@ -25,58 +17,115 @@ namespace ChefHesab.Application.services.define
     public class AdditionalCostService : IAdditionalCostService
     {
         public IChefHesabUnitOfWork _unitOfWork;
-        public Mapper _mapper;
-
-        public AdditionalCostService(IChefHesabUnitOfWork unitOfWork, Mapper mapper)
+        private readonly IMapper _mapper;
+        public AdditionalCostService(IChefHesabUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
 
-        private async Task<bool> IsDuplicate(AdditionalCostVM additionalCost)
+        private bool IsDuplicate(CreateAdditionalCostVM additionalCost)
         {
             if (string.IsNullOrEmpty(additionalCost.Id.ToString()))
             {
-                return  _unitOfWork.AdditionalCostRepository.Any(a =>a.Id!=additionalCost.Id&& a.Title == additionalCost.Title);
+                return _unitOfWork.AdditionalCostRepository
+                    .Any(a => a.Id != additionalCost.Id
+                    && a.Title == additionalCost.Title
+                    && a.CompanyId == additionalCost.CompanyId
+                   && a.IsActive.HasValue && a.IsActive.Value == true);
 
             }
             else
             {
-                return  _unitOfWork.AdditionalCostRepository.Any(a => a.Title == additionalCost.Title);
+                return _unitOfWork.AdditionalCostRepository
+                    .Any(a => a.Title == additionalCost.Title && a.IsActive.HasValue && a.IsActive.Value==true
+                    && a.CompanyId == additionalCost.CompanyId);
             }
-            
+
         }
-        public List<AdditionalCost> GetAdditionalCost()
+        public dynamic GetAdditionalCostWithCompany(AdditionalCostSearchModel request)
+
         {
-            return _unitOfWork.AdditionalCostRepository.SelectAll().ToList();
-        }
-        public async Task<Tuple<List<AdditionalCostVM>,int>> GetAdditionalCostListWithPeginition(AdditionalCostVM additionalCost)
-        {
-            var filters = new List<Expression<Func<AdditionalCost, bool>>>();
-            if (string.IsNullOrEmpty(additionalCost.Title))
+            var additionalCosts = _unitOfWork
+                .AdditionalCostRepository
+                .GetAll()
+                .Include(a => a.ContractingCompany).Where(a=>a.IsActive==true).AsTracking();
+            if (request.CompanyId.HasValue)
             {
-                filters.Add(a => a.Title == "");
+
+                additionalCosts = additionalCosts.Where(a => a.CompanyId == request.CompanyId.Value);
             }
-            
 
-            var result =await _unitOfWork.AdditionalCostRepository.SelectDataFilteredByPage(additionalCost.pageNumber, additionalCost.pageSize, filters);
-            var mappedResult= result.Item2.Select(a=>_mapper.Map<AdditionalCostVM>(a)).ToList();
-            return new Tuple<List<AdditionalCostVM>, int>(mappedResult,result.Item1);
+            int total = additionalCosts.Count();
+            IList resultData;
+            bool isGrouped = false;
+            var aggregates = new Dictionary<string, Dictionary<string, string>>();
+            var data = additionalCosts.Select(a => new AdditionalCostVM()
+            {
+                Id = a.Id,
+                Title = a.Title,
+                IsShowRatio = a.IsShowRatio,
+                Price = a.Price,
+                CompanyTitle = a.ContractingCompany.CompanyName,
+                CompanyId = a.CompanyId
+            });
+            if (request.Sorts != null)
+            {
+                data = data.Sort(request.Sorts);
+            }
 
+            if (request.Filter != null)
+            {
+                data = data.Filter(request.Filter);
+                total = data.Count();
+            }
+
+            if (request.Aggregates != null)
+            {
+                aggregates = data.CalculateAggregates(request.Aggregates);
+            }
+
+            if (request.Take > 0)
+            {
+                data = data.Page(request.Skip, request.Take);
+            }
+
+            if (request.Groups != null && request.Groups.Count > 0 && !request.GroupPaging)
+            {
+                resultData = data.Group(request.Groups).Cast<Group>().ToList();
+                isGrouped = true;
+            }
+            else
+            {
+                resultData = data.ToList();
+            }
+
+            var result = new Response(resultData, aggregates, total, isGrouped).ToResult();
+            return result;
+        }
+        public CreateAdditionalCostVM GetForEdit(Guid id)
+        {
+            var result = _unitOfWork.AdditionalCostRepository
+                .Where(a => a.Id == id)
+                .Select(a => _mapper.Map<AdditionalCost, CreateAdditionalCostVM>(a))
+                .FirstOrDefault();
+            return result;
         }
 
-        public async Task<ChefResult> Add(AdditionalCostVM additionalCost)
+
+        public async Task<ChefResult> Add(CreateAdditionalCostVM additionalCost)
         {
             var result = new ChefResult();
             try
             {
-              
-                if (await IsDuplicate(additionalCost))
+
+                if (IsDuplicate(additionalCost))
                 {
                     result.AddError("داده وارد شده تکراری می باشد");
                     return result;
                 }
                 var mapper = _mapper.Map<AdditionalCost>(additionalCost);
+                mapper.IsActive = true;
                 _unitOfWork.AdditionalCostRepository.Add(mapper);
                 await _unitOfWork.SaveAsync();
                 return result;
@@ -86,29 +135,29 @@ namespace ChefHesab.Application.services.define
                 result.AddError("عملیات نا موفق بود");
                 return result;
             }
-            
+
         }
-        public async Task<ChefResult> Edit(AdditionalCostVM additionalCost)
+        public async Task<ChefResult> Edit(CreateAdditionalCostVM additionalCost)
         {
             var result = new ChefResult();
             try
             {
 
-                if (await IsDuplicate(additionalCost))
+                if (IsDuplicate(additionalCost))
                 {
                     result.AddError("داده وارد شده تکراری می باشد");
                     return result;
                 }
-                var find = _unitOfWork.AdditionalCostRepository.Where(a=>a.Id== additionalCost.Id).FirstOrDefault();
+                var find = _unitOfWork.AdditionalCostRepository.Where(a => a.Id == additionalCost.Id).FirstOrDefault();
                 if (find == null)
                 {
                     result.AddError("داده مورد نظر حذف شده است");
                     return result;
                 }
 
-                var mapper = _mapper.Map<AdditionalCostVM,AdditionalCost>(additionalCost, find);
+                var mapper = _mapper.Map<CreateAdditionalCostVM, AdditionalCost>(additionalCost, find);
                 _unitOfWork.AdditionalCostRepository.Update(mapper);
-                 _unitOfWork.SaveAsync();
+                await _unitOfWork.SaveAsync();
                 return result;
             }
             catch (Exception ex)
@@ -118,6 +167,30 @@ namespace ChefHesab.Application.services.define
             }
 
         }
+        public async Task<ChefResult> Delete(CreateAdditionalCostVM additionalCost)
+        {
+            var result = new ChefResult();
+            try
+            {
+                var find = _unitOfWork.AdditionalCostRepository.Where(a => a.Id == additionalCost.Id).FirstOrDefault();
+                if (find == null)
+                {
+                    result.AddError("داده مورد نظر حذف شده است");
+                    return result;
+                }
 
+
+                find.IsActive = false;
+                _unitOfWork.AdditionalCostRepository.Update(find);
+                await _unitOfWork.SaveAsync();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                result.AddError("عملیات نا موفق بود");
+                return result;
+            }
+
+        }
     }
 }

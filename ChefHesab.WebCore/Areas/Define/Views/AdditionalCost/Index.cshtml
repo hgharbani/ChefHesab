@@ -1,0 +1,356 @@
+﻿@Html.DalirWindow()
+
+<style>
+    .k-grid-cancel {
+        background-color: lightgray !important;
+        color: black !important;
+    }
+
+    .k-grid-update {
+        border-color: #222222 !important;
+        color: #ffffff !important;
+        background-color: #0dc121 !important;
+    }
+
+    .k-grid-edit {
+        border-color: #222222 !important;
+        color: black !important;
+        background-color: #ffc501 !important;
+    }
+</style>
+<div class="grid grid-cols-4 gap-4">
+    <div class="col-span-2 mt-2 k-rtl" id="search">
+        شرکت طرف قرارداد
+        <select id="Company" class="drodpwon"></select>
+    </div>
+  
+    <div class="col-span-4 mt-2 k-rtl" id="GridBox">
+        <div id="AdditionalCostGrid"></div>
+    </div>
+</div>
+
+<script id="responsive-column-template" type="text/x-kendo-template">
+    <strong>Contact Name</strong>
+    <p class="col-template-val">#=data.ContactName#</p>
+
+    <strong>Contact Title</strong>
+    <p class="col-template-val">#=data.ContactTitle#</p>
+
+    <strong>Company Name</strong>
+    <p class="col-template-val">#=data.CompanyName#</p>
+
+    <strong>Country</strong>
+    <p class="col-template-val">#=data.Country#</p>
+</script>
+
+<style>
+    .col-template-val {
+        margin: 0 0 1em .5em;
+    }
+</style>
+
+@section scripts {
+    <script>
+
+        $(document).ready(function (e) {
+            $("#AdditionalCostMenu").addClass("mm-active")
+            renderCompanyComboBox("#Company")
+            bindAdditionalCostGrids();
+            $("#Company").change(function () {
+                refreshGrid()
+            })
+            $("#AdditionalCostGrid").find(".k-grid-add").click(function (e) {
+                ShowPopup(null, "/Define/AdditionalCost/Create", "اضافه کردن شرکت جدید", "600px", "auto", refreshGrid)
+                //ShowPopup("#window", "/Define/AdditionalCost/Create", "اضافه کردن شرکت جدید", "600px", "auto", refreshGrid)
+            });
+
+        });
+
+        function renderCompanyComboBox(nameId, valueCompany) {
+            $(nameId).kendoComboBox({
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "/Define/Companies/GetAllByKendoFilter",
+                            type: "POST",
+                            dataType: "json",
+                            contentType: "application/json",
+                        },
+
+                        parameterMap: function (data, operation) {
+                            if (operation != "read") {
+                                return data;
+                            } else {
+                                return JSON.stringify(data);
+                            }
+                        }
+                    },
+                    pageSize: 20,
+                    autoSync: true,
+                    schema: {
+                        data: "Data",
+                        model: {
+                            id: "Id",
+                            fields: {
+                                Id: { editable: false, nullable: true },
+                                CompanyName: { type: "string", editable: false },
+                                AgreementPeriod: { type: "number", editable: false },
+                                AgreementDate: { type: "date" },
+                                ExpirationDate: { type: "date", editable: false },
+                                AgreementNumber: { type: "number" },
+
+                            }
+                        }
+                    }
+                },
+                dataTextField: "CompanyName",
+                dataValueField: "Id",
+                filter: "contains",
+                suggest: true,
+                value: valueCompany == "" ? null : valueCompany
+
+            });
+        }
+
+        function getData() {
+                    let companyId = $("#Company").data("kendoComboBox").value()
+            return {
+                CompanyId: companyId == "" ? null : companyId,
+               
+            }
+        }
+        function Add() {
+            ShowPopup(null, "/Define/AdditionalCost/Create", "اضافه کردن", "600px", "auto", refreshGrid)
+        }
+        function bindAdditionalCostGrids() {
+            var record = 0;
+
+            $("#AdditionalCostGrid").kendoGrid({
+                autoBind: false,
+                toolbar: function () {
+                    var btn = `<button onclick="Add()" type="button" class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base"><span class="k-icon k-i-plus k-button-icon"></span><span class="k-button-text">اضافه کردن ردیف جدید</span></button>`
+                    return btn;
+                },
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "/Define/AdditionalCost/GetAllByKendoFilter",
+                            type: "POST",
+                            dataType: "json",
+                            contentType: "application/json",
+                            data: getData
+                        },
+                        update: {
+                            url: "/Define/FoodStuff/UpdateStuff",
+                            dataType: "jsonp",
+
+                        },
+                        parameterMap: function (data, operation) {
+                            if (operation != "read") {
+                                return data;
+                            } else {
+                                return JSON.stringify(data);
+                            }
+                        }
+                    },
+                    pageSize: 20,
+                    autoSync: false,
+                    schema: {
+                        data: "Data",
+                        model: {
+                            id: "Id",
+                            fields: {
+                                Id: { editable: false, nullable: false },
+                                Title: { type: "string", editable: false },
+                                CompanyTitle: { type: "string", editable: false },
+                                Price: { type: "number", editable: false },
+                                IsShowRatio: { type: "boolean" },
+
+                            }
+                        }
+                    },
+                    sortable: {
+                        mode: "multiple",
+                        allowUnsort: true
+                    },
+                   
+                },
+                columnMenu: {
+                    filterable: true
+                },
+
+                dataBinding: function () {
+                    record = (this.dataSource.page() - 1) * this.dataSource.pageSize();
+                },
+                dataBound: function (e) {
+                    foodStuffClass = new KendoObject("#AdditionalCostGrid", "kendoGrid");
+
+
+
+
+                    $("#AdditionalCostGrid").find(".k-grid-edit").click(function (e) {
+                        var dataRow = foodStuffClass.kendoConstractor.dataItem(this.closest('tr'))
+                        UpdateRow(dataRow, e)
+                    });
+                },
+                pageable: {
+                    pageSizes: [10, 25, 50, 100, 250, 500],
+                    refresh: true,
+                    messages: {
+                        display: "{0} تا {1} از {2} رکورد",
+                        //{0} is the index of the first record on the page, {1} - index of the last record on the page, {2} is the total amount of records
+                        empty: "رکوردی برای نمایش وجود ندارد.",
+                        page: "صفحه",
+                        of: "از {0}", //{0} is total amount of pages
+                        itemsPerPage: "رکورد در صفحه",
+                        first: "صفحه نخست",
+                        previous: "صفحه قبل",
+                        next: "صفحه بعد",
+                        last: "صفحه آخر",
+                        refresh: "دوباره سازی"
+                    }
+                },
+                sortable: true,
+                groupable: true,
+                resizable: true,
+                reorderable: true,
+                editable: false,
+                filterable: true,
+                selectable: 'row',
+                columns: [
+                    {
+                        field: "Id",
+                        title: "عملیات",
+                        width: 105,
+                        template: function (e) {
+                            var btn = `
+                                                                  <button type="button"
+                                                                                  class="ms-1 inline-block
+                                                                                  rounded bg-yellow-500 px-4
+                                                                                  pb-2 pt-2.5 text-xs
+                                                                                  font-medium uppercase
+                                                                                  leading-normal
+                                                                                  text-white
+                                                                                  hover:bg-primary-accent-300
+                                                                                  hover:shadow-primary-2
+                                                                                 "
+
+                                                                          onclick="showEditForm('${e.Id}')" >
+                                                              <i class="fa fa-edit"></i>
+                                                          </button>
+                                                                   <button type="button"
+                                                                          class="ms-1 inline-block
+                                                                          rounded bg-red-500 px-4
+                                                                          pb-2 pt-2.5 text-xs
+                                                                          font-medium uppercase
+                                                                          leading-normal
+                                                                          text-white
+                                                                          transition
+                                                                          duration-150
+                                                                          ease-in-out
+                                                                          hover:bg-primary-accent-300
+                                                                          hover:shadow-primary-2
+                                                                         "
+
+                                                                          onclick="deleteAdditionalCost('${e.Id}')"
+
+                                                                          >
+                                                                      <i class="fa fa-trash"></i>
+                                                                  </button>
+
+                                                        `
+                            return btn;
+                        },
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    },
+
+
+                    {
+                        field: "Title",
+                        title: "عنوان",
+                        width: 300,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    }, {
+                        field: "CompanyTitle",
+                        title: "نوع",
+                        width: 105,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    },
+
+                    {
+                        field: "Price",
+                        title: "قیمت",
+                        width: 100,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                        template: kendo.template("#= addCommas(Price)#"),
+
+                    },
+                    {
+                        field: "IsShowRatio",
+                        title: "درصد",
+                        width: 105,
+                        template:function(e){
+                            if (e.IsShowRatio == true) {
+                                return `<span class="text-lg text-success">
+                                <i class="fa fa-check"></i></span>`
+                            } else {
+                                return `<span class="text-lg text-danger">
+                                        <i class="fa fa-remove"></i></span>`
+                            }
+                        },
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    }
+                ],
+            });
+
+
+
+        }
+
+        function refreshGrid() {
+            $("#AdditionalCostGrid").data("kendoGrid").dataSource.read();
+        }
+
+        function showEditForm(id) {
+            ShowPopup(null, "/Define/AdditionalCost/Edit?id=" + id, 'تصویر', "600px", "auto", refreshGrid)
+
+            // ShowPopup("#window", "/Define/AdditionalCost/Edit?id=" + id, "اضافه کردن شرکت جدید", "600px", "auto", refreshGrid)
+        }
+        function deleteAdditionalCost(id) {
+            Swal.fire({
+                title: "با حذف این شرکت تمام اطلاعات مربوط به ۀن حذف میشود،?",
+
+                showCancelButton: true,
+                confirmButtonText: "حذف کن !",
+                cancelButtonText: `انصراف`
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: "/Define/AdditionalCost/Delete?id=" + id,
+                        type: 'post',
+                        beforeSend: function (xhr) {
+
+                        }
+                    })
+                        .done(function (data) {
+                            Swal.fire("حذف شد", "", "success");
+                            refreshGrid()
+                        });
+
+                }
+            });
+        }
+
+    </script>
+}
