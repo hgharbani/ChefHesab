@@ -13,7 +13,9 @@ namespace ChefHesab.Dto.food.AdditionalCostFood
         public string AdditionalCostTitle { get; set; }
         public Guid FoodProviderId { get; set; }
         public string FoodProviderTitle { get; set; }
-        public double Ratio { get; set; }
+        public string Title { get; set; }
+        public long Price { get; set; }
+        public bool IsShowRatio { get; set; }
         public double Cost { get; set; }
     }
 }

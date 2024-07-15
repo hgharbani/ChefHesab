@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 
 namespace ChefHesab.Domain.Peresentition.IRepositories.food
 {
-    public interface IFoodProviderRepository: IGenericRepository<FoodProvider>
+    public interface IFoodProviderRepository : IGenericRepository<FoodProvider>
     {
+        IQueryable<FoodProvider> GetAll();
+        IQueryable<FoodProvider> GetAllAsNoTracking();
     }
 }

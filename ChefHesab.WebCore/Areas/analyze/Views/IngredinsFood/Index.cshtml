@@ -1,4 +1,5 @@
-﻿@{
+﻿
+@{
     Layout = null;
 }
 @Html.DalirWindow()
@@ -19,106 +20,388 @@
         color: black !important;
         background-color: #ffc501 !important;
     }
+
+    .k-tabstrip-items-wrapper .k-item.k-active, .k-tabstrip-items-wrapper .k-item.k-selected, .k-tabstrip-items-wrapper .k-item:active {
+        border-color: #222222 !important;
+        color: black !important;
+        background-color: #ffc501 !important;
+    }
+
+
+    .k-tabstrip-top > .k-tabstrip-items-wrapper .k-item {
+        border-color: #222222 !important;
+        color: black !important;
+        background-color: white;
+    }
 </style>
+<form id="Ingredinsform" method="post" action="create" class="bg-white px-8 pt-6 pb-8 mb-4">
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
 <div class="grid grid-cols-7 gap-4">
-    <div class="col-span-2 mt-2 k-rtl" >
+  
+    <div class="col-span-2 mt-2 k-rtl">
         مواد غذایی
         <select id="IngredinsFood" class="drodpwon w-full"></select>
     </div>
-    <div class="col-span-2 mt-2 k-rtl" >
+    <div class="col-span-2 mt-2 k-rtl">
         واحد
         <input id="Unit" class="k-input"></input>
     </div>
-    <div class="col-span-2 mt-2 k-rtl" >
+    <div class="col-span-2 mt-2 k-rtl">
         مقدار لازم
         <input id="Amount" class="k-input"></input>
     </div>
-    <div class="col-span-1 mt-2 k-rtl" >
-        
-        <button id="" class="k-button-add"><i class="fa fa-pluss"></i></button>
+    <div class="col-span-1 mt-2 k-rtl" style="
+    display: flex;
+    align-self: flex-end;
+    position: static;
+    justify-items: end;
+">
+
+            <button type="button" id="btnCreateIngredins"
+                class="ms-1 inline-block
+                        rounded bg-blue-500 px-4
+                        pb-2 pt-2.5 text-xs
+                        font-medium uppercase
+                        leading-normal
+                        text-white
+                        hover:bg-primary-accent-300
+                        hover:shadow-primary-2"
+              >
+            <i class="fa fa-plus"></i>
+        </button>
     </div>
     <div class="col-span-7 mt-2 k-rtl" id="IngredinsFoodGrid">
-       
     </div>
 </div>
+</form>
+<script>
 
-    <script>
-    
-        $(document).ready(function (event) {
+    $(document).ready(function (event) {
 
-            RenderIngredinsFood()
-          
+        RenderIngredinsFood()
+        RenderIngredinsFoodGrid()
+        $("#btnCreateIngredins").click(function (e) {
+            e.preventDefault();
+            var item = {
+                StuffPriceId: $("#IngredinsFood").data("kendoComboBox").value(),
+                FoodProviderId: $("#Id").val(),
+                Unit: $("#Unit").val(),
+                Amount: Number($("#Amount").val())
+            }
+            $.PostMvcDataAjax({
+                baseEvent: e,
+                postUrl: '/analyze/IngredinsFood/Create',
+                loginUrl: '/login',
+                data: item,
+                beforePostHandler: function () {
+
+
+                },
+                completeHandler: function (data) {
+                    refreshIngredinsFoodGrid()
+                    refreshAdditionalCostFoodGrid()
+                },
+                errorHandler: function () {
+
+                }
+            });
+
+
+
+
+
+        })
+        var lastItem = $('#tabstrip .k-item:last');//load just the last
+        $('#tabstrip').data().kendoTabStrip.reload(lastItem);
+    });
+
+    function getDataIngredinsFood() {
+        return {
+            CompanyId: $("#ContractCompanyId").val(),
+            FoodCategoryId: 1
+
+        }
+    }
+    function RenderIngredinsFood() {
+        $("#IngredinsFood").kendoComboBox({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/Define/StuffPrice/GetAllByKendoFilter",
+                        type: "POST",
+                        dataType: "json",
+                        contentType: "application/json",
+                        data: getDataIngredinsFood
+                    },
+                    update: {
+                        url: "/Define/FoodStuff/UpdateStuff",
+                        dataType: "jsonp",
+
+                    },
+                    parameterMap: function (data, operation) {
+                        if (operation != "read") {
+                            return data;
+                        } else {
+                            return JSON.stringify(data);
+                        }
+                    }
+                },
+                pageSize: 20,
+                autoSync: false,
+                schema: {
+                    data: "Data",
+                    model: {
+                        id: "Id",
+                        fields: {
+                            Id: { editable: false, nullable: true },
+                            Title: { type: "string", editable: false },
+                            AmountPercent: { type: "number", editable: true },
+                            TotalPrice: { type: "number", editable: false, defaultValue: 0 },
+                            FoodCategoryTitle: { type: "string", editable: false },
+                            Price: { type: "string", editable: true },
+
+                        }
+                    }
+                },
+                sortable: {
+                    mode: "multiple",
+                    allowUnsort: true
+                },
+                sort: [
+                    {
+                        field: "FoodCategoryTitle",
+                        dir: "asc"
+                    },
+                    {
+                        field: "Title",
+                        dir: "asc"
+                    }
+                ]
+            },
+            onchange: function (e) {
+
+            },
+            dataTextField: "FoodStuffTitle",
+            dataValueField: "Id",
+            filter: "contains",
+            suggest: true,
+            template: "#=FoodStuffTitle# - مبلغ: #=Price#"
 
         });
+    }
+    function getFilterIngredinsFood() {
 
-        function getDataIngredinsFood() {
-            return {
-            CompanyId: $("#Company").data("kendoComboBox").value() == "" ? 0 : $("#Company").data("kendoComboBox").value(),
-                FoodCategoryId: 0
+        return {
+
+            FoodProviderId: $("#Id").val()
+        }
+    }
+    function RenderIngredinsFoodGrid() {
+        var recordIngredins = 0;
+
+        $("#IngredinsFoodGrid").kendoGrid({
+            autoBind: true,
+
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/analyze/IngredinsFood/GetAllByKendoFilter",
+                        type: "POST",
+                        dataType: "json",
+                        contentType: "application/json",
+                        data: getFilterIngredinsFood
+                    },
+
+                    parameterMap: function (data, operation) {
+                        if (operation != "read") {
+                            return data;
+                        } else {
+                            return JSON.stringify(data);
+                        }
+                    }
+                },
+                pageSize: 20,
+                autoSync: true,
+                schema: {
+                    data: "Data",
+                    model: {
+                        id: "Id",
+                        fields: {
+                            Id: { editable: false, nullable: true },
+                            StuffPriceTitle: { type: "string", editable: false },
+                            Unit: { type: "string", editable: false },
+                            Amount: { type: "number" },
+                            Price: { type: "number", editable: false },
+                            Cost: { type: "string", editable: false },
+
+
+                        }
+                    }
+                }
+            },
+            columnMenu: {
+                filterable: true
+            },
+
+            editable: false,
+            dataBinding: function () {
+                recordIngredins = (this.dataSource.page() - 1) * this.dataSource.pageSize();
+            },
+            dataBound: function (e) {
+                
+                totalPriceOnePorsFood()
+            },
+            pageable: {
+                pageSizes: [10, 25, 50, 100],
+                refresh: true,
+                messages: {
+                    display: "{0} تا {1} از {2} رکورد",
+                    //{0} is the index of the first record on the page, {1} - index of the last record on the page, {2} is the total amount of records
+                    empty: "رکوردی برای نمایش وجود ندارد.",
+                    page: "صفحه",
+                    of: "از {0}", //{0} is total amount of pages
+                    itemsPerPage: "رکورد در صفحه",
+                    first: "صفحه نخست",
+                    previous: "صفحه قبل",
+                    next: "صفحه بعد",
+                    last: "صفحه آخر",
+                    refresh: "دوباره سازی"
+                }
+            },
+            sortable: true,
+            navigatable: true,
+            resizable: true,
+            reorderable: true,
+            height: 400,
+            filterable: true,
+            scrollable: true,
+            columns: [
+
+                {
+                    field: "Id",
+                    title: "عملیات",
+                    width:100,
+                    template: function (e) {
+                        var btn = `
+                                          <button type="button"
+                                                 class="ms-1 inline-block
+                                                 rounded bg-red-500 px-4
+                                                 pb-2 pt-2.5 text-xs
+                                                 font-medium uppercase
+                                                 leading-normal
+                                                 text-white
+                                                 transition
+                                                 duration-150
+                                                 ease-in-out
+                                                 hover:bg-primary-accent-300
+                                                 hover:shadow-primary-2
+                                                "
+
+                                                     onclick="deleteIngredinsFood('${e.Id}')"
+
+                                                 >
+                                             <i class="fa fa-trash"></i>
+                                        </button>
+
+                                                        `
+                        return btn;
+                    },
+                    attributes: {
+                        style: "text-align: center;"
+                    },
+                },
+
+                {
+                    field: "StuffPriceTitle",
+                    title: "نام مواد غذایی",
+                   
+                    attributes: {
+                        style: "text-align: center;"
+                    },
+                }
+                ,
+
+                {
+                    field: "Unit",
+                    title: "واحد",
+               
+                    attributes: {
+                        style: "text-align: center;"
+                    },
+                }, {
+                    field: "CategoryTitle",
+                    title: "نوع غذا",
+                   
+                    attributes: {
+                        style: "text-align: center;"
+                    },
+                },
+
+                {
+                    field: "Amount",
+                    title: "تعداد درخواست",
+                  
+                    attributes: {
+                        style: "text-align: center;"
+                    },
+                }, {
+                    field: "Price",
+                    title: "مبلغ",
+                    attributes: {
+                        style: "text-align: center;"
+                    },
+                }, {
+                    field: "Cost",
+                    title: "قیمت نهایی",
+                    attributes: {
+                        style: "text-align: center;"
+                    },
+                },
+            ],
+        });
+
+    }
+    function refreshIngredinsFoodGrid() {
+        $("#IngredinsFoodGrid").data("kendoGrid").dataSource.read();
+    }
+
+    function deleteIngredinsFood(id) {
+        debugger;
+        Swal.fire({
+            title: "با حذف این مورد تمام اطلاعات آن حذف میشود",
+
+            showCancelButton: true,
+            confirmButtonText: "حذف کن !",
+            cancelButtonText: `انصراف`
+        }).then((result,e) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                var item = {
+                    Id: id,
+                    FoodProviderId: $("#Id").val()
+                }
+                $.PostMvcDataAjax({
+                    baseEvent: event,
+                    postUrl: '/analyze/IngredinsFood/Delete',
+                    loginUrl: '/login',
+                    data: item,
+                    beforePostHandler: function () {
+
+
+                    },
+                    completeHandler: function (data) {
+                        refreshIngredinsFoodGrid()
+                        refreshAdditionalCostFoodGrid
+                    },
+                    errorHandler: function () {
+
+                    }
+                });
+
 
             }
-        }
-        function RenderIngredinsFood() {
-            $("#IngredinsFood").kendoComboBox({
-                dataSource: {
-                    transport: {
-                        read: {
-                            url: "/Define/FoodStuff/GetAllByKendoFilter",
-                            type: "POST",
-                            dataType: "json",
-                            contentType: "application/json",
-                            data: getDataIngredinsFood
-                        },
-                        update: {
-                            url: "/Define/FoodStuff/UpdateStuff",
-                            dataType: "jsonp",
+        });
+    }
 
-                        },
-                        parameterMap: function (data, operation) {
-                            if (operation != "read") {
-                                return data;
-                            } else {
-                                return JSON.stringify(data);
-                            }
-                        }
-                    },
-                    pageSize: 20,
-                    autoSync: false,
-                    schema: {
-                        data: "Data",
-                        model: {
-                            id: "Id",
-                            fields: {
-                                Id: { editable: false, nullable: true },
-                                Title: { type: "string", editable: false },
-                                AmountPercent: { type: "number", editable: true },
-                                TotalPrice: { type: "number", editable: false, defaultValue: 0 },
-                                FoodCategoryTitle: { type: "string", editable: false },
-                                Price: { type: "string", editable: true },
-
-                            }
-                        }
-                    },
-                    sortable: {
-                        mode: "multiple",
-                        allowUnsort: true
-                    },
-                    sort: [
-                        {
-                            field: "FoodCategoryTitle",
-                            dir: "asc"
-                        },
-                        {
-                            field: "Title",
-                            dir: "asc"
-                        }
-                    ]
-                },
-                dataTextField: "Title",
-                dataValueField: "Id",
-                filter: "contains",
-                suggest: true,
-
-            });
-        }
-    </script>
+</script>

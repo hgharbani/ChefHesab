@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SUgXscRPp06xHETE6JPLahMuJpL60U8wKhtpz67WznA=",
+  "Hash": "lJ+RrOLiN1v5DBvZdLBhxMf+hJugFOm5NQx7SXtIUJU=",
   "Source": "ChefHesab.WebCore",
   "BasePath": "_content/ChefHesab.WebCore",
   "Mode": "Default",
@@ -15234,6 +15234,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\avatar\\5.png"
+    },
+    {
+      "Identity": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\avatar\\jelvehLogo.png",
+      "SourceId": "ChefHesab.WebCore",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\",
+      "BasePath": "_content/ChefHesab.WebCore",
+      "RelativePath": "images/avatar/jelvehLogo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\avatar\\jelvehLogo.png"
     },
     {
       "Identity": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.WebCore\\wwwroot\\images\\big\\img1.jpg",

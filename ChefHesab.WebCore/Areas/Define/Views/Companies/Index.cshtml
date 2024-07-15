@@ -22,13 +22,8 @@
 
         });
 
-
-        function bindCompanyGrids() {
-            var record = 0;
-
-            $("#CompanyGrid").kendoGrid({
-
-                toolbar: ["create", "excel"],
+        function renderCompanyComboBox(nameId) {
+            $(nameId).kendoComboBox({
                 dataSource: {
                     transport: {
                         read: {
@@ -64,6 +59,66 @@
                         }
                     }
                 },
+                dataTextField: "CompanyName",
+                dataValueField: "Id",
+                filter: "contains",
+                suggest: true,
+
+            });
+        }
+        function bindCompanyGrids() {
+            var record = 0;
+            showLoading()
+            $("#CompanyGrid").kendoGrid({
+
+                toolbar: ["create"],
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "/Define/Companies/GetAllByKendoFilter",
+                            type: "POST",
+                            dataType: "json",
+                            contentType: "application/json",
+                        },
+
+                        parameterMap: function (data, operation) {
+                            if (operation != "read") {
+                                return data;
+                            } else {
+                                return JSON.stringify(data);
+                            }
+                        }
+                    },
+                    pageSize: 20,
+                    autoSync: true,
+                    schema: {
+                        data: "Data",
+                        model: {
+                            id: "Id",
+                            fields: {
+                                Id: { editable: false, nullable: true },
+                                CompanyName: { type: "string", editable: false },
+                                AgreementPeriod: { type: "number", editable: false },
+                                AgreementDate: { type: "date" },
+                                ExpirationDate: { type: "date", editable: false },
+                                AgreementNumber: { type: "number" },
+
+                            }
+                        }
+                    },
+                    requestEnd: function (e) {
+                        if (e.type == "create" || e.type == "update") {
+                            showLoading()
+                            this.read();
+                        }
+                        hideLoading()
+                    },
+                    error: function (e) {
+                        display_kendoui_grid_error(e);
+                        // Cancel the changes
+                        this.cancelChanges();
+                    },
+                },
                 columnMenu: {
                     filterable: true
                 },
@@ -72,6 +127,7 @@
                 dataBinding: function () {
                     record = (this.dataSource.page() - 1) * this.dataSource.pageSize();
                 },
+
                 pageable: {
                     pageSizes: [10, 25, 50, 100],
                     refresh: true,

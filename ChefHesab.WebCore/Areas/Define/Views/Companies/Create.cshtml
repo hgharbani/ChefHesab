@@ -62,18 +62,19 @@
     $(document).ready(function (event) {
         moveFooter()
         $("#btnCreate").click(function (e) {
+            showLoading();
             e.preventDefault();
             $("#Companyform").PostMvcFormAjax({
                 baseEvent: e,
                 postUrl: '/Define/Companies/Create',
                 loginUrl: '/login',
                 beforePostHandler: function () {
-                   
-                 
+
+                    showLoading();
                 },
                 completeHandler: function (data) {
-
-
+                    console.log(data);
+                    hideLoading()
                     CloseModal()
                 },
                 errorHandler: function () {

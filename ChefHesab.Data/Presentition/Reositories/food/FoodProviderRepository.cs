@@ -1,5 +1,6 @@
 ﻿using ChefHesab.Data.Presentition.Context;
 using ChefHesab.Data.Presentition.Reositories.generic;
+using Microsoft.EntityFrameworkCore;
 
 namespace ChefHesab.Domain.Peresentition.IRepositories.food
 {
@@ -9,6 +10,14 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.food
         {
         }
 
+        public IQueryable<FoodProvider> GetAll()
+        {
+            return _dbContext.Set<FoodProvider>().AsQueryable();
+        }
+        public IQueryable<FoodProvider> GetAllAsNoTracking()
+        {
+            return _dbContext.Set<FoodProvider>().AsQueryable().AsNoTracking();
+        }
 
     }
 }

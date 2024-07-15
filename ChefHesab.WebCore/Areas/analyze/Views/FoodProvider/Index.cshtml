@@ -1,5 +1,5 @@
-﻿
-@Html.DalirWindow()
+﻿@Html.DalirWindow()
+
 <style>
     .k-grid-cancel {
         background-color: lightgray !important;
@@ -18,45 +18,269 @@
         background-color: #ffc501 !important;
     }
 </style>
-<div class="grid grid-cols-6 gap-4">
+<div class="grid grid-cols-4 gap-4">
+   
     <div class="col-span-2 mt-2 k-rtl" id="search">
         شرکت طرف قرارداد
-        <select id="Company" class="drodpwon w-full"></select>
+        <select id="CompanySearch" class="drodpwon"></select>
     </div>
     <div class="col-span-2 mt-2 k-rtl" id="search">
-        غذا
-        <select id="FoodName" class="drodpwon w-full"></select>
+        نوع غذا
+        <select id="foodCategoryId" class="drodpwon"></select>
     </div>
-    <div class="col-span-2 mt-2 k-rtl" id="search">
-        تعداد درخواست
-        <input id="AmountRequested" class="k-input"></input>
-    </div>
-    <div class="col-span-6 mt-2 k-rtl" id="tabstrip">
-        <ul>
-            <li class="k-active">مواد غذایی</li>
-            <li>هزینه های جانبی</li>
-        </ul>
-
+    <div class="col-span-4 mt-2 k-rtl" id="GridBox">
+        <div id="foodProviderGrid"></div>
     </div>
 </div>
+
 @section scripts {
     <script>
-        var foodStuffClass;
-        $(document).ready(function (event) {
-            $("#foodProvidermenu").addClass("mm-active")
-            RenderCompany();
-            RenderFoodStuff()
-            var ts = $("#tabstrip").kendoTabStrip({
-                animation: { open: { effects: "fadeIn" } },
-                contentUrls: [
-                    '/analyze/IngredinsFood/Index',
-                    '/analyze/AdditionalCostFood/Index'
-                ]
-            }).data('kendoTabStrip');
 
+        $(document).ready(function (e) {
+            $("#foodproviderMenu").addClass("mm-active")
+            renderFoodCategoryComboBox("#foodCategoryId")
+            RenderCompanysearch()
+            bindfoodProviderGrids();
+            $("#CompanySearch").change(function () {
+                refreshGrid()
+            })
+            $("#foodCategoryId").change(function () {
+                refreshGrid()
+            })
         });
-        function RenderCompany() {
-            $("#Company").kendoComboBox({
+        function bindfoodProviderGrids() {
+            var record = 0;
+
+            $("#foodProviderGrid").kendoGrid({
+                autoBind:true,
+                toolbar: function () {
+                    var btn = `<button onclick="add()" type="button" class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base"><span class="k-icon k-i-plus k-button-icon"></span><span class="k-button-text">اضافه کردن ردیف جدید</span></button>`
+                    return btn;
+                },
+                dataSource: {
+                    transport: {
+                        read: {
+                            url: "/analyze/foodprovider/GetAllByKendoFilter",
+                            type: "POST",
+                            dataType: "json",
+                            contentType: "application/json",
+                            data:getFilter
+                        },
+
+                        parameterMap: function (data, operation) {
+                            if (operation != "read") {
+                                return data;
+                            } else {
+                                return JSON.stringify(data);
+                            }
+                        }
+                    },
+                    pageSize: 20,
+                    autoSync: true,
+                    schema: {
+                        data: "Data",
+                        model: {
+                            id: "Id",
+                            fields: {
+                                Id: { editable: false, nullable: true },
+                                CompanyName: { type: "string", editable: false },
+                                FoodName: { type: "string", editable: false },
+                                AmountRequested: { type: "number" },
+                                
+
+                            }
+                        }
+                    }
+                },
+                columnMenu: {
+                    filterable: true
+                },
+
+                editable: false,
+                dataBinding: function () {
+                    record = (this.dataSource.page() - 1) * this.dataSource.pageSize();
+                },
+                pageable: {
+                    pageSizes: [10, 25, 50, 100],
+                    refresh: true,
+                    messages: {
+                        display: "{0} تا {1} از {2} رکورد",
+                        //{0} is the index of the first record on the page, {1} - index of the last record on the page, {2} is the total amount of records
+                        empty: "رکوردی برای نمایش وجود ندارد.",
+                        page: "صفحه",
+                        of: "از {0}", //{0} is total amount of pages
+                        itemsPerPage: "رکورد در صفحه",
+                        first: "صفحه نخست",
+                        previous: "صفحه قبل",
+                        next: "صفحه بعد",
+                        last: "صفحه آخر",
+                        refresh: "دوباره سازی"
+                    }
+                },
+                sortable: true,
+                navigatable: true,
+                resizable: true,
+                reorderable: true,
+
+                filterable: true,
+                columns: [
+
+                    {
+                        field: "Id",
+                        title: "عملیات",
+                        template: function (e) {
+                            var btn = `
+                                                          <button type="button"
+                                                                          class="ms-1 inline-block
+                                                                          rounded bg-yellow-500 px-4
+                                                                          pb-2 pt-2.5 text-xs
+                                                                          font-medium uppercase
+                                                                          leading-normal
+                                                                          text-white
+                                                                          hover:bg-primary-accent-300
+                                                                          hover:shadow-primary-2
+                                                                         "
+
+                                                                  onclick="showEditForm('${e.Id}')" >
+                                                      <i class="fa fa-edit"></i>
+                                                  </button>
+                                                           <button type="button"
+                                                                  class="ms-1 inline-block
+                                                                  rounded bg-red-500 px-4
+                                                                  pb-2 pt-2.5 text-xs
+                                                                  font-medium uppercase
+                                                                  leading-normal
+                                                                  text-white
+                                                                  transition
+                                                                  duration-150
+                                                                  ease-in-out
+                                                                  hover:bg-primary-accent-300
+                                                                  hover:shadow-primary-2
+                                                                 "
+
+                                                                          onclick="deletefoodProvider('${e.Id}')"
+
+                                                                  >
+                                                              <i class="fa fa-trash"></i>
+                                                          </button>
+
+                                                `
+                            return btn;
+                        },
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    }, {
+                        field: "Id",
+                        title: "آنالیز",
+                        
+                        template: function (e) {
+                            var btn = `
+<button type="button"
+   class="ms-1 inline-block
+   rounded bg-blue-500 px-4
+   pb-2 pt-2.5 text-xs
+   font-medium uppercase
+   leading-normal
+   text-white
+   hover:bg-primary-accent-300
+   hover:shadow-primary-2 "
+
+      onclick="showAnalyzeForm('${e.Id}')" >
+        <i class="fa-regular fa-chart-bar"></i>
+</button>
+                                                    
+
+                                                        `
+                            return btn;
+                        },
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    },
+
+                  {
+                        field: "CompanyName",
+                        title: "نام شرکت",
+                        width: 300,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    }
+                    ,
+
+                    {
+                        field: "FoodName",
+                        title: "نام غذا",
+                        width: 300,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    }, {
+                        field: "CategoryName",
+                        title: "نوع غذا",
+                        width: 300,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    },
+
+                    {
+                        field: "AmountRequested",
+                        title: "تعداد درخواست",
+                        width: 300,
+                        attributes: {
+                            style: "text-align: center;"
+                        },
+                    }
+                ],
+            });
+
+
+
+        }
+
+        function refreshGrid() {
+            $("#foodProviderGrid").data("kendoGrid").dataSource.read();
+        }
+
+        function add() {
+            ShowPopup(null, "/analyze/foodprovider/create", 'ایجاد', "600px", "auto", refreshGrid)
+ }
+        function showEditForm(id) {
+            ShowPopup(null, "/analyze/foodprovider/Edit?id=" + id, 'ویرایش', "600px", "auto", refreshGrid)
+}
+
+        function showAnalyzeForm(id) {
+            ShowPopup(null, "/analyze/foodprovider/CostMeal?id=" + id, 'هزینه ی یک پرس غذا', null, null, refreshGrid)
+        }
+        function deletefoodProvider(id) {
+            Swal.fire({
+                title: "با حذف این شرکت تمام اطلاعات مربوط به ۀن حذف میشود،?",
+
+                showCancelButton: true,
+                confirmButtonText: "حذف کن !",
+                cancelButtonText: `انصراف`
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: "/food/foodprovider/Delete?id=" + id,
+                        type: 'post',
+                        beforeSend: function (xhr) {
+
+                        }
+                    })
+                        .done(function (data) {
+                            Swal.fire("حذف شد", "", "success");
+                        });
+
+                }
+            });
+        }
+
+        function RenderCompanysearch() {
+            $("#CompanySearch").kendoComboBox({
                 dataSource: {
                     transport: {
                         read: {
@@ -99,23 +323,26 @@
 
             });
         }
-        function getDataFoodCategory() {
+        function getFoodCategoryForFoodSearch() {
             return {
-                FoodCategoryId: 0
+                FoodCategoryId: 2
 
             }
         }
-        function RenderFoodStuff() {
-            $("#FoodName").kendoComboBox({
+        function renderFoodCategoryComboBox(nameId, value = 0) {
+            $(nameId).kendoComboBox({
                 dataSource: {
                     transport: {
                         read: {
-                            url: "/Define/FoodStuff/GetAllFoodByKendoFilter",
+                            url: "/Define/FoodCategory/GetAllByKendoFilter",
                             type: "POST",
                             dataType: "json",
                             contentType: "application/json",
-                            data: getDataFoodCategory
+                            data: {
+                                Code: 2
+                            }
                         },
+
                         parameterMap: function (data, operation) {
                             if (operation != "read") {
                                 return data;
@@ -124,42 +351,38 @@
                             }
                         }
                     },
-                    pageSize: 500,
-                    autoSync: false,
+                    pageSize: 20,
+                    autoSync: true,
                     schema: {
                         data: "Data",
                         model: {
-                            id: "Id",
+                            id: "CategoryId",
                             fields: {
-                                Id: { editable: false, nullable: true },
+                                CategoryId: { editable: false, nullable: true },
                                 Title: { type: "string", editable: false },
-                                TotalPrice: { type: "number", editable: false, defaultValue: 0 },
-                                FoodCategoryTitle: { type: "string", editable: false },
+
 
                             }
                         }
-                    },
-                    sortable: {
-                        mode: "multiple",
-                        allowUnsort: true
-                    },
-                    sort: [
-                        {
-                            field: "FoodCategoryTitle",
-                            dir: "asc"
-                        },
-                        {
-                            field: "Title",
-                            dir: "asc"
-                        }
-                    ]
+                    }
                 },
                 dataTextField: "Title",
-                dataValueField: "Id",
+                dataValueField: "CategoryId",
                 filter: "contains",
                 suggest: true,
-
+                value: value > 0 ? value : 0
+                
             });
+        }
+
+        function getFilter() {
+            var companyId = $("#CompanySearch").data("kendoComboBox").value();
+            var foodCategoryId = $("#foodCategoryId").data("kendoComboBox").value();
+
+            return  {
+                CompanyId: companyId == '' ? null : companyId,
+                FoodCategoryId: foodCategoryId == '' ? null : foodCategoryId
+            }
         }
     </script>
 }

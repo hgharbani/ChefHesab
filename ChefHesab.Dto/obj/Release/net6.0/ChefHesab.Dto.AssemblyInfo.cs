@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChefHesab.Dto")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dfc591aa06efd60c67ff8f732b0f96f15c0df7f0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c416606522eeef5770a69cda89138941c1a251a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChefHesab.Dto")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChefHesab.Dto")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

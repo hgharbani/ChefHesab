@@ -34,15 +34,19 @@ namespace ChefHesab.Application.services.define
         }
 
 
-        private async Task<bool> IsDuplicate(ContractingCompanyVM contractingCompany)
+        private bool IsDuplicate(ContractingCompanyVM contractingCompany)
         {
-            if (string.IsNullOrEmpty(contractingCompany.Id.ToString()))
+            if (!string.IsNullOrEmpty(contractingCompany.Id.ToString()))
             {
-                return  _unitOfWork.ContractingCompanyRepository.Any(a => a.Id != contractingCompany.Id && a.CompanyName == contractingCompany.CompanyName &&
-                (a.AgreementDate <= contractingCompany.AgreementDate && a.ExpirationDate >= contractingCompany.AgreementDate)
+                return  _unitOfWork.ContractingCompanyRepository
+                    .Any(a => a.Id != contractingCompany.Id && 
+                    a.CompanyName == contractingCompany.CompanyName &&
+                    ((a.AgreementDate <= contractingCompany.AgreementDate &&
+                    a.ExpirationDate >= contractingCompany.AgreementDate)
                 ||
-                (a.AgreementDate <= contractingCompany.ExpirationDate && a.ExpirationDate >= contractingCompany.ExpirationDate)
-                );
+                     (a.AgreementDate <= contractingCompany.ExpirationDate 
+                        && a.ExpirationDate >= contractingCompany.ExpirationDate))
+                   );
 
             }
             else
@@ -130,7 +134,7 @@ namespace ChefHesab.Application.services.define
             try
             {
 
-                if (await IsDuplicate(model))
+                if ( IsDuplicate(model))
                 {
                     result.AddError("داده وارد شده تکراری می باشد");
                     return result;
@@ -141,8 +145,16 @@ namespace ChefHesab.Application.services.define
                 mapper.IsActive = true;
                 _unitOfWork.ContractingCompanyRepository.Add(mapper);
 
-              await _unitOfWork.SaveAsync();
+                var id = await _unitOfWork.SaveAsync();
+                if (id > 0)
+                {
+
+                    return result;
+                }
+
+                result.AddError("اطلاعاتی تغییر نیافته است");
                 return result;
+
             }
             catch (Exception ex)
             {
@@ -157,7 +169,7 @@ namespace ChefHesab.Application.services.define
             try
             {
 
-                if (await IsDuplicate(ContractingCompany))
+                if ( IsDuplicate(ContractingCompany))
                 {
                     result.AddError("داده وارد شده تکراری می باشد");
                     return result;
@@ -172,8 +184,16 @@ namespace ChefHesab.Application.services.define
                 var mapper = _mapper.Map<ContractingCompanyVM, ContractingCompany>(ContractingCompany, find);
                 mapper.AgreementPeriod = mapper.ExpirationDate.Value.Date.Subtract(mapper.AgreementDate.Value.Date).Days;
                 _unitOfWork.ContractingCompanyRepository.Update(mapper);
-               await  _unitOfWork.SaveAsync();
+             var id=await  _unitOfWork.SaveAsync();
+                if (id > 0)
+                {
+
                 return result;
+                }
+               
+                    result.AddError("اطلاعاتی تغییر نیافته است");
+                    return result;
+                
             }
             catch (Exception ex)
             {
@@ -199,8 +219,16 @@ namespace ChefHesab.Application.services.define
 
                 find.IsActive = false;
                 _unitOfWork.ContractingCompanyRepository.Update(find);
-               await  _unitOfWork.SaveAsync();
+                var id = await _unitOfWork.SaveAsync();
+                if (id > 0)
+                {
+
+                    return result;
+                }
+
+                result.AddError("اطلاعاتی تغییر نیافته است");
                 return result;
+
             }
             catch (Exception ex)
             {

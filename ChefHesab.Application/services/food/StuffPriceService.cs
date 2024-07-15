@@ -4,9 +4,15 @@ using ChefHesab.Application.Interface.food;
 using ChefHesab.Data.Presentition.Context;
 using ChefHesab.Data.Presentition.Reositories.generic;
 using ChefHesab.Dto.define.ContractingCompany;
+using ChefHesab.Dto.define.FoodStuff;
+using ChefHesab.Dto.food.IngredinsFood;
 using ChefHesab.Dto.food.StuffPrice;
+using ChefHesab.Share.Extiontions.KendoExtentions;
 using ChefHesab.Share.model;
+using ChefHesab.Share.model.KendoModel.Response;
+using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,6 +32,68 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.food
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
+
+        public dynamic GetIngredinsFoods(FoodStuffSearch request)
+        {
+            var foodproviderQuery = _unitOfWork
+                .StuffPriceRepository
+                .SelectQuery()
+                .Include(a => a.FoodStuff).AsNoTracking();
+
+
+            foodproviderQuery = foodproviderQuery.Where(a => a.CompanyId == request.CompanyId)
+                ;
+            int total = foodproviderQuery.Count();
+            IList resultData;
+            bool isGrouped = false;
+            var aggregates = new Dictionary<string, Dictionary<string, string>>();
+
+            var data = foodproviderQuery.Select(a => new StuffPriceVM()
+            {
+                Id = a.Id,
+                FoodStuffTitle = a.FoodStuff.Title,
+                Price = a.TotalPrice,
+               
+
+            });
+
+            if (request.Sorts != null)
+            {
+                data = data.Sort(request.Sorts);
+            }
+
+            if (request.Filter != null)
+            {
+                data = data.Filter(request.Filter);
+                total = data.Count();
+            }
+
+            if (request.Aggregates != null)
+            {
+                aggregates = data.CalculateAggregates(request.Aggregates);
+            }
+
+            if (request.Take > 0)
+            {
+                data = data.Page(request.Skip, request.Take);
+            }
+
+            if (request.Groups != null && request.Groups.Count > 0 && !request.GroupPaging)
+            {
+                resultData = data.Group(request.Groups).Cast<Group>().ToList();
+                isGrouped = true;
+            }
+            else
+            {
+                resultData = data.ToList();
+            }
+
+            var result = new Response(resultData, aggregates, total, isGrouped).ToResult();
+            return result;
+        }
+
+
+
 
         public async Task<ChefResult> AddOrUpdate(CreateStuffPriceVM model)
         {
@@ -118,6 +186,14 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.food
                 {
                     model.TotalPrice = model.Price;
                 }
+                var ingredins= await _unitOfWork.IngredinsFoodRepository.SelectQuery()
+                    .Where(a=>a.StuffPriceId==find.Id).ToListAsync();
+                foreach(var item in ingredins)
+                {
+                    item.Cost = item.Amount * model.TotalPrice;
+                    _unitOfWork.IngredinsFoodRepository.Update(item);
+                }
+
                 var mapper = _mapper.Map<CreateStuffPriceVM, StuffPrice>(model, find);
                 _unitOfWork.StuffPriceRepository.Update(mapper);
                 await _unitOfWork.SaveAsync();

@@ -9,8 +9,9 @@ using Microsoft.AspNetCore.Mvc;
 namespace ChefHesab.WebCore.Areas.Define.Controllers
 {
     [Area("Define")]
-    public class CompaniesController : Controller
+    public class CompaniesController : BaseController
     {
+    
         private readonly ApiExtention _apiExtention;
         private readonly IConfiguration _configuration;
         public CompaniesController(ApiExtention apiExtention, IConfiguration configuration)
@@ -40,15 +41,28 @@ namespace ChefHesab.WebCore.Areas.Define.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(ContractingCompanyVM model)
         {
+            var result = new ChefResult();
             if (ModelState.IsValid)
             {
-                var result = await _apiExtention.PostDataToApiAsync<ContractingCompanyVM, ChefResult>($"{_configuration["ChefHesabApi"]}api/CompaniesApi/Create", model);
-                if(result.IsSuccess)
+                 result = await _apiExtention.PostDataToApiAsync<ContractingCompanyVM, ChefResult>($"{_configuration["ChefHesabApi"]}api/CompaniesApi/Create", model);
+
+                if (!result.IsSuccess)
                 {
-                    return Json(result);
+                    ErrorNotifications(result.Errors, true, true);
+                    return InvokeNotifications(false);
                 }
+                SuccessNotification("اطلاعات با موفقیت ذخیره شد");
+
+                return InvokeNotifications(true);
             }
-            return View(model);
+            else
+            {
+                var ListErrors = ModelState.Select(x => x.Value.Errors)
+                           .Where(y => y.Count > 0).SelectMany(a => a).ToList();
+                ErrorNotifications(ListErrors.Select(a => a.ErrorMessage).ToList(), true, true);
+                return InvokeNotifications(false);
+            }
+
         }
 
         public async Task<IActionResult> Edit(CoontractingCompanySearch model)
@@ -61,28 +75,59 @@ namespace ChefHesab.WebCore.Areas.Define.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(ContractingCompanyVM model)
         {
+            var result = new ChefResult();
+
             if (ModelState.IsValid)
             {
-                var result = await _apiExtention.PostDataToApiAsync<ContractingCompanyVM, ChefResult>($"{_configuration["ChefHesabApi"]}api/CompaniesApi/Edit", model);
-                if (result.IsSuccess)
+                 result = await _apiExtention.PostDataToApiAsync<ContractingCompanyVM, ChefResult>($"{_configuration["ChefHesabApi"]}api/CompaniesApi/Edit", model);
+
+
+                if (!result.IsSuccess)
                 {
-                    return Json(result);
+                    ErrorNotifications(result.Errors, true, true);
+                    return InvokeNotifications(false);
                 }
+                SuccessNotification("اطلاعات با موفقیت ذخیره شد");
+
+                return InvokeNotifications(true);
             }
-            return View(model);
+            else
+            {
+                var ListErrors = ModelState.Select(x => x.Value.Errors)
+                           .Where(y => y.Count > 0).SelectMany(a => a).ToList();
+                ErrorNotifications(ListErrors.Select(a => a.ErrorMessage).ToList(), true, true);
+                return InvokeNotifications(false);
+            }
+
         }
 
         [HttpPost]
         public async Task<IActionResult> Delete(CoontractingCompanySearch model)
         {
-           
-                var result = await _apiExtention.PostDataToApiAsync<CoontractingCompanySearch, ChefResult >($"{_configuration["ChefHesabApi"]}api/CompaniesApi/Delete", model);
-                if (result.IsSuccess)
+            var result = new ChefResult();
+
+            if (ModelState.IsValid)
+            {
+                 result = await _apiExtention.PostDataToApiAsync<CoontractingCompanySearch, ChefResult>($"{_configuration["ChefHesabApi"]}api/CompaniesApi/Delete", model);
+
+
+
+                if (!result.IsSuccess)
                 {
-                    return Json(result);
+                    ErrorNotifications(result.Errors, true, true);
+                    return InvokeNotifications(false);
                 }
-           
-            return Json(model);
+                SuccessNotification("اطلاعات با موفقیت ذخیره شد");
+
+                return InvokeNotifications(true);
+            }
+            else
+            {
+                var ListErrors = ModelState.Select(x => x.Value.Errors)
+                           .Where(y => y.Count > 0).SelectMany(a => a).ToList();
+                ErrorNotifications(ListErrors.Select(a => a.ErrorMessage).ToList(), true, true);
+                return InvokeNotifications(false);
+            }
         }
     }
 }

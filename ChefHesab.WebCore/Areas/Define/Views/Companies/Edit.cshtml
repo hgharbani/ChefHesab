@@ -70,14 +70,18 @@
                 postUrl: '/Define/Companies/Edit',
                 loginUrl: '/login',
                 beforePostHandler: function () {
-
+                    showLoading();
 
                 },
                 completeHandler: function (data) {
+                    hideLoading();
+                    
+                    if (data.CloseWindow == true) {
                     CloseWindow()
+                    }
                 },
-                errorHandler: function () {
-
+                errorHandler: function (data) {
+                    hideLoading();
                 }
             });
 

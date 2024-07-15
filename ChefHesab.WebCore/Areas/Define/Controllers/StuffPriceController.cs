@@ -1,5 +1,6 @@
 ﻿using ChefHesab.Dto.define.ContractingCompany;
 using ChefHesab.Dto.define.FoodStuff;
+using ChefHesab.Dto.food.FoodProvider;
 using ChefHesab.Dto.food.StuffPrice;
 using ChefHesab.Share.Extiontions;
 using ChefHesab.Share.model;
@@ -18,6 +19,14 @@ namespace ChefHesab.WebCore.Areas.Define.Controllers
         {
             this._apiExtention = apiExtention;
             _configuration = configuration;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> GetAllByKendoFilter([FromBody] FoodStuffSearch request)
+        {
+            var result = await _apiExtention.PostDataToApiAsync<FoodStuffSearch, dynamic>($"{_configuration["ChefHesabApi"]}api/StuffPriceApi/GetAllByKendoFilter", request);
+
+            return Json(result);
         }
 
         [HttpPost]

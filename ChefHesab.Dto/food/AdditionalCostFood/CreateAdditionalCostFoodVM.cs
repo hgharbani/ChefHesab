@@ -8,8 +8,8 @@ namespace ChefHesab.Dto.food.AdditionalCostFood
 {
     public class CreateAdditionalCostFoodVM
     {
-        public Guid Id { get; set; }
-        public Guid AdditionalCostId { get; set; }
+        public Guid? Id { get; set; }
+        public Guid? AdditionalCostId { get; set; }
         public Guid FoodProviderId { get; set; }
         public double Ratio { get; set; }
         public double Cost { get; set; }

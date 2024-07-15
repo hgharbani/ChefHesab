@@ -1,0 +1,121 @@
+﻿@model FoodProviderVM
+@{
+    Layout = null;
+}
+
+@Html.DalirWindow()
+<style>
+    .k-grid-cancel {
+        background-color: lightgray !important;
+        color: black !important;
+    }
+
+    .k-grid-update {
+        border-color: #222222 !important;
+        color: #ffffff !important;
+        background-color: #0dc121 !important;
+    }
+
+    .k-grid-edit {
+        border-color: #222222 !important;
+        color: black !important;
+        background-color: #ffc501 !important;
+    }
+</style>
+@Html.HiddenFor(a => a.Id)
+@Html.HiddenFor(a => a.ContractCompanyId)
+<div class="grid grid-cols-6 gap-0">
+    <div class="col-span-6 grid grid-cols-6 gap-4 bg-blue-900 text-white  p-4 mb-0">
+        <div class="col-span-2 mt-2 k-rtl flex text-white text-lg" id="search">
+            شرکت طرف قرارداد: <h3 class="text-white"> @Html.DisplayFor(a => a.CompanyName) </h3>
+
+        </div>
+        <div class="col-span-2 mt-2 k-rtl  flex text-white text-lg" id="search">
+            غذا : <h3 class="text-white">  @Html.DisplayFor(a => a.FoodName)</h3>
+
+        </div>
+        <div class="col-span-2 mt-2 k-rtl  flex text-white text-lg" id="search">
+            تعداد درخواست: <h3 class="text-white">  @Html.DisplayFor(a => a.AmountRequested)</h3>
+            @Html.HiddenFor(a=>a.AmountRequested)
+        </div>
+
+    </div>
+
+
+    <div class="col-span-6 mt-1 k-rtl" id="tabstrip">
+        <ul>
+            <li class="k-active">مواد غذایی</li>
+            <li>هزینه های جانبی</li>
+        </ul>
+
+    </div>
+
+    <div class="col-span-6 mt-1 k-rtl   mb-0 bg-orange-500 text-white">
+        <div class="grid grid-cols-8 gap-0">
+            <div class="col-span-2 p-4 k-rtl flex text-lg font-bold border" id="search">
+                هزینه یک پرس غذا:
+
+            </div>
+            <div class="col-span-2 p-4 k-rtl flex text-lg font-bold border"> <h3 class="text-white" id="PorsTotalPrice"></h3></div>
+            <div class="col-span-2 p-4 k-rtl  flex text-lg font-bold border" id="search">
+                هزینه کل به تعداد درخواست : 
+
+            </div>
+
+            <div class="col-span-2 p-4 k-rtl flex text-lg font-bold border"> <h3 class="text-white" id="RequestedPorsTotalPrice"></h3></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var foodStuffClass;
+    var PorsTotalPrice = 0;
+    var RequestedPorsTotalPrice = 0;
+    $(document).ready(function (event) {
+        $("#PorsTotalPrice").html(PorsTotalPrice);
+        $("#RequestedPorsTotalPrice").html(RequestedPorsTotalPrice);
+        var ts = $("#tabstrip").kendoTabStrip({
+            animation: { open: { effects: "fadeIn" } },
+            contentUrls: [
+                '/analyze/IngredinsFood/Index',
+                '/analyze/AdditionalCostFood/Index'
+            ]
+        }).data('kendoTabStrip');
+
+    });
+
+    function totalPriceOnePorsFood() {
+        var totalPrice = 0;
+        if ($("#IngredinsFoodGrid").data("kendoGrid") != undefined) {
+ var IngredinsFoodGrid = $("#IngredinsFoodGrid").data("kendoGrid").dataSource.data();
+
+        if (IngredinsFoodGrid != undefined && IngredinsFoodGrid.length > 0) {
+            for (var i = 0; i < IngredinsFoodGrid.length; i++) {
+                totalPrice = totalPrice + Number(IngredinsFoodGrid[i].Cost);
+            }
+        } else {
+            totalPrice = totalPrice + 0
+        }
+        }
+       
+        if ($("#AdditionalCostFoodGrid").data("kendoGrid") != undefined) {
+ var additionalCostGrid = $("#AdditionalCostFoodGrid").data("kendoGrid").dataSource.data();
+        if (additionalCostGrid != undefined && additionalCostGrid.length > 0) {
+            for (var i = 0; i < additionalCostGrid.length; i++) {
+                totalPrice = totalPrice + Number(additionalCostGrid[i].Cost);
+            }
+        } else {
+            totalPrice = totalPrice + 0
+        }
+        }
+       
+
+
+
+
+        $("#PorsTotalPrice").html(totalPrice);
+        var amountRequested = $("#AmountRequested").val();
+        $("#RequestedPorsTotalPrice").html(totalPrice * Number(amountRequested));
+    }
+</script>
+

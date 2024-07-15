@@ -1,0 +1,185 @@
+﻿@model CreateFoodProviderVM
+@{
+    Layout = null;
+}
+
+<div style=" overflow: auto; height: calc(100% - 70px); padding: 10px" class="relative flex-auto p-4" data-twe-modal-body-ref id="ModalConent">
+    <form id="FoodProviderform" method="post" action="create" class="bg-white px-8 pt-6 pb-8 mb-4">
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(a=>a.Id)
+        @Html.ValidationSummary(true)
+        <div class="grid grid-cols-4 gap-4">
+            <div class="col-span-4 mt-2 k-rtl" id="search">
+                شرکت طرف قرارداد
+                <select id="ContractCompanyId" name="ContractCompanyId" class="drodpwon w-full"></select>
+            </div>
+            <div class="col-span-4 mt-2 k-rtl" id="search">
+                غذا
+                <select id="FoodStuffId" name="FoodStuffId"  class="drodpwon w-full"></select>
+            </div>
+            <div class="col-span-4 mt-2 k-rtl" id="search">
+                تعداد درخواست
+                <input id="AmountRequested" name="AmountRequested" value="@Model.AmountRequested" class="k-input"></input>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Modal footer -->
+<div class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 p-2 dark:border-white/10" id="modalFooter">
+    <button type="button"
+            class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline "
+            data-twe-modal-dismiss
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+            onclick="CloseModal(this)">
+        بستن
+    </button>
+    <button type="button"
+            class="ms-1 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
+            data-twe-ripple-init
+            data-twe-ripple-color="light"
+            id="btnCreate">
+        ذخیره
+    </button>
+</div>
+
+<script>
+    $(document).ready(function (event) {
+        RenderCompany();
+
+        RenderFoodStuff()
+        $("#btnCreate").click(function (e) {
+            e.preventDefault();
+            $("#FoodProviderform").PostMvcFormAjax({
+                baseEvent: e,
+                postUrl: '/analyze/foodprovider/edit',
+                loginUrl: '/login',
+                beforePostHandler: function () {
+
+
+                },
+                completeHandler: function (data) {
+                    CloseWindow()
+
+                },
+                errorHandler: function () {
+
+                }
+            });
+
+
+
+
+
+        });
+
+    })
+    function RenderCompany() {
+        $("#ContractCompanyId").kendoComboBox({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/Define/Companies/GetAllByKendoFilter",
+                        type: "POST",
+                        dataType: "json",
+                        contentType: "application/json",
+                    },
+
+                    parameterMap: function (data, operation) {
+                        if (operation != "read") {
+                            return data;
+                        } else {
+                            return JSON.stringify(data);
+                        }
+                    }
+                },
+                pageSize: 20,
+                autoSync: true,
+                schema: {
+                    data: "Data",
+                    model: {
+                        id: "Id",
+                        fields: {
+                            Id: { editable: false, nullable: true },
+                            CompanyName: { type: "string", editable: false },
+                            AgreementPeriod: { type: "number", editable: false },
+                            AgreementDate: { type: "date" },
+                            ExpirationDate: { type: "date", editable: false },
+                            AgreementNumber: { type: "number" },
+
+                        }
+                    }
+                }
+            },
+            dataTextField: "CompanyName",
+            dataValueField: "Id",
+            filter: "contains",
+            suggest: true,
+            value: '@Model.ContractCompanyId'
+        });
+    }
+    function getDataFoodCategory() {
+        return {
+            FoodCategoryId: 0
+
+        }
+    }
+    function RenderFoodStuff() {
+        $("#FoodStuffId").kendoComboBox({
+            dataSource: {
+                transport: {
+                    read: {
+                        url: "/Define/FoodStuff/GetAllFoodByKendoFilter",
+                        type: "POST",
+                        dataType: "json",
+                        contentType: "application/json",
+                        data: getDataFoodCategory
+                    },
+                    parameterMap: function (data, operation) {
+                        if (operation != "read") {
+                            return data;
+                        } else {
+                            return JSON.stringify(data);
+                        }
+                    }
+                },
+                pageSize: 500,
+                autoSync: false,
+                schema: {
+                    data: "Data",
+                    model: {
+                        id: "Id",
+                        fields: {
+                            Id: { editable: false, nullable: true },
+                            Title: { type: "string", editable: false },
+                            TotalPrice: { type: "number", editable: false, defaultValue: 0 },
+                            FoodCategoryTitle: { type: "string", editable: false },
+
+                        }
+                    }
+                },
+                sortable: {
+                    mode: "multiple",
+                    allowUnsort: true
+                },
+                sort: [
+                    {
+                        field: "FoodCategoryTitle",
+                        dir: "asc"
+                    },
+                    {
+                        field: "Title",
+                        dir: "asc"
+                    }
+                ]
+            },
+            dataTextField: "Title",
+            dataValueField: "Id",
+            filter: "contains",
+            suggest: true,
+            value:'@Model.FoodStuffId'
+        });
+    }
+
+</script>
