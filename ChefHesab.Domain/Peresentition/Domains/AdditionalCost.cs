@@ -13,6 +13,7 @@ namespace ChefHesab.Domain
     /// <summary>
     /// عناوین هزینه های جانبی
     /// </summary>
+    [Table("AdditionalCosts")]
     public partial class AdditionalCost
     {
         public Guid Id { get; set; } // Id (Primary key)

@@ -13,6 +13,8 @@ namespace ChefHesab.Application.Interface.define
         dynamic GetAdditionalCostWithCompany(AdditionalCostSearchModel request);
         CreateAdditionalCostVM GetForEdit(Guid id);
 
+        double checkformula();
+
 
     }
 }

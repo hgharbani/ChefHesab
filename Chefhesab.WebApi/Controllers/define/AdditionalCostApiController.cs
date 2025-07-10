@@ -50,5 +50,11 @@ namespace Chefhesab.WebApi.Controllers.define
             var result = await _additionalCostService.Delete(model);
             return Ok(result);
         }
+        [HttpPost("checkformula")]
+        public async Task<IActionResult> checkformula()
+        {
+            var result = _additionalCostService.checkformula();
+            return Ok(result);
+        }
     }
 }

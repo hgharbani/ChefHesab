@@ -8,14 +8,13 @@
     ".NETCoreApp,Version=v6.0": {
       "Chefhesab.WebApi/1.0.0": {
         "dependencies": {
-          "Autofac": "7.1.0",
           "Autofac.Extensions.DependencyInjection": "8.0.0",
           "ChefHesab.Application": "1.0.0",
           "ChefHesab.Data": "1.0.0",
           "ChefHesab.Domain": "1.0.0",
           "ChefHesab.Dto": "1.0.0",
           "ChefHesab.Share": "1.0.0",
-          "DNTCommon.Web.Core": "5.3.3",
+          "DNTCommon.Web.Core": "6.2.0",
           "DNTPersianUtils.Core": "6.3.1",
           "Microsoft.EntityFrameworkCore.Design": "7.0.10",
           "Newtonsoft.Json": "13.0.3",
@@ -124,11 +123,11 @@
           }
         }
       },
-      "BouncyCastle.Cryptography/2.3.1": {
+      "BouncyCastle.Cryptography/2.4.0": {
         "runtime": {
           "lib/net6.0/BouncyCastle.Cryptography.dll": {
             "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.3.1.17862"
+            "fileVersion": "2.4.0.33771"
           }
         }
       },
@@ -147,24 +146,26 @@
           }
         }
       },
-      "DNTCommon.Web.Core/5.3.3": {
+      "DNTCommon.Web.Core/6.2.0": {
         "dependencies": {
           "Ben.Demystifier": "0.4.1",
           "DNTPersianUtils.Core": "6.3.1",
           "HarfBuzzSharp.NativeAssets.Linux": "7.3.0.2",
-          "HtmlAgilityPack": "1.11.61",
+          "HtmlAgilityPack": "1.11.63",
           "IPAddressRange": "6.0.0",
-          "MailKit": "4.6.0",
-          "Microsoft.Extensions.Http.Polly": "8.0.6",
-          "Microsoft.SyndicationFeed.ReaderWriter": "1.0.2",
+          "MailKit": "4.7.1.1",
+          "Microsoft.Extensions.Http.Polly": "8.0.8",
           "SkiaSharp": "2.88.8",
           "SkiaSharp.HarfBuzz": "2.88.8",
-          "SkiaSharp.NativeAssets.Linux": "2.88.8"
+          "SkiaSharp.NativeAssets.Linux": "2.88.8",
+          "System.IO.Hashing": "8.0.0",
+          "System.ServiceModel.Syndication": "8.0.0",
+          "UAParser": "3.1.47"
         },
         "runtime": {
           "lib/net6.0/DNTCommon.Web.Core.dll": {
-            "assemblyVersion": "5.3.3.0",
-            "fileVersion": "5.3.3.0"
+            "assemblyVersion": "6.2.0.0",
+            "fileVersion": "6.2.0.0"
           }
         }
       },
@@ -279,11 +280,11 @@
           }
         }
       },
-      "HtmlAgilityPack/1.11.61": {
+      "HtmlAgilityPack/1.11.63": {
         "runtime": {
           "lib/netstandard2.0/HtmlAgilityPack.dll": {
-            "assemblyVersion": "1.11.61.0",
-            "fileVersion": "1.11.61.0"
+            "assemblyVersion": "1.11.63.0",
+            "fileVersion": "1.11.63.0"
           }
         }
       },
@@ -350,14 +351,15 @@
           }
         }
       },
-      "MailKit/4.6.0": {
+      "MailKit/4.7.1.1": {
         "dependencies": {
-          "MimeKit": "4.6.0"
+          "MimeKit": "4.7.1",
+          "System.Formats.Asn1": "8.0.1"
         },
         "runtime": {
           "lib/net6.0/MailKit.dll": {
-            "assemblyVersion": "4.6.0.0",
-            "fileVersion": "4.6.0.0"
+            "assemblyVersion": "4.7.0.0",
+            "fileVersion": "4.7.1.1"
           }
         }
       },
@@ -576,7 +578,7 @@
           "Microsoft.Net.Http.Headers": "2.2.0"
         }
       },
-      "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
+      "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
         "dependencies": {
           "Microsoft.AspNetCore.Authentication.Core": "2.2.0",
           "Microsoft.AspNetCore.Authorization.Policy": "2.2.0",
@@ -597,7 +599,7 @@
       },
       "Microsoft.AspNetCore.Mvc.DataAnnotations/2.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.Extensions.Localization": "2.2.0",
           "System.ComponentModel.Annotations": "5.0.0"
         }
@@ -605,7 +607,7 @@
       "Microsoft.AspNetCore.Mvc.Formatters.Json/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": "2.2.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0"
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5"
         }
       },
       "Microsoft.AspNetCore.Mvc.ViewFeatures/2.2.0": {
@@ -613,7 +615,7 @@
           "Microsoft.AspNetCore.Antiforgery": "2.2.0",
           "Microsoft.AspNetCore.Diagnostics.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Html.Abstractions": "2.2.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.AspNetCore.Mvc.DataAnnotations": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Formatters.Json": "2.2.0",
           "Microsoft.Extensions.WebEncoders": "2.2.0",
@@ -1037,7 +1039,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Http.Polly/8.0.6": {
+      "Microsoft.Extensions.Http.Polly/8.0.8": {
         "dependencies": {
           "Microsoft.Extensions.Http": "8.0.0",
           "Polly": "7.2.4",
@@ -1045,8 +1047,8 @@
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Http.Polly.dll": {
-            "assemblyVersion": "8.0.6.0",
-            "fileVersion": "8.0.624.26909"
+            "assemblyVersion": "8.0.8.0",
+            "fileVersion": "8.0.824.36908"
           }
         }
       },
@@ -1272,20 +1274,6 @@
           }
         }
       },
-      "Microsoft.SyndicationFeed.ReaderWriter/1.0.2": {
-        "dependencies": {
-          "System.Globalization": "4.3.0",
-          "System.Linq": "4.3.0",
-          "System.Runtime.Extensions": "4.3.0",
-          "System.Xml.ReaderWriter": "4.3.0"
-        },
-        "runtime": {
-          "lib/netstandard1.3/Microsoft.SyndicationFeed.ReaderWriter.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "Microsoft.Web.Infrastructure/1.0.0": {
         "runtime": {
           "lib/net40/Microsoft.Web.Infrastructure.dll": {
@@ -1323,15 +1311,16 @@
           }
         }
       },
-      "MimeKit/4.6.0": {
+      "MimeKit/4.7.1": {
         "dependencies": {
-          "BouncyCastle.Cryptography": "2.3.1",
+          "BouncyCastle.Cryptography": "2.4.0",
+          "System.Formats.Asn1": "8.0.1",
           "System.Security.Cryptography.Pkcs": "8.0.0"
         },
         "runtime": {
           "lib/net6.0/MimeKit.dll": {
-            "assemblyVersion": "4.6.0.0",
-            "fileVersion": "4.6.0.0"
+            "assemblyVersion": "4.7.0.0",
+            "fileVersion": "4.7.1.0"
           }
         }
       },
@@ -1343,6 +1332,14 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.1.1"
+          }
+        }
+      },
+      "ncalc/1.3.6": {
+        "runtime": {
+          "lib/NCalc.dll": {
+            "assemblyVersion": "1.3.6.0",
+            "fileVersion": "1.3.6.0"
           }
         }
       },
@@ -1704,11 +1701,11 @@
           }
         }
       },
-      "System.Formats.Asn1/8.0.0": {
+      "System.Formats.Asn1/8.0.1": {
         "runtime": {
           "lib/net6.0/System.Formats.Asn1.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.23.53103"
+            "fileVersion": "8.0.724.31311"
           }
         }
       },
@@ -1805,6 +1802,14 @@
       "System.IO.FileSystem.Primitives/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.IO.Hashing/8.0.0": {
+        "runtime": {
+          "lib/net6.0/System.IO.Hashing.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
         }
       },
       "System.Linq/4.3.0": {
@@ -2079,7 +2084,7 @@
       },
       "System.Security.Cryptography.Cng/5.0.0": {
         "dependencies": {
-          "System.Formats.Asn1": "8.0.0"
+          "System.Formats.Asn1": "8.0.1"
         }
       },
       "System.Security.Cryptography.Csp/4.3.0": {
@@ -2134,7 +2139,7 @@
       },
       "System.Security.Cryptography.Pkcs/8.0.0": {
         "dependencies": {
-          "System.Formats.Asn1": "8.0.0"
+          "System.Formats.Asn1": "8.0.1"
         },
         "runtime": {
           "lib/net6.0/System.Security.Cryptography.Pkcs.dll": {
@@ -2225,6 +2230,14 @@
         }
       },
       "System.Security.Principal.Windows/5.0.0": {},
+      "System.ServiceModel.Syndication/8.0.0": {
+        "runtime": {
+          "lib/net6.0/System.ServiceModel.Syndication.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
@@ -2370,6 +2383,14 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "UAParser/3.1.47": {
+        "runtime": {
+          "lib/netcoreapp2.0/UAParser.dll": {
+            "assemblyVersion": "3.1.47.0",
+            "fileVersion": "3.1.47.0"
+          }
+        }
+      },
       "wilx.Kendo.DynamicLinq.Core/2.1.2": {
         "dependencies": {
           "Microsoft.Extensions.DependencyModel": "7.0.0",
@@ -2425,14 +2446,16 @@
         "dependencies": {
           "Autofac": "7.1.0",
           "ChefHesab.Domain": "1.0.0",
+          "ChefHesab.Share": "1.0.0",
           "DNTPersianUtils.Core": "6.3.1",
           "Dalir.common": "1.0.4",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "Microsoft.AspNetCore.Mvc.Core": "2.2.0",
+          "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.Extensions.DependencyInjection": "8.0.0",
           "Microsoft.Extensions.Logging": "8.0.0",
           "Microsoft.Owin": "4.2.2",
-          "Owin": "1.0.0"
+          "Owin": "1.0.0",
+          "ncalc": "1.3.6"
         },
         "runtime": {
           "ChefHesab.Data.dll": {}
@@ -2440,14 +2463,13 @@
       },
       "ChefHesab.Domain/1.0.0": {
         "dependencies": {
+          "ChefHesab.Share": "1.0.0",
           "DNTPersianUtils.Core": "6.3.1",
           "Microsoft.EntityFrameworkCore": "7.0.10",
           "Microsoft.EntityFrameworkCore.Abstractions": "7.0.10",
           "Microsoft.EntityFrameworkCore.Analyzers": "7.0.10",
           "Microsoft.EntityFrameworkCore.Relational": "7.0.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10",
-          "Microsoft.Extensions.DependencyInjection": "8.0.0",
-          "Microsoft.Extensions.Logging": "8.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.10"
         },
         "runtime": {
           "ChefHesab.Domain.dll": {}
@@ -2539,12 +2561,12 @@
       "path": "ben.demystifier/0.4.1",
       "hashPath": "ben.demystifier.0.4.1.nupkg.sha512"
     },
-    "BouncyCastle.Cryptography/2.3.1": {
+    "BouncyCastle.Cryptography/2.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-buwoISwecYke3CmgG1AQSg+sNZjJeIb93vTAtJiHZX35hP/teYMxsfg0NDXGUKjGx6BKBTNKc77O2M3vKvlXZQ==",
-      "path": "bouncycastle.cryptography/2.3.1",
-      "hashPath": "bouncycastle.cryptography.2.3.1.nupkg.sha512"
+      "sha512": "sha512-SwXsAV3sMvAU/Nn31pbjhWurYSjJ+/giI/0n6tCrYoupEK34iIHCuk3STAd9fx8yudM85KkLSVdn951vTng/vQ==",
+      "path": "bouncycastle.cryptography/2.4.0",
+      "hashPath": "bouncycastle.cryptography.2.4.0.nupkg.sha512"
     },
     "Dalir.common/1.0.4": {
       "type": "package",
@@ -2553,12 +2575,12 @@
       "path": "dalir.common/1.0.4",
       "hashPath": "dalir.common.1.0.4.nupkg.sha512"
     },
-    "DNTCommon.Web.Core/5.3.3": {
+    "DNTCommon.Web.Core/6.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-P2dpEAQXMufqzMQhsv7ijdB6yxzl1324AuOE6YX3mmOof3W6y8EWauCAoGal+mIi/qNbWIYAzrQ65E6mQ3TVfg==",
-      "path": "dntcommon.web.core/5.3.3",
-      "hashPath": "dntcommon.web.core.5.3.3.nupkg.sha512"
+      "sha512": "sha512-SZqRbpWWNLKWgmWBbELfaW7HIe8PRdpOQREaaTelrqne95dM5I7W16i63ZxemO6ZOKzNGpTCRdP0JluEkNP7lg==",
+      "path": "dntcommon.web.core/6.2.0",
+      "hashPath": "dntcommon.web.core.6.2.0.nupkg.sha512"
     },
     "DNTPersianUtils.Core/6.3.1": {
       "type": "package",
@@ -2616,12 +2638,12 @@
       "path": "harfbuzzsharp.nativeassets.win32/7.3.0.2",
       "hashPath": "harfbuzzsharp.nativeassets.win32.7.3.0.2.nupkg.sha512"
     },
-    "HtmlAgilityPack/1.11.61": {
+    "HtmlAgilityPack/1.11.63": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hqZASeEFHS9quHvfZSwaULoAJLWkOYVPiQjc3P9J4pQS8vSYzrP3bxe04Vm7vYYuxwbQhq9hCSVvZVLTyRaNaQ==",
-      "path": "htmlagilitypack/1.11.61",
-      "hashPath": "htmlagilitypack.1.11.61.nupkg.sha512"
+      "sha512": "sha512-cAWxtzqcCcv3ZpnpPXa6Rj309hqkMP9UajmhWZ3nje0murYIzR0cpdNGqz/aNK8BNwlof1R04bqom9VsNglZyg==",
+      "path": "htmlagilitypack/1.11.63",
+      "hashPath": "htmlagilitypack.1.11.63.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -2644,12 +2666,12 @@
       "path": "libuv/1.10.0",
       "hashPath": "libuv.1.10.0.nupkg.sha512"
     },
-    "MailKit/4.6.0": {
+    "MailKit/4.7.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-EJ1L2AtoO9nGZz2AKl2WGGw4pLIpkgEwzpczmZWBLqX0m33ueVA+CJYd9hg52XOvvEj+w5PVzB7yy26E0WHzKQ==",
-      "path": "mailkit/4.6.0",
-      "hashPath": "mailkit.4.6.0.nupkg.sha512"
+      "sha512": "sha512-Y3okmIxu8g/ZcoJiE2i+dCeKgnNyddsXmcJslZnCPGVPP0aRyeVINHV1h97V+OVMdqjQI6O12J2p8Duwq5UEqQ==",
+      "path": "mailkit/4.7.1.1",
+      "hashPath": "mailkit.4.7.1.1.nupkg.sha512"
     },
     "Microsoft.AspNet.Mvc/5.3.0": {
       "type": "package",
@@ -2826,12 +2848,12 @@
       "path": "microsoft.aspnetcore.mvc.abstractions/2.2.0",
       "hashPath": "microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Mvc.Core/2.2.0": {
+    "Microsoft.AspNetCore.Mvc.Core/2.2.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ALiY4a6BYsghw8PT5+VU593Kqp911U3w9f/dH9/ZoI3ezDsDAGiObqPu/HP1oXK80Ceu0XdQ3F0bx5AXBeuN/Q==",
-      "path": "microsoft.aspnetcore.mvc.core/2.2.0",
-      "hashPath": "microsoft.aspnetcore.mvc.core.2.2.0.nupkg.sha512"
+      "sha512": "sha512-/8sr8ixIUD57UFwUntha9bOwex7/AkZfdk1f9oNJG1Ek7p/uuKVa7fuHmYZpQOf35Oxrt+2Ku4WPwMSbNxOuWg==",
+      "path": "microsoft.aspnetcore.mvc.core/2.2.5",
+      "hashPath": "microsoft.aspnetcore.mvc.core.2.2.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.DataAnnotations/2.2.0": {
       "type": "package",
@@ -3127,12 +3149,12 @@
       "path": "microsoft.extensions.http/8.0.0",
       "hashPath": "microsoft.extensions.http.8.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Http.Polly/8.0.6": {
+    "Microsoft.Extensions.Http.Polly/8.0.8": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-vehhL2uDlr2ovIFMuYcQwXgOCu7QECXnjcRD37luN40Fjqm0C4PDiN0t0dHoyfJp6OgJ+sOYDev5jVMGz4lJnQ==",
-      "path": "microsoft.extensions.http.polly/8.0.6",
-      "hashPath": "microsoft.extensions.http.polly.8.0.6.nupkg.sha512"
+      "sha512": "sha512-pGdr4TNLLHLRT5PVZaNdcgBIKN1lQQAFcbnNV7P7qcS6WazGXT2ijMsuhUcNtm2ZxEVB7pZDRDJKR6J9m2bVaA==",
+      "path": "microsoft.extensions.http.polly/8.0.8",
+      "hashPath": "microsoft.extensions.http.polly.8.0.8.nupkg.sha512"
     },
     "Microsoft.Extensions.Localization/2.2.0": {
       "type": "package",
@@ -3323,13 +3345,6 @@
       "path": "microsoft.sqlserver.server/1.0.0",
       "hashPath": "microsoft.sqlserver.server.1.0.0.nupkg.sha512"
     },
-    "Microsoft.SyndicationFeed.ReaderWriter/1.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-o3F/WrKcVpcGYcVJeCTMfP0PLMl+uh7ndBQz9PBE6YvcJiSFj1/hbcqeiV8bAkFN8GMYT74398csaFoz6mfGIg==",
-      "path": "microsoft.syndicationfeed.readerwriter/1.0.2",
-      "hashPath": "microsoft.syndicationfeed.readerwriter.1.0.2.nupkg.sha512"
-    },
     "Microsoft.Web.Infrastructure/1.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3358,12 +3373,12 @@
       "path": "microsoft.win32.systemevents/7.0.0",
       "hashPath": "microsoft.win32.systemevents.7.0.0.nupkg.sha512"
     },
-    "MimeKit/4.6.0": {
+    "MimeKit/4.7.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-M4jddPQNSClTzHE+HnfrtN93mCXSYF8KewWUTwzXgl49ajzUh8hz/UY4CAnRQR4YJF3lBY5P+r+73VXZAGKafw==",
-      "path": "mimekit/4.6.0",
-      "hashPath": "mimekit.4.6.0.nupkg.sha512"
+      "sha512": "sha512-Qoj4aVvhX14A1FNvaJ33hzOP4VZI2j+Mr38I9wSGcjMq4BYDtWLJG89aJ9nRW2cNfH6Czjwyp7+Mh++xv3AZvg==",
+      "path": "mimekit/4.7.1",
+      "hashPath": "mimekit.4.7.1.nupkg.sha512"
     },
     "Mono.TextTemplating/2.2.1": {
       "type": "package",
@@ -3371,6 +3386,13 @@
       "sha512": "sha512-KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "path": "mono.texttemplating/2.2.1",
       "hashPath": "mono.texttemplating.2.2.1.nupkg.sha512"
+    },
+    "ncalc/1.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-uRL3efgqzQv91q4u1Z645X80aTNXLSfpaTE46pcMtf90J8+nH/XcsxyeTHl0TQVKdIgy14W5xPhQJh3NJdhzYA==",
+      "path": "ncalc/1.3.6",
+      "hashPath": "ncalc.1.3.6.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",
@@ -3680,12 +3702,12 @@
       "path": "system.drawing.common/7.0.0",
       "hashPath": "system.drawing.common.7.0.0.nupkg.sha512"
     },
-    "System.Formats.Asn1/8.0.0": {
+    "System.Formats.Asn1/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AJukBuLoe3QeAF+mfaRKQb2dgyrvt340iMBHYv+VdBzCUM06IxGlvl0o/uPOS7lHnXPN6u8fFRHSHudx5aTi8w==",
-      "path": "system.formats.asn1/8.0.0",
-      "hashPath": "system.formats.asn1.8.0.0.nupkg.sha512"
+      "sha512": "sha512-XqKba7Mm/koKSjKMfW82olQdmfbI5yqeoLV/tidRp7fbh5rmHAQ5raDI/7SU0swTzv+jgqtUGkzmFxuUg0it1A==",
+      "path": "system.formats.asn1/8.0.1",
+      "hashPath": "system.formats.asn1.8.0.1.nupkg.sha512"
     },
     "System.Globalization/4.3.0": {
       "type": "package",
@@ -3749,6 +3771,13 @@
       "sha512": "sha512-6QOb2XFLch7bEc4lIcJH49nJN2HV+OC3fHDgsLVsBVBk3Y4hFAnOBGzJ2lUu7CyDDFo9IBWkSsnbkT6IBwwiMw==",
       "path": "system.io.filesystem.primitives/4.3.0",
       "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.IO.Hashing/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ne1843evDugl0md7Fjzy6QjJrzsjh46ZKbhf8GwBXb5f/gw97J4bxMs0NQKifDuThh/f0bZ0e62NPl1jzTuRqA==",
+      "path": "system.io.hashing/8.0.0",
+      "hashPath": "system.io.hashing.8.0.0.nupkg.sha512"
     },
     "System.Linq/4.3.0": {
       "type": "package",
@@ -4030,6 +4059,13 @@
       "path": "system.security.principal.windows/5.0.0",
       "hashPath": "system.security.principal.windows.5.0.0.nupkg.sha512"
     },
+    "System.ServiceModel.Syndication/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CJxIUwpBkMCPmIx46tFVOt0zpRrYurUHLW6tJBcmyj+MyWpKc6MMcS69B7IdlV/bgtgys073wMIHZX9QOQ1OFA==",
+      "path": "system.servicemodel.syndication/8.0.0",
+      "hashPath": "system.servicemodel.syndication.8.0.0.nupkg.sha512"
+    },
     "System.Text.Encoding/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -4120,6 +4156,13 @@
       "sha512": "sha512-5zJ0XDxAIg8iy+t4aMnQAu0MqVbqyvfoUVl1yDV61xdo3Vth45oA2FoY4pPkxYAH5f8ixpmTqXeEIya95x0aCQ==",
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
+    },
+    "UAParser/3.1.47": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I68Jl/Vs5RQZdz9BbmYtnXgujg0jVd61LhKbyNZOCm9lBxZFGxLbiQo6yFj21VYi7DzPvEvrVOmeC6v41AoLfw==",
+      "path": "uaparser/3.1.47",
+      "hashPath": "uaparser.3.1.47.nupkg.sha512"
     },
     "wilx.Kendo.DynamicLinq.Core/2.1.2": {
       "type": "package",

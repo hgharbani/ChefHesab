@@ -25,8 +25,13 @@ namespace Chefhesab.WebApi.Controllers.food
             var result = _foodProviderService.GetFoodProviders(model);
             return Ok(result);
         }
+        [HttpPost("GetFoodProviderPrintVms")]
+        public IActionResult GetFoodProviderPrintVms(SearchfoodProvider model)
+        {
 
-
+            var result = _foodProviderService.GetFoodProviders(model);
+            return Ok(result);
+        }
         [HttpGet("GetForEdit")]
         public async Task<IActionResult> GetForEdit(Guid id)
         {

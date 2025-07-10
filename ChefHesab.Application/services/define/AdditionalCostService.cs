@@ -1,13 +1,16 @@
-﻿using AutoMapper;
+﻿using Autofac.Core;
+using AutoMapper;
 using ChefHesab.Application.Interface.define;
 using ChefHesab.Domain;
 using ChefHesab.Domain.Peresentition.IRepositories;
 using ChefHesab.Dto.define.AdditionalCost;
 using ChefHesab.Share.Extiontions.KendoExtentions;
 using ChefHesab.Share.model;
+using ChefHesab.Share;
 using ChefHesab.Share.model.KendoModel.Response;
 using Microsoft.EntityFrameworkCore;
 using System.Collections;
+using System.Text.RegularExpressions;
 
 namespace ChefHesab.Application.services.define
 {
@@ -38,7 +41,7 @@ namespace ChefHesab.Application.services.define
             else
             {
                 return _unitOfWork.AdditionalCostRepository
-                    .Any(a => a.Title == additionalCost.Title && a.IsActive.HasValue && a.IsActive.Value==true
+                    .Any(a => a.Title == additionalCost.Title && a.IsActive.HasValue && a.IsActive.Value == true
                     && a.CompanyId == additionalCost.CompanyId);
             }
 
@@ -49,7 +52,7 @@ namespace ChefHesab.Application.services.define
             var additionalCosts = _unitOfWork
                 .AdditionalCostRepository
                 .GetAll()
-                .Include(a => a.ContractingCompany).Where(a=>a.IsActive==true).AsTracking();
+                .Include(a => a.ContractingCompany).Where(a => a.IsActive == true).AsTracking();
             if (request.CompanyId.HasValue)
             {
 
@@ -92,7 +95,7 @@ namespace ChefHesab.Application.services.define
 
             if (request.Groups != null && request.Groups.Count > 0 && !request.GroupPaging)
             {
-                resultData = data.Group(request.Groups).Cast<Group>().ToList();
+                resultData = data.Group(request.Groups).Cast<Share.model.KendoModel.Response.Group>().ToList();
                 isGrouped = true;
             }
             else
@@ -192,5 +195,27 @@ namespace ChefHesab.Application.services.define
             }
 
         }
+
+        public double checkformula()
+        {
+            var formola = $"AdditionalCosts_Price *1000/ 1000";
+            var FormulsParametes = new List<FormulsParametes>();
+            Dictionary<string, object> formulaParameters = new Dictionary<string, object>()
+                    {
+                        {"AdditionalCosts.Price", 10},
+                    
+                    };
+            var x = _unitOfWork.AdditionalCostRepository.CalculateLeaveDays(formola, formulaParameters);
+            return x;
+        }
+
+
+        private FieldInfos ParseFieldName(string parameterName)
+        {
+            // فرض کنید جداکننده بین نام جدول و فیلد نقطه (.) باشد
+            var parts = parameterName.Split('.');
+            return new FieldInfos { TableName = parts[0], FieldName = parts[1], FieldCondition = parts.Count() > 2 ? parts[2] : "" };
+        }
+
     }
 }

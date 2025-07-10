@@ -67,12 +67,12 @@ function enableButtons(buttons) {
         $(val).prop('disabled', false).removeAttr("disabled").removeProp('disabled').removeProp("onclick").removeAttr("onclick");
     });
 }
-function showLoading() {
-    $("#showLoading").show();
-}
-function hideLoading() {
-    $("#showLoading").hide();
-}
+//function showLoading() {
+//    $("#showLoading").show();
+//}
+//function hideLoading() {
+//    $("#showLoading").hide();
+//}
 function customDelete(e, formId, options) {
     var defaults = {
         disableButtons: null,

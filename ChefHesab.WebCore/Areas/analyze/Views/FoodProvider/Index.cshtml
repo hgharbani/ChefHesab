@@ -55,6 +55,7 @@
                 autoBind:true,
                 toolbar: function () {
                     var btn = `<button onclick="add()" type="button" class="k-button k-button-md k-rounded-md k-button-solid k-button-solid-base"><span class="k-icon k-i-plus k-button-icon"></span><span class="k-button-text">اضافه کردن ردیف جدید</span></button>`
+                    btn = btn + `<button onclick="downloadExcel()">Download Excel</button>`;
                     return btn;
                 },
                 dataSource: {
@@ -384,5 +385,40 @@
                 FoodCategoryId: foodCategoryId == '' ? null : foodCategoryId
             }
         }
+
+        function downloadExcel() {
+           
+            $.PostMvcDataAjax({
+                //baseEvent: e,
+                postUrl: '/analyze/FoodProvider/GetAnalysicFood',
+                loginUrl: '/login',
+                data: getFilter(),
+                beforePostHandler: function () {
+
+
+                },
+                completeHandler: function (response) {
+                     // Assuming the response contains the Base64 string
+                    var binary = atob(response);
+                    var array = [];
+                    for (var i = 0; i < binary.length; i++) {
+                        array.push(binary.charCodeAt(i));
+                    }
+                    var blob = new Blob([new Uint8Array(array)], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+                    var link = document.createElement('a');
+                    link.href = window.URL.createObjectURL(blob);
+                    link.download = 'example.xlsx';
+                    link.click();
+                },
+                errorHandler: function () {
+
+                }
+            });
+
+        }
+    </script>
+
+    <script>
+       
     </script>
 }

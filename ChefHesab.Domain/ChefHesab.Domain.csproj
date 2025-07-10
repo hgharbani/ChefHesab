@@ -21,8 +21,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +29,10 @@
 
   <ItemGroup>
     <None Include="E:\Drive E\برنامه نویسی\برنامه های من\chefhesab\ChefHesab\ChefHesab.Domain\Peresentition\IRepositories\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChefHesab.Share\ChefHesab.Share.csproj" />
   </ItemGroup>
 
 </Project>

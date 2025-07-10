@@ -1,8 +1,12 @@
 ﻿using ChefHesab.Data.Presentition.Context;
 using ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository;
+using ChefHesab.Share;
 using Dalir.common.Extensions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Linq.Expressions;
+using System.Reflection;
+using System.Text.RegularExpressions;
 
 namespace ChefHesab.Data.Presentition.Reositories.generic
 {
@@ -15,6 +19,133 @@ namespace ChefHesab.Data.Presentition.Reositories.generic
            
             _dbContext = chefHesab;
         }
+
+
+       
+
+        public double CalculateLeaveDays(string formulaString, Dictionary<string, object> formulsParametes)
+        {
+            var tableName = "AdditionalCosts";
+            var columnName = "Price";
+
+            // ایجاد عبارت
+             formulaString = $"{tableName}_{columnName} * 1000 / 1000";
+            var expression = new NCalc.Expression(formulaString);
+
+            // تعیین مقدار پارامترها (به جای این قسمت، از منطق دسترسی به پایگاه داده خود استفاده کنید)
+            expression.Parameters[tableName + "_" + columnName] = GetValueFromTable(tableName, columnName);
+
+            // ارزیابی عبارت
+  
+
+
+            //var formula = _context.Formulas.Include(f => f.Parameters).SingleOrDefault(f => f.Id == formulaId);
+
+            // ایجاد یک شیء از کلاس Expression از NCalc
+            //var expression = new NCalc.Expression(formulaString);
+            var x = expression.Parameters.Keys.ToList();
+
+            // تنظیم پارامترهای عبارت
+            foreach (var parameter in formulsParametes)
+            {
+                expression.Parameters[parameter.Key] = parameter.Value;
+            }
+
+            // ارزیابی عبارت و بازگرداندن نتیجه
+            var result = expression.Evaluate();
+            return Convert.ToDouble(result);
+
+
+
+
+
+            //// بازیابی اطلاعات پرسنل از دیتابیس
+
+
+            //// ایجاد یک شیء Expression از NCalc
+            //var expression = new NCalc.Expression(formulaString);
+            //var parameters = expression.Parameters.Keys.ToList();
+            //Regex parameterRegex = new Regex(@"[%)(/*+-]\w*");
+
+            //// پیدا کردن پارامترها
+            //MatchCollection matches = parameterRegex.Matches(formulaString);
+            //List<string> parameters1 = matches.Cast<Match>().Select(m => m.Value).ToList();
+
+            //// جایگزینی پارامترها با نگهدارنده‌ها
+            //string modifiedFormula = Regex.Replace(formulaString, parameterRegex.ToString(), "{@}");
+            //var listParameters = modifiedFormula.Split("{@}").ToList();
+            //foreach (var parameters in listParameters)
+            //{
+            //    if (IsNumeric(parameters)) continue;
+            //    expression.Parameters[parameters] = GetFieldValue<dynamic>(parameters, formulsParametes);
+            //}
+
+
+            //// ارزیابی عبارت و بازگرداندن نتیجه
+            //object result = expression.Evaluate();
+            //return Convert.ToDouble(result);
+        }
+        // تابع برای دریافت مقدار از جدول
+        private decimal GetValueFromTable(string tableName, string columnName)
+        {
+           
+                // بررسی اعتبار ورودی‌ها
+                if (string.IsNullOrEmpty(tableName) || string.IsNullOrEmpty(columnName))
+                {
+                    throw new ArgumentException("نام جدول یا ستون نمی‌تواند خالی باشد.");
+                }
+
+                // استفاده از Reflection برای دسترسی دینامیک به DbSet
+                var dbSetProperty = _dbContext.GetType().GetProperty(tableName);
+                if (dbSetProperty == null)
+                {
+                    throw new ArgumentException($"جدول {tableName} در DbContext یافت نشد.");
+                }
+
+                var dbSet = dbSetProperty.GetValue(_dbContext) ;
+                if (dbSet == null)
+                {
+                    throw new ArgumentException($"نوع DbSet برای جدول {tableName} صحیح نیست.");
+                }
+                var AdditionalCosts= dbSet.GetType().GetNestedType(columnName);
+            //// استفاده از LINQ برای انتخاب مقدار
+            //Expression<Func<object, object>> selector = x => x.GetType().GetProperty(columnName).GetValue(x);
+            //var value = dbSet.Select(selector)
+            //    .FirstOrDefault();
+
+            //    if (value == null)
+            //    {
+            //        throw new ArgumentException($"ستون {columnName} در جدول {tableName} یافت نشد یا مقداری ندارد.");
+            //    }
+
+                return Convert.ToDecimal(0);
+            
+        }
+        public decimal Evaluate(string formulaString, Dictionary<string, object> parameters)
+        {
+            //var formula = _context.Formulas.Include(f => f.Parameters).SingleOrDefault(f => f.Id == formulaId);
+
+            // ایجاد یک شیء از کلاس Expression از NCalc
+            var expression = new NCalc.Expression(formulaString);
+           var x= expression.Parameters.Keys.ToList();
+            // تنظیم پارامترهای عبارت
+            foreach (var parameter in parameters)
+            {
+                expression.Parameters[parameter.Key] = parameter.Value;
+            }
+
+            // ارزیابی عبارت و بازگرداندن نتیجه
+            var result = expression.Evaluate();
+            return Convert.ToDecimal(result);
+        }
+
+        bool IsNumeric(string str)
+        {
+            int number;
+            return int.TryParse(str, out number);
+        }
+
+
 
         public async Task<T> GetById(int id)
         {

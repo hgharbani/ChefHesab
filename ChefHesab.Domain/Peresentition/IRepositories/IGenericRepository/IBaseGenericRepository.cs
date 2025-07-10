@@ -35,6 +35,7 @@ namespace ChefHesab.Domain.Peresentition.IRepositories.IGenericRepository
   
 
         IQueryable<T> SelectQuery();
+        double CalculateLeaveDays(string formulaString, Dictionary<string, object> formulsParametes);
     }
 
 
