@@ -104,22 +104,6 @@
           }
         }
       },
-      "Dalir.common/1.0.4": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.10",
-          "Microsoft.Extensions.Configuration": "7.0.0",
-          "Microsoft.Extensions.Configuration.Json": "7.0.0",
-          "Microsoft.Extensions.DependencyInjection": "7.0.0",
-          "Microsoft.Extensions.Logging": "7.0.0"
-        },
-        "compile": {
-          "lib/net6.0/Dalir.common.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/Dalir.common.dll": {}
-        }
-      },
       "DNTPersianUtils.Core/6.3.1": {
         "type": "package",
         "compile": {
@@ -4147,17 +4131,6 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
-      ]
-    },
-    "Dalir.common/1.0.4": {
-      "sha512": "fc99mEu3nuLMgecIL+JTJpYndJEY6on/e63l/yvJCCzCoTz4vrFyBRPDLydO+AElrDRWBIeifTaiCogSqGii2Q==",
-      "type": "package",
-      "path": "dalir.common/1.0.4",
-      "files": [
-        ".nupkg.metadata",
-        "dalir.common.1.0.4.nupkg.sha512",
-        "dalir.common.nuspec",
-        "lib/net6.0/Dalir.common.dll"
       ]
     },
     "DNTPersianUtils.Core/6.3.1": {
@@ -10622,23 +10595,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {},
+    "C:\\Users\\Hossein\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Application\\ChefHesab.Application.csproj",
+      "projectUniqueName": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Application\\ChefHesab.Application.csproj",
       "projectName": "ChefHesab.Application",
-      "projectPath": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Application\\ChefHesab.Application.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Application\\obj\\",
+      "projectPath": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Application\\ChefHesab.Application.csproj",
+      "packagesPath": "C:\\Users\\Hossein\\.nuget\\packages\\",
+      "outputPath": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hossein\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -10648,24 +10621,23 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "G:\\package": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Data\\ChefHesab.Data.csproj": {
-              "projectPath": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Data\\ChefHesab.Data.csproj"
+            "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Data\\ChefHesab.Data.csproj": {
+              "projectPath": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Data\\ChefHesab.Data.csproj"
             },
-            "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Domain\\ChefHesab.Domain.csproj": {
-              "projectPath": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Domain\\ChefHesab.Domain.csproj"
+            "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Domain\\ChefHesab.Domain.csproj": {
+              "projectPath": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Domain\\ChefHesab.Domain.csproj"
             },
-            "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Dto\\ChefHesab.Dto.csproj": {
-              "projectPath": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Dto\\ChefHesab.Dto.csproj"
+            "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Dto\\ChefHesab.Dto.csproj": {
+              "projectPath": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Dto\\ChefHesab.Dto.csproj"
             },
-            "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Share\\ChefHesab.Share.csproj": {
-              "projectPath": "D:\\programming\\برنامه نویسی\\برنامه های من\\chefhesab\\ChefHesab\\ChefHesab.Share\\ChefHesab.Share.csproj"
+            "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Share\\ChefHesab.Share.csproj": {
+              "projectPath": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Share\\ChefHesab.Share.csproj"
             }
           }
         }
@@ -10679,7 +10651,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net6.0": {
@@ -10748,11 +10721,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   },
   "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Dalir.common. No packages exist with this id in source(s): C:\\Program Files\\dotnet\\library-packs, Microsoft Visual Studio Offline Packages, nuget.org",
+      "libraryId": "Dalir.common",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Chefhesab.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c416606522eeef5770a69cda89138941c1a251a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffeac6e232b93d2a1e0561976cff2e221851c24b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Chefhesab.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Chefhesab.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

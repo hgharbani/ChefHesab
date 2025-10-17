@@ -1,0 +1,339 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\programming\\programmin\\ChefHesab\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6413F4-63BB-4F9C-BBB5-A9D663A24A25}|ChefHesab.Data\\ChefHesab.Data.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.data\\chefhesab.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8A6413F4-63BB-4F9C-BBB5-A9D663A24A25}|ChefHesab.Data\\ChefHesab.Data.csproj|solutionrelative:chefhesab.data\\chefhesab.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.webapi\\controllers\\food\\foodproviderapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|solutionrelative:chefhesab.webapi\\controllers\\food\\foodproviderapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|solutionrelative:chefhesab.webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.webapi\\controllers\\food\\ingredinsfoodapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|solutionrelative:chefhesab.webapi\\controllers\\food\\ingredinsfoodapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|solutionrelative:chefhesab.webapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|solutionrelative:chefhesab.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.webapi\\controllers\\define\\snapapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|solutionrelative:chefhesab.webapi\\controllers\\define\\snapapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.webapi\\controllers\\food\\additionalcostfoodapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|solutionrelative:chefhesab.webapi\\controllers\\food\\additionalcostfoodapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6F82420-EA25-4C6B-A97C-A90A0B1BE4F5}|ChefHesab.Web\\ChefHesab.Web.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.web\\chefhesab.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C6F82420-EA25-4C6B-A97C-A90A0B1BE4F5}|ChefHesab.Web\\ChefHesab.Web.csproj|solutionrelative:chefhesab.web\\chefhesab.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6413F4-63BB-4F9C-BBB5-A9D663A24A25}|ChefHesab.Data\\ChefHesab.Data.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.data\\presentition\\configurations\\additionalcostconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6413F4-63BB-4F9C-BBB5-A9D663A24A25}|ChefHesab.Data\\ChefHesab.Data.csproj|solutionrelative:chefhesab.data\\presentition\\configurations\\additionalcostconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6413F4-63BB-4F9C-BBB5-A9D663A24A25}|ChefHesab.Data\\ChefHesab.Data.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.data\\presentition\\context\\chefhesabcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6413F4-63BB-4F9C-BBB5-A9D663A24A25}|ChefHesab.Data\\ChefHesab.Data.csproj|solutionrelative:chefhesab.data\\presentition\\context\\chefhesabcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6413F4-63BB-4F9C-BBB5-A9D663A24A25}|ChefHesab.Data\\ChefHesab.Data.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.data\\presentition\\reositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6413F4-63BB-4F9C-BBB5-A9D663A24A25}|ChefHesab.Data\\ChefHesab.Data.csproj|solutionrelative:chefhesab.data\\presentition\\reositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F2123F-28C9-44E0-A91B-44C9F50CD755}|ChefHesab.Domain\\ChefHesab.Domain.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.domain\\peresentition\\irepositories\\igenericrepository\\ibasegenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F2123F-28C9-44E0-A91B-44C9F50CD755}|ChefHesab.Domain\\ChefHesab.Domain.csproj|solutionrelative:chefhesab.domain\\peresentition\\irepositories\\igenericrepository\\ibasegenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6413F4-63BB-4F9C-BBB5-A9D663A24A25}|ChefHesab.Data\\ChefHesab.Data.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.data\\presentition\\reositories\\define\\additionalcostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6413F4-63BB-4F9C-BBB5-A9D663A24A25}|ChefHesab.Data\\ChefHesab.Data.csproj|solutionrelative:chefhesab.data\\presentition\\reositories\\define\\additionalcostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6413F4-63BB-4F9C-BBB5-A9D663A24A25}|ChefHesab.Data\\ChefHesab.Data.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.data\\presentition\\reositories\\generic\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A6413F4-63BB-4F9C-BBB5-A9D663A24A25}|ChefHesab.Data\\ChefHesab.Data.csproj|solutionrelative:chefhesab.data\\presentition\\reositories\\generic\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{33F2123F-28C9-44E0-A91B-44C9F50CD755}|ChefHesab.Domain\\ChefHesab.Domain.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.domain\\peresentition\\domains\\additionalcost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33F2123F-28C9-44E0-A91B-44C9F50CD755}|ChefHesab.Domain\\ChefHesab.Domain.csproj|solutionrelative:chefhesab.domain\\peresentition\\domains\\additionalcost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.webapi\\controllers\\define\\additionalcostapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F8965D0-F288-4079-87FA-CB0167F64013}|Chefhesab.WebApi\\Chefhesab.WebApi.csproj|solutionrelative:chefhesab.webapi\\controllers\\define\\additionalcostapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3328D6-BFC0-45FE-8D49-E3905B726015}|ChefHesab.Application\\ChefHesab.Application.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.application\\services\\define\\additionalcostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3328D6-BFC0-45FE-8D49-E3905B726015}|ChefHesab.Application\\ChefHesab.Application.csproj|solutionrelative:chefhesab.application\\services\\define\\additionalcostservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9B3328D6-BFC0-45FE-8D49-E3905B726015}|ChefHesab.Application\\ChefHesab.Application.csproj|d:\\programming\\programmin\\chefhesab\\chefhesab.application\\services\\food\\foodproviderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9B3328D6-BFC0-45FE-8D49-E3905B726015}|ChefHesab.Application\\ChefHesab.Application.csproj|solutionrelative:chefhesab.application\\services\\food\\foodproviderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChefHesab.Data",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Data\\ChefHesab.Data.csproj",
+              "RelativeDocumentMoniker": "ChefHesab.Data\\ChefHesab.Data.csproj",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Data\\ChefHesab.Data.csproj*",
+              "RelativeToolTip": "ChefHesab.Data\\ChefHesab.Data.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-17T11:19:26.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "Chefhesab.WebApi\\appsettings.json",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\appsettings.json",
+              "RelativeToolTip": "Chefhesab.WebApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-11T13:14:56.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IngredinsFoodApiController.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\Controllers\\food\\IngredinsFoodApiController.cs",
+              "RelativeDocumentMoniker": "Chefhesab.WebApi\\Controllers\\food\\IngredinsFoodApiController.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\Controllers\\food\\IngredinsFoodApiController.cs",
+              "RelativeToolTip": "Chefhesab.WebApi\\Controllers\\food\\IngredinsFoodApiController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:56.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FoodProviderApiController.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\Controllers\\food\\FoodProviderApiController.cs",
+              "RelativeDocumentMoniker": "Chefhesab.WebApi\\Controllers\\food\\FoodProviderApiController.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\Controllers\\food\\FoodProviderApiController.cs",
+              "RelativeToolTip": "Chefhesab.WebApi\\Controllers\\food\\FoodProviderApiController.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAIwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:56.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Chefhesab.WebApi\\appsettings.Development.json",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\appsettings.Development.json",
+              "RelativeToolTip": "Chefhesab.WebApi\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-11T13:14:56.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "Chefhesab.WebApi\\Program.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\Program.cs",
+              "RelativeToolTip": "Chefhesab.WebApi\\Program.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAmwFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:56.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SnapApiController.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\Controllers\\define\\SnapApiController.cs",
+              "RelativeDocumentMoniker": "Chefhesab.WebApi\\Controllers\\define\\SnapApiController.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\Controllers\\define\\SnapApiController.cs",
+              "RelativeToolTip": "Chefhesab.WebApi\\Controllers\\define\\SnapApiController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAADCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:55.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdditionalCostFoodApiController.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\Controllers\\food\\AdditionalCostFoodApiController.cs",
+              "RelativeDocumentMoniker": "Chefhesab.WebApi\\Controllers\\food\\AdditionalCostFoodApiController.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\Controllers\\food\\AdditionalCostFoodApiController.cs",
+              "RelativeToolTip": "Chefhesab.WebApi\\Controllers\\food\\AdditionalCostFoodApiController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:56.075Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChefHesab.Web.csproj",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Web\\ChefHesab.Web.csproj",
+              "RelativeDocumentMoniker": "ChefHesab.Web\\ChefHesab.Web.csproj",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Web\\ChefHesab.Web.csproj*",
+              "RelativeToolTip": "ChefHesab.Web\\ChefHesab.Web.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-11T13:14:56.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AdditionalCostConfiguration.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Data\\Presentition\\Configurations\\AdditionalCostConfiguration.cs",
+              "RelativeDocumentMoniker": "ChefHesab.Data\\Presentition\\Configurations\\AdditionalCostConfiguration.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Data\\Presentition\\Configurations\\AdditionalCostConfiguration.cs",
+              "RelativeToolTip": "ChefHesab.Data\\Presentition\\Configurations\\AdditionalCostConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:56.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChefHesabContext.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Data\\Presentition\\Context\\ChefHesabContext.cs",
+              "RelativeDocumentMoniker": "ChefHesab.Data\\Presentition\\Context\\ChefHesabContext.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Data\\Presentition\\Context\\ChefHesabContext.cs",
+              "RelativeToolTip": "ChefHesab.Data\\Presentition\\Context\\ChefHesabContext.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAADwvxgAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:56.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Data\\Presentition\\Reositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "ChefHesab.Data\\Presentition\\Reositories\\UnitOfWork.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Data\\Presentition\\Reositories\\UnitOfWork.cs",
+              "RelativeToolTip": "ChefHesab.Data\\Presentition\\Reositories\\UnitOfWork.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAswBcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:56.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IBaseGenericRepository.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Domain\\Peresentition\\IRepositories\\IGenericRepository\\IBaseGenericRepository.cs",
+              "RelativeDocumentMoniker": "ChefHesab.Domain\\Peresentition\\IRepositories\\IGenericRepository\\IBaseGenericRepository.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Domain\\Peresentition\\IRepositories\\IGenericRepository\\IBaseGenericRepository.cs",
+              "RelativeToolTip": "ChefHesab.Domain\\Peresentition\\IRepositories\\IGenericRepository\\IBaseGenericRepository.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAkwCUAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:56.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdditionalCostRepository.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Data\\Presentition\\Reositories\\define\\AdditionalCostRepository.cs",
+              "RelativeDocumentMoniker": "ChefHesab.Data\\Presentition\\Reositories\\define\\AdditionalCostRepository.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Data\\Presentition\\Reositories\\define\\AdditionalCostRepository.cs",
+              "RelativeToolTip": "ChefHesab.Data\\Presentition\\Reositories\\define\\AdditionalCostRepository.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAcwEcAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:56.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Data\\Presentition\\Reositories\\generic\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "ChefHesab.Data\\Presentition\\Reositories\\generic\\GenericRepository.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Data\\Presentition\\Reositories\\generic\\GenericRepository.cs",
+              "RelativeToolTip": "ChefHesab.Data\\Presentition\\Reositories\\generic\\GenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:56.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AdditionalCost.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Domain\\Peresentition\\Domains\\AdditionalCost.cs",
+              "RelativeDocumentMoniker": "ChefHesab.Domain\\Peresentition\\Domains\\AdditionalCost.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Domain\\Peresentition\\Domains\\AdditionalCost.cs",
+              "RelativeToolTip": "ChefHesab.Domain\\Peresentition\\Domains\\AdditionalCost.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAADwvw8AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:56.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AdditionalCostApiController.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\Controllers\\define\\AdditionalCostApiController.cs",
+              "RelativeDocumentMoniker": "Chefhesab.WebApi\\Controllers\\define\\AdditionalCostApiController.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\Chefhesab.WebApi\\Controllers\\define\\AdditionalCostApiController.cs",
+              "RelativeToolTip": "Chefhesab.WebApi\\Controllers\\define\\AdditionalCostApiController.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAawDcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:56.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdditionalCostService.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Application\\services\\define\\AdditionalCostService.cs",
+              "RelativeDocumentMoniker": "ChefHesab.Application\\services\\define\\AdditionalCostService.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Application\\services\\define\\AdditionalCostService.cs",
+              "RelativeToolTip": "ChefHesab.Application\\services\\define\\AdditionalCostService.cs",
+              "ViewState": "AQIAALwAAAAAAAAAAAAtwM8AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:56.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FoodProviderService.cs",
+              "DocumentMoniker": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Application\\services\\food\\FoodProviderService.cs",
+              "RelativeDocumentMoniker": "ChefHesab.Application\\services\\food\\FoodProviderService.cs",
+              "ToolTip": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Application\\services\\food\\FoodProviderService.cs",
+              "RelativeToolTip": "ChefHesab.Application\\services\\food\\FoodProviderService.cs",
+              "ViewState": "AQIAALYAAAAAAAAAAAAYwLUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T13:14:56.098Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

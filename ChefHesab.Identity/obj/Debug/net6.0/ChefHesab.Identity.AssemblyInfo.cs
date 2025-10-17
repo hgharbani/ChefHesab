@@ -11,12 +11,11 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-ChefHesab.Identity-1f3fa32c-a5fb-4d15-bb0d-e12b75ceb77a")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChefHesab.Identity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75a3e77a25da44245bb85a20bdd9d130df077066")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffeac6e232b93d2a1e0561976cff2e221851c24b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChefHesab.Identity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChefHesab.Identity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

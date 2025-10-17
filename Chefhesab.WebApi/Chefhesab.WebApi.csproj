@@ -27,4 +27,8 @@
     <ProjectReference Include="..\ChefHesab.Share\ChefHesab.Share.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\attend\" />
+  </ItemGroup>
+
 </Project>

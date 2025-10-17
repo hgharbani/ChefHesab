@@ -1,0 +1,21 @@
+﻿using Ksc.HR.Domain.Entities;
+
+using KSC.Domain;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ksc.HR.Domain.Repositories.EmployeeBase
+{
+    public interface IEmployeeAccountBankRepository : IRepository<EmployeeAccountBank, int>
+    {
+        IQueryable<EmployeeAccountBank> GetAllRelated();
+
+        IQueryable<EmployeeAccountBank> GetByIdRelated(int id);
+
+        IQueryable<EmployeeAccountBank> GetActiveByAccountBankType(int id);
+
+    }
+}
