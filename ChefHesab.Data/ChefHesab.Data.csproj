@@ -24,8 +24,4 @@
     <ProjectReference Include="..\ChefHesab.Share\ChefHesab.Share.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Attend\Persistant\Repositories\Extention\" />
-  </ItemGroup>
-
 </Project>

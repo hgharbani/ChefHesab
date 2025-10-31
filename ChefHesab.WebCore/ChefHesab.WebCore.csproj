@@ -2078,7 +2078,6 @@
   <ItemGroup>
     <Folder Include="Areas\Define\Data\" />
     <Folder Include="Areas\Define\Models\" />
-    <Folder Include="Areas\Attend\" />
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
 

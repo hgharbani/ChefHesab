@@ -227,6 +227,15 @@
       ]
     },
     {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: The HTTP request to 'GET https://api.nuget.org/v3-vulnerabilities/2025.10.28.23.31.39/2025.10.31.05.31.48/vulnerability.update.json' has timed out after 100000ms.",
+      "projectPath": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Application\\ChefHesab.Application.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\programming\\programmin\\ChefHesab\\ChefHesab.Application\\ChefHesab.Application.csproj",
+      "targetGraphs": []
+    },
+    {
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Microsoft.AspNet.Mvc 5.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
